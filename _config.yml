@@ -23,7 +23,7 @@ title: Byte Crafter # the main title
 tagline: Hyeonsu Kim's Blog # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Here, I share my knowledge, record my journey of learning and growth, and present the results of my studies and research. I aim to provide in-depth insights into various fields by sharing my learning processes, research findings, and project experiences. This blog is centered around algorithm, design, programming, and the small discoveries in everyday life. Through weekly posts, I hope to communicate with you, fostering a space where we can learn and grow together.
+  This blog records what I learn in design, gaming, development, algorithms, and more. I share my knowledge, research findings, and project experiences, aiming to foster a space where we can learn and grow together.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://skykhs3.github.io"
