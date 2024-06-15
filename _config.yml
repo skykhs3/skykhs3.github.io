@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
   What I've studied and what I resume is for
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://jiseoup.github.io"
+url: "https://skykhs3.github.io"
 
 github:
   username: skykhs3 # change to your github username
@@ -35,7 +35,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Hyeonsu Kim
-  email: skykhs3 # change to your email address
+  email: skykhs3@naver.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/skykhs3 # change to your github homepage
