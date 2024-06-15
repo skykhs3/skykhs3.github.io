@@ -4,7 +4,7 @@ vendor
 Gemfile.lock
 .DS_Store
 # Jekyll cache
-.jekyll-cache
+.jekyll-cache 
 _site
 
 # RubyGems

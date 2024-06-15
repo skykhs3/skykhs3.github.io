@@ -18,9 +18,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Hyeonsu Kim's Blog # the main title
+title: Byte Crafter # the main title
 
-tagline: I wanna be young and rich # it will display as the sub-title
+tagline: Hyeonsu Kim's Blog # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   What I've studied and what I resume is for
