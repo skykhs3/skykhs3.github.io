@@ -148,6 +148,7 @@ PLATFORMS
 
 DEPENDENCIES
   html-proofer (~> 5.0)
+  jekyll
   jekyll-theme-chirpy!
 
 BUNDLED WITH
