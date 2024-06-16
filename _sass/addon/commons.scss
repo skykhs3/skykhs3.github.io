@@ -829,15 +829,15 @@ $sidebar-display: "sidebar-display";
     display: table-cell;
     vertical-align: middle;
     text-shadow:
-      -1px -1px 0 rgb(118, 86, 59),
-      //  -1px 0px 0 rgb(118, 86, 59),
-      -1px 1px 0 rgb(118, 86, 59),
-      //   0px -1px 0 rgb(118, 86, 59),
-      0px 0px 0 rgb(118, 86, 59),
-      //   0px 1px 0 rgb(118, 86, 59),
-      1px -1px 0 rgb(118, 86, 59),
-      // 1px 0px 0 rgb(118, 86, 59),
-      1px 1px 0 rgb(118, 86, 59),
+      0px 0px 0 black,
+      -1px -1px 0 rgb(65, 97, 91),
+      -1px 1px 0 rgb(65, 97, 91),
+      1px -1px 0 rgb(65, 97, 91),
+      1px 1px 0 rgb(65, 97, 91);
+      // -1px -1px 0 rgb(118, 86, 59),
+      // -1px 1px 0 rgb(118, 86, 59),
+      // 1px -1px 0 rgb(118, 86, 59),
+      // 1px 1px 0 rgb(118, 86, 59),
   }
 
   .nav-item {
