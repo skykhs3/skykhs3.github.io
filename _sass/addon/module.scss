@@ -16,7 +16,8 @@
     margin-bottom: 1.25rem;
 
     &:focus {
-      outline: none; /* avoid outline in Safari */
+      outline: none;
+      /* avoid outline in Safari */
     }
   }
 }
@@ -95,7 +96,7 @@
 }
 
 %img-caption {
-  + em {
+  +em {
     display: block;
     text-align: center;
     font-style: normal;
@@ -106,7 +107,7 @@
 }
 
 %sidebar-links {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.6);
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
