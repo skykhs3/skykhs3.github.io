@@ -1,5 +1,5 @@
 ---
 layout: page
-icon: fas fa-tag
+icon: fas fa-id-card
 order: 4
 ---

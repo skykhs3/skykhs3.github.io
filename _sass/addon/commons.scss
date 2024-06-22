@@ -831,14 +831,11 @@ $sidebar-display: "sidebar-display";
     vertical-align: middle;
     text-shadow:
       0px 0px 0 black,
-      -1px -1px 0 --nav-text-border-color,
-      -1px 1px 0 --nav-text-border-color,
-      1px -1px 0 --nav-text-border-color,
-      1px 1px 0 --nav-text-border-color;
-      // -1px -1px 0 rgb(118, 86, 59),
-      // -1px 1px 0 rgb(118, 86, 59),
-      // 1px -1px 0 rgb(118, 86, 59),
-      // 1px 1px 0 rgb(118, 86, 59),
+      -1px -1px 0 var(--nav-text-border-color),
+      -1px 1px 0 var(--nav-text-border-color),
+      1px -1px 0 var(--nav-text-border-color),
+      1px 1px 0 var(--nav-text-border-color);
+
   }
 
   .nav-item {
