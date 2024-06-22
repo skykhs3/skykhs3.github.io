@@ -11,14 +11,11 @@ tags:
     creating a GitHub blog,
     GitHub,
     GitHub blog,
-    blog,
-    creating a GitHub blog,
-    velog,
-    tistory,
+    tech blog,
+    engineering blog,
     ruby,
     jekyll,
-    installing ruby,
-    installing jekyll,
+    open source
   ]
 ---
 
