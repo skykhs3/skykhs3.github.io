@@ -20,7 +20,7 @@ timezone: Asia/Seoul
 
 title: skykhs3 # the main title
 
-tagline: Hyeonsu Kim's Blog # it will display as the sub-title
+tagline: Hyeonsu Kim's Tech Blog # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   This blog records what I learn in design, gaming, development, algorithms, and more. I share my knowledge, research findings, and project experiences to foster a space where we can learn and grow together.

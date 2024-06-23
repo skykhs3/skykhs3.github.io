@@ -82,23 +82,23 @@ South Korea, Daejeon
 ## Side Projects
 ### New Ara
 This is official community app for KAIST students
-- [Repo](https://github.com/sparcs-kaist/new-ara-app)
+- [Repository](https://github.com/sparcs-kaist/new-ara-app)
 - [iOS Download](https://apps.apple.com/kr/app/ara-for-kaist/id6457209147)
 - [Android Download](https://play.google.com/store/apps/details?id=org.sparcs.newara)
 
 ### Jeong Seok Engineering
 This is the introduction webpage for the company.
-- [Repo](https://github.com/skykhs3/project-jseng)
+- [Repository](https://github.com/skykhs3/project-jseng)
 - [URL](https://jseng.fly.dev/)
 
 ### Yeok Pacar - Gangnam-gu Parking Platform
 This is a Gangnam-Gu parking platform app developed during a hackathon.
-- [Repo](https://github.com/HACKY-TALKY-2-2/team19-app)
+- [Repository](https://github.com/HACKY-TALKY-2-2/team19-app)
 
 ### Battle Pants
 This is a platformer game allowing up to 4 players to join.
-- [Repo](https://github.com/skykhs3/game-battle-pants)
+- [Repository](https://github.com/skykhs3/game-battle-pants)
 
 ### Morning Buddy
 This is an alarm app made with Kotlin.
-- [Repo](https://github.com/skykhs3/project-morning-buddy?tab=readme-ov-file)
+- [Repository](https://github.com/skykhs3/project-morning-buddy?tab=readme-ov-file)
