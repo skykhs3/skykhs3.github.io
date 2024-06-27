@@ -8,9 +8,7 @@ tags:
     github,
     github blog,
     blog,
-    creating a GitHub blog,
-    GitHub,
-    GitHub blog,
+    creating a gitHub blog,
     tech blog,
     engineering blog,
     ruby,
@@ -27,7 +25,7 @@ tags:
 > 
 > Through personal branding, they can increase their credibility and uniqueness in their field.
 
-# 1. Why Start a GitHub Blog?
+## 1. Why Start a GitHub Blog? 
 
 The world is vast, and there are many developers. If you want to be a unique presence among the many developers, you need to work harder and challenge yourself in various fields. There are so many areas to study, and new fields and skills are constantly emerging, so a tendency to shy away from challenges is not suitable for a developer.
 
@@ -38,12 +36,12 @@ Even if I have studied something before, I often don't remember it after a few m
 I believed that I needed a technical blog to increase my own value. To prove what I know and to showcase the projects I've worked on, a GitHub blog is a perfect space. Additionally, GitHub is efficient for linking my GitHub, LinkedIn, and projects, and it helps me showcase my resume. This comprehensive integration enhances my professional presence and makes it easier for potential employers or collaborators to see my work and skills.
 
 ---
-# 2. Difficulties in Creating a GitHub Blog
+## 2. Difficulties in Creating a GitHub Blog
 
 I didn't start by following the [Jekyll tutorial](https://jekyllrb-ko.github.io/); instead, I used open-source blog codes and themes available on GitHub to create one directly. Using the existing GitHub blog themes, you can create a sufficiently attractive blog, and if you have frontend knowledge, you can customize the blog to your liking. However, the challenging part was dealing with unexpected errors when running the blog's local server or deploying it with GitHub Actions. If you don't have experience solving such errors as a developer, I think the entry barrier is higher compared to other blog creation tools. I also resolved the Git blog errors by referring to other people's blogs.
 
 ---
-# 3. Blog Content
+## 3. Blog Content
 
 I believe that for this blog to be vital and valuable, it needs to be updated consistently. Ideally, I would post once a week, but I don't want to force out content or write low-quality posts. Nonetheless, I plan to post at least once every two weeks. I intend to organize my wide-ranging interests, from development and design book contents to web development, game development, and algorithms (coding tests), on this blog.
 
