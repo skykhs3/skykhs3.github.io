@@ -113,3 +113,14 @@
   </div> <!-- .sidebar-bottom -->
 
 </div><!-- #sidebar -->
+
+<!-- This script prevents the video from pausing when the tab is not visible -->
+<script>
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') {
+      document.querySelectorAll('video').forEach(video => {
+        video.play();
+      });
+    }
+  });
+</script>
