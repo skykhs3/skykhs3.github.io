@@ -2,13 +2,13 @@
 
 title: Thoughts on Starting a GitHub Blog
 date: 2024-06-16 00:17:00 +09:00
-categories: [blog, github_blog]
+categories: [Blog, Github Blog]
 tags:
   [
     github,
     github blog,
     blog,
-    creating a gitHub blog,
+    creating a github blog,
     tech blog,
     engineering blog,
     ruby,
