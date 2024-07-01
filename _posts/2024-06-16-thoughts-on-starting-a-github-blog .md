@@ -2,7 +2,7 @@
 
 title: Thoughts on Starting a GitHub Blog
 date: 2024-06-16 00:17:00 +09:00
-categories: [Blog, Github Blog]
+categories: [Development, Jekyll]
 tags:
   [
     github,
