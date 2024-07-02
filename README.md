@@ -1,5 +1,12 @@
 <div align="center">
 
+  # How to run
+  ```
+  bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href 
+  
+  bundle exec jekyll serve --trace   
+  ```
+
   # Chirpy Jekyll Theme
 
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
