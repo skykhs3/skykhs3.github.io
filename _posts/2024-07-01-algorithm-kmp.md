@@ -1,7 +1,7 @@
 ---
 title: "KMP(Knuth-Morris-Pratt) Algorithm"
 date: 2024-06-25 00:13:00 +09:00
-categories: [Problem Soving, Algorithm]
+categories: [Problem Solving, Algorithm]
 tags:
   [
     kmp algorithm,
