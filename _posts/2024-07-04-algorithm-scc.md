@@ -20,7 +20,7 @@ tags:
 > 
 {: .prompt-info }
 
-## 1. Overview
+## 1. Description
 In a directed graph, a subset of vertices S satisfies the condition that "for any two vertices u and v in S, there is a path from u to v". Such subset S is referred to as a strongly connected component (SCC). An SCC is a subset of vertices to which no other vertex subset can be added while maintaining strong connectivity. Any directed graph can be decomposed into a union of several SCCs, each of which has no intersection with others. After this process, a Directed Acyclic Graph (DAG) is formed. The algorithm that transforms a directed graph into a DAG composed of SCCs is commonly known as the SCC algorithm.
 
 ## 2. Tarjan's Algorithm
