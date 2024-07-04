@@ -33,7 +33,7 @@ The time complexity of this algorithm is O(N + M).
 ## 2. Code
 
 ```c++
-vector<int> getPartialMatch(string B){
+vector<int> getPartialMatch(string &B){
   int M=(int)B.size(), matched=0;
   vector<int> pi(M, 0);
 
@@ -44,19 +44,22 @@ vector<int> getPartialMatch(string B){
   return pi;
 }
 
-void kmp(string A, string B){
-  vector<int> pi=getPartialMatch(B);
-
-  int match=0;
+void kmp(string &A, string &B){
+  int matched=0;
   int N = (int)A.size(), M = (int)B.size();
+  vector<int> pi=getPartialMatch(B);
+  vector<int> whereBIsIncluded;
+  
   for(int i=0;i<N;i++){
-    while(match>0 && A[i]!=B[match])
-      match=pi[match-1];
-    if(A[i]==B[match])
-      if(++match==M){
-        whereBIsIncluded.push_back(i-match+1);
-        match=pi[match-1];
+    while(matched>0 && A[i]!=B[matched])
+      matched=pi[matched-1];
+    if(A[i]==B[matched]){
+      ++matched;
+      if(matched==M){
+        whereBIsIncluded.push_back(i-matched+1);
+        matched=pi[matched-1];
       }
+    }
   }
 }
 ```
