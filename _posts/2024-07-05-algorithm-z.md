@@ -14,8 +14,9 @@ tags:
 
 > The Z-algorithm is an efficient algorithm( O(N) ) that calculates the Z-array for a given string. 
 
-## 1. Overview
+## 1. Description
 The Z-array for a string s is an array z where z[i] represents the length of the longest substring starting from the position i which is also a prefix of s.
+The reason the time complexity is O(n) is due to reusing the results obtained previously.
 
 ## 2. Example Scenario
 Consider the string s = "ababcabab". The Z-array for this string would be calculated as follows:
