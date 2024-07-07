@@ -82,61 +82,74 @@ order: 4
 ---
 
 ## 5. Projects
-### New Ara
+
+<div class="d-flex flex-row">
 <div>
-  <img src="/assets/img/resume/flutter.svg"/>
+<img
+      src="https://raw.githubusercontent.com/sparcs-kaist/new-ara-app/dev/assets/images/logo.svg"
+      alt="Ara Logo"
+      style="height:50px;min-width:50px; margin-right: 15px; margin-top: 32px"
+    />
 </div>
+<div markdown="1">
+### New Ara
 This is official community app for KAIST students
+<div><img src="/assets/img/resume/flutter.svg"/></div>
 - [Repository](https://github.com/sparcs-kaist/new-ara-app){:target="_blank"}
 - [iOS Download](https://apps.apple.com/kr/app/ara-for-kaist/id6457209147){:target="_blank"}
 - [Android Download](https://play.google.com/store/apps/details?id=org.sparcs.newara){:target="_blank"}
 
 <br/>
-
-### Jeong Seok Engineering
-<div>
-  <img src="/assets/img/resume/nextjs.svg">
 </div>
+</div>
+
+<div class="d-flex flex-row">
+<div>
+<img src="https://raw.githubusercontent.com/skykhs3/project-jseng/main/frontend/public/icon_logo.png" style="height:50px;min-width:50px; margin-right: 15px; margin-top: 32px"/>
+</div>
+<div markdown="1">
+### Jeong Seok Engineering
 This is the introduction webpage for the company.
+<div><img src="/assets/img/resume/nextjs.svg"></div>
 - [Repository](https://github.com/skykhs3/project-jseng){:target="_blank"}
 - [URL](https://jseng.fly.dev/){:target="_blank"}
 
 <br/>
-
+</div>
+</div>
 
 ### Yeok Pacar - Gangnam-gu Parking Platform
+This is a Gangnam-Gu parking platform app developed during a hackathon.
 <div>
   <img src="/assets/img/resume/flutter.svg"/>
 </div>
-This is a Gangnam-Gu parking platform app developed during a hackathon.
 - [Repository](https://github.com/HACKY-TALKY-2-2/team19-app){:target="_blank"}
 
 <br/>
 
 ### Battle Pants
+This is a platformer game allowing up to 4 players to join.
 <div>
   <img src = "/assets/img/resume/unity.svg"/>
 </div>
-This is a platformer game allowing up to 4 players to join.
 - [Repository](https://github.com/skykhs3/game-battle-pants){:target="_blank"}
   
 <br/>
 
 ### Flowlink
+This is a voting platform in the classroom.
 <div>
   <img src="/assets/img/resume/flutter.svg"/> <img src="/assets/img/resume/expressjs.svg"/> <img src="/assets/img/resume/mysql.svg"/>
 </div>
-
-This is a voting platform in the classroom.
 - [Repository](https://github.com/2023-Summer-MadCamp-KP/FlowLink){:target="_blank"}
   
 <br/>
 
 ### Morning Buddy
+This is an alarm app targeting Android.
 <div>
   <img src = "/assets/img/resume/kotlin.svg">
 </div>
-This is an alarm app targeting Android.
 - [Repository](https://github.com/skykhs3/project-morning-buddy?tab=readme-ov-file){:target="_blank"}
 
 ---
