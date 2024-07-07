@@ -11,12 +11,16 @@ tags:
   - ps
   - problem solving
 ---
+<div markdown="1">
 
 > The Z-algorithm is an efficient algorithm( O(N) ) that calculates the Z-array for a given string. 
 
 ## 1. Description
 The Z-array for a string s is an array z where z[i] represents the length of the longest substring starting from the position i which is also a prefix of s.
 The reason the time complexity is O(n) is due to reusing the results obtained previously.
+
+
+---
 
 ## 2. Example Scenario
 Consider the string s = "ababcabab". The Z-array for this string would be calculated as follows:
@@ -44,6 +48,8 @@ For i = 6: No match with the prefix. So, z[6] = 0.
 For i = 7: Match "ab" with the prefix "ab". So, z[7] = 2.
 
 For i = 8: Match "ab" with the prefix "ab". So, z[8] = 2.
+
+---
 
 ## 3. Code
 
@@ -76,3 +82,4 @@ public:
 > [You can test your code here](https://leetcode.com/problems/sum-of-scores-of-built-strings/)
 {: .prompt-tip }
 
+</div>
