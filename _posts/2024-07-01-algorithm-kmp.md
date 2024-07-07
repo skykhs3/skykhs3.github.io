@@ -30,6 +30,8 @@ The length of A is N and the length of B is M.
 We can find out where B is included in A using the KMP algorithm.
 The time complexity of this algorithm is O(N + M).
 
+---
+
 ## 2. Code
 
 ```c++

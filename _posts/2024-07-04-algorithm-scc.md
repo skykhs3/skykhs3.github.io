@@ -27,6 +27,9 @@ In a directed graph, a subset of vertices S satisfies the condition that "for an
 
   * In the graph above, vertices a, b, and e form an SCC. Vertices f and g form another SCC, and vertices c, d, and h form yet another SCC.
 
+
+---
+
 ## 2. Tarjan's Algorithm
 
 Let's suppose n is the number of vertices and for a given vertex number v, the contents of the vector E[v] represent the vertex numbers that can be reached from v.
@@ -73,6 +76,8 @@ vector<vector<int>> tarjan(int n,vector<vector<int>> &E){
   return ans;
 }
 ```
+
+---
 
 ## 3. Kosaraju's Algorithm
 Let's suppose the same input situation as Tarjan's algorithm.
@@ -124,6 +129,7 @@ vector<vector<int>> kosaraju(int n,vector<vector<int>> E){
   return ans;
 }
 ```
+---
 
 ## 4. Difference between Tarjan's and Kosaraju's
 Tarjan's uses one DFS and Kosaraju's uses two DFS, but Tarjan's is more difficult to understand than Kosaraju's. You can use either one according to your preference.
