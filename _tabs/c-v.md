@@ -6,12 +6,14 @@ order: 4
 
 <img src="/assets/img/resume/anonymous.png"/>
 
-
 # Hyeonsu Kim 김 현수
+
 ### Email: [skykhs3@naver.com](mailto:skykhs3@naver.com)
+
 ### Linkedin: [default](https://www.linkedin.com/in/default/)
 
 ---
+
 ## 1. Work Experience
 
 <div style="display: flex; align-items: start;">
@@ -71,10 +73,10 @@ order: 4
   </div>
 </div>
 
-
 ---
 
 ## 4. Awards
+
 - Gold Medal in the 2016 Korea Olympiad in Informatics (High School Division)
 
 - Bronze Medal in the 1st Nexon Youth Programming Challenge (NYPC 2016)
@@ -110,7 +112,9 @@ This is official community app for KAIST students
 <div markdown="1">
 ### Jeong Seok Engineering
 This is the introduction webpage for the company.
-<div><img src="/assets/img/resume/nextjs.svg"></div>
+<div>
+<img src="/assets/img/resume/nextjs.svg">
+</div>
 - [Repository](https://github.com/skykhs3/project-jseng){:target="_blank"}
 - [URL](https://jseng.fly.dev/){:target="_blank"}
 
@@ -119,7 +123,9 @@ This is the introduction webpage for the company.
 </div>
 
 ### Yeok Pacar - Gangnam-gu Parking Platform
+
 This is a Gangnam-Gu parking platform app developed during a hackathon.
+
 <div>
   <img src="/assets/img/resume/flutter.svg"/>
 </div>
@@ -128,7 +134,9 @@ This is a Gangnam-Gu parking platform app developed during a hackathon.
 <br/>
 
 ### Battle Pants
+
 This is a platformer game allowing up to 4 players to join.
+
 <div>
   <img src = "/assets/img/resume/unity.svg"/>
 </div>
@@ -137,7 +145,9 @@ This is a platformer game allowing up to 4 players to join.
 <br/>
 
 ### Flowlink
+
 This is a voting platform in the classroom.
+
 <div>
   <img src="/assets/img/resume/flutter.svg"/> <img src="/assets/img/resume/expressjs.svg"/> <img src="/assets/img/resume/mysql.svg"/>
 </div>
@@ -146,17 +156,22 @@ This is a voting platform in the classroom.
 <br/>
 
 ### Morning Buddy
+
 This is an alarm app targeting Android.
+
 <div>
   <img src = "/assets/img/resume/kotlin.svg">
 </div>
 - [Repository](https://github.com/skykhs3/project-morning-buddy?tab=readme-ov-file){:target="_blank"}
 
 ---
+
 ## 6. Certifications
+
 - TOEFL 83 (December 16, 2023)
 
 ---
+
 ## 7. Tech Stack
 
 - Flutter - Upper Intermediate
@@ -168,11 +183,13 @@ This is an alarm app targeting Android.
 - Tailwind Css - Beginner
 - Unity - Beginner
 - AWS - Beginner
-  
+
 ---
 
 ## 8. Activities Outside of Academics
+
 ### Volunteering in ICT Education
+
 KAIST Global Student Volunteers / Arduino Education Team Leader
 
 January 2024
@@ -180,6 +197,9 @@ January 2024
 Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia
 
 ---
+
 ## 9. Military Service
+
 ### Republic of Korea Air Force
+
 February 2021 ~ January 2023
