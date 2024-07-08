@@ -1,7 +1,7 @@
 ---
 title: "Types and Options of Git Merge"
 date: 2024-07-09 00:01:29 +09:00
-categories: [Tech, Git]
+categories: [Development, Git]
 tags:
   - git
   - git merge
