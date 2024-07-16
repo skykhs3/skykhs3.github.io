@@ -32,7 +32,7 @@ In a bipartite graph, the goal of the maximum bipartite matching algorithm is to
 
 The algorithm is particularly useful in various practical applications, such as job assignments, where tasks need to be assigned to workers in a way that maximizes efficiency while ensuring no worker is assigned more than one task.
 
-<img src="/assets/img/posts/2024-07-14-algorithm-maximum-bipartite-matching/sample_graph.jpeg"/>
+<img src="/assets/img/posts/2024-07-14-algorithm-maximum-bipartite-matching/sample_graph.jpeg" alt="maximum bipartite matching"/>
 
 For example, the maximum bipartite matching is 4 in the above picture. Of course, another way of matching the edges can exist. You can match vertex 3 and vertex 4 instead of matching vertex 2 and vertex 4.
 
@@ -41,7 +41,7 @@ For example, the maximum bipartite matching is 4 in the above picture. Of course
 To be written...
 
 ## 4. Code
-- If there exists an edge connecting vertex 1 and vertex 2 and an edge connecting vertex 1 and vertex 3, we indicate this as 𝑉[1]={2,3}
+- If there exists an edge connecting vertex 1 in group A and vertex 2 in group B and an edge connecting vertex 1 in group A and vertex 3 in group B, we indicate this as 𝑉[1]={2,3}
 - The assign array indicates where a vertex in group B connects to in group A.
 - The visit array tracks the visiting history.
 - The time complexity is 𝑂(𝑁𝐸)(where 𝑁 is the number of vertices and 𝐸 is the number of edges).
