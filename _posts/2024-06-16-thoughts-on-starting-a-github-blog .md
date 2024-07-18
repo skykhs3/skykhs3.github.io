@@ -16,7 +16,7 @@ tags:
     open source
   ]
 ---
-
+<div markdown="1">
 > What do developers need to stay competitive?
 >
 > They must constantly challenge themselves in new fields.
@@ -47,5 +47,4 @@ I believe that for this blog to be vital and valuable, it needs to be updated co
 
 Additionally, if you truly want to differentiate yourself from others, writing content in English could be beneficial. If not only Korean developers but also people from around the world read my blog, it would further increase my value.
 
-#### **Next Post**  
-> Coming up next...
+</div>

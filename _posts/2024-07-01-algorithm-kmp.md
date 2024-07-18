@@ -25,7 +25,7 @@ tags:
 
 > Referenced from 『프로그래밍 대회에서 배우는 알고리즘 문제 해결 전략 세트2』 p.657
 > 
-> <img src="https://image.yes24.com/Goods/8006522/XL">
+> <img src="https://image.yes24.com/Goods/8006522/XL" alt="프로그래밍 대회에서 배우는 알고리즘 문제 해결 전략 세트"/>
 {: .prompt-info }
 
 <div markdown="1">
@@ -48,7 +48,7 @@ pi[i] represents the maximum length of the string that can simultaneously serve 
 
 The picture below will help you understand this definition.
 
-<img src="/assets/img/posts/2024-07-01-algorithm-kmp/example2.jpeg">
+<img src="/assets/img/posts/2024-07-01-algorithm-kmp/example2.jpeg" alt="definition"/>
 
 Let's temporarily set aside how to compute pi and assume that we have already constructed the pi array.
 
@@ -75,7 +75,7 @@ vector<int> sample(string A, string B){
 
 However, we don't need to iterate from i=0 to i=N. What does this mean? Please refer to the explanation below.
 
-<img src="/assets/img/posts/2024-07-01-algorithm-kmp/example1.jpeg">
+<img src="/assets/img/posts/2024-07-01-algorithm-kmp/example1.jpeg" alt="KMP"/>
 
 Assuming we already have the pi array, when A[q] and B[q] do not match at i=0, the next step isn't i=i+1 but rather i=p (where p = q - pi[q-1]). This transition is perfectly valid and crucial to understand. ( Here, pi[q-1] represents the maximum length of the string that can simultaneously serve as both a prefix and a suffix of "abacaba". )
 

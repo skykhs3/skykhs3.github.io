@@ -11,12 +11,12 @@ tags:
   - ps
   - problem solving
 ---
-
+<div markdown="1">
 > The SCC algorithm can be performed in O(N) time complexity, and there are two main methods to achieve this: Tarjan's algorithm and Kosaraju's algorithm.
 
 > Referenced from 『Programming Contest Challenge Book』
 > 
-> <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328003271i/13446808.jpg"/>
+> <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328003271i/13446808.jpg" alt="Programming Contest Challenge Book"/>
 > 
 {: .prompt-info }
 
@@ -29,7 +29,7 @@ Every directed graph can be decomposed into a union of SCCs, where each SCC is d
 
 The algorithm used to identify and construct SCCs in a directed graph is often referred to as the SCC algorithm. One efficient algorithm for this task operates in O(N) time complexity, where N is the number of vertices in the graph.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Scc-1.svg/220px-Scc-1.svg.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Scc-1.svg/220px-Scc-1.svg.png" alt="SCC"/>
 
   * In the graph above, vertices a, b, and e form an SCC. Vertices f and g form another SCC, and vertices c, d, and h form yet another SCC.
 
@@ -139,3 +139,4 @@ vector<vector<int>> kosaraju(int n,vector<vector<int>> E){
 
 ## 4. Difference between Tarjan's and Kosaraju's
 Tarjan's uses one DFS and Kosaraju's uses two DFS, but Tarjan's is more difficult to understand than Kosaraju's. You can use either one according to your preference.
+</div>
