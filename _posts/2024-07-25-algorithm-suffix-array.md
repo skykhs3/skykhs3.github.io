@@ -17,6 +17,7 @@ tags:
 </script>
 
 <div markdown="1">
+> Suffix Array and LCP Array are known as the Swiss Army knife in string-related problem solving.
 
 ## 1. Description
 
