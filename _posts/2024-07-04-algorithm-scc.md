@@ -35,17 +35,17 @@ The algorithm used to identify and construct SCCs in a directed graph is often r
 
 ## 2. Tarjan's Algorithm
 
-Let's suppose n is the number of vertices and for a given vertex number v, the contents of the vector G[v] represent the vertex numbers that can be reached from v.
+Let's suppose n is the number of vertices (The indices of the graph start from 1) and for a given vertex number v, the contents of the vector G[v] represent the vertex numbers that can be reached from v.
 
 ```c++
 #include <bits/stdc++.h>
 using namespace std;
-int dfs(int v, int n, vector<vector<int>> &G, vector<bool> &finished, vector<int> &d, int &cnt, stack<int> &S, vector<vector<int>> &ans){
+int dfs(int v, int n, int &cnt, vector<vector<int>> &G, vector<int> &d, vector<bool> &finished, stack<int> &S, vector<vector<int>> &ans){
   int p; // Stores the minimum value of d among the reachable child vertices (including itself) that are not in SCC.
   p = d[v] = ++cnt;
   S.push(v);
   for (auto to : G[v]) {
-    if (d[to] == 0) p = min(p, dfs(to, n, G, finished, d, cnt, S, ans)); // Explore vertices that have not been visited yet.
+    if (d[to] == 0) p = min(p, dfs(to, n, cnt, G, d, finished, S, ans)); // Explore vertices that have not been visited yet.
     else if (!finished[to]) p = min(p, d[to]); // The vertex has already been explored through another path, and we already know its d value.
   }
 
@@ -62,7 +62,7 @@ int dfs(int v, int n, vector<vector<int>> &G, vector<bool> &finished, vector<int
   return p;
 }
 
-vector<vector<int>> tarjan(int n,vector<vector<int>> &G){
+vector<vector<int>> tarjan(int n, vector<vector<int>> &G){
   vector<bool> finished(n+1); // Records whether the vertex has been included in an SCC
   vector<int> d(n+1); // Stores the order of visits
   vector<vector<int>> ans; // SCC output
@@ -70,7 +70,7 @@ vector<vector<int>> tarjan(int n,vector<vector<int>> &G){
   int cnt=0; // A variable for ordering
 
   for(int i=1;i<=n;i++)
-    if(!finished[i]) dfs(i, n, G, finished, d, cnt, S, ans);
+    if(d[i]==0) dfs(i, n, G, finished, d, cnt, S, ans);
 
   return ans;
 }
@@ -82,7 +82,7 @@ Let's suppose the same input situation as Tarjan's algorithm.
 ```c++
 #include <bits/stdc++.h>
 using namespace std;
-void createReversedEdge(int n,vector<vector<int>> &rG,vector<vector<int>> &G){
+void createReversedEdge(int n, vector<vector<int>> &rG, vector<vector<int>> &G){
   for(int i=1;i<=n;i++)
     for(auto to:G[i])
       rG[to].push_back(i);
@@ -102,19 +102,17 @@ void rdfs(int v,int n,vector<vector<int>> &rG, vector<bool> &visited, vector<int
     if(!visited[to]) rdfs(to, n, rG, visited, scc);
 }
 
-vector<vector<int>> kosaraju(int n,vector<vector<int>> G){
+vector<vector<int>> kosaraju(int n, vector<vector<int>> &G){
   vector<bool> visited(n+1); // Records whether the vertex has been included in an SCC
   vector<int> vs; // A variable to record post-order travelsal
   vector<vector<int>> ans; // SCC output
   vector<vector<int>> rG(n+1); // Graph with reversed edge directions
+  createReversedEdge(n,rG,G);
 
   for(int i=1;i<=n;i++)
     if(!visited[i]) dfs(i,n,G,visited,vs);
   
-  createReversedEdge(n,rG,G);
-
   fill(visited.begin(),visited.end(),false);
-
   for(int i=vs.size()-1;i>=0;i--){
     vector<int> scc;
     if(!visited[vs[i]]){
