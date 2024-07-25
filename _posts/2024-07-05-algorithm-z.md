@@ -98,7 +98,7 @@ We will save the maximum of $$i+z[i]-1$$ to $$r$$, and save $$i$$ to $$l$$ when 
 In Case 1-2, we don't enter the while loop because of the condition. In Cases 1-1 and 2, $$i+z[i]$$ will always be greater than the previous $$r$$. Thus, $$i+z[i]$$ will cover every index form $$0$$ to $$n-1$$ exactly once. Therefore, the overall time complexity is $$O(N)$$.
 
 
-> [You can test your code here](https://leetcode.com/problems/sum-of-scores-of-built-strings/)
+> [You can test your code here](https://leetcode.com/problems/sum-of-scores-of-built-strings/){:target="_blank"}
 {: .prompt-tip }
 
 </div>
