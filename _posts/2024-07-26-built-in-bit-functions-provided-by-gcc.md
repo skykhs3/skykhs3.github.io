@@ -87,7 +87,7 @@ __builtin_ctzll(y) = 0
 __builtin_popcountll(y) = 27
 __builtin_parityll(y) = 1
 ```
-## Custom functions vs Built-in function
+## 3. Custom functions vs Built-in function
 Comparison of **execution time** between the custom function and the built-in function.
 
 ### Code
@@ -214,7 +214,7 @@ The GCC and Clang compilers are optimized to translate these built-in functions 
 
 Since these hardware instructions are executed in a fixed number of cycles, the operations they perform (counting leading zeros, counting trailing zeros, counting the number of 1 bits, or determining parity) are completed in constant time, $$O(1)$$. The complexity does not depend on the size of the input; instead, it is bounded by the nature of the instruction set of the CPU.
 
-## 4. Applications
+## 5. Applications
 
 You could find the highest power of two that is smaller than or equal to 𝑛 in 𝑂(1) time complexity.
 ```c++
