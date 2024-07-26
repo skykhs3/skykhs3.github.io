@@ -10,6 +10,14 @@ tags:
   - lcp
   - ps
   - problem solving
+  - __builtin_clz(x)
+  - __builtin_ctz(x)
+  - __builtin_popcount
+  - __builtin_parity
+  - __builtin_clzll
+  - __builtin_ctzll
+  - __builtin_popcountll
+  - __builtin_parityll
 ---
 
 <script type="text/javascript" async
@@ -37,31 +45,31 @@ int main(){
   // 29 = 00000000 00000000 00000000 00011101 in binary
   unsigned int x = 29; 
 
-  // Count leading zeros -> 27
+  // Count leading zeros => 27
   std::cout << "__builtin_clz(x) = " << __builtin_clz(x) << endl;
 
- // Count trailing zeros -> 0
+ // Count trailing zeros => 0
   std::cout << "__builtin_ctz(x) = " << __builtin_ctz(x) << endl;
 
- // Count number of 1 bits -> 4
+ // Count number of 1 bits => 4
   std::cout << "__builtin_popcount(x) = " << __builtin_popcount(x) << endl;
 
- // Parity (1 if the number of 1 bits is odd, 0 if even) -> 0
+ // Parity (1 if the number of 1 bits is odd, 0 if even) => 0
   std::cout << "__builtin_parity(x) = " << __builtin_parity(x) << endl;
 
   // 12345678987654321 = 00000000 00100011 01001011 11100010 01010001 10001010 10001110 11110101
   unsigned long long y = 12345678987654321ULL;
 
-// Count leading zeros for long long -> 10
+// Count leading zeros for long long => 10
   std::cout << "__builtin_clzll(y) = " << __builtin_clzll(y) << endl; 
 
- // Count trailing zeros for long long -> 0
+ // Count trailing zeros for long long => 0
   std::cout << "__builtin_ctzll(y) = " << __builtin_ctzll(y) << endl;
 
- // Count number of 1 bits for long long -> 27
+ // Count number of 1 bits for long long => 27
   std::cout << "__builtin_popcountll(y) = " << __builtin_popcountll(y) << endl;
 
- // Parity for long long -> 1
+ // Parity for long long => 1
   std::cout << "__builtin_parityll(y) = " << __builtin_parityll(y) << endl;
 
   return 0;
@@ -99,4 +107,20 @@ The GCC and Clang compilers are optimized to translate these built-in functions 
 ### 3. Constant Time Execution
 
 Since these hardware instructions are executed in a fixed number of cycles, the operations they perform (counting leading zeros, counting trailing zeros, counting the number of 1 bits, or determining parity) are completed in constant time, $$O(1)$$. The complexity does not depend on the size of the input; instead, it is bounded by the nature of the instruction set of the CPU.
+
+## 4. Applications
+
+You could find the highest power of two that is smaller than or equal to 𝑛 in 𝑂(1) time complexity.
+```c++
+int highestPowerOf2(int n) {
+    if (n <= 0) return 0; // There is an assumption that n is positive, but additional safeguards
+    return 1 << (31 - __builtin_clz(n));
+}
+
+long long highestPowerOf2(long long n) {
+    if (n <= 0) return 0; // There is an assumption that n is positive, but additional safeguards
+    return 1LL << (63 - __builtin_clzll(n));
+}
+```
+
 </div>
