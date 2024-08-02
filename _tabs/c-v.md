@@ -172,7 +172,7 @@ order: 4
 ## 5. Awards
 
 <ul>
-  <li>Gold Medal in the 2016 Korea Olympiad in Informatics (High School Division)</li>
+  <li>**Gold Medal** in the 2016 Korea Olympiad in Informatics (High School Division Final Round)</li>
   <li>Bronze Medal in the 1st Nexon Youth Programming Challenge (NYPC 2016)</li>
 </ul>
 <br/>
