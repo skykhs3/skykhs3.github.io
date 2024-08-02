@@ -1,7 +1,7 @@
 ---
 title: "백엔드 개발자 학습 자료 & 로드맵 (KOR)"
 date: 2024-08-03 00:03:05 +09:00
-categories: [Book Report, Development]
+categories: [Book Report, Development-related Book]
 tags:
   - backend developer
   - backend
