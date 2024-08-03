@@ -14,7 +14,7 @@ tags:
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-> Maximum Bipartite Matching is well-known algorithm in algorithm contests.
+> A matching in a bipartite graph is a set of edges selected so that no two edges share a common vertex. A maximum matching is a matching that contains the greatest number of edges possible.
 
 <div markdown="1">
 
