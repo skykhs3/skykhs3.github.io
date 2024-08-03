@@ -28,16 +28,16 @@ tags:
 이는 코딩테스트에서는 **코드의 정확성, 빠른 실행 시간, 빠른 코드 작성 시간**을 정량적으로 측정 가능하기 때문이다. 하지만 코딩테스트 만으로는 **코드가 간결하고, 가독성이 높고, 재사용성이 높은 지**는 평가가 불가능한 한계점이 있다. 문제 해결 스타일과 코드의 간결성과 가독성을 파악하기 위해 라이브로 코딩테스트를 진행하기도 한다.
 
 ### Upper Immediate
-- **[[site] solved.ac](https://solved.ac/problems/level){:target="_blank"} (실용:★★★★★, 최신:★★★★★, 난이도:★★★☆☆)**<br/>본인의 수준을 판단하기 좋으며, 낮은 수준부터 높은 수준까지 차례대로 풀면 필수적인 알고리즘과 자료 구조를 학습할 수 있다. 코딩테스트를 대비한다면 골드 레벨 문제를 원할히 풀 수 있도록 노력해야한다.
+- **[[site] solved.ac](https://solved.ac/problems/level){:target="_blank"}<br/>(실용:★★★★★, 최신:★★★★★, 난이도:★★★☆☆)**<br/>본인의 수준을 판단하기 좋으며, 낮은 수준부터 높은 수준까지 차례대로 풀면 필수적인 알고리즘과 자료 구조를 학습할 수 있다. 코딩테스트를 대비한다면 골드 레벨 문제를 원할히 풀 수 있도록 노력해야한다.
 
-- **[[site] 프로그래머스](https://school.programmers.co.kr/learn/challenges?order=recent&page=1){:target="_blank"} (실용:★★★★☆, 최신:★★★★☆, 난이도:★★★☆☆)**<br/>공개된 카카오 코딩테스트 기출들 풀어보는 것 추천
+- **[[site] 프로그래머스](https://school.programmers.co.kr/learn/challenges?order=recent&page=1){:target="_blank"}<br/>(실용:★★★★☆, 최신:★★★★☆, 난이도:★★★☆☆)**<br/>공개된 카카오 코딩테스트 기출들 풀어보는 것 추천
 
 ### Advanced
-- **[[book] 프로그래밍 대회에서 배우는 알고리즘 문제해결 전략 1,2](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=21089176){:target="_blank"} (실용:★★★☆☆, 최신:★★★☆☆, 난이도:★★★★★)**<br/>프로그래밍 대회의 바이블, 이 책을 이해하는 수준이라면 코딩테스트는 걱정 안 해도 되는 레벨이다. 프로그래밍 대회를 대비 하기위서는 필요하지만, 코딩 테스트를 대비 하기에는 수준이 높은 내용이 많다.
+- **[[book] 프로그래밍 대회에서 배우는 알고리즘 문제해결 전략 1,2](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=21089176){:target="_blank"}<br/>(실용:★★★☆☆, 최신:★★★☆☆, 난이도:★★★★★)**<br/>프로그래밍 대회의 바이블, 이 책을 이해하는 수준이라면 코딩테스트는 걱정 안 해도 되는 레벨이다. 프로그래밍 대회를 대비 하기위서는 필요하지만, 코딩 테스트를 대비 하기에는 수준이 높은 내용이 많다.
 
-- **[[book] 프로그래밍 콘테스트 챌린징](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=13459601){:target="_blank"} (실용:★☆☆☆☆, 최신:★★☆☆☆, 난이도:★★★★★)**<br/> ACM ICPC, IOI/KOI 대비용
+- **[[book] 프로그래밍 콘테스트 챌린징](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=13459601){:target="_blank"}<br/>(실용:★☆☆☆☆, 최신:★★☆☆☆, 난이도:★★★★★)**<br/> ACM ICPC, IOI/KOI 대비용
 
-- **[[book] 알고리즘 트레이닝: 자료구조, 알고리즘 문제 해결 핵심 노하우](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=110847940){:target="_blank"} (실용:★☆☆☆☆, 최신:★★☆☆☆, 난이도:★★★★★)**<br/>ACM ICPC, IOI/KOI 대비용
+- **[[book] 알고리즘 트레이닝: 자료구조, 알고리즘 문제 해결 핵심 노하우](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=110847940){:target="_blank"}<br/>(실용:★☆☆☆☆, 최신:★★☆☆☆, 난이도:★★★★★)**<br/>ACM ICPC, IOI/KOI 대비용
 
 <br/>
 
@@ -45,8 +45,8 @@ tags:
 
 ## 2. CS
 ### Basic
-- **[[book] 혼자 공부하는 컴퓨터 구조 + 운영체제](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=299014282){:target="_blank"} (실용:★★★☆☆, 최신:★★★☆☆, 난이도:★★★☆☆)**
-- **[[book] 혼자 공부하는 네트워크](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=337483817&start=slayer){:target="_blank"} (실용:★★★☆☆, 최신:★★★☆☆, 난이도:★★★☆☆)**<br/>비전공자에게 추천하는 책. 학과 내용을 너무 깊지 않게 개발에 필요한 지식들만 딱 한 권에 끝낼 수 있다.
+- **[[book] 혼자 공부하는 컴퓨터 구조 + 운영체제](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=299014282){:target="_blank"}<br/>(실용:★★★☆☆, 최신:★★★☆☆, 난이도:★★★☆☆)**
+- **[[book] 혼자 공부하는 네트워크](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=337483817&start=slayer){:target="_blank"}<br/>(실용:★★★☆☆, 최신:★★★☆☆, 난이도:★★★☆☆)**<br/>비전공자에게 추천하는 책. 학과 내용을 너무 깊지 않게 개발에 필요한 지식들만 딱 한 권에 끝낼 수 있다.
   
 <br/>
 
@@ -54,18 +54,18 @@ tags:
 
 ## 3. JavaScript/TypeScript
 ### Basic (Language)
-- **[[site] Javascript Tutorial](https://www.javascripttutorial.net/){:target="_blank"} (실용:★★★★☆, 최신:★★★☆☆, 난이도:★★★☆☆)** 
-- **[[site] 모던 JavaScript 튜토리얼](https://ko.javascript.info/){:target="_blank"} (실용:★★★★☆, 최신:★★★☆☆, 난이도:★★★☆☆)**<br/> 위 아래 사이트 둘 중 하나만 읽어도 충분하다.
-
-- **[[site] Express Starter](https://expressjs.com/ko/starter/installing.html) {:target="_blank"} (실용:★★★★☆, 최신:★★★☆☆, 난이도:★★☆☆☆)**
+- **[[site] Javascript Tutorial](https://www.javascripttutorial.net/){:target="_blank"}<br/>(실용:★★★★☆, 최신:★★★☆☆, 난이도:★★★☆☆)** 
+- **[[site] 모던 JavaScript 튜토리얼](https://ko.javascript.info/){:target="_blank"}<br/>(실용:★★★★☆, 최신:★★★☆☆, 난이도:★★★☆☆)**<br/> 내용이 중복되기 때문에 위, 아래 사이트 둘 중 하나만 읽어도 충분하다.
   
-- **[[site] Typescript Tutorial](https://www.typescripttutorial.net/){:target="_blank"} (실용:★★★★☆, 최신:★★★☆☆, 난이도:★★☆☆☆)** 
+- **[[site] Typescript Tutorial](https://www.typescripttutorial.net/){:target="_blank"}<br/>(실용:★★★★☆, 최신:★★★☆☆, 난이도:★★☆☆☆)** 
 
 ### Basic (Framework)
 
-- **[[blog] How to set up TypeScript with Node.js and Express](https://blog.logrocket.com/how-to-set-up-node-typescript-express/){:target="_blank"} (실용:★★★★☆, 최신:★★★☆☆, 난이도:★☆☆☆☆)** 
+- **[[site] Express Starter](https://expressjs.com/en/starter/installing.html){:target="_blank"}<br/>(실용:★★★★☆, 최신:★★★☆☆, 난이도:★★☆☆☆)** 한글 문서는 영어 문서보다 번역이 느려 업데이트가 느리므로 영어 문서로 직접 읽는 것이 좋다.
+
+- **[[blog] How to set up TypeScript with Node.js and Express](https://blog.logrocket.com/how-to-set-up-node-typescript-express/){:target="_blank"}<br/>(실용:★★★★☆, 최신:★★★☆☆, 난이도:★☆☆☆☆)** 
   
-- **[[site] NestJS Documentation](https://docs.nestjs.com/){:target="_blank"} (실용:★★★★☆, 최신:★★★★★, 난이도:★★☆☆☆)** - 공식 문서
+- **[[site] NestJS Documentation](https://docs.nestjs.com/){:target="_blank"}<br/>(실용:★★★★☆, 최신:★★★★★, 난이도:★★☆☆☆)** - 공식 문서
   
 <br/>
 
@@ -73,7 +73,7 @@ tags:
 
 ## 4. MySql
 ### Basic
-- **[[site] MySQL Tutorial](https://www.mysqltutorial.org/){:target="_blank"} (실용:★★★☆☆, 최신:★★★★☆, 난이도:★★★☆☆)**
+- **[[site] MySQL Tutorial](https://www.mysqltutorial.org/){:target="_blank"}<br/>(실용:★★★☆☆, 최신:★★★★☆, 난이도:★★★☆☆)**
 
 <br/>
 
@@ -81,9 +81,9 @@ tags:
 ## 5. Git
 ### Basic
 
-- **[[site] LearnGitBranching](https://learngitbranching.js.org/?locale=ko){:target="_blank"} (실용:★★★☆☆, 최신:★★★★☆, 난이도:★★☆☆☆)**<br/>무작정 실습하면서 Git을 공부하기 좋다.
+- **[[site] LearnGitBranching](https://learngitbranching.js.org/?locale=ko){:target="_blank"}<br/>(실용:★★★☆☆, 최신:★★★★☆, 난이도:★★☆☆☆)**<br/>무작정 실습하면서 Git을 공부하기 좋다.
 
-- **[[site] 생활코딩 - 지옥에서 온 Git](https://opentutorials.org/course/2708){:target="_blank"} (실용:★★★☆☆, 최신:★★★★☆, 난이도:★★☆☆☆)**<br/>여기 내용만 숙지해도 사용에 문제가 없다.
+- **[[site] 생활코딩 - 지옥에서 온 Git](https://opentutorials.org/course/2708){:target="_blank"}<br/>(실용:★★★☆☆, 최신:★★★★☆, 난이도:★★☆☆☆)**<br/>여기 내용만 숙지해도 사용에 문제가 없다.
 
 <br/>
 
@@ -95,16 +95,16 @@ tags:
 ---
 ## 7. AWS
 ### Basic
-- **[[site] AWS Cloud Practitioner Essentials](https://explore.skillbuilder.aws/learn/course/external/view/elearning/1928/aws-cloud-practitioner-essentials-korean-sub-hangug-eo-jamag){:target="_blank"} (실용:★★☆☆☆,최신:★★★★★, 난이도:★★☆☆☆)**<br/>AWS에서 제공하는 입문 강의. 애니메이션으로 비유적으로 표현해 이해하기 쉬우며 한글 자막이 있다.
+- **[[site] AWS Cloud Practitioner Essentials](https://explore.skillbuilder.aws/learn/course/external/view/elearning/1928/aws-cloud-practitioner-essentials-korean-sub-hangug-eo-jamag){:target="_blank"}<br/>(실용:★★☆☆☆,최신:★★★★★, 난이도:★★☆☆☆)**<br/>AWS에서 제공하는 입문 강의. 애니메이션으로 비유적으로 표현해 이해하기 쉬우며 한글 자막이 있다.
 
-- **[[site] AWS Technical Essentials](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/15366/aws-technical-essentials-korean-na-hangug-eo-gang-ui){:target="_blank"} (실용:★★☆☆☆,최신:★★★★★, 난이도:★★☆☆☆)** <br/> 위 강의와 내용이 대부분 겹친다. 
+- **[[site] AWS Technical Essentials](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/15366/aws-technical-essentials-korean-na-hangug-eo-gang-ui){:target="_blank"}<br/>(실용:★★☆☆☆,최신:★★★★★, 난이도:★★☆☆☆)** <br/> 위 강의와 내용이 대부분 겹친다. 
 
 <br/>
 
 ---
 ## 8. CI/CD
 ### Basic
-- **[[site] GitHub Actions Quick Start](https://docs.github.com/ko/actions/writing-workflows/quickstart){:target="_blank"} (실용:★★★★☆,최신:★★★★★, 난이도:)** - 공식 문서
+- **[[site] GitHub Actions Quick Start](https://docs.github.com/ko/actions/writing-workflows/quickstart){:target="_blank"}<br/>(실용:★★★★☆,최신:★★★★★, 난이도:)** - 공식 문서
 
 <br/>
 
@@ -113,7 +113,7 @@ tags:
 
 ### Basic
 
-- **[[site] Terraform Tutorials](https://developer.hashicorp.com/terraform/tutorials){:target="_blank"} (실용:★★★☆☆, 최신:★★★☆☆, 난이도:★★★☆☆)**<br> - 공식 문서
+- **[[site] Terraform Tutorials](https://developer.hashicorp.com/terraform/tutorials){:target="_blank"}<br/>(실용:★★★☆☆, 최신:★★★☆☆, 난이도:★★★☆☆)**<br> - 공식 문서
 
 <br/>
 
