@@ -71,6 +71,8 @@
     }
 
     .post-meta {
+      margin-top: 0.6rem;
+
       i {
         font-size: 0.73rem;
 
@@ -98,8 +100,8 @@
     }
 
     .post-content {
-      margin-top: 0.6rem;
       margin-bottom: 0.6rem;
+      margin-top: 0.6rem;
       color: var(--post-list-text-color);
 
       > p {
