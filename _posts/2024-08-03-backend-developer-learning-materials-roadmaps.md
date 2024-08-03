@@ -14,9 +14,9 @@ tags:
 
 <div markdown="1">
 
-백엔드 개발을 공부하면서, 내가 올바른 방향으로 학습하고 있는지, 그리고 사용하고 있는 자료들이 충분히 좋은지 판단하기가 어려웠다. 이 글은 백엔드 개발자로 성장하기 위해 사용한 학습 자료와 로드맵을 정리했다. 백엔드 개발자에게 필요한 필수 지식과 도구들을 체계적으로 소개하고, 학습의 방향성을 제시하고자 한다.
+백엔드 개발을 혼자 공부하면서, 내가 올바른 방향으로 학습하고 있는지, 그리고 사용하고 있는 자료들이 충분히 좋은지 판단하기가 어려웠다. 이 글은 내가 백엔드 개발자로 성장하기 위해 사용한 학습 자료와 로드맵을 정리했다. 백엔드를 독학 하는 사람들에게 도움이 되었으면 좋겠다.
 
-(**실용성, 최신성, 난이도**) 이 세 가지 기준으로 평가합니다. 직접 다 읽어보면서 좋은 자료만 계속 업데이트 합니다.
+(**실용성, 최신성, 난이도**) 이 세 가지 기준으로 평가하며, 계속 업데이트 
 
 <br/>
 
@@ -78,7 +78,15 @@ tags:
 <br/>
 
 ---
-## 5. Git
+
+## 5. Redis
+### Basic
+- **[[우아한테크세미나] 191121 우아한레디스 by 강대명님](https://youtu.be/mPB2CZiAkKM?feature=shared){:target="_blank"} (실용:★★★☆☆, 최신:★★★☆☆, 난이도:★★☆☆☆)**
+
+<br/>
+
+---
+## 6. Git
 ### Basic
 
 - **[[site] LearnGitBranching](https://learngitbranching.js.org/?locale=ko){:target="_blank"} (실용:★★★☆☆, 최신:★★★★☆, 난이도:★★☆☆☆)**<br/>무작정 실습하면서 Git을 공부하기 좋다.
@@ -88,12 +96,12 @@ tags:
 <br/>
 
 ---
-## 6. Docker/Kubernetes
+## 7. Docker/Kubernetes
 
 <br/>
 
 ---
-## 7. AWS
+## 8. AWS
 ### Basic
 - **[[site] AWS Cloud Practitioner Essentials](https://explore.skillbuilder.aws/learn/course/external/view/elearning/1928/aws-cloud-practitioner-essentials-korean-sub-hangug-eo-jamag){:target="_blank"} (실용:★★☆☆☆,최신:★★★★★, 난이도:★★☆☆☆)**<br/>AWS에서 제공하는 입문 강의. 애니메이션으로 비유적으로 표현해 이해하기 쉬우며 한글 자막이 있다.
 
@@ -102,14 +110,14 @@ tags:
 <br/>
 
 ---
-## 8. CI/CD
+## 9. CI/CD
 ### Basic
 - **[[site] GitHub Actions Quick Start](https://docs.github.com/ko/actions/writing-workflows/quickstart){:target="_blank"} (실용:★★★★☆,최신:★★★★★, 난이도:)** - 공식 문서
 
 <br/>
 
 ---
-## 9. IaC (Infrastructure as Code)
+## 10. IaC (Infrastructure as Code)
 
 ### Basic
 
@@ -118,7 +126,7 @@ tags:
 <br/>
 
 ---
-## 10. 리팩토링
+## 11. 리팩토링
 
 단순히 빠르고 정확한 코드를 넘어, 좋은 코드에 관한 책들
 
@@ -133,7 +141,7 @@ tags:
 <br/>
 
 ---
-## 11. 개발 문화
+## 12. 개발 문화
 - **[[blog] 효과적인 코드리뷰를 위한 리뷰어의 자세](https://tech.kakao.com/posts/498){:target="_blank"}** : 리뷰어의 기본적인 마인드셋, 원할한 협업 또한 중요한 능력이다.
 
 - **[[blog] 코드 리뷰를 어떻게 하는 게 좋을까?](https://smartstudio.tech/how-to-make-a-good-code-review/){:target="_blank"}** 
@@ -143,7 +151,7 @@ tags:
 <br/>
 
 ---
-## 12. 소프트 스킬
+## 13. 소프트 스킬
 코드 몽키가 아닌 개발자로서의 발전에 도움을 주는 책
 
 - **[[book] 소프트 스킬](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=298621616){:target="_blank"}** - 전문가가 되기 위한 조건 3가지(의사소통, 지식 전문성, 리더십)
