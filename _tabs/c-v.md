@@ -21,7 +21,7 @@ order: 4
     <img src="/assets/img/resume/bagelcode.png" class="img-fluid" alt="Bagelcode Logo" style="height:50px;width:50px;margin-top:32px;">
   </div>
   <div class="col">
-    <h3>Bagelcode</h3>
+    <h3><b>Bagelcode</b></h3>
     <p>Backend Developer / Club Vegas Studio server<br>
     <small>February 2024 ~ August 2024</small><br/>
     <small>Expressjs, Nestjs</small></p>
@@ -37,7 +37,7 @@ order: 4
     <img src="/assets/img/resume/sparcs.png" class="img-fluid" alt="SPARCS-KAIST Logo" style="height:50px;width:50px;margin-top:32px;">
   </div>
   <div class="col">
-    <h3>SPARCS-KAIST</h3>
+    <h3><b>SPARCS-KAIST</b></h3>
     <p>App Developer / New Ara<br>
     <small>September 2020 ~</small><br/>
     <small>Flutter</small></p>
@@ -53,21 +53,19 @@ order: 4
     <img src="/assets/img/resume/kaist.png" class="img-fluid" alt="KAIST Logo" style="height:50px;width:50px;margin-top:32px;">
   </div>
   <div class="col">
-    <h3>KAIST ( Korea Advanced Institute of Science and Technology )</h3>
+    <h3><b>KAIST ( Korea Advanced Institute of Science and Technology )</b></h3>
     <p>KAIST School of Computing / Undergraduate<br>
     <small>February 2019 ~</small><br>
     <small>South Korea, Daejeon</small></p>
   </div>
 </div>
 
-<br/>
-
 <div class="row mb-3">
   <div class="col-auto">
     <img src="/assets/img/resume/gshs.jpeg" class="img-fluid" alt="Gyeonggi Science High School Logo" style="height:50px;width:50px;margin-top:32px;">
   </div>
   <div class="col">
-    <h3>Gyeonggi Science High School for the Gifted</h3>
+    <h3><b>Gyeonggi Science High School for the Gifted</b></h3>
     <p><small>February 2016 ~ January 2019</small><br>
     <small>South Korea, Suwon</small></p>
   </div>
@@ -247,7 +245,7 @@ I worked on both the front-end and back-end development of the voting platform u
 
 ## 8. Activities Outside of Academics
 
-### Volunteering in ICT Education
+### **Volunteering in ICT Education**
 
 <div class="row mb-3">
   <div class="col">
@@ -262,7 +260,7 @@ I worked on both the front-end and back-end development of the voting platform u
 
 ## 9. Military Service
 
-### Republic of Korea Air Force
+### **Republic of Korea Air Force**
 
 <div class="row mb-3">
   <div class="col">
