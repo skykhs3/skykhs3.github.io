@@ -1,7 +1,7 @@
 {
-  "name": "{{ site.title }}",
-  "short_name": "{{ site.title }}",
-  "description": "{{ site.description }}",
+  "name": "Hyeonsu kim's Tech Blog",
+  "short_name": "skykhs3",
+  "description": "In this blog, I document what I learn in development, design, algorithms, and more.",
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png?v=2",
@@ -14,7 +14,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "{{ '/index.html' | relative_url }}",
+  "start_url": "https://skykhs3.github.io",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone"
