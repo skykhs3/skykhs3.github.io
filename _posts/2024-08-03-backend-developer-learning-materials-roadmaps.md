@@ -16,7 +16,7 @@ tags:
 
 >백엔드 개발을 혼자 공부하면서, 내가 올바른 방향으로 학습하고 있는지, 판단하기가 어려웠다. 이 글은 내가 백엔드 개발자로 성장하기 위해 사용한 학습 자료와 로드맵을 정리했다.
 >
->지금도 부족한 점이 많지만 지금까지 공부한 것들을 기록해보려고 한다. 백엔드를 독학 하는 사람들에게 도움이 되었으면 좋겠다. 
+>지금도 부족한 점이 많지만 지금까지 공부한 것들을 기록해 보려고 한다. 백엔드를 독학하는 사람들에게 도움이 되었으면 좋겠다. 
 
 (**난이도, 실용성, 최신성**) 이 세 가지 기준으로 주관적으로 평가하며, 계속 업데이트 중.
 
@@ -28,17 +28,17 @@ tags:
 ---
 
 ## 1. 알고리즘/코딩테스트
-알고리즘을 직접적으로 백엔드 개발에서 사용할 일은 없지만, 왜 많은 회사들이 알고리즘에 관련된 코딩테스트를 본다.
+알고리즘을 직접적으로 백엔드 개발에서 사용할 일은 없지만, 많은 회사들이 알고리즘에 관련된 코딩테스트를 본다.
 
-이는 코딩테스트에서는 **코드의 정확성, 빠른 실행 시간, 빠른 코드 작성 시간**을 정량적으로 측정 가능하기 때문이다. 하지만 코딩테스트 만으로는 **코드가 간결하고, 가독성이 높고, 재사용성이 높은 지**는 평가가 불가능한 한계점이 있다. 문제 해결 스타일과 코드의 간결성과 가독성을 파악하기 위해 라이브로 코딩테스트를 진행하기도 한다.
+이는 코딩테스트에서는 **코드의 정확성, 빠른 실행 시간, 빠른 코드 작성 시간**을 정량적으로 측정 가능하기 때문이다. 하지만 코딩테스트만으로는 **코드를 간결하고, 가독성이 높게 짜는지, 돌발 상황에는 어떻게 대처하는 지**는 평가가 불가능한 한계점이 있다. 이를 위해 라이브로 코딩테스트를 진행하기도 한다.
 
 ### Upper Immediate
-- **[[site] solved.ac](https://solved.ac/problems/level){:target="_blank"}<br/>(난이도:★★★☆☆, 실용:★★★☆☆, 최신:★★★★☆)**<br/>본인의 수준을 판단하기 좋으며, 낮은 수준부터 높은 수준까지 차례대로 풀면 필수적인 알고리즘과 자료 구조를 학습할 수 있다. 코딩테스트를 대비한다면 골드 레벨 문제를 원할히 풀 수 있도록 노력해야한다.
+- **[[site] solved.ac](https://solved.ac/problems/level){:target="_blank"}<br/>(난이도:★★★☆☆, 실용:★★★☆☆, 최신:★★★★☆)**<br/>본인의 수준을 판단하기 좋으며, 낮은 수준부터 높은 수준까지 차례대로 풀면 필수적인 알고리즘과 자료 구조를 학습할 수 있다. 코딩테스트를 대비한다면 골드 레벨 문제를 원활히 풀 수 있도록 노력해야 한다.
 
 - **[[site] 프로그래머스](https://school.programmers.co.kr/learn/challenges?order=recent&page=1){:target="_blank"}<br/>(난이도:★★★☆☆, 실용:★★★☆☆, 최신:★★★★☆)**<br/>공개된 카카오 코딩테스트 기출들 풀어보는 것 추천
 
 ### Advanced
-- **[[book] 프로그래밍 대회에서 배우는 알고리즘 문제해결 전략 1,2](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=21089176){:target="_blank"}<br/>(난이도:★★★★☆, 실용:★★☆☆☆, 최신:★★☆☆☆)**<br/>프로그래밍 대회의 바이블, 이 책을 이해하는 수준이라면 코딩테스트는 걱정 안 해도 되는 레벨이다. 프로그래밍 대회를 대비하기 위해서는 필요하지만, 코딩 테스트를 대비 하기에는 수준이 높은 내용이 많다.
+- **[[book] 프로그래밍 대회에서 배우는 알고리즘 문제해결 전략 1,2](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=21089176){:target="_blank"}<br/>(난이도:★★★★☆, 실용:★★☆☆☆, 최신:★★☆☆☆)**<br/>프로그래밍 대회의 바이블, 이 책을 이해하는 수준이라면 코딩테스트는 걱정 안 해도 되는 레벨이다. 프로그래밍 대회를 대비하기 위해서는 필요하지만, 코딩 테스트를 대비하기에는 수준이 높은 내용이 많다.
 
 - **[[book] 프로그래밍 콘테스트 챌린징](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=13459601){:target="_blank"}<br/>(난이도:★★★★☆, 실용:★☆☆☆☆, 최신:★★☆☆☆)**<br/> ACM ICPC, IOI/KOI 대비용
 
@@ -51,7 +51,7 @@ tags:
 ## 2. CS
 ### Basic
 - **[[book] 혼자 공부하는 컴퓨터 구조 + 운영체제](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=299014282){:target="_blank"}<br/>(난이도:★★☆☆☆, 실용:★★★★☆, 최신:★★★☆☆)**
-- **[[book] 혼자 공부하는 네트워크](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=337483817&start=slayer){:target="_blank"}<br/>(난이도:★★☆☆☆, 실용:★★★★☆, 최신:★★★☆☆)**<br/>비전공자에게 추천하는 책. 학과 내용을 너무 깊지 않게 개발에 필요한 지식들만 딱 한 권에 끝낼 수 있다.
+- **[[book] 혼자 공부하는 네트워크](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=337483817&start=slayer){:target="_blank"}<br/>(난이도:★★☆☆☆, 실용:★★★★☆, 최신:★★★☆☆)**<br/>비전공자에게 추천하는 책. 학과 내용을 너무 깊지 않게 개발에 필요한 지식만 딱 한 권에 끝낼 수 있다.
   
 <br/>
 
@@ -101,20 +101,23 @@ tags:
 <br/>
 
 ---
+
 ## 7. Docker/Kubernetes
 
 <br/>
 
 ---
+
 ## 8. AWS
 ### Basic
-- **[[site] AWS Cloud Practitioner Essentials](https://explore.skillbuilder.aws/learn/course/external/view/elearning/1928/aws-cloud-practitioner-essentials-korean-sub-hangug-eo-jamag){:target="_blank"}<br/>(난이도:★★☆☆☆, 실용:★★☆☆☆, 최신:★★★★★)**<br/>AWS에서 제공하는 입문 강의. 애니메이션으로 비유적으로 표현해 이해하기 쉬우며 한글 자막이 있다.
+- **[[site] AWS Cloud Practitioner Essentials](https://explore.skillbuilder.aws/learn/course/external/view/elearning/1928/aws-cloud-practitioner-essentials-korean-sub-hangug-eo-jamag){:target="_blank"}<br/>(난이도:★★☆☆☆, 실용:★★☆☆☆, 최신:★★★★★)**<br/>AWS에서 제공하는 입문 강의. 애니메이션으로, 비유적으로 표현해 이해하기 쉬우며 한글 자막이 있다.
 
 - **[[site] AWS Technical Essentials](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/15366/aws-technical-essentials-korean-na-hangug-eo-gang-ui){:target="_blank"}<br/>(난이도:★★☆☆☆, 실용:★★☆☆☆, 최신:★★★★★)** <br/> 한국어 강의. 위 강의와 내용이 대부분 겹친다. 
 
 <br/>
 
 ---
+
 ## 9. CI/CD
 ### Basic
 - **[[site] GitHub Actions Quick Start](https://docs.github.com/ko/actions/writing-workflows/quickstart){:target="_blank"}<br/>(난이도:★★★☆☆, 실용:★★★★☆, 최신:★★★★★)**<br/>공식 문서
@@ -131,9 +134,8 @@ tags:
 <br/>
 
 ---
+
 ## 11. 리팩토링
-
-
 
 ### Intermediate
 
@@ -149,11 +151,12 @@ tags:
 - **[[blog] 효과적인 코드리뷰를 위한 리뷰어의 자세](https://tech.kakao.com/posts/498){:target="_blank"}**
 - **[[blog] 코드 리뷰를 어떻게 하는 게 좋을까?](https://smartstudio.tech/how-to-make-a-good-code-review/){:target="_blank"}** 
 - **[[blog] 코드 리뷰 in 뱅크샐러드 개발 문화](https://blog.banksalad.com/tech/banksalad-code-review-culture/){:target="_blank"}**
-  <br/>프로덕션은 혼자 만들지 못하고, 개발자들의 협업이 필요하다. 코드 리뷰어의 기본적인 마인드셋
+  <br/>프로덕션은 혼자 만들지 못하고, 많은 사람들의 협업이 필요하다. 코드 리뷰어의 기본적인 태도에 관한 글.
 
 <br/>
 
 ---
+
 ## 13. 소프트 스킬
 코드 몽키가 아닌 개발자로서의 발전에 도움을 주는 책
 
@@ -162,6 +165,7 @@ tags:
 <br/>
 
 ---
+
 <br/>
 **좋은 자료가 있다면 추천 부탁드립니다.**
 
