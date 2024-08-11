@@ -1,7 +1,7 @@
 {
   "name": "Hyeonsu kim's Tech Blog",
   "short_name": "skykhs3",
-  "description": "In this blog, I document what I learn in development, design, algorithms, and more.",
+  "description": "In this blog, I share what I learn about development, design, algorithms, and more. As a developer, I'm constantly working to improve my skills, and this is where I document that journey.",
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png?v=2",

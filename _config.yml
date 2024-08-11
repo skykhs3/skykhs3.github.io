@@ -23,7 +23,7 @@ title: skykhs3 # the main title
 tagline: Hyeonsu Kim's Tech Blog # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  In this blog, I document what I learn in development, design, algorithms, and more. I share my knowledge, research findings, and project experiences to create a space where we can learn and grow together.
+  In this blog, I share what I learn about development, design, algorithms, and more. As a developer, I'm constantly working to improve my skills, and this is where I document that journey.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://skykhs3.github.io"
