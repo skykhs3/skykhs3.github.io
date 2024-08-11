@@ -9,9 +9,8 @@ tags:
   - problem solving
   - algorithm
 ---
-
 <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js">
 </script>
 
 > A matching in a bipartite graph is a set of edges selected so that no two edges share a common vertex. A maximum matching is a matching that contains the greatest number of edges possible.

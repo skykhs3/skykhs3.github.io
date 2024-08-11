@@ -15,11 +15,9 @@ tags:
     algorithm,
   ]
 ---
-
 <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js">
 </script>
-
 
 > The KMP (Knuth-Morris-Pratt) algorithm is a fast string search algorithm.
 
@@ -37,7 +35,7 @@ The length of A is N and the length of B is M.
 We can find out where B is included in A using the KMP algorithm.
 The time complexity of this algorithm is $$O(N + M)$$.
 
-For example, if A is "abacabacabad" and B is "abacabad", we can determine where B is included within A ( i=5 ) in $$O(length of A + length of B)$$ time complexity.
+For example, if A is "abacabacabad" and B is "abacabad", we can determine where B is included within A ( i=5 ) in $$O(\text{length of A + length of B})$$ time complexity.
 
 ---
 
