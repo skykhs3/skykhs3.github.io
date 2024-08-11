@@ -29,7 +29,7 @@ toc: true
     <h3><b>Bagelcode</b></h3>
     <p>Backend Developer / Club Vegas Studio server<br>
     <small>February 2024 ~ August 2024</small><br/>
-    <small>Expressjs, Nestjs</small></p>
+    <small>Express.js, NestJS</small></p>
   </div>
 </div>
 
@@ -221,12 +221,12 @@ I worked on both the front-end and back-end development of the voting platform u
 
 <ul>
   <li>Flutter - Upper Intermediate</li>
-  <li>Express - Upper Intermediate</li>
+  <li>Express.js - Upper Intermediate</li>
   <li>C++ - Upper Intermediate</li>
-  <li>Nestjs - Intermediate</li>
+  <li>NestJS - Intermediate</li>
   <li>React - Intermediate</li>
-  <li>Nextjs - Intermediate</li>
-  <li>Tailwind CSS - Beginner</li>
+  <li>Next.js - Intermediate</li>
+  <li>Tailwind CSS - Intermediate</li>
   <li>Unity - Beginner</li>
   <li>AWS - Beginner</li>
 </ul>
