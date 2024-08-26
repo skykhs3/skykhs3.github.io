@@ -41,15 +41,17 @@ To be written...
 
 ## 4. Code
 - If there exists an edge connecting vertex 1 in group A and vertex 2 in group B and an edge connecting vertex 1 in group A and vertex 3 in group B, we indicate this as 𝑉[1]={2,3}
-- The assign array indicates where a vertex in group B connects to in group A.
-- The visit array tracks the visiting history.
-- The time complexity is 𝑂(𝑁𝐸)(where 𝑁 is the number of vertices and 𝐸 is the number of edges).
+- **N** represents the number of vertices in group A, and **M** represents the number of vertices in group B.
+- The **assign** array indicates where a vertex in group B connects to in group A.
+- The **visit** array tracks visiting history to prevent infinite loops.
+- The time complexity is **𝑂(𝑁𝐸)**(where 𝑁 is the number of vertices and 𝐸 is the number of edges).
 
 ```c++
-bool dfs(int v,vector<vector<int>> & V,vector<int> &visit, vector<int> &assign){
+bool dfs(int v,vector<vector<int>> &V, vector<bool> &visit, vector<int> &assign){
     for(auto to:V[v]){
-        if(visit[to]!=0) continue;
-        visit[to]=1;
+        if(visit[to]) continue;
+        visit[to]=true;
+
         if(assign[to]==0 || dfs(assign[to],V,visit,assign)){ 
             assign[to]=v;
             return true;
@@ -58,12 +60,12 @@ bool dfs(int v,vector<vector<int>> & V,vector<int> &visit, vector<int> &assign){
     return false;
 }
 
-int maximumBipartiteMatching(int n,vector<vector<int>> & V){
-    vector<int> visit(N+10,0);
-    vector<int> assign(N+10,0);
+int maximumBipartiteMatching(int N,int M,vector<vector<int>> & V){
+    vector<bool> visit(M+1);
+    vector<int> assign(M+1);
     int ans=0;
-    for(int i=1; i<=n;i++){
-        for(int j=1;j<=n;j++) visit[j]=0; 
+    for(int i=1; i<=N;i++){
+        for(int j=1;j<=M;j++) visit[j]=0; 
         if(dfs(i,V,visit,assign)) ans++;
     }
     
