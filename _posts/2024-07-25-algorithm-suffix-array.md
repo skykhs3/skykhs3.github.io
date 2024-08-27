@@ -10,6 +10,7 @@ tags:
   - lcp
   - ps
   - problem solving
+  - Manber-Myers
 ---
 <script type="text/javascript" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js">
@@ -35,6 +36,9 @@ For instance, if $$s$$ = "$$banana$$", the suffix array will represent the suffi
 
 In this case, its LCP array is $$[null, 1, 3, 0, 0, 2]$$
 ## 2. Code
+A Suffix Array can be obtained using the Manber-Myers algorithm. If we use quicksort, the time complexity is $$O(Nlog^2N)$$. If we use counting sort, the time complexity is $$O(NlogN)$$.
+
+We can also obtain a LCP Array from a Suffix Array using Kasai's algorithm. It's time complexity is $$O(N)$$
 
 ```c++
 #include <bits/stdc++.h>
@@ -47,15 +51,18 @@ struct Comparator {
   Comparator(const vector<int> &_group, int _t): group(_group),t(_t) {};
   bool operator () (int indexA, int indexB){ // Allows this object to be used as a function
     if(group[indexA]!=group[indexB]) return group[indexA] < group[indexB];
-    return group[indexA+t]<group[indexB+t]; // Since group[indexA] == group[indexB], there is at least an overlap of t characters from the start.
-    // Thus, the lengths of s[indexA..] and s[indexB..] are at least t. In other words, indexA + t <= n and indexB + t <= n.
+    return group[indexA+t]<group[indexB+t];
+    // Since group[indexA] == group[indexB], there is at least an overlap of t characters from the start.
+    // Thus, the lengths of s[indexA..] and s[indexB..] are at least t.
+    // In other words, indexA + t <= n and indexB + t <= n.
     // To handle the case where the index is n, set group[n] = -1.
   }
 };
 
 void countingSort(vector<int> &suffixArray, vector<int> &group, int t){
   int n=suffixArray.size();
-  int sum,maxi=max(MAX_VALUE_TO_HANDLE_ASCII,n+1); // group can range from 0 to n. Consider the array bounds carefully.
+  int sum,maxi=max(MAX_VALUE_TO_HANDLE_ASCII,n+1);
+  // group can range from 0 to n. Consider the array bounds carefully.
   vector<int> c(maxi);
   for(int i=0;i<n;i++) c[i+t<n?group[i+t]:0]++;
   for(int i=1;i<maxi;i++) c[i]+=c[i-1];
@@ -67,8 +74,10 @@ void countingSort(vector<int> &suffixArray, vector<int> &group, int t){
 
 vector<int> getSuffixArray(const string &s){
   int n = s.size(), t=1;
-  vector<int> group(n+1); // group[i] = the group number that s[i...] belongs to when sorted by the first t characters.
-  vector<int> suffixArray(n); // suffixArray[0] = i means s[i..] is the lexicographically smallest.
+  vector<int> group(n+1);
+  // group[i] = the group number that s[i...] belongs to when sorted by the first t characters.
+  vector<int> suffixArray(n);
+  // suffixArray[0] = i means s[i..] is the lexicographically smallest.
   for(int i=0;i<n;i++) group[i]=s[i], suffixArray[i]=i;
   group[n]=0;
   while(t<n){
@@ -103,7 +112,8 @@ vector<int> getLcpArray(string s, vector<int> &suffixArray){
   for(int i=0;i<n;i++) iSA[suffixArray[i]]=i;
   for(int i=0,L=0;i<n;i++){
     if(iSA[i]==0) continue;
-    while(i+L<n && suffixArray[iSA[i]-1]+L<n && s[i+L]==s[suffixArray[iSA[i]-1]+L]) L++;
+    while(i+L<n && suffixArray[iSA[i]-1]+L<n
+      && s[i+L]==s[suffixArray[iSA[i]-1]+L]) L++;
     LCP[iSA[i]]=L;
     L=max(L-1,0);
   }
@@ -116,8 +126,8 @@ int main(){
   cin>>s;
 
   auto suffixArray=getSuffixArray(s);
-  for(auto index:suffixArray)cout<<index+1<< " ";
-  cout <<endl;
+  for(auto index:suffixArray) cout<<index+1<< " ";
+  cout<<endl;
 
   auto lcpArray=getLcpArray(s, suffixArray);
   for(int i=0;i<lcpArray.size();i++)
@@ -125,6 +135,33 @@ int main(){
     else cout<<lcpArray[i]<<" ";
 }
 ```
+
+## 3. Example
+
+String: "**banana**"
+
+| i | Suffix |Suffix Array | iSA | LCP Array
+|-|-|-|-
+| 0 | a | 5 | 3 | null
+| 1 | ana | 3 | 2 | 1
+| 2 | anana | 1 | 5 | 3
+| 3 | banana | 0 | 1 | 0
+| 4 | na | 4 | 4 | 0
+| 5 | nana | 2 | 0 | 2
+
+
+**Ordered by iSA**
+
+| iSA | Suffix | LCP Array
+|-|-|-
+| 0 | banana | 0
+| 1 | anana | 3
+| 2 | nana | 2
+| 3 | ana | 1
+| 4 | na | 0 
+| 5 | a | null
+
+
 > [You can test your code here](https://www.acmicpc.net/problem/9248){:target="_blank"}
 {: .prompt-tip }
 
