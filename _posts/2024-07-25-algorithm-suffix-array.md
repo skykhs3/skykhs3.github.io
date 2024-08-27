@@ -61,15 +61,21 @@ struct Comparator {
 
 void countingSort(vector<int> &suffixArray, vector<int> &group, int t){
   int n=suffixArray.size();
-  int sum,maxi=max(MAX_VALUE_TO_HANDLE_ASCII,n+1);
+  int maxVal=max(MAX_VALUE_TO_HANDLE_ASCII,n+1);
   // group can range from 0 to n. Consider the array bounds carefully.
-  vector<int> c(maxi);
-  for(int i=0;i<n;i++) c[i+t<n?group[i+t]:0]++;
-  for(int i=1;i<maxi;i++) c[i]+=c[i-1];
+  vector<int> c(maxVal);
+  vector<int> idx(n);
+
+  for(int i=0;i<n;i++)  idx[i]=suffixArray[i]+t<n ? group[suffixArray[i]+t] : 0;
+  for(int i=0;i<n;i++) c[idx[i]]++;
+  for(int i=1;i<maxVal;i++) c[i]+=c[i-1];
 
   vector<int> temp(n);
-  for(int i=n-1;i>=0;i--) temp[--c[suffixArray[i]+t<n?group[suffixArray[i]+t]:0]]=suffixArray[i];
-  suffixArray=temp;
+  for(int i=n-1;i>=0;i--){
+    temp[--c[idx[i]]]=suffixArray[i];
+  }
+
+  swap(suffixArray, temp);
 }
 
 vector<int> getSuffixArray(const string &s){
@@ -83,7 +89,7 @@ vector<int> getSuffixArray(const string &s){
   while(t<n){
     Comparator compareUsing2T(group,t);
     // Choose between O(NlogN) quick sort and O(N) counting sort.
-    // sort(suffixArray.begin(),suffixArray.end(),compareUsing2T);
+   // sort(suffixArray.begin(),suffixArray.end(),compareUsing2T);
     countingSort(suffixArray,group,t); countingSort(suffixArray,group,0);
 
     t*=2;
@@ -98,7 +104,8 @@ vector<int> getSuffixArray(const string &s){
         newGroup[suffixArray[i]]=newGroup[suffixArray[i-1]]+1;
       else
         newGroup[suffixArray[i]]=newGroup[suffixArray[i-1]];
-    group=newGroup;
+
+    swap(group, newGroup);
   }
 
   return suffixArray;
@@ -106,8 +113,7 @@ vector<int> getSuffixArray(const string &s){
 
 vector<int> getLcpArray(string s, vector<int> &suffixArray){
   int n=s.size();
-  vector<int> iSA(n);
-  vector<int> LCP(n);
+  vector<int> iSA(n), LCP(n);
 
   for(int i=0;i<n;i++) iSA[suffixArray[i]]=i;
   for(int i=0,L=0;i<n;i++){
