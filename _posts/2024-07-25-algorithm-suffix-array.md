@@ -126,7 +126,7 @@ int main(){
   cin>>s;
 
   auto suffixArray=getSuffixArray(s);
-  for(auto index:suffixArray) cout<<index+1<< " ";
+  for(auto index:suffixArray) cout<<index<<" ";
   cout<<endl;
 
   auto lcpArray=getLcpArray(s, suffixArray);
