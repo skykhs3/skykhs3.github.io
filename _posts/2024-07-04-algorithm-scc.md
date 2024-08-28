@@ -97,18 +97,18 @@ void createReversedEdge(int n, vector<vector<int>> &rG, vector<vector<int>> &G){
       rG[to].push_back(i);
 }
 
-void dfs(int v,int n,vector<vector<int>> &G, vector<bool> &visited, vector<int> &vs){
+void dfs(int v, vector<vector<int>> &G, vector<bool> &visited, vector<int> &vs){
   visited[v]=true;
   for(auto to:G[v])
-    if(!visited[to]) dfs(to, n, G, visited, vs);
+    if(!visited[to]) dfs(to, G, visited, vs);
   vs.push_back(v);
 }
 
-void rdfs(int v,int n,vector<vector<int>> &rG, vector<bool> &visited, vector<int> &scc){
+void rdfs(int v, vector<vector<int>> &rG, vector<bool> &visited, vector<int> &scc){
   visited[v]=true;
   scc.push_back(v);
   for(auto to:rG[v])
-    if(!visited[to]) rdfs(to, n, rG, visited, scc);
+    if(!visited[to]) rdfs(to, rG, visited, scc);
 }
 
 vector<vector<int>> kosaraju(int n, vector<vector<int>> &G){
@@ -119,13 +119,13 @@ vector<vector<int>> kosaraju(int n, vector<vector<int>> &G){
   createReversedEdge(n,rG,G);
 
   for(int i=1;i<=n;i++)
-    if(!visited[i]) dfs(i,n,G,visited,vs);
+    if(!visited[i]) dfs(i,G,visited,vs);
   
   fill(visited.begin(),visited.end(),false);
   for(int i=vs.size()-1;i>=0;i--){
     vector<int> scc;
     if(!visited[vs[i]]){
-      rdfs(vs[i],n,rG,visited,scc);
+      rdfs(vs[i],rG,visited,scc);
       ans.push_back(scc);
     }
   }
