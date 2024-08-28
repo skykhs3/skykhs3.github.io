@@ -31,7 +31,7 @@ An SCC is maximal in the sense that no additional vertices can be added to it wi
 
 Every directed graph can be decomposed into a union of SCCs, where each SCC is disjoint from the others. After this decomposition, the remaining graph becomes a Directed Acyclic Graph (DAG), where SCCs are represented as individual nodes.
 
-The algorithm used to identify and construct SCCs in a directed graph is often referred to as the SCC algorithm. One efficient algorithm for this task operates in O(N) time complexity, where N is the number of vertices in the graph.
+The algorithm used to identify and construct SCCs in a directed graph is often referred to as the SCC algorithm. One efficient algorithm for this task operates in O(N+M) time complexity, where N is the number of vertices in the graph and M is the number of edges in the graph.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Scc-1.svg/220px-Scc-1.svg.png" alt="SCC"/>
 
