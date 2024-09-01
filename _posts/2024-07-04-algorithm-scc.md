@@ -16,7 +16,7 @@ tags:
 </script>
 
 <div markdown="1">
-> The SCC algorithm can be performed in O(N) time complexity, and there are two main methods to achieve this: Tarjan's algorithm and Kosaraju's algorithm.
+> The SCC algorithm can be performed in O(N+M) time complexity, and there are two main methods to achieve this: Tarjan's algorithm and Kosaraju's algorithm.
 
 > Referenced from 『Programming Contest Challenge Book』
 > 
