@@ -9,9 +9,9 @@ tags:
 ---
 
 <div markdown="1">
+<img src="/assets/img/posts/2024-09-04-bagelcode-retrospective/logo.png" alt="logo"/>
 
 ## 1. Company Overview
-<img src="/assets/img/posts/2024-09-04-bagelcode-retrospective/logo.png" alt="logo"/>
 
 **[Bagelcode](https://www.bagelcode.com/en/){:target="_blank"}** is a rapidly growing mobile game company with a global market presence.
 
@@ -27,12 +27,12 @@ I worked as a backend developer for the **Club Vegas Studio server team**<br/>
 
 ## 2. Key Tasks
 As a member of the Club Vegas Studio server team, my tasks included:
-- Developing the game backend API server using TypeScript (Express.js)
-- Developing an in-house admin website using React
-- Developing a game item purchase and payment website using Next.js and NestJS
+- Developing the game backend API server using TypeScript (**Express.js**)
+- Developing an in-house admin website using **React**
+- Developing a game item purchase and payment website using **Next.js** and **NestJS**
 - Building a backend server to support third-party payments by integrating with third-party payment providers' webhooks
-- Operating the system with AWS and Kubernetes (EKS)
-- Implementing CI/CD pipelines using GitHub Actions
+- Operating the system with **AWS and Kubernetes (EKS)**
+- Implementing CI/CD pipelines using **GitHub Actions**
 
 ## 3. Key Projects
 I independently undertook the development work for the following projects:

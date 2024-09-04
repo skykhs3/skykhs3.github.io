@@ -25,6 +25,7 @@ order: 4
     <p>Backend Developer / Club Vegas Studio server<br>
     <small>February 2024 ~ August 2024</small><br/>
     <small>Expressjs, Nestjs</small></p>
+    <a href="/posts/bagelcode-retrospective/">My contribution</a>
   </div>
 </div>
 
