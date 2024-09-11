@@ -30,7 +30,7 @@ toc: true
     <p>Backend Developer / Club Vegas Studio server<br>
     <small>February 2024 ~ August 2024</small><br/>
     <small>Expressjs, NestJS</small></p>
-    <a href="/posts/bagelcode-retrospective/">My contribution</a>
+    <b><a href="/posts/bagelcode-retrospective/">My contribution</a></b>
   </div>
 </div>
 
