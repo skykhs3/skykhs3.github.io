@@ -4,7 +4,6 @@ date: 2024-07-26 00:03:13 +09:00
 categories: [Development, C/C++]
 tags:
   - built-in
-  - c
   - c++
   - bits
   - lcp
