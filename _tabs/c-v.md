@@ -1,7 +1,10 @@
 ---
-# the default layout is 'page'
+layout: post
 icon: fas fa-address-card
 order: 4
+panel_includes:
+  - toc
+toc: true
 ---
 
 <div style="display: flex; justify-content: center; align-items: center;">
@@ -17,6 +20,7 @@ order: 4
 ---
 
 <div markdown="1">
+
 ## 1. Work Experience
 
 <div class="row mb-3">
