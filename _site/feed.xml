@@ -2,131 +2,188 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
-  <title>Chirpy</title>
+  <title>skykhs3</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-09-11T17:20:02+08:00</updated>
+  <updated>2024-09-11T19:58:32+08:00</updated>
   <author>
-    <name>your_full_name</name>
+    <name>Hyeonsu Kim</name>
     <uri>http://localhost:4000/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
-  <rights> © 2024 your_full_name </rights>
+  <rights> © 2024 Hyeonsu Kim </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
-    <title>Customize the Favicon</title>
-    <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-11T00:34:00+08:00</published>
+    <title>Types and Options of Git Merge</title>
+    <link href="http://localhost:4000/posts/types-and-options-of-git-merge/" rel="alternate" type="text/html" title="Types and Options of Git Merge" />
+    <published>2024-09-10T23:01:29+08:00</published>
   
-    <updated>2019-08-11T00:34:00+08:00</updated>
+    <updated>2024-09-10T23:01:29+08:00</updated>
   
-    <id>http://localhost:4000/posts/customize-the-favicon/</id>
-    <content src="http://localhost:4000/posts/customize-the-favicon/" />
+    <id>http://localhost:4000/posts/types-and-options-of-git-merge/</id>
+    <content src="http://localhost:4000/posts/types-and-options-of-git-merge/" />
     <author>
-      <name>cotes</name>
+      <name>Hyeonsu Kim</name>
     </author>
 
   
     
-    <category term="Blogging" />
+    <category term="Development" />
     
-    <category term="Tutorial" />
+    <category term="Git" />
     
   
 
-  <summary>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
+  <summary>When using Git to create multiple branches, you will eventually need to merge them. There are various methods available for merging branches.
 
-Generate the favicon
+    Let’s begin by assuming familiarity with concepts such as commit, push, pull, and fetch, as well as the ability to create branches.
+  
 
-Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...</summary>
+  1. The Difference between Merge and Rebase
+
+  1.1 Merge
+  Merge combines two branches while preserving the flow ...</summary>
 
   </entry>
 
   
   <entry>
-    <title>Getting Started</title>
-    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
-    <published>2019-08-09T20:55:00+08:00</published>
+    <title>Bagelcode Retrospective</title>
+    <link href="http://localhost:4000/posts/bagelcode-retrospective/" rel="alternate" type="text/html" title="Bagelcode Retrospective" />
+    <published>2024-09-03T23:18:00+08:00</published>
   
-    <updated>2019-08-09T20:55:00+08:00</updated>
+    <updated>2024-09-03T23:18:00+08:00</updated>
   
-    <id>http://localhost:4000/posts/getting-started/</id>
-    <content src="http://localhost:4000/posts/getting-started/" />
+    <id>http://localhost:4000/posts/bagelcode-retrospective/</id>
+    <content src="http://localhost:4000/posts/bagelcode-retrospective/" />
     <author>
-      <name>cotes</name>
+      <name>Hyeonsu Kim</name>
     </author>
 
   
     
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
+    <category term="Retrospective" />
     
   
 
-  <summary>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</summary>
+  <summary>1. Company Overview
+
+  Bagelcode is a rapidly growing mobile game company with a global market presence.
+
+  One of Bagelcode’s flagship games, Club Vegas Slots Casino Games, is enjoyed by over 50 million people worldwide. Notably, Club Vegas boasts the highest average playtime among social casino games and ranked in the top 100 for overall revenue on Android in the U.S. in 2022.
+
+  Club Vegas S...</summary>
 
   </entry>
 
   
   <entry>
-    <title>Writing a New Post</title>
-    <link href="http://localhost:4000/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
-    <published>2019-08-08T14:10:00+08:00</published>
+    <title>백엔드 개발자 학습 자료 &amp; 로드맵 (KOR)</title>
+    <link href="http://localhost:4000/posts/backend-developer-learning-materials-roadmaps/" rel="alternate" type="text/html" title="백엔드 개발자 학습 자료 &amp;amp; 로드맵 (KOR)" />
+    <published>2024-08-02T23:03:05+08:00</published>
   
-    <updated>2019-08-08T14:10:00+08:00</updated>
+    <updated>2024-08-02T23:03:05+08:00</updated>
   
-    <id>http://localhost:4000/posts/write-a-new-post/</id>
-    <content src="http://localhost:4000/posts/write-a-new-post/" />
+    <id>http://localhost:4000/posts/backend-developer-learning-materials-roadmaps/</id>
+    <content src="http://localhost:4000/posts/backend-developer-learning-materials-roadmaps/" />
     <author>
-      <name>cotes</name>
+      <name>Hyeonsu Kim</name>
     </author>
 
   
     
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
+    <category term="Development" />
     
   
 
-  <summary>This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.
+  <summary>백엔드 개발을 혼자 공부하면서, 내가 올바른 방향으로 학습하고 있는지, 판단하기가 어려웠다. 이 글은 내가 백엔드 개발자로 성장하기 위해 사용한 학습 자료와 로드맵을 정리했다.
 
-Naming and Path
+    지금도 부족한 점이 많지만 지금까지 공부한 것들을 기록해 보려고 한다. 백엔드를 독학하는 사람들에게 도움이 되었으면 좋겠다.
+  
 
-Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...</summary>
+  (난이도, 실용성, 최신성) 이 세 가지 기준으로 주관적으로 평가하며, 계속 업데이트 중.
+
+  난이도: 학습에 있어 수준이 어려운가?
+실용성: 백엔드 개발자로서 현업에 되는 자료인가?
+최신성: 옛날 자료가 아니고, 최신 업데이트가 문서에 반영이 있는가?
+
+
+  
+
+  1. 알고리즘/코딩테스트
+  알고리즘을 직접적으로 백엔드 개발에서 사용할 일은 없지만, 많은 회사들이 알고리즘에 관련된...</summary>
 
   </entry>
 
   
   <entry>
-    <title>Text and Typography</title>
-    <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
-    <published>2019-08-08T11:33:00+08:00</published>
+    <title>Built-in Bit Functions Provided by GCC</title>
+    <link href="http://localhost:4000/posts/built-in-bit-functions-provided-by-gcc/" rel="alternate" type="text/html" title="Built-in Bit Functions Provided by GCC" />
+    <published>2024-07-25T23:03:13+08:00</published>
   
-    <updated>2019-08-08T11:33:00+08:00</updated>
+    <updated>2024-07-25T23:03:13+08:00</updated>
   
-    <id>http://localhost:4000/posts/text-and-typography/</id>
-    <content src="http://localhost:4000/posts/text-and-typography/" />
+    <id>http://localhost:4000/posts/built-in-bit-functions-provided-by-gcc/</id>
+    <content src="http://localhost:4000/posts/built-in-bit-functions-provided-by-gcc/" />
     <author>
-      <name>cotes</name>
+      <name>Hyeonsu Kim</name>
     </author>
 
   
     
-    <category term="Blogging" />
+    <category term="Development" />
     
-    <category term="Demo" />
+    <category term="C/C++" />
     
   
 
-  <summary>Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.</summary>
+  <summary>GCC includes built-in bit functions. These functions can perform tasks such as counting the number of 1-bits in a number, and their time complexity is O(1).
+  
+
+  
+    6.63 Other Built-in Functions Provided by GCC
+  
+
+  1. Overview
+  In theory, counting the number of 1-bits in a number 𝑁 has a time complexity of 𝑂(log𝑁) since it involves repeatedly dividing the number by two until it becomes ze...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Suffix Array and LCP Array</title>
+    <link href="http://localhost:4000/posts/algorithm-suffix-array/" rel="alternate" type="text/html" title="Suffix Array and LCP Array" />
+    <published>2024-07-24T23:01:29+08:00</published>
+  
+    <updated>2024-07-24T23:01:29+08:00</updated>
+  
+    <id>http://localhost:4000/posts/algorithm-suffix-array/</id>
+    <content src="http://localhost:4000/posts/algorithm-suffix-array/" />
+    <author>
+      <name>Hyeonsu Kim</name>
+    </author>
+
+  
+    
+    <category term="Problem Solving" />
+    
+    <category term="Algorithm" />
+    
+  
+
+  <summary>Suffix Array and LCP Array are known as the Swiss Army knife in string-related problem solving.
+  
+
+  1. Description
+
+  Suffix Array
+  A suffix array for a string \(s\) is an array of integers representing the starting positions of all suffixes of \(s\) in lexicographical order. More formally, if \(s\) is a string of length \(n\), \(\text{suffixArray}[i]\) indicates the starting index of the i-...</summary>
 
   </entry>
 
