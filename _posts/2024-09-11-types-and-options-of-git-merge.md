@@ -38,6 +38,7 @@ git merge feature-branch
 ```
 <img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/merge1.jpeg"/>
 
+---
 
 ### 1.2 Rebase
 `Rebase` moves the current branch's commits onto the latest commit of the target branch.
@@ -70,6 +71,8 @@ It should be a fast-forward merge.
 
 <img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/rebase2.jpeg"/>
 
+---
+
 ## 2. Types of Git Merge
 If you don't specify a particular merge method, Git will automatically choose the appropriate method.
 
@@ -84,17 +87,49 @@ An 3-way merge is used when the the two branches have different commit.
 
 - **Merge Commit**: A merge commit is created. It compares the common ancestor commit of the two branches with the latest commit of each branch to generate a new merge commit.
 
+---
 
 ## 3. Options of Git Merge
 
 
-### --ff
-You can merge branches by fast-forward with `--ff` option
+<h3>--ff</h3>
+You can merge branches by a fast-forward with the `--ff` option.
 
-### --no-ff
-You can merge branches by 3-way with `--no-ff` option
+**Example**
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.jpeg"/>
+```zsh
+git checkout main
+git merge feature-branch --ff
+```
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/--ff.jpeg"/>
 
-### --squash
-You   
+---
+
+<h3>--no-ff</h3>
+You can merge branches using a 3-way merge with the `--no-ff` option. This creates a merge commit, preserving the merge history.
+
+**Example**
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.jpeg"/>
+```zsh
+git checkout main
+git merge feature-branch --ff
+```
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/--no-ff.jpeg"/>
+
+---
+
+<h3>--squash</h3>
+You can squash the commits from a branch into a single commit. This does not preserve the merge history.
+
+**Example**
+
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.jpeg"/>
+```zsh
+git checkout main
+git merge feature-branch --squash
+```
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/--squash.jpeg"/>
+
+
 
 </div>
