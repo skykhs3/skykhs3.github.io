@@ -3,6 +3,8 @@
 title: Thoughts on Starting a GitHub Blog
 date: 2024-06-16 00:17:00 +09:00
 categories: [Development, Jekyll]
+post: skykhs3
+pin: true
 tags:
   [
     github,

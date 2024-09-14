@@ -2,6 +2,10 @@
 title: "Types and Options of Git Merge"
 date: 2024-09-11 00:01:29 +09:00
 categories: [Development, Git]
+post: skykhs3
+image:
+  path: /assets/img/posts/2024-09-11-types-and-options-of-git-merge/--no-ff.jpeg
+  alt: 3-way merge
 tags:
   - git
   - git merge

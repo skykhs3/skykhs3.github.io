@@ -2,6 +2,7 @@
 title: "Maximum Bipartite Matching"
 date: 2024-07-14 00:22:00 +09:00
 categories: [Problem Solving, Algorithm]
+post: skykhs3
 tags:
   - bipartite graph
   - maximum bipartite matching

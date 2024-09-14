@@ -2,6 +2,7 @@
 title: "Suffix Array and LCP Array"
 date: 2024-07-25 00:01:29 +09:00
 categories: [Problem Solving, Algorithm]
+post: skykhs3
 tags:
   - string
   - suffix array

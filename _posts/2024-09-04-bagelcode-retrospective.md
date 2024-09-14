@@ -2,6 +2,7 @@
 title: "Bagelcode Retrospective"
 date: 2024-09-04 00:18:00 +09:00
 categories: [Retrospective, Retrospective]
+post: skykhs3
 tags:
   - bagelcode
   - backend
