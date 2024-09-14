@@ -214,6 +214,7 @@ I worked on both the front-end and back-end development of the voting platform u
 
 <ul>
   <li>TOEFL 83 (December 16, 2023)</li>
+  <li>TOEIC Speaking Test Intermediate Mid 2 (Speaking Score 120) (Sep 8, 2024)</li>
 </ul>
 <br/>
 
