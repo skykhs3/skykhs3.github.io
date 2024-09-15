@@ -74,7 +74,7 @@ git merge feature-branch
 ```
 It should be a fast-forward merge.
 
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/rebase2.jpeg"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/rebase2.png"/>
 
 ---
 
