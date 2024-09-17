@@ -5,9 +5,7 @@ categories: [Problem Solving, Algorithm]
 post: skykhs3
 tags:
   - z
-  - z algorithm
-  - string
-  - suffix
+  - algorithm
   - suffix array
   - ps
   - problem solving
