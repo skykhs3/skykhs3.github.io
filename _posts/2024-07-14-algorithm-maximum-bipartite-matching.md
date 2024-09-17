@@ -1,6 +1,6 @@
 ---
 title: "Maximum Bipartite Matching"
-date: 2024-07-14 00:22:00 +09:00
+date: 2024-07-14 22:00:00 +09:00
 categories: [Problem Solving, Algorithm]
 post: skykhs3
 description: A matching in a bipartite graph is a set of edges where no two edges share a common vertex, and a maximum matching is one that contains the largest possible number of edges.
@@ -12,8 +12,6 @@ image:
 tags:
   - bipartite graph
   - maximum bipartite matching
-  - ps
-  - problem solving
   - algorithm
 ---
 <script type="text/javascript" async

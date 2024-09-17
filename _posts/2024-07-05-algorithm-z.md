@@ -1,6 +1,6 @@
 ---
 title: "Z Algorithm"
-date: 2024-07-05 00:01:29 +09:00
+date: 2024-07-05 01:29:00 +09:00
 categories: [Problem Solving, Algorithm]
 post: skykhs3
 tags:
