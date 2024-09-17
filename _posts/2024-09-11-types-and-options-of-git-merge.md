@@ -1,6 +1,6 @@
 ---
 title: "Types and Options of Git Merge"
-date: 2024-09-11 00:01:29 +09:00
+date: 2024-09-11 01:29:00 +09:00
 categories: [Development, Git]
 post: skykhs3
 image:

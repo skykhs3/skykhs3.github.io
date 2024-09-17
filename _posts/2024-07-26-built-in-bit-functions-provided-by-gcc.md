@@ -1,15 +1,12 @@
 ---
 title: "Built-in Bit Functions Provided by GCC"
-date: 2024-07-26 00:03:13 +09:00
+date: 2024-07-26 03:13:00 +09:00
 categories: [Development, C/C++]
 post: skykhs3
 tags:
-  - built-in
-  - c++
-  - bits
-  - lcp
-  - ps
-  - problem solving
+  - bit functions
+  - gcc
+  - c/c++
   - __builtin_clz(x)
   - __builtin_ctz(x)
   - __builtin_popcount

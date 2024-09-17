@@ -1,17 +1,15 @@
 ---
 title: "Suffix Array and LCP Array"
-date: 2024-07-25 00:01:29 +09:00
+date: 2024-07-25 01:29:00 +09:00
 categories: [Problem Solving, Algorithm]
 post: skykhs3
 tags:
-  - string
   - suffix array
   - lcp array
-  - suffix
-  - lcp
-  - ps
+  - algorithm
   - problem solving
   - Manber-Myers
+  - Kasai's
 ---
 <script type="text/javascript" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js">
