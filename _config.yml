@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: skykhs3 # the main title
 
-tagline: Hyeonsu Kim's Tech Blog # it will display as the subtitle
+tagline: A developer who loves to create. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   I document my journey in development, design, and algorithms as I grow my skills.
