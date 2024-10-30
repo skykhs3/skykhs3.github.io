@@ -1,8 +1,12 @@
 ---
-title: "Bagelcode Retrospective"
+title: "Retrospective of Bagelcode"
 date: 2024-09-04 18:00:00 +09:00
 categories: [Retrospective, Retrospective]
 post: skykhs3
+image:
+  path: /assets/img/posts/2024-09-04-bagelcode-retrospective/logo2.png
+  alt: Bagelcode
+  show_in_post: false
 tags:
   - bagelcode
   - retrospective

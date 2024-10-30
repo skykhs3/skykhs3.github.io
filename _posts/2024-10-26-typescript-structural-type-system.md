@@ -4,6 +4,10 @@ date: 2024-09-17 19:57:00 +09:00
 categories: [Development, Typescript]
 post: skykhs3
 math: true
+image:
+  path: /assets/img/posts/2024-10-26-typescript-duck-typing/typescript.png
+  alt: Typescript
+  show_in_post: false
 tags:
   - structural type system.
   - typescript
