@@ -3,6 +3,10 @@ title: "Built-in Bit Functions Provided by GCC"
 date: 2024-07-26 03:13:00 +09:00
 categories: [Development, C/C++]
 post: skykhs3
+image:
+  path: /assets/img/posts/2024-07-26-built-in-bit-functions/c++.png
+  alt: C++
+  show_in_post: false
 tags:
   - bit functions
   - gcc
