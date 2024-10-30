@@ -1,6 +1,6 @@
 ---
 title: "Structural type system in Typescript"
-date: 2024-09-17 19:57:00 +09:00
+date: 2024-10-26 00:00:00 +09:00
 categories: [Development, Typescript]
 post: skykhs3
 math: true
