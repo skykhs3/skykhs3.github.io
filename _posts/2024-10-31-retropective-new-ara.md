@@ -12,7 +12,7 @@ image:
 tags:
   - ara
   - flutter
-description: I developed the official KAIST community app, Ara, using Flutter. It took six months to complete.
+description: I developed Ara, the official KAIST community app, using Flutter. It took six months to complete, and version 1.0.0 was launched on February 22, 2024.
 ---
 
 <div markdown="1">
