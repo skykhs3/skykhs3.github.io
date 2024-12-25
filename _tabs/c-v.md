@@ -19,7 +19,6 @@ toc: true
 
 ---
 
-
 ## 1. Work Experience
 
 <div class="row mb-3">
@@ -89,7 +88,7 @@ toc: true
   <div class="col">
     <h3 id="New Ara"><b>New Ara</b></h3>
     <p>This is the official community app for KAIST students.</p>
-    <strong>Role and Responsibilities:</strong><br/>
+    <a href="/posts/retropective-new-ara/"><strong>Role and Responsibilities:</strong><br/></a>
     I participated as an app developer using Flutter, collaborating with another team member to handle all aspects of the process, from planning to deployment.<br/><br/>
     <b>Technologies I Used:</b><br/>
     <img src="/assets/img/resume/flutter.svg" class="img-fluid" alt="Flutter Logo"><br/><br/>
@@ -230,6 +229,7 @@ I worked on both the front-end and back-end development of the voting platform u
   <li>React - Intermediate</li>
   <li>Next.js - Intermediate</li>
   <li>Tailwind CSS - Intermediate</li>
+  <li>Django - Begineer</li>
   <li>Unity - Beginner</li>
   <li>AWS - Beginner</li>
 </ul>
@@ -239,13 +239,30 @@ I worked on both the front-end and back-end development of the voting platform u
 
 ## 8. Activities Outside of Academics
 
-### **Volunteering in ICT Education**
+<div class="row mb-3">
+  <div class="col">
+    <h3 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b>
+    </h3>
+    <li>KAIST Global Student Volunteers / Arduino Education Team Leader</li>
+    <li>January 2024</li>
+    <li>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</li>
+  </div>
+  <div class="col">
+    <img src="/assets/img/resume/volunteering.jpg" width="100%" style="margin-top:32px;"/>
+  </div>
+</div>
+<br/>
 
 <div class="row mb-3">
   <div class="col">
-    <p>KAIST Global Student Volunteers / Arduino Education Team Leader<br>
-    January 2024<br>
-    Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</p>
+    <h3 id="YouTube Content"><b>YouTube Content</b></h3>
+    <li><a href="https://www.youtube.com/watch?v=ql0lFXHtAnk"><strong>YouTube Link</strong></a></li>
+    <li>
+    I participated in YouTube content with YouTubers 미미미누 and 조코딩. We created an artificial intelligence service that gives phone calls and notifications to the vulnerable elderly.</li>
+    <li>December 2024</li>
+  </div>
+  <div class="col">
+    <img src="https://i.ytimg.com/vi/ql0lFXHtAnk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDhpeVfpGj4iI9UtqJjDOCjA_ugOg" width="100%" style="margin-top:32px;"/>
   </div>
 </div>
 <br/>
@@ -262,4 +279,3 @@ I worked on both the front-end and back-end development of the voting platform u
   </div>
 </div>
 <br/>
-
