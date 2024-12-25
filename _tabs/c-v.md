@@ -243,12 +243,10 @@ I worked on both the front-end and back-end development of the voting platform u
   <div class="col">
     <h3 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b>
     </h3>
+    <img src="/assets/img/resume/volunteering.jpg" width="80%" style="margin-top:32px; margin-left:10%;"/>
     <li>KAIST Global Student Volunteers / Arduino Education Team Leader</li>
     <li>January 2024</li>
     <li>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</li>
-  </div>
-  <div class="col">
-    <img src="/assets/img/resume/volunteering.jpg" width="100%" style="margin-top:32px;"/>
   </div>
 </div>
 <br/>
@@ -256,13 +254,11 @@ I worked on both the front-end and back-end development of the voting platform u
 <div class="row mb-3">
   <div class="col">
     <h3 id="YouTube Content"><b>YouTube Content</b></h3>
-    <li><a href="https://www.youtube.com/watch?v=ql0lFXHtAnk"><strong>YouTube Link</strong></a></li>
+    <img src="https://i.ytimg.com/vi/ql0lFXHtAnk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDhpeVfpGj4iI9UtqJjDOCjA_ugOg" width="80%" style="margin-top:32px;margin-left:10%;"/>
+    <li><a href="https://www.youtube.com/watch?v=ql0lFXHtAnk">YouTube Link</a></li>
     <li>
     I participated in YouTube content with YouTubers 미미미누 and 조코딩. We created an artificial intelligence service that gives phone calls and notifications to the vulnerable elderly.</li>
     <li>December 2024</li>
-  </div>
-  <div class="col">
-    <img src="https://i.ytimg.com/vi/ql0lFXHtAnk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDhpeVfpGj4iI9UtqJjDOCjA_ugOg" width="100%" style="margin-top:32px;"/>
   </div>
 </div>
 <br/>
