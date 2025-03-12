@@ -254,10 +254,10 @@ I worked on both the front-end and back-end development of the voting platform u
 <div class="row mb-3">
   <div class="col">
     <h3 id="YouTube Content"><b>YouTube Content</b></h3>
-    <img src="/assets/img/resume/youtube_thumbnail.webp" width="80%" style="margin-top:32px;margin-left:10%;"/>
-    <li><a href="https://www.youtube.com/watch?v=ql0lFXHtAnk">YouTube Link</a></li>
-    <li>
-    I participated in YouTube content with YouTubers 미미미누 and 조코딩. We created an artificial intelligence service that gives phone calls and notifications to the vulnerable elderly.</li>
+    <div>
+     {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
+    </div>
+    <li>I participated in YouTube content with YouTubers 미미미누 and 조코딩. We created an artificial intelligence service that gives phone calls and notifications to the vulnerable elderly.</li>
     <li>December 2024</li>
   </div>
 </div>
