@@ -23,7 +23,7 @@ toc: true
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/bagelcode.png" class="img-fluid" alt="Bagelcode Logo" style="height:50px;width:50px;margin-top:32px;"/>
+    <img src="/assets/img/resume/bagelcode.webp" class="img-fluid" alt="Bagelcode Logo" style="height:50px;width:50px;margin-top:32px;"/>
   </div>
   <div class="col">
     <h3 id="Bagelcode"><b>Bagelcode</b></h3>
@@ -40,7 +40,7 @@ toc: true
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/sparcs.png" class="img-fluid" alt="SPARCS-KAIST Logo" style="height:50px;width:50px;margin-top:32px;"/>
+    <img src="/assets/img/resume/sparcs.webp" class="img-fluid" alt="SPARCS-KAIST Logo" style="height:50px;width:50px;margin-top:32px;"/>
   </div>
   <div class="col">
     <h3 id="SPARCS-KAIST"><b>SPARCS-KAIST</b></h3>
@@ -56,7 +56,7 @@ toc: true
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/kaist.png" class="img-fluid" alt="KAIST Logo" style="height:50px;width:50px;margin-top:32px;"/>
+    <img src="/assets/img/resume/kaist.webp" class="img-fluid" alt="KAIST Logo" style="height:50px;width:50px;margin-top:32px;"/>
   </div>
   <div class="col">
     <h3 id="KAIST ( Korea Advanced Institute of Science and Technology )"><b>KAIST</b> ( Korea Advanced Institute of Science and Technology )</h3>
@@ -68,7 +68,7 @@ toc: true
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/gshs.jpeg" class="img-fluid" alt="Gyeonggi Science High School Logo" style="height:50px;width:50px;margin-top:32px;"/>
+    <img src="/assets/img/resume/gshs.webp" class="img-fluid" alt="Gyeonggi Science High School Logo" style="height:50px;width:50px;margin-top:32px;"/>
   </div>
   <div class="col">
     <h3 id = "Gyeonggi Science High School for the Gifted"><b>Gyeonggi Science High School for the Gifted</b></h3>
@@ -83,7 +83,7 @@ toc: true
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/ara.png" class="img-fluid" alt="Ara Logo" style="height:50px;width:50px;margin-top:32px;"/>
+    <img src="/assets/img/resume/ara.webp" class="img-fluid" alt="Ara Logo" style="height:50px;width:50px;margin-top:32px;"/>
   </div>
   <div class="col">
     <h3 id="New Ara"><b>New Ara</b></h3>
@@ -103,7 +103,7 @@ toc: true
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="https://raw.githubusercontent.com/skykhs3/project-jseng/main/frontend/public/icon_logo.png" class="img-fluid" alt="Jeong Seok Engineering Logo" style="height:50px;width:50px;margin-top:32px;"/>
+    <img src="/assets/img/resume/jseng.webp" class="img-fluid" alt="Jeong Seok Engineering Logo" style="height:50px;width:50px;margin-top:32px;"/>
   </div>
   <div class="col">
     <h3 id="Jeong Seok Engineering"><b>Jeong Seok Engineering</b></h3>
@@ -123,7 +123,7 @@ toc: true
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="https://raw.githubusercontent.com/HACKY-TALKY-2-2/team19-app/main/assets/icons/cctv.png" class="img-fluid" alt="Yeok Pacar Logo" style="height:50px;width:50px;margin-top:32px;"/>
+    <img src="/assets/img/resume/cctv.webp" class="img-fluid" alt="Yeok Pacar Logo" style="height:50px;width:50px;margin-top:32px;"/>
   </div>
   <div class="col">
     <h3 id="Yeok Pacar - Gangnam-gu Parking Platform"><b>Yeok Pacar - Gangnam-gu Parking Platform</b></h3>
@@ -142,7 +142,7 @@ I worked as an app developer, building the parking platform using Flutter and in
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/battle_pants.png" class="img-fluid" alt="Battle Pants Logo" style="height:50px;width:50px;margin-top:32px;"/>
+    <img src="/assets/img/resume/battle_pants.webp" class="img-fluid" alt="Battle Pants Logo" style="height:50px;width:50px;margin-top:32px;"/>
   </div>
   <div class="col">
     <h3 id="Battle Pants"><b>Battle Pants</b></h3>
@@ -160,7 +160,7 @@ I developed the game mechanics and multiplayer features using Unity and Photon S
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="https://raw.githubusercontent.com/2023-Summer-MadCamp-KP/FlowLink/main/flow_camp_app/assets/images/flowlinkLogo.png" class="img-fluid" alt="Flowlink Logo" style="height:10px;width:50px;margin-top:32px;"/>
+    <img src="/assets/img/resume/flowlink.webp" class="img-fluid" alt="Flowlink Logo" style="height:10px;width:50px;margin-top:32px;"/>
   </div>
   <div class="col">
     <h3 id="Flowlink"><b>Flowlink</b></h3>
@@ -180,7 +180,7 @@ I worked on both the front-end and back-end development of the voting platform u
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="https://github.com/2023-MadCamp-HJ/project1/assets/80195979/81a13a02-3d23-44f9-b5d5-e04cd3118d71" class="img-fluid" alt="Morning Buddy Logo" style="height:50px;width:50px;margin-top:32px;"/>
+    <img src="/assets/img/resume/morning_buddy.webp" class="img-fluid" alt="Morning Buddy Logo" style="height:50px;width:50px;margin-top:32px;"/>
   </div>
   <div class="col">
     <h3 id="Morning Buddy"><b>Morning Buddy</b></h3>
@@ -243,7 +243,7 @@ I worked on both the front-end and back-end development of the voting platform u
   <div class="col">
     <h3 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b>
     </h3>
-    <img src="/assets/img/resume/volunteering.jpg" width="80%" style="margin-top:32px; margin-left:10%;"/>
+    <img src="/assets/img/resume/volunteering.webp" width="80%" style="margin-top:32px; margin-left:10%;"/>
     <li>KAIST Global Student Volunteers / Arduino Education Team Leader</li>
     <li>January 2024</li>
     <li>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</li>
@@ -254,7 +254,7 @@ I worked on both the front-end and back-end development of the voting platform u
 <div class="row mb-3">
   <div class="col">
     <h3 id="YouTube Content"><b>YouTube Content</b></h3>
-    <img src="https://i.ytimg.com/vi/ql0lFXHtAnk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDhpeVfpGj4iI9UtqJjDOCjA_ugOg" width="80%" style="margin-top:32px;margin-left:10%;"/>
+    <img src="/assets/img/resume/youtube_thumbnail.webp" width="80%" style="margin-top:32px;margin-left:10%;"/>
     <li><a href="https://www.youtube.com/watch?v=ql0lFXHtAnk">YouTube Link</a></li>
     <li>
     I participated in YouTube content with YouTubers 미미미누 and 조코딩. We created an artificial intelligence service that gives phone calls and notifications to the vulnerable elderly.</li>

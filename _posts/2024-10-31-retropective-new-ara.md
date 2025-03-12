@@ -6,7 +6,7 @@ post: skykhs3
 math: true
 mermaid: true
 image:
-  path: /assets/img/posts/2024-10-31-retrospective-new-ara/logo.png
+  path: /assets/img/posts/2024-10-31-retrospective-new-ara/logo.webp
   alt: Ara Logo
   show_in_post: true
 tags:
@@ -28,21 +28,21 @@ description: I developed Ara, the official KAIST community app, using Flutter. I
 [The web-based Ara frontend and backend have been in service since 1991.](https://sparcs.org/projects/ara/) However, there was no **mobile app** for Ara, so I developed one.
 
 <div style="display: flex">
-<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/login_page.png" style="width: 100%" alt="login page"/>
-<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/main_page_eng.png" style="width: 100%" alt="login page"/>
-<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/main_page_kor.png" style="width: 100%" alt="login page"/>
-<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/board_kor.png" style="width: 100%" alt="login page"/>
-<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/board_eng.png" style="width: 100%" alt="login page"/>
-<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/notification_page.png" style="width: 100%" alt="login page"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/login_page.webp" style="width: 100%" alt="login page"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/main_page_eng.webp" style="width: 100%" alt="login page"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/main_page_kor.webp" style="width: 100%" alt="login page"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/board_kor.webp" style="width: 100%" alt="login page"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/board_eng.webp" style="width: 100%" alt="login page"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/notification_page.webp" style="width: 100%" alt="login page"/>
 </div>
 
 <div style="display: flex">
-<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/board_list_page.png" style="width: 100%" alt="login page"/>
-<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/view_page.png" style="width: 100%" alt="login page"/>
-<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/cat.png" style="width: 100%" alt="login page"/>
-<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/write_page2.png" style="width: 100%" alt="login page"/>
-<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/history.png" style="width: 100%" alt="login page"/>
-<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/setting_page.png" style="width: 100%" alt="login page"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/board_list_page.webp" style="width: 100%" alt="login page"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/view_page.webp" style="width: 100%" alt="login page"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/cat.webp" style="width: 100%" alt="login page"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/write_page2.webp" style="width: 100%" alt="login page"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/history.webp" style="width: 100%" alt="login page"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/setting_page.webp" style="width: 100%" alt="login page"/>
 </div>
 
 - **Login Logic**: Integrate KAIST SSO authentication so that only KAIST students can log in.
