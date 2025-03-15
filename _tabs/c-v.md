@@ -13,11 +13,11 @@ toc: true
 
 ## **Hyeonsu Kim 김현수**
 
-### Email: [skykhs3@naver.com](mailto:skykhs3@naver.com)
+### GitHub: [skykhs3](https://github.com/skykhs3/)
 
 ### Linkedin: [default](https://www.linkedin.com/in/default/)
 
-### GitHub: [skykhs3](https://github.com/skykhs3/)
+### Email: [skykhs3@naver.com](mailto:skykhs3@naver.com)
 
 ---
 
@@ -29,10 +29,12 @@ toc: true
   </div>
   <div class="col">
     <h3 id="Bagelcode"><b>Bagelcode</b></h3>
-    <p>Backend Developer / Club Vegas Studio server<br>
-    <small>February 2024 ~ August 2024</small><br/>
-    <small>Expressjs, NestJS</small></p>
-    <b><a href="/posts/bagelcode-retrospective/">My contribution</a></b>
+    <p>
+      Backend Developer / Club Vegas Studio server<br>
+      <b><a href="/posts/bagelcode-retrospective/">My contribution</a></b><br>
+      <small>February 2024 ~ August 2024</small><br/>
+      <small>Expressjs, NestJS</small><br>
+    </p>
   </div>
 </div>
 
@@ -47,10 +49,29 @@ toc: true
   <div class="col">
     <h3 id="SPARCS-KAIST"><b>SPARCS-KAIST</b></h3>
     <p>App Developer / New Ara<br>
-    <small>September 2020 ~</small><br/>
+    <b><a href="/posts/retropective-new-ara/">My contribution</a></b><br>
+    <small>September 2020 ~ August 2025</small><br/>
     <small>Flutter</small></p>
   </div>
+
 </div>
+
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/icists.jpeg" class="img-fluid" alt="ICISTS-KAIST Logo" style="height:50px;width:50px;margin-top:32px;"/>
+  </div>
+  <div class="col">
+    <h3 id="ICISTS-KAIST"><b>ICISTS-KAIST</b></h3>
+    <p>
+      Public Relations Department<br>
+      Tech Department<br>
+      <small>March 2019 ~ August 2020</small><br/>
+      <small><a href="https://www.youtube.com/watch?v=eRp0Q8maqhk" target="_blank" >The 1st GRAFFITI Festival</a></small><br>
+      <small><a href="https://www.youtube.com/@ICISTSKAIST">YouTube channel</a></small>
+    </p>
+  </div>
+</div>
+
 
 ---
 
@@ -63,7 +84,7 @@ toc: true
   <div class="col">
     <h3 id="KAIST ( Korea Advanced Institute of Science and Technology )"><b>KAIST</b> ( Korea Advanced Institute of Science and Technology )</h3>
     <p>KAIST School of Computing / Undergraduate<br>
-    <small>February 2019 ~</small><br>
+    <small>February 2019 ~ August 2025</small><br>
     <small>South Korea, Daejeon</small></p>
   </div>
 </div>
