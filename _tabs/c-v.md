@@ -265,7 +265,7 @@ I worked on both the front-end and back-end development of the voting platform u
       <br/><br/>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See/blob/e1fcdd1cffa7af2e3b9285c06b95a3711769d271/%E1%84%8E%E1%85%AC%E1%84%8C%E1%85%A9%E1%86%BC%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD_220V.pdf">
+      <li><a href="/assets/img/resume/solar_see_final_presentation.pdf">
       Presentation</a></li>
       <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See" target="_blank">Repository</a></li>
     </ul>
@@ -291,7 +291,7 @@ I worked on both the front-end and back-end development of the voting platform u
     <div>
      {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
     </div>
-    <li>I participated in YouTube content with YouTubers 미미미누 and 조코딩. We created an artificial intelligence service that gives phone calls and notifications to the vulnerable elderly.</li>
+    <li>I participated in YouTube content with YouTubers <b>미미미누</b> and <b>조코딩</b>. We created an artificial intelligence service that gives phone calls and notifications to the vulnerable elderly.</li>
     <li>December 2024</li>
   </div>
 </div>
@@ -335,15 +335,7 @@ I worked on both the front-end and back-end development of the voting platform u
 </ul>
 <br/>
 
----
-
-## 8. Activities Outside of Academics
-
-
-
----
-
-## 9. Military Service
+## 8. Military Service
 
 ### **Republic of Korea Air Force**
 
