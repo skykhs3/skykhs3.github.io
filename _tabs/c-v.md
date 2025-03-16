@@ -104,6 +104,8 @@ toc: true
 
 ## 4. Projects
 
+
+### 4.1. Live Projects
 <div class="row mb-3">
   <div class="col-auto">
     <img src="/assets/img/resume/ara.webp" class="img-fluid" alt="Ara Logo" style="height:50px;width:50px;margin-top:32px;"/>
@@ -132,7 +134,7 @@ toc: true
     <h3 id="Jeong Seok Engineering"><b>Jeong Seok Engineering</b></h3>
     <p>This is the introduction webpage for the company.</p>
     <b>Role and Responsibilities:</b><br/>
-    I developed the introduction webpage using Next.js and Tailwind CSS, focusing on both front-end design and performance optimization.<br/><br/>
+    I designed, and developed by myself. I developed the introduction webpage using Next.js and Tailwind CSS, focusing on both front-end design and performance optimization.<br/><br/>
     <b>Technologies I Used:</b><br/>
     <img src="/assets/img/resume/nextjs.svg" class="img-fluid" alt="Next.js Logo">
     <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/><br/><br/>
@@ -140,6 +142,44 @@ toc: true
     <ul>
       <li><a href="https://github.com/skykhs3/project-jseng" target="_blank">Repository</a></li>
       <li><a href="https://jseng.fly.dev/" target="_blank">URL</a></li>
+    </ul>
+  </div>
+</div>
+
+### 4.2 Toy Projects
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/naver_email.png" class="img-fluid" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:32px;"/>
+  </div>
+  <div class="col">
+    <h3 id="Naver Email Summarizer"><b>Naver Email Summarizer</b></h3>
+      <p>
+      It gives you a tooltip to preview the contents of the email and summarizes the contents of the email.<br>
+      It uses Chrome Extension.
+      </p>
+    <b>Reference</b><br/>
+    <ul>
+      <li><a href="https://github.com/skykhs3/project-naver-email-summarizer" target="_blank">Repository</a></li>
+    </ul>
+  </div>
+</div>
+
+### 4.3 Hakathon Projects
+
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/battle_pants.webp" class="img-fluid" alt="Battle Pants Logo" style="height:50px;width:50px;margin-top:32px;"/>
+  </div>
+  <div class="col">
+    <h3 id="Battle Pants"><b>Battle Pants</b></h3>
+    <p>This is a platformer game allowing up to 4 players to join.</p>
+    <b>Role and Responsibilities:</b><br/>
+I developed the game mechanics and multiplayer features using Unity and Photon Server<br/><br/>
+    <b>Technologies I Used:</b><br/>
+    <img src="/assets/img/resume/unity.svg" class="img-fluid" alt="Unity Logo"><br/><br/>
+    <b>Reference</b><br/>
+    <ul>
+      <li><a href="https://github.com/skykhs3/game-battle-pants" target="_blank">Repository</a></li>
     </ul>
   </div>
 </div>
@@ -159,24 +199,6 @@ I worked as an app developer, building the parking platform using Flutter and in
     <b>Reference</b><br/>
     <ul>
       <li><a href="https://github.com/HACKY-TALKY-2-2/team19-app" target="_blank">Repository</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="row mb-3">
-  <div class="col-auto">
-    <img src="/assets/img/resume/battle_pants.webp" class="img-fluid" alt="Battle Pants Logo" style="height:50px;width:50px;margin-top:32px;"/>
-  </div>
-  <div class="col">
-    <h3 id="Battle Pants"><b>Battle Pants</b></h3>
-    <p>This is a platformer game allowing up to 4 players to join.</p>
-    <b>Role and Responsibilities:</b><br/>
-I developed the game mechanics and multiplayer features using Unity and Photon Server<br/><br/>
-    <b>Technologies I Used:</b><br/>
-    <img src="/assets/img/resume/unity.svg" class="img-fluid" alt="Unity Logo"><br/><br/>
-    <b>Reference</b><br/>
-    <ul>
-      <li><a href="https://github.com/skykhs3/game-battle-pants" target="_blank">Repository</a></li>
     </ul>
   </div>
 </div>
