@@ -265,7 +265,7 @@ I worked on both the front-end and back-end development of the voting platform u
       <br/><br/>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="/assets/img/resume/solar_see_final_presentation.pdf">
+      <li><a href="/assets/img/resume/solar_see_final_presentation.pdf" target="_blank">
       Presentation</a></li>
       <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See" target="_blank">Repository</a></li>
     </ul>
