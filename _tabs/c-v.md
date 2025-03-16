@@ -105,7 +105,7 @@ toc: true
 ## 4. Projects
 
 
-### 4.1. Live Projects
+### 4.1. Official Projects
 <div class="row mb-3">
   <div class="col-auto">
     <img src="/assets/img/resume/ara.webp" class="img-fluid" alt="Ara Logo" style="height:50px;width:50px;margin-top:32px;"/>
@@ -119,9 +119,9 @@ toc: true
     <img src="/assets/img/resume/flutter.svg" class="img-fluid" alt="Flutter Logo"><br/><br/>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="https://github.com/sparcs-kaist/new-ara-app" target="_blank">Repository</a></li>
       <li><a href="https://apps.apple.com/kr/app/ara-for-kaist/id6457209147" target="_blank">iOS Download</a></li>
       <li><a href="https://play.google.com/store/apps/details?id=org.sparcs.newara" target="_blank">Android Download</a></li>
+      <li><a href="https://github.com/sparcs-kaist/new-ara-app" target="_blank">Repository</a></li>
     </ul>
   </div>
 </div>
@@ -132,7 +132,7 @@ toc: true
   </div>
   <div class="col">
     <h3 id="Jeong Seok Engineering"><b>Jeong Seok Engineering</b></h3>
-    <p>This is the introduction webpage for the company.</p>
+    <p>This is the introduction website for the company.</p>
     <b>Role and Responsibilities:</b><br/>
     I designed, and developed by myself. I developed the introduction webpage using Next.js and Tailwind CSS, focusing on both front-end design and performance optimization.<br/><br/>
     <b>Technologies I Used:</b><br/>
@@ -140,13 +140,15 @@ toc: true
     <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/><br/><br/>
     <b>Reference</b><br/>
     <ul>
+      <li><a href="https://jseng.fly.dev/" target="_blank">Website</a></li>
       <li><a href="https://github.com/skykhs3/project-jseng" target="_blank">Repository</a></li>
-      <li><a href="https://jseng.fly.dev/" target="_blank">URL</a></li>
     </ul>
   </div>
 </div>
 
-### 4.2 Toy Projects
+---
+
+### 4.2. Toy Projects
 <div class="row mb-3">
   <div class="col-auto">
     <img src="/assets/img/resume/naver_email.png" class="img-fluid" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:32px;"/>
@@ -164,7 +166,9 @@ toc: true
   </div>
 </div>
 
-### 4.3 Hakathon Projects
+---
+
+### 4.3. Hakathon Projects
 
 <div class="row mb-3">
   <div class="col-auto">
@@ -240,6 +244,57 @@ I worked on both the front-end and back-end development of the voting platform u
     </ul>
   </div>
 </div>
+
+---
+
+### 4.4. Social Impact Projects
+
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/solar_see.webp" class="img-fluid" alt="Solar See Logo" style="height:50px;width:50px;margin-top:32px;"/>
+  </div>
+  <div class="col">
+    <h3 id="Solar See"><b>Solar-See</b></h3>
+    <p>Solar-See is an AI-powered gaming and mapping service developed to discover undetected solar panels and thereby increase the accuracy of power demand forecasting.</p>
+    <b>Role and Responsibilities:</b><br/>
+    I developed both the frontend and backend, deployed services, and fine-tuned an image segmentation model.<br/><br/>
+    <b>Technologies I Used:</b><br/>
+      <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+      <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+      <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
+      <br/><br/>
+    <b>Reference</b><br/>
+    <ul>
+      <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See/blob/e1fcdd1cffa7af2e3b9285c06b95a3711769d271/%E1%84%8E%E1%85%AC%E1%84%8C%E1%85%A9%E1%86%BC%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD_220V.pdf">
+      Presentation</a></li>
+      <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See" target="_blank">Repository</a></li>
+    </ul>
+  </div>
+</div>
+<br/>
+
+<div class="row mb-3">
+  <div class="col">
+    <h3 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b>
+    </h3>
+    <img src="/assets/img/resume/volunteering.webp" width="80%" style="margin-top:32px; margin-left:10%;"/>
+    <li>KAIST Global Student Volunteers / Arduino Education Team Leader</li>
+    <li>January 2024</li>
+    <li>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</li>
+  </div>
+</div>
+<br/>
+
+<div class="row mb-3">
+  <div class="col">
+    <h3 id="YouTube Content"><b>YouTube Content</b></h3>
+    <div>
+     {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
+    </div>
+    <li>I participated in YouTube content with YouTubers 미미미누 and 조코딩. We created an artificial intelligence service that gives phone calls and notifications to the vulnerable elderly.</li>
+    <li>December 2024</li>
+  </div>
+</div>
 <br/>
 
 ---
@@ -284,29 +339,7 @@ I worked on both the front-end and back-end development of the voting platform u
 
 ## 8. Activities Outside of Academics
 
-<div class="row mb-3">
-  <div class="col">
-    <h3 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b>
-    </h3>
-    <img src="/assets/img/resume/volunteering.webp" width="80%" style="margin-top:32px; margin-left:10%;"/>
-    <li>KAIST Global Student Volunteers / Arduino Education Team Leader</li>
-    <li>January 2024</li>
-    <li>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</li>
-  </div>
-</div>
-<br/>
 
-<div class="row mb-3">
-  <div class="col">
-    <h3 id="YouTube Content"><b>YouTube Content</b></h3>
-    <div>
-     {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
-    </div>
-    <li>I participated in YouTube content with YouTubers 미미미누 and 조코딩. We created an artificial intelligence service that gives phone calls and notifications to the vulnerable elderly.</li>
-    <li>December 2024</li>
-  </div>
-</div>
-<br/>
 
 ---
 
