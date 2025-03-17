@@ -31,7 +31,7 @@ toc: true
     <h3 id="Bagelcode"><b>Bagelcode</b></h3>
     <p>
       Backend Developer / Club Vegas Studio server<br>
-      <b><a href="/posts/bagelcode-retrospective/">My contribution</a></b><br>
+      <b><a href="/posts/bagelcode-retrospective/">My contributions</a></b><br>
       <small>February 2024 ~ August 2024</small><br/>
       <small>Expressjs, NestJS</small><br>
     </p>
@@ -49,7 +49,7 @@ toc: true
   <div class="col">
     <h3 id="SPARCS-KAIST"><b>SPARCS-KAIST</b></h3>
     <p>App Developer / New Ara<br>
-    <b><a href="/posts/retropective-new-ara/">My contribution</a></b><br>
+    <b><a href="/posts/retropective-new-ara/">My contributions</a></b><br>
     <small>September 2020 ~ August 2025</small><br/>
     <small>Flutter</small></p>
   </div>
@@ -114,7 +114,7 @@ toc: true
     <h3 id="New Ara"><b>New Ara</b></h3>
     <p>This is the official community app for KAIST students.</p>
     <a href="/posts/retropective-new-ara/"><strong>Role and Responsibilities:</strong><br/></a>
-    I participated as an app developer using Flutter, collaborating with another team member to handle all aspects of the process, from planning to deployment.<br/><br/>
+    I participated as an app developer using Flutter and collaborated with another team member to handle all aspects of the process, from planning to deployment.<br/><br/>
     <b>Technologies I Used:</b><br/>
     <img src="/assets/img/resume/flutter.svg" class="img-fluid" alt="Flutter Logo"><br/><br/>
     <b>Reference</b><br/>
@@ -134,7 +134,7 @@ toc: true
     <h3 id="Jeong Seok Engineering"><b>Jeong Seok Engineering</b></h3>
     <p>This is the introduction website for the company.</p>
     <b>Role and Responsibilities:</b><br/>
-    I designed, and developed by myself. I developed the introduction webpage using Next.js and Tailwind CSS, focusing on both front-end design and performance optimization.<br/><br/>
+    I designed and developed it by myself. I developed the introduction webpage using Next.js and Tailwind CSS, focusing on both front-end design and performance optimization.<br/><br/>
     <b>Technologies I Used:</b><br/>
     <img src="/assets/img/resume/nextjs.svg" class="img-fluid" alt="Next.js Logo">
     <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/><br/><br/>
@@ -197,7 +197,7 @@ I developed the game mechanics and multiplayer features using Unity and Photon S
     <p>This is a Gangnam-Gu parking platform app developed during a hackathon.</p>
     <b>Role and Responsibilities:</b>
     <br/>
-I worked as an app developer, building the parking platform using Flutter and integrating Naver Map API<br/><br/>
+I worked as an app developer, building the parking platform using Flutter and integrating Naver Map API.<br/><br/>
     <b>Technologies I Used:</b><br/>
     <img src="/assets/img/resume/flutter.svg" class="img-fluid" alt="Flutter Logo"><br/><br/>
     <b>Reference</b><br/>
@@ -215,7 +215,7 @@ I worked as an app developer, building the parking platform using Flutter and in
     <h3 id="Flowlink"><b>Flowlink</b></h3>
     <p>This is a voting platform in the classroom.</p>
     <b>Role and Responsibilities:</b><br/>
-I worked on both the front-end and back-end development of the voting platform using Flutter, Express.js, and MySQL.<br/><br/>
+I worked on both front-end and back-end development for the voting platform using Flutter, Express.js, and MySQL.<br/><br/>
     <b>Technologies I Used:</b><br/>
     <img src="/assets/img/resume/flutter.svg" class="img-fluid" alt="Flutter Logo">
     <img src="/assets/img/resume/expressjs.svg" class="img-fluid" alt="Express.js Logo">
@@ -235,7 +235,7 @@ I worked on both the front-end and back-end development of the voting platform u
     <h3 id="Morning Buddy"><b>Morning Buddy</b></h3>
     <p>This is an alarm app</p>
     <b>Role and Responsibilities:</b><br/>
-    I developed the Android alarm app using Kotlin.<br/><br/>
+    I developed an Android alarm app using Kotlin.<br/><br/>
     <b>Technologies I Used:</b><br/>
     <img src="/assets/img/resume/kotlin.svg" class="img-fluid" alt="Kotlin Logo"><br/><br/>
     <b>Reference</b><br/>
@@ -255,9 +255,9 @@ I worked on both the front-end and back-end development of the voting platform u
   </div>
   <div class="col">
     <h3 id="Solar See"><b>Solar-See</b></h3>
-    <p>Solar-See is an AI-powered gaming and mapping service developed to discover undetected solar panels and thereby increase the accuracy of power demand forecasting.</p>
+    <p>Solar-See is an AI-powered gaming and map service developed to discover undetected solar panels and thereby increase the accuracy of power demand forecasting.</p>
     <b>Role and Responsibilities:</b><br/>
-    I developed both the frontend and backend, deployed services, and fine-tuned an image segmentation model.<br/><br/>
+    I developed both the frontend and backend, deployed the services, and fine-tuned an image segmentation model.<br/><br/>
     <b>Technologies I Used:</b><br/>
       <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
       <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
@@ -280,7 +280,7 @@ I worked on both the front-end and back-end development of the voting platform u
     <h3 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b>
     </h3>
     <img src="/assets/img/resume/volunteering.webp" width="80%" style="margin-top:30px; margin-left:10%;"/>
-    <li>KAIST Global Student Volunteers / Arduino Education Team Leader</li>
+    <li>KAIST Global Student Volunteers / Leader of the Arduino Education Team</li>
     <li>January 2024</li>
     <li>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</li>
   </div>
@@ -296,7 +296,7 @@ I worked on both the front-end and back-end development of the voting platform u
     <div>
      {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
     </div>
-    <li>I participated in YouTube content with YouTubers <b>미미미누</b> and <b>조코딩</b>. We created an artificial intelligence service that gives phone calls and notifications to the vulnerable elderly.</li>
+    <li>I participated in YouTube content with YouTubers <b>미미미누</b> and <b>조코딩</b>. We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people.</li>
     <li>December 2024</li>
   </div>
 </div>
@@ -334,7 +334,7 @@ I worked on both the front-end and back-end development of the voting platform u
   <li>React - Intermediate</li>
   <li>Next.js - Intermediate</li>
   <li>Tailwind CSS - Intermediate</li>
-  <li>Django - Begineer</li>
+  <li>Django - Beginner</li>
   <li>Unity - Beginner</li>
   <li>AWS - Beginner</li>
 </ul>
