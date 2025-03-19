@@ -119,9 +119,9 @@ toc: true
     <img src="/assets/img/resume/flutter.svg" class="img-fluid" alt="Flutter Logo"><br/><br/>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="https://apps.apple.com/kr/app/ara-for-kaist/id6457209147" target="_blank">iOS Download</a></li>
-      <li><a href="https://play.google.com/store/apps/details?id=org.sparcs.newara" target="_blank">Android Download</a></li>
-      <li><a href="https://github.com/sparcs-kaist/new-ara-app" target="_blank">Repository</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.sparcs.newara" target="_blank"><b>Android Download</b></a></li>
+      <li><a href="https://apps.apple.com/kr/app/ara-for-kaist/id6457209147" target="_blank"><b>iOS Download</b></a></li>
+      <li><a href="https://github.com/sparcs-kaist/new-ara-app" target="_blank"><b>Repository</b></a></li>
     </ul>
   </div>
 </div>
@@ -140,8 +140,8 @@ toc: true
     <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/><br/><br/>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="https://jseng.fly.dev/" target="_blank">Website</a></li>
-      <li><a href="https://github.com/skykhs3/project-jseng" target="_blank">Repository</a></li>
+      <li><a href="https://jseng.fly.dev/" target="_blank"><b>Website</b></a></li>
+      <li><a href="https://github.com/skykhs3/project-jseng" target="_blank"><b>Repository</b></a></li>
     </ul>
   </div>
 </div>
@@ -161,32 +161,72 @@ toc: true
       </p>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="https://github.com/skykhs3/project-naver-email-summarizer" target="_blank">Repository</a></li>
+      <li><a href="https://chromewebstore.google.com/detail/%EB%84%A4%EC%9D%B4%EB%B2%84-%EB%A9%94%EC%9D%BC-%EC%9A%94%EC%95%BD%EA%B8%B0naver-mail-summ/geddbcdppbknpoomennnelgdngolhibn" target="_blank"><b>Download</b></a></li>
+      <li><a href="https://github.com/skykhs3/project-naver-email-summarizer" target="_blank"><b>Repository</b></a></li>
     </ul>
   </div>
 </div>
 
 ---
 
-### 4.3. Hakathon Projects
+### 4.3. Social Impact Projects
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/battle_pants.webp" class="img-fluid" alt="Battle Pants Logo" style="height:50px;width:50px;margin-top:30px;"/>
+    <img src="/assets/img/resume/solar_see.webp" class="img-fluid" alt="Solar See Logo" style="height:50px;width:50px;margin-top:30px;"/>
   </div>
   <div class="col">
-    <h3 id="Battle Pants"><b>Battle Pants</b></h3>
-    <p>This is a platformer game allowing up to 4 players to join.</p>
+    <h3 id="Solar See"><b>Solar-See</b></h3>
+    <p>Solar-See is an AI-powered gaming and map service developed to discover undetected solar panels and thereby increase the accuracy of power demand forecasting.</p>
     <b>Role and Responsibilities:</b><br/>
-I developed the game mechanics and multiplayer features using Unity and Photon Server<br/><br/>
+    I developed both the frontend and backend, deployed the services, and fine-tuned an image segmentation model.<br/><br/>
     <b>Technologies I Used:</b><br/>
-    <img src="/assets/img/resume/unity.svg" class="img-fluid" alt="Unity Logo"><br/><br/>
+      <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+      <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+      <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
+      <br/><br/>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="https://github.com/skykhs3/game-battle-pants" target="_blank">Repository</a></li>
+      <li><a href="/assets/img/resume/solar_see_final_presentation.pdf" download><b>Presentation</b></a></li>
+      <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See" target="_blank"><b>Repository</b></a></li>
     </ul>
   </div>
 </div>
+<br/>
+
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/kgsv.webp" class="img-fluid" alt="KGSV Logo" style="height:50px;width:50px;margin-top:30px;"/>
+  </div>
+  <div class="col">
+    <h3 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b>
+    </h3>
+    <img src="/assets/img/resume/volunteering.webp" width="80%" style="margin-top:30px; margin-left:10%;"/>
+    <li>KAIST Global Student Volunteers / Leader of the Arduino Education Team</li>
+    <li>January 2024</li>
+    <li>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</li>
+  </div>
+</div>
+<br/>
+
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/nypc.webp" class="img-fluid" alt="NYPC Logo" style="height:50px;width:50px;margin-top:30px;"/>
+  </div>
+  <div class="col">
+    <h3 id="YouTube Content"><b>YouTube Content</b></h3>
+    <div>
+     {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
+    </div>
+    <li>I participated in YouTube content with YouTubers <b>미미미누</b> and <b>조코딩</b>. We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people.</li>
+    <li>December 2024</li>
+  </div>
+</div>
+<br/>
+
+---
+
+### 4.4. Hakathon Projects
 
 <div class="row mb-3">
   <div class="col-auto">
@@ -203,6 +243,28 @@ I worked as an app developer, building the parking platform using Flutter and in
     <b>Reference</b><br/>
     <ul>
       <li><a href="https://github.com/HACKY-TALKY-2-2/team19-app" target="_blank">Repository</a></li>
+    </ul>
+  </div>
+</div>
+
+---
+
+### 4.5. KAIST Mad Camp
+
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/battle_pants.webp" class="img-fluid" alt="Battle Pants Logo" style="height:50px;width:50px;margin-top:30px;"/>
+  </div>
+  <div class="col">
+    <h3 id="Battle Pants"><b>Battle Pants</b></h3>
+    <p>This is a platformer game allowing up to 4 players to join.</p>
+    <b>Role and Responsibilities:</b><br/>
+I developed the game mechanics and multiplayer features using Unity and Photon Server<br/><br/>
+    <b>Technologies I Used:</b><br/>
+    <img src="/assets/img/resume/unity.svg" class="img-fluid" alt="Unity Logo"><br/><br/>
+    <b>Reference</b><br/>
+    <ul>
+      <li><a href="https://github.com/skykhs3/game-battle-pants" target="_blank">Repository</a></li>
     </ul>
   </div>
 </div>
@@ -247,63 +309,6 @@ I worked on both front-end and back-end development for the voting platform usin
 
 ---
 
-### 4.4. Social Impact Projects
-
-<div class="row mb-3">
-  <div class="col-auto">
-    <img src="/assets/img/resume/solar_see.webp" class="img-fluid" alt="Solar See Logo" style="height:50px;width:50px;margin-top:30px;"/>
-  </div>
-  <div class="col">
-    <h3 id="Solar See"><b>Solar-See</b></h3>
-    <p>Solar-See is an AI-powered gaming and map service developed to discover undetected solar panels and thereby increase the accuracy of power demand forecasting.</p>
-    <b>Role and Responsibilities:</b><br/>
-    I developed both the frontend and backend, deployed the services, and fine-tuned an image segmentation model.<br/><br/>
-    <b>Technologies I Used:</b><br/>
-      <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
-      <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
-      <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
-      <br/><br/>
-    <b>Reference</b><br/>
-    <ul>
-      <li><a href="/assets/img/resume/solar_see_final_presentation.pdf" download>Presentation</a></li>
-      <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See" target="_blank">Repository</a></li>
-    </ul>
-  </div>
-</div>
-<br/>
-
-<div class="row mb-3">
-  <div class="col-auto">
-    <img src="/assets/img/resume/kgsv.webp" class="img-fluid" alt="KGSV Logo" style="height:50px;width:50px;margin-top:30px;"/>
-  </div>
-  <div class="col">
-    <h3 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b>
-    </h3>
-    <img src="/assets/img/resume/volunteering.webp" width="80%" style="margin-top:30px; margin-left:10%;"/>
-    <li>KAIST Global Student Volunteers / Leader of the Arduino Education Team</li>
-    <li>January 2024</li>
-    <li>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</li>
-  </div>
-</div>
-<br/>
-
-<div class="row mb-3">
-  <div class="col-auto">
-    <img src="/assets/img/resume/nypc.webp" class="img-fluid" alt="NYPC Logo" style="height:50px;width:50px;margin-top:30px;"/>
-  </div>
-  <div class="col">
-    <h3 id="YouTube Content"><b>YouTube Content</b></h3>
-    <div>
-     {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
-    </div>
-    <li>I participated in YouTube content with YouTubers <b>미미미누</b> and <b>조코딩</b>. We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people.</li>
-    <li>December 2024</li>
-  </div>
-</div>
-<br/>
-
----
-
 ## 5. Awards
 
 <ul>
@@ -326,19 +331,37 @@ I worked on both front-end and back-end development for the voting platform usin
 
 ## 7. Tech Stack
 
-<ul>
-  <li>Flutter - Upper Intermediate</li>
-  <li>Express.js - Upper Intermediate</li>
-  <li>C++ - Upper Intermediate</li>
-  <li>NestJS - Intermediate</li>
-  <li>React - Intermediate</li>
-  <li>Next.js - Intermediate</li>
-  <li>Tailwind CSS - Intermediate</li>
-  <li>Django - Beginner</li>
-  <li>Unity - Beginner</li>
-  <li>AWS - Beginner</li>
+<div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; font-family: sans-serif;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+<div>
+<h4 style="color: #555; margin-bottom: 10px;">Upper Intermediate</h4>
+<ul style="list-style: none; padding: 0;">
+<li style="margin-bottom: 5px;"><span style="font-weight: bold; color: #007bff;">Flutter</span></li>
+<li style="margin-bottom: 5px;"><span style="font-weight: bold; color: #007bff;">Express.js</span></li>
+<li style="margin-bottom: 5px;"><span style="font-weight: bold; color: #007bff;">C++</span></li>
 </ul>
-<br/>
+</div>
+<div>
+<h4 style="color: #555; margin-bottom: 10px;">Intermediate</h4>
+<ul style="list-style: none; padding: 0;">
+<li style="margin-bottom: 5px;"><span style="color: #28a745;">NestJS</span></li>
+<li style="margin-bottom: 5px;"><span style="color: #28a745;">React</span></li>
+<li style="margin-bottom: 5px;"><span style="color: #28a745;">Next.js</span></li>
+<li style="margin-bottom: 5px;"><span style="color: #28a745;">Tailwind CSS</span></li>
+<li style="margin-bottom: 5px;"><span style="color: #28a745;">MySQL</span></li>
+</ul>
+</div>
+<div>
+<h4 style="color: #555; margin-bottom: 10px;">Beginner</h4>
+<ul style="list-style: none; padding: 0;">
+<li style="margin-bottom: 5px;"><span style="color: #dc3545;">Django</span></li>
+<li style="margin-bottom: 5px;"><span style="color: #dc3545;">Unity</span></li>
+<li style="margin-bottom: 5px;"><span style="color: #dc3545;">AWS</span></li>
+<li style="margin-bottom: 5px;"><span style="color: #dc3545;">MongoDB</span></li>
+</ul>
+</div>
+</div>
+</div>
 
 ## 8. Military Service
 
