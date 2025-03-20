@@ -44,6 +44,12 @@ description: Cookies have several attributes that control how they behave in the
 | **HttpOnly** | JavaScript can access (`document.cookie`) | JavaScript cannot access (prevents XSS) |
 | **SameSite** | `Lax` (CSRF protection enabled) | `Strict` (stronger CSRF protection) or `None` (allows all requests) |
 
+🚀 **Secure Cookie Example:**
+```http
+Set-Cookie: session_id=xyz123; Secure; HttpOnly; SameSite=Strict; Expires=Wed, 19 Jun 2025 12:00:00 GMT
+```
+📌 This setup ensures **CSRF/XSS protection, HTTPS security, and automatic session expiration.**  
+
 ---
 
 ## 2. `Name=Value` (Cookie Name and Value)**
@@ -142,7 +148,6 @@ The cookie is sent over **both HTTP and HTTPS**
 ### 6.2. `Secure` is set
 The cookie is sent **ONLY over HTTPS**, preventing **man-in-the-middle (MITM) attacks**.
 
-📌 Example:
 ```http
 Set-Cookie: session_id=xyz123; Secure
 ```
@@ -160,7 +165,6 @@ JavaScript can **read and modify** the cookie using `document.cookie` (security 
 
 ### 7.2. `HttpOnly` is set
 JavaScript **cannot access the cookie** (prevents XSS attacks).
-📌 Example:
 ```http
 Set-Cookie: session_id=xyz123; HttpOnly
 ```
@@ -211,17 +215,11 @@ Set-Cookie: session_id=xyz123; SameSite=None; Secure
 
 ---
 
-## Conclusion
+## 9. Conclusion
 -  **If cookie attributes are not explicitly set, browsers use default values that may not be secure.**  
 - **For sensitive cookies (e.g., login sessions), always use `Secure`, `HttpOnly`, and `SameSite`.**  
 - **To prevent session expiration, set `Expires` or `Max-Age`.**  
 - **To allow cookies on subdomains, specify `Domain`.**  
-
-🚀 **Secure Cookie Example:**
-```http
-Set-Cookie: session_id=xyz123; Secure; HttpOnly; SameSite=Strict; Expires=Wed, 19 Jun 2025 12:00:00 GMT
-```
-📌 This setup ensures **CSRF/XSS protection, HTTPS security, and automatic session expiration.**  
 
 
 </div>
