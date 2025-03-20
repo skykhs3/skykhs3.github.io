@@ -52,7 +52,7 @@ Set-Cookie: session_id=xyz123; Secure; HttpOnly; SameSite=Strict; Expires=Wed, 1
 
 ---
 
-## 2. `Name=Value` (Cookie Name and Value)**
+## 2. `Name=Value` (Cookie Name and Value)
 Every cookie consists of a **name-value pair** which stores data in the browser.
 
 ```http
@@ -98,10 +98,10 @@ Set-Cookie: session_id=xyz123; Max-Age=3600
 
 ---
 
-## 4. `Domain` (Specifies Where the Cookie is Accessible)**
+## 4. `Domain` (Specifies Where the Cookie is Accessible)
 
 ###  4.1. `Domain` is NOT set
-The cookie is **only accessible from the domain that set it.
+The cookie is only accessible from the domain that set it.
 
 ```http
 Set-Cookie: auth_token=xyz123
@@ -112,7 +112,7 @@ Set-Cookie: auth_token=xyz123
 ---
 
 ### 4.2. `Domain` is set
-The cookie **can be accessed by the specified domain and all its 
+The cookie can be accessed by the specified domain and all its 
 
 ```http
 Set-Cookie: auth_token=xyz123; Domain=.example.com
