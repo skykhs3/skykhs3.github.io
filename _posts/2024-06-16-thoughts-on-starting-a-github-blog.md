@@ -5,6 +5,10 @@ date: 2024-06-16 17:00:00 +09:00
 categories: [Development, Jekyll]
 post: skykhs3
 pin: true
+image:
+  path: /assets/img/posts/2024-06-16-thoughts-on-starting-a-github-blog/jekyll_pages.webp
+  alt: Blog
+  show_in_post: false
 tags:
   [
     github,
@@ -51,6 +55,6 @@ Additionally, if you truly want to differentiate yourself from others, writing c
 
 ---
 ## 4. Continuity
-I don't know how long it will take for my posts to be read by many people and become popular. **I've been planning for at least five years**, and I'll try to accumulate my knowledge on this blog for five years or more. If the direction of the blog becomes more defined over time, I would like to focus on writing more specific articles.
+I don't know how long it will take for my posts to be read by a lot of people and become popular. **I'm going to manage my blog for at least 10 years,** and I'm going to keep trying to accumulate knowledge in the future. If the direction of my blog becomes clearer over time, I'd like to focus on writing more specific articles.
 
 </div>
