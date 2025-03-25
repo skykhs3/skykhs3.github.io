@@ -33,15 +33,15 @@ tags:
 - **Cluttered History**: The history can become cluttered. If there are many branches or frequent merges, the commit log may become messy.
 
 **Example**
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/base.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/base.png" alt="base"/>
 ```zsh
 git checkout main
 ```
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/checkout-merge.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/checkout-merge.png" alt="checkout"/>
 ```zsh
 git merge feature-branch
 ```
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/merge1.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/merge1.png" alt="merge"/>
 
 ---
 
@@ -56,17 +56,17 @@ git merge feature-branch
 - **Creating New Commit**: It generates new commits with new commit hashes, which can make tracking history more difficult.
 
 **Example**
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/base.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/base.png" alt="rebase"/>
 ```zsh
 git checkout feature-branch
 ```
 
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/checkout-rebase.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/checkout-rebase.png" alt="rebase"/>
 ```zsh
 git rebase main
 ```
 
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/rebase1.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/rebase1.png" alt="rebase"/>
 
 ```zsh
 git checkout main
@@ -74,7 +74,7 @@ git merge feature-branch
 ```
 It should be a fast-forward merge.
 
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/rebase2.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/rebase2.png" alt="rebase"/>
 
 ---
 
@@ -101,12 +101,12 @@ An 3-way merge is used when the the two branches have different commit.
 You can merge branches by a fast-forward with the `--ff` option.
 
 **Example**
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.png" alt="before"/>
 ```zsh
 git checkout main
 git merge feature-branch --ff
 ```
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/--ff.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/--ff.png" alt="ff"/>
 
 ---
 
@@ -114,12 +114,12 @@ git merge feature-branch --ff
 You can merge branches using a 3-way merge with the `--no-ff` option. This creates a merge commit, preserving the merge history.
 
 **Example**
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.png" alt="before"/>
 ```zsh
 git checkout main
 git merge feature-branch --ff
 ```
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/--no-ff.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/--no-ff.png" alt="no-ff"/>
 
 ---
 
@@ -128,11 +128,11 @@ You can squash the commits from a branch into a single commit. This does not pre
 
 **Example**
 
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.png" alt="before"/>
 ```zsh
 git checkout main
 git merge feature-branch --squash
 ```
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/--squash.png"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/--squash.png" alt="squash"/>
 
 </div>

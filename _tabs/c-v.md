@@ -137,7 +137,7 @@ toc: true
     I designed and developed it by myself. I developed the introduction webpage using Next.js and Tailwind CSS, focusing on both front-end design and performance optimization.<br/><br/>
     <b>Technologies I Used:</b><br/>
     <img src="/assets/img/resume/nextjs.svg" class="img-fluid" alt="Next.js Logo">
-    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/><br/><br/>
+    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/ alt="tailwindcss"><br/><br/>
     <b>Reference</b><br/>
     <ul>
       <li><a href="https://jseng.fly.dev/" target="_blank"><b>Website</b></a></li>
@@ -181,9 +181,9 @@ toc: true
     <b>Role and Responsibilities:</b><br/>
     I developed both the frontend and backend, deployed the services, and fine-tuned an image segmentation model.<br/><br/>
     <b>Technologies I Used:</b><br/>
-      <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
-      <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
-      <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
+      <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="react"/>
+      <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwindcss"/>
+      <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="django"/>
       <br/><br/>
     <b>Reference</b><br/>
     <ul>
@@ -201,7 +201,7 @@ toc: true
   <div class="col">
     <h3 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b>
     </h3>
-    <img src="/assets/img/resume/volunteering.webp" width="80%" style="margin-top:30px; margin-left:10%;"/>
+    <img src="/assets/img/resume/volunteering.webp" width="80%" style="margin-top:30px; margin-left:10%;" alt="volunteering"/>
     <li>KAIST Global Student Volunteers / Leader of the Arduino Education Team</li>
     <li>January 2024</li>
     <li>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</li>
