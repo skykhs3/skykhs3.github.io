@@ -12,9 +12,6 @@ tags:
   - ps
   - problem solving
 ---
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js">
-</script>
 
 <div markdown="1">
 > The SCC algorithm can be performed in O(N+M) time complexity, and there are two main methods to achieve this: Tarjan's algorithm and Kosaraju's algorithm.

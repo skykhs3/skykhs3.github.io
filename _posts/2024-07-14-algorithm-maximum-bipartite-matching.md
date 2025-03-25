@@ -14,11 +14,7 @@ tags:
   - maximum bipartite matching
   - algorithm
 ---
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js">
-</script>
 
-> 
 <div markdown="1">
 
 ## 1. Bipartite Graph 

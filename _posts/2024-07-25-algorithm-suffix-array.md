@@ -3,6 +3,7 @@ title: "Suffix Array and LCP Array"
 date: 2024-07-25 01:29:00 +09:00
 categories: [Problem Solving, Algorithm]
 post: skykhs3
+math: true
 tags:
   - suffix array
   - lcp array
@@ -11,9 +12,6 @@ tags:
   - Manber-Myers
   - Kasai's
 ---
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js">
-</script>
 
 <div markdown="1">
 > Suffix Array and LCP Array are known as the Swiss Army knife in string-related problem solving.
@@ -21,23 +19,23 @@ tags:
 ## 1. Description
 
 ### Suffix Array
-A suffix array for a string $$s$$ is an array of integers representing the starting positions of all suffixes of $$s$$ in lexicographical order. More formally, if $$s$$ is a string of length $$n$$, $$\text{suffixArray}[i]$$ indicates the starting index of the i-th smallest suffix of $$s$$ when sorted lexicographically.
+A suffix array for a string $s$ is an array of integers representing the starting positions of all suffixes of $s$ in lexicographical order. More formally, if $\text{s}$ is a string of length $\text{n}$, $\text{suffixArray}[i]$ indicates the starting index of the i-th smallest suffix of $s$ when sorted lexicographically.
 
-For example, if $$s$$ = "$$banana$$", the suffix array would be an array containing the starting positions of the suffixes "$$a$$", "$$ana$$", "$$anana$$", "$$banana$$", "$$na$$", and "$$nana$$", sorted in lexicographical order.
+For example, if $\text{s}$ = "$\text{banana}$", the suffix array would be an array containing the starting positions of the suffixes "$\text{a}$", "$\text{ana}$", "$\text{anana}$", "$\text{banana}$", "$\text{na}$", and "$\text{nana}$", sorted in lexicographical order.
 
-In this case, its suffix array is $$[5, 3, 1, 0, 4, 2]$$.
+In this case, its suffix array is $[5, 3, 1, 0, 4, 2]$.
 
 
 ### LCP Array
-**The Longest Common Prefix (LCP)** array for a string s is an array that stores the lengths of the longest common prefixes between consecutive suffixes in the suffix array. Specifically, if suffixArray is the suffix array of s, then the LCP array LCP is defined such that $$\text{LCP}[i]$$ is the length of the longest common prefix between the suffixes starting at $$\text{suffixArray}[i]$$ and $$\text{suffixArray}[i-1]$$.
+**The Longest Common Prefix (LCP)** array for a string s is an array that stores the lengths of the longest common prefixes between consecutive suffixes in the suffix array. Specifically, if suffixArray is the suffix array of s, then the LCP array LCP is defined such that $\text{LCP}[i]$ is the length of the longest common prefix between the suffixes starting at $\text{suffixArray}[i]$ and $\text{suffixArray}[i-1]$.
 
-For instance, if $$s$$ = "$$banana$$", the suffix array will represent the suffixes "$$a$$", "$$ana$$", "$$anana$$", "$$banana$$", "$$na$$", and "$$nana$$", then the LCP array will provide the lengths of the common prefixes between adjacent suffixes in this order.
+For instance, if $\text{s}$ = "$\text{banana}$", the suffix array will represent the suffixes "$\text{a}$", "$\text{ana}$", "$\text{anana}$", "$\text{banana}$", "$\text{na}$", and "$\text{nana}$", then the LCP array will provide the lengths of the common prefixes between adjacent suffixes in this order.
 
-In this case, its LCP array is $$[null, 1, 3, 0, 0, 2]$$
+In this case, its LCP array is $[null, 1, 3, 0, 0, 2]$
 ## 2. Code
-A Suffix Array can be obtained using the Manber-Myers algorithm. If we use quicksort, the time complexity is $$O(Nlog^2N)$$. If we use counting sort, the time complexity is $$O(NlogN)$$.
+A Suffix Array can be obtained using the Manber-Myers algorithm. If we use quicksort, the time complexity is $O(Nlog^2N)$. If we use counting sort, the time complexity is $O(NlogN)$.
 
-We can also obtain a LCP Array from a Suffix Array using Kasai's algorithm. It's time complexity is $$O(N)$$
+We can also obtain a LCP Array from a Suffix Array using Kasai's algorithm. It's time complexity is $O(N)$
 
 ```c++
 #include <bits/stdc++.h>
@@ -145,26 +143,26 @@ int main(){
 
 String: "**banana**"
 
-| i | Suffix |Suffix Array | iSA | LCP Array
-|-|-|-|-
-| 0 | a | 5 | 3 | null
-| 1 | ana | 3 | 2 | 1
-| 2 | anana | 1 | 5 | 3
-| 3 | banana | 0 | 1 | 0
-| 4 | na | 4 | 4 | 0
-| 5 | nana | 2 | 0 | 2
+| i   | Suffix | Suffix Array | iSA | LCP Array |
+| --- | ------ | ------------ | --- |
+| 0   | a      | 5            | 3   | null      |
+| 1   | ana    | 3            | 2   | 1         |
+| 2   | anana  | 1            | 5   | 3         |
+| 3   | banana | 0            | 1   | 0         |
+| 4   | na     | 4            | 4   | 0         |
+| 5   | nana   | 2            | 0   | 2         |
 
 
 **Ordered by iSA**
 
-| iSA | Suffix | LCP Array
-|-|-|-
-| 0 | banana | 0
-| 1 | anana | 3
-| 2 | nana | 2
-| 3 | ana | 1
-| 4 | na | 0 
-| 5 | a | null
+| iSA | Suffix | LCP Array |
+| --- | ------ | --------- |
+| 0   | banana | 0         |
+| 1   | anana  | 3         |
+| 2   | nana   | 2         |
+| 3   | ana    | 1         |
+| 4   | na     | 0         |
+| 5   | a      | null      |
 
 
 > [You can test your code here](https://www.acmicpc.net/problem/9248){:target="_blank"}

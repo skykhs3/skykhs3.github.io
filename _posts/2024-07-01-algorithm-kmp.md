@@ -3,6 +3,7 @@ title: "KMP(Knuth-Morris-Pratt) Algorithm"
 date: 2024-07-01 13:00:00 +09:00
 categories: [Problem Solving, Algorithm]
 post: skykhs3
+math: true
 tags:
   [
     kmp algorithm,
@@ -34,9 +35,9 @@ tags:
 Let's suppose there are two strings, A and B.
 The length of A is N and the length of B is M.
 We can find out where B is included in A using the KMP algorithm.
-The time complexity of this algorithm is $$O(N + M)$$.
+The time complexity of this algorithm is $\text{O(N + M)}$.
 
-For example, if A is "abacabacabad" and B is "abacabad", we can determine where B is included within A ( i=5 ) in $$O(\text{length of A + length of B})$$ time complexity.
+For example, if A is "abacabacabad" and B is "abacabad", we can determine where B is included within A ( i=5 ) in $\text{O(length of A + length of B)}$ time complexity.
 
 ---
 
@@ -56,7 +57,7 @@ Let's temporarily set aside how to compute pi and assume that we have already co
 ## 3. The Main Process of KMP
 Let's suppose there are two strings A( = "**abacabacabad**") and B( = "**abacabad**").
 
-In $$O(N^2)$$ time complexity, you may write this code to find out where B is included in A.
+In $\text{O(N^2)}$ time complexity, you may write this code to find out where B is included in A.
 
 ```c++
 vector<int> sample(string A, string B){
