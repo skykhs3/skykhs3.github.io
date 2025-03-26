@@ -137,7 +137,7 @@ toc: true
     I designed and developed it by myself. I developed the introduction webpage using Next.js and Tailwind CSS, focusing on both front-end design and performance optimization.<br/><br/>
     <b>Technologies I Used:</b><br/>
     <img src="/assets/img/resume/nextjs.svg" class="img-fluid" alt="Next.js Logo">
-    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/ alt="tailwindcss"><br/><br/>
+    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwindcss"/><br/><br/>
     <b>Reference</b><br/>
     <ul>
       <li><a href="https://jseng.fly.dev/" target="_blank"><b>Website</b></a></li>
