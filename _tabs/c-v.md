@@ -309,7 +309,7 @@ I worked on both front-end and back-end development for the voting platform usin
 
 ---
 
-## 5. Competition Prize
+## 5. Competitions
 
 
 <div class="row mb-3">
