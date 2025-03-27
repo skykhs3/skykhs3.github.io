@@ -31,7 +31,7 @@ toc: true
     <h3 id="Bagelcode"><b>Bagelcode</b></h3>
     <p>
       Backend Developer / Club Vegas Studio server<br>
-      <b><a href="/posts/bagelcode-retrospective/">My contributions</a></b><br>
+      <b><a href="/posts/bagelcode-retrospective/" target="_blank">My contributions</a></b><br>
       <small>February 2024 ~ August 2024</small><br/>
       <small>Expressjs, NestJS</small><br>
     </p>
@@ -49,7 +49,7 @@ toc: true
   <div class="col">
     <h3 id="SPARCS-KAIST"><b>SPARCS-KAIST</b></h3>
     <p>App Developer / New Ara<br>
-    <b><a href="/posts/retropective-new-ara/">My contributions</a></b><br>
+    <b><a href="/posts/retropective-new-ara/" target="_blank">My contributions</a></b><br>
     <small>September 2020 ~ August 2025</small><br/>
     <small>Flutter</small></p>
   </div>
@@ -67,7 +67,7 @@ toc: true
       Tech Department<br>
       <small>March 2019 ~ August 2020</small><br/>
       <small><a href="https://www.youtube.com/watch?v=eRp0Q8maqhk" target="_blank" >The 1st GRAFFITI Festival</a></small><br>
-      <small><a href="https://www.youtube.com/@ICISTSKAIST">YouTube channel</a></small>
+      <small><a href="https://www.youtube.com/@ICISTSKAIST" target="_blank">YouTube channel</a></small>
     </p>
   </div>
 </div>
@@ -166,6 +166,24 @@ toc: true
     </ul>
   </div>
 </div>
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/blog_logo.webp" class="img-fluid" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:30px;"/>
+  </div>
+  <div class="col">
+    <h3><b>TypeScript & Express Tutorial (KOR) </b></h3>
+      <p>
+      I created a website and materials where students can learn Typescript and express.
+      </p>
+    <b>Reference</b><br/>
+    <ul>
+      <li><a href="https://edu.techceo.kr/" target="_blank"><b>Website</b></a></li>
+      <li><a href="https://github.com/skykhs3/education-typescript-express/blob/main/slides.pdf" target="_blank"><b>Learning Materials</b></a></li>
+      <li><a href="https://github.com/skykhs3/education-typescript-express" target="_blank"><b>Repository</b></a></li>
+
+    </ul>
+  </div>
+</div>
 
 ---
 
@@ -187,7 +205,7 @@ toc: true
       <br/><br/>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="/assets/img/resume/solar_see_final_presentation.pdf" download><b>Presentation</b></a></li>
+      <li><a href="/assets/img/resume/solar_see_final_presentation.pdf" target="_blank"><b>Presentation</b></a></li>
       <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See" target="_blank"><b>Repository</b></a></li>
     </ul>
   </div>
