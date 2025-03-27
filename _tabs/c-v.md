@@ -309,13 +309,28 @@ I worked on both front-end and back-end development for the voting platform usin
 
 ---
 
-## 5. Awards
+## 5. Competition Prize
 
-<ul>
-  <li><b>Gold Medal</b> in the 2016 Korea Olympiad in Informatics (High School Division Final Round)</li>
-  <li>Bronze Medal in the 1st Nexon Youth Programming Challenge (NYPC 2016)</li>
-</ul>
-<br/>
+
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/koi_prize.webp" alt="KOI Award Certificate" style="width:50px; margin-top:30px;"/>
+  </div>
+   <div class="col">
+    <h3 id="2016 KOI"><b>Gold Medal in the 2016 Korea Olympiad in Informatics</b></h3>
+    <p>3rd place in the final round</p>
+  </div>  
+</div>
+
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/nypc_prize.webp" alt="KOI Award Certificate" style="width:50px; margin-top:30px;"/>
+  </div>
+   <div class="col">
+    <h3 id="1th NYPC"><b>Bronze Medal in the 1st Nexon Youth Programming Challenge</b></h3>
+    <p>2016 NYPC</p>
+  </div>
+</div>
 
 ---
 
