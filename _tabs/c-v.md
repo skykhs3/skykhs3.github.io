@@ -244,7 +244,7 @@ toc: true
 
 ---
 
-### 4.4. Hakathon Projects
+### 4.4. Hackathon Projects
 
 <div class="row mb-3">
   <div class="col-auto">
