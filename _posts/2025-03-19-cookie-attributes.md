@@ -21,34 +21,38 @@ description: Cookies have several attributes that control how they behave in the
 <div markdown="1">
 - Because the browser is smart, it automatically manages and stores cookies.
 - When saving cookies in your browser, you can use the `Set-Cookie` response header to save cookies in your browser and control properties.
+- Moreover, developers need to know how **backend frameworks automatically** set up `set-cookie`.
 
 ## 1. Overview
 
-| **Attribute** | **Description** | **Example** |
-|-|-|
-| **`Name=Value`** | Defines the name and value of the cookie | `session_id=abc123` |
-| **`Expires` / `Max-Age`** | Specifies when the cookie should expire | `Expires=Wed, 19 Jun 2025 12:00:00 GMT` |
-| **`Domain`** | Specifies which domain can access the cookie | `Domain=.example.com` |
-| **`Path`** | Restricts the cookie to a specific URL path | `Path=/account/` |
-| **`Secure`** | Ensures the cookie is sent only over HTTPS | `Secure` |
-| **`HttpOnly`** | Prevents JavaScript from accessing the cookie | `HttpOnly` |
-| **`SameSite`** | Controls how cookies are sent with cross-site requests | `SameSite=Strict` |
+| **Attribute**             | **Description**                                        | **Example**                             |
+| ------------------------- | ------------------------------------------------------ |
+| **`Name=Value`**          | Defines the name and value of the cookie               | `session_id=abc123`                     |
+| **`Expires` / `Max-Age`** | Specifies when the cookie should expire                | `Expires=Wed, 19 Jun 2025 12:00:00 GMT` |
+| **`Domain`**              | Specifies which domain can access the cookie           | `Domain=.example.com`                   |
+| **`Path`**                | Restricts the cookie to a specific URL path            | `Path=/account/`                        |
+| **`Secure`**              | Ensures the cookie is sent only over HTTPS             | `Secure`                                |
+| **`HttpOnly`**            | Prevents JavaScript from accessing the cookie          | `HttpOnly`                              |
+| **`SameSite`**            | Controls how cookies are sent with cross-site requests | `SameSite=Strict`                       |
 
+---
 
-| **Attribute** | **Default Behavior (If Not Set)** | **When Explicitly Set** |
-|--------------|--------------------------------|--------------------------|
-| **Expires** | Session cookie (deleted when browser closes) | Persistent until a specific date |
-| **Domain** | Only available on the current domain | Accessible on subdomains |
-| **Path** | Current path and subdirectories | Limited to a specific path |
-| **Secure** | Sent over HTTP & HTTPS (security risk) | Sent only over HTTPS (prevents MITM attacks) |
-| **HttpOnly** | JavaScript can access (`document.cookie`) | JavaScript cannot access (prevents XSS) |
-| **SameSite** | `Lax` (CSRF protection enabled) | `Strict` (stronger CSRF protection) or `None` (allows all requests) |
+| **Attribute** | **Default Behavior (If Not Set)**            | **When Explicitly Set**                                             |
+| ------------- | -------------------------------------------- | ------------------------------------------------------------------- |
+| **Expires**   | Session cookie (deleted when browser closes) | Persistent until a specific date                                    |
+| **Domain**    | Only available on the current domain         | Accessible on subdomains                                            |
+| **Path**      | Current path and subdirectories              | Limited to a specific path                                          |
+| **Secure**    | Sent over HTTP & HTTPS (security risk)       | Sent only over HTTPS (prevents MITM attacks)                        |
+| **HttpOnly**  | JavaScript can access (`document.cookie`)    | JavaScript cannot access (prevents XSS)                             |
+| **SameSite**  | `Lax` (CSRF protection enabled)              | `Strict` (stronger CSRF protection) or `None` (allows all requests) |
 
-🚀 **Secure Cookie Example:**
+---
+
+📌 **Secure Cookie Example:**
 ```http
-Set-Cookie: session_id=xyz123; Secure; HttpOnly; SameSite=Strict; Expires=Wed, 19 Jun 2025 12:00:00 GMT
+Set-Cookie: session_id=xyz123; Secure; HttpOnly; SameSite=Lax; Expires=Wed, 19 Jun 2025 12:00:00 GMT
 ```
-📌 This setup ensures **CSRF/XSS protection, HTTPS security, and automatic session expiration.**  
+This setup ensures **CSRF/XSS protection, HTTPS security, and automatic session expiration.**  
 
 ---
 
@@ -123,7 +127,7 @@ Set-Cookie: auth_token=xyz123; Domain=.example.com
 
 ## 5. `Path` (Restricting Cookie Usage to Specific Paths)
 ### 5.1. `Path` is NOT set
-The cookie is **available for the directory where it was set and its subdirectories**.
+Path is defaulted to the path of the request URL that set the cookie (e.g. `/login/`), and applies to that path and its subpaths (e.g. `/login/reset`).
 
 ---
 
@@ -140,13 +144,13 @@ Set-Cookie: user_token=abc123; Path=/account/
 ---
 
 ## 6. `Secure` (Restricting Cookies to HTTPS Only)
-### 6.1. `Secure` is NOT set
-The cookie is sent over **both HTTP and HTTPS**
 
----
-
-### 6.2. `Secure` is set
-The cookie is sent **ONLY over HTTPS**, preventing **man-in-the-middle (MITM) attacks**.
+| Situation         | Cookie Stored?(Response) | Cookie Sent?(Request) |
+| ----------------- | ------------------------ | --------------------- |
+| HTTP + Secure     | ❌ No                     | ❌ No                  |
+| HTTP + no Secure  | ✅ Yes                    | ✅ Yes                 |
+| HTTPS + Secure    | ✅ Yes                    | ✅ Yes                 |
+| HTTPS + no Secure | ✅ Yes                    | ✅ Yes                 |
 
 ```http
 Set-Cookie: session_id=xyz123; Secure
@@ -182,24 +186,24 @@ Set-Cookie: session_id=xyz123; HttpOnly
 - `SameSite` controls **whether cookies are sent with cross-site requests**.
 - Cookies will automatically be included in the request if they are of the same origin.
 
-| **SameSite Value** | **Behavior** |
-|------------------|--------------------------------|
-| **`Strict`** | Cookie is **only sent for same-site requests** (most secure). |
-| **`Lax`** | Cookie is **sent when users click a link but not with other cross-site requests**. (Default) |
-| **`None`** | Cookie is **sent with all requests, even from other sites** (must be `Secure`). |
+| **SameSite Value**  | **Behavior**                                                                       |
+| ------------------- | ---------------------------------------------------------------------------------- |
+| **`Strict`**        | Cookie is **only sent for same-site requests** (most secure).                      |
+| **`Lax`** (Default) | Cookie is **sent when users click a link but not with other cross-site requests**. |
+| **`None`**          | Cookie is **sent with all requests, even from other sites** (must be `Secure`).    |
 
 ---
 
-### 8.1. (`Lax`, `SameSite` is Not set):
+### 8.1. (`Lax` == `SameSite` is Not set):
 ```http
 Set-Cookie: session_id=xyz123; SameSite=Lax
 ```
 ✅ **Cross-site automatic requests (like `fetch`,`<img>`,`<iframe>`,`XMLHttpRequest`) will not include the cookie**, preventing CSRF attacks.  
-✅ **If a user clicks a link(`<a hef>`), the cookie will be sent**.
+✅ **If a user clicks a link(`<a href>`), the cookie will be sent**.
 
 ---
 
-### 8.2. (`Strict`, maximum security):
+### 8.2. (`Strict` == maximum security):
 ```http
 Set-Cookie: session_id=xyz123; SameSite=Strict
 ```
@@ -207,7 +211,7 @@ Set-Cookie: session_id=xyz123; SameSite=Strict
 
 ---
 
-### 8.3. (`None`, allows all requests):
+### 8.3. (`None` == allows all requests):
 ```http
 Set-Cookie: session_id=xyz123; SameSite=None; Secure
 ```
@@ -215,11 +219,38 @@ Set-Cookie: session_id=xyz123; SameSite=None; Secure
 
 ---
 
-## 9. Conclusion
--  **If cookie attributes are not explicitly set, browsers use default values that may not be secure.**  
-- **For sensitive cookies (e.g., login sessions), always use `Secure`, `HttpOnly`, and `SameSite`.**  
-- **To prevent session expiration, set `Expires` or `Max-Age`.**  
-- **To allow cookies on subdomains, specify `Domain`.**  
+## 9. `fetch`
 
+>Referenced from [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#including_credentials){:target="_blank"}
+{: .prompt-info }
+
+In many cases, developers use `fetch` function with the credential option to request a server. For security, it is important to consider the appropriate credential option.
+
+
+```js
+fetch('https://api.example.com/profile', {
+  credentials: 'include'
+});
+```
+ 
+| **Credentials**             | **Behavior**                                                                  |
+| --------------------------- | ----------------------------------------------------------------------------- |
+| **`omit`**                  | never send credentials in the request or include credentials in the response. |
+| **`same-origin`** (Default) | only send and include credentials for same-origin requests.                   |
+| **`include`**               | always include credentials, even cross-origin.                                |
+
+---
+
+> However, the sameSite attribute of cookie take precedence over the credential option of `fetch`
+{: .prompt-warning}
+
+| Condition                      | GET Request                  | POST Request                 |
+| ------------------------------ | ---------------------------- | ---------------------------- |
+| same-origin                    | ✅ Cookies sent automatically | ✅ Cookies sent automatically |
+| cross-origin + SameSite=Lax    | ✅ (conditionally allowed)    | ❌ Blocked                    |
+| cross-origin + SameSite=None   | ✅ (credentials: 'include')   | ✅ (credentials: 'include')   |
+| cross-origin + SameSite=Strict | ❌ Blocked                    | ❌ Blocked                    |
+
+---
 
 </div>
