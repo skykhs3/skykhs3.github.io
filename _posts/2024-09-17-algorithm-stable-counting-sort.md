@@ -17,9 +17,11 @@ tags:
 
 ## 1. What is a stable sort?
 
-Consider the list [ $a, b, c, d, e, f$ ], where $a = b < c < d < e = f$. <br/> If this list is shuffled ( for example, [ $f, e, d, c, b, a$ ] ) and then sorted, the resulting order could be [ $a, b, c, d, e, f$ ], [ $b, a, c, d, e, f$ ], [ $a, b, c, d, f, e$ ], or [ $b, a, c, d, f, e$ ].
+Consider the list [ $a, b, c, d, e, f$ ], where $a = b > c > d > e = f$. <br/> If this list is sorted, the resulting order could be [ $f, e, d, c, b, a$ ], [ $f, e, d, c, a, b$ ], [ $e, f, d, c, b, a$ ], or [ $e, f, c, d, a, b$ ].
 
-If we don't care about the initial shuffled order, all four results are possible outcomes of an unstable sort. However, if we do consider the shuffled order, only the result [ $b, a, c, d, f, e$ ] is valid, since in the shuffled list, $f$ precedes $e$ and $b$ precedes $a$.
+If we do consider the original order, the sorting result must preserve the relative order of elements with equal values. For example, if in the original list $e$ comes before $f$, and $a$ before $b$, then a stable sort must place $e$ before $f$, and $a$ before $b$ in the output.
+
+The result of a stable sort is only [ $e, f, c, d, a, b$ ].
 
 **If we don't consider the initial order, it is an unstable sort.**
 **If we consider the initial order and maintain the relative order of elements with equal values, it is a stable sort.**
@@ -57,8 +59,15 @@ vector<int> unstableCountingSort(const vector<int> &a) {
 We could perform a stable counting sort with **cumulative sum array**.
 ```c++
 template <typename T>
+int getValueOf(const T& elem) {
+  // The function `getValueOf()` extracts the key used for sorting.
+  // For primitive types like integers, this could simply return the value itself.
+  // For user-defined types, it can return an integer attribute used for ordering.
+}
+
+template <typename T>
 vector<T> stableCountingSort(const vector<T> &a) {
-  vector<int> count(MAX_SIZE_OF_ELEMENTS + 1), prefixSum(MAX_SIZE_OF_ELEMENTS + 1);
+  vector<int> count(MAX_VALUE_RANGE + 1), prefixSum(MAX_VALUE_RANGE + 1);
   vector<T> sorted(a.size());
 
   // Step 1: Count the occurrences of each element based on their value from getValueOf()
@@ -67,7 +76,7 @@ vector<T> stableCountingSort(const vector<T> &a) {
   
   // Step 2: Build the cumulative sum (prefix sum) array
   prefixSum[0] = count[0];
-  for (int i = 1; i <= MAX_SIZE_OF_ELEMENTS; i++)
+  for (int i = 1; i <= MAX_VALUE_RANGE; i++)
     prefixSum[i] = prefixSum[i - 1] + count[i];
 
   // Step 3: Place the elements in the correct position in the sorted array
