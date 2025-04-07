@@ -35,39 +35,42 @@ I developed both the **frontend(React)** and **backend(Django)**, deployed the s
 
 ## 3. Architecture
 
-### 3.1 Training Model
+### 3.1. Training Model
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[National Geographic Information Institute] -->|Aerial Photos| B[GPU Server]
 
 ```
 
-### 3.2 Pre Processing
+### 3.2. Pre Processing
 ```mermaid
-flowchart LR
+flowchart TD
     A[National Geographic Information Institute] -->|Aerial Photos| B[Trained AI Model]
-    A[National Geographic Information Institute] -->|Aerial Photos| D[Storage]
     A[National Geographic Information Institute] -->|Metadata| C[Coordinate Converter]
     B[Trained AI Model] -->|Solar panel x,y pixel coordinates on photos| C[Coordinate Converter]
-    C[Coordinate Converter] -->|Solar panel longitude, latitude| E[Database]
+    C[Coordinate Converter] -->|Solar panel longitude, latitude| E[Database; SQLite]
 ```
 
-### 3.3 Service
+### 3.3. Service
 ```mermaid
-flowchart LR
-    A[Client] <--> B[Nginx]
-    B[Nginx] <--> C[Bundled Frontend Files]
-    B[Nginx] <--> D[Gunicorn]
-    D[Gunicorn] <--> E[Django]
-    E[Django] <--> F[SQLite]
+flowchart TD
+    A[Client] <-->  B
+    subgraph Personal Server 
+        B[Nginx] <--> C[Bundled Frontend Files]
+        B <--> D[Gunicorn]
+        D <--> E[Django]
+        E <--> F[SQLite]
+        B <--> G[Aerial Images]
+    end
+
 ```
 
 ## 3. Tech Stacks
 
-We chose React and Django + Django REST Framework because our team is already familiar with these technologies.
+We chose React and Django + Django REST Framework because our team is already familiar with these technologies. We saved over 50GB of images for training the model and developing the service.
 
-### 3.1 Django REST Framework
+### 3.1. Django REST Framework
 **Pros:**
 - Many AI modules are available in Python
 - Built-in ORM (Django ORM) and built-in JSON conversion (serializers)
@@ -76,10 +79,10 @@ We chose React and Django + Django REST Framework because our team is already fa
 **Cons:**
 - Limited flexibility
 
-### 3.2 Nginx
+### 3.2. Nginx
 - Its asynchronous, event-driven architecture makes it highly efficient at handling concurrent connections. It's especially fast at serving static files.
 
-### 3.2.1 High-level features (HTTP optimizations)
+### 3.2.1. High-level features (HTTP optimizations)
 **1. gzip / brotli – Compression**
 
 These compress your static files (like HTML, CSS, JS) before sending them to the browser.<br/>
@@ -94,7 +97,7 @@ If the file hasn’t changed, the browser can use the cached version instead of 
 The browser asks: “Has this file been updated since last time?”<br/>
 If not, the server just says "No need to re-download" (sends 304 Not Modified).<br/>
 
-### 3.2.2 Low-level features (System-level speed boosts)
+### 3.2.2. Low-level features (System-level speed boosts)
 **1. sendfile – Skip the middle step**<br/>
 Normally, files go from disk → memory → network.<br/>
 With sendfile, the OS sends the file directly from disk to network.<br/>
@@ -108,7 +111,7 @@ Useful when serving the same files repeatedly.<br/>
 It avoids copying data between parts of the system (like memory and disk).<br/>
 
 
-### 3.3 SQLite
+### 3.3. SQLite
 **Pros:**
 
 - Django supports SQLite as the default database.
@@ -121,13 +124,13 @@ It avoids copying data between parts of the system (like memory and disk).<br/>
 
 - As a serverless RDBMS, it cannot be accessed directly from external networks.
 
-### 3.4 Ultralytics
+### 3.4. Ultralytics
 **Pros:**
 
 - If the training data is well-labeled, fine-tuning can be done easily with just a few commands.
 - This framework has good pre-trained models.
 
-### 3.4.1 How to fine-turn model?
+### 3.4.1. How to fine-turn model?
 To be written...
 
 ## 4. Gunicorn?? It's weird for me.
@@ -137,7 +140,7 @@ In Node.js, I was used to creating standalone HTTP servers, so simply porting it
 
 However, Django introduces a unique concept: the separation between the **WSGI (Web Server Gateway Interface) server** and the **WSGI(web server gateway interface) application**
 
-## 4.1 WSGI Server, WSGI Application
+### 4.1. WSGI Server, WSGI Application
 
 - The WSGI application handles business logic.
 
@@ -146,7 +149,7 @@ However, Django introduces a unique concept: the separation between the **WSGI (
 This separation of concerns is a good design principle. It allows the WSGI application to be swapped out easily (e.g., from WSGI to ASGI).
 
 
-## 4.2  Node.js vs. Django + DRF
+### 4.2.  Node.js vs Django + DRF
 
 For example, if you want to use HTTP/2 in Node.js, you'd need to import the http2 module and change the code accordingly.
 In Django, on the other hand, you just need to switch the WSGI server.
@@ -156,3 +159,42 @@ In Django, on the other hand, you just need to switch the WSGI server.
 | Self-HTTP Server  | O (default built-in)        | X (external server required)     |
 | Design Philosophy | Server + Runtime All-in-One | App Logic Only, Server is Needed |
 | Deployment        | simple and low flexibility  | complex and high flexibility     |
+
+### 4.3. Spring Boot Application vs Django
+
+
+| Concept                    | Spring Boot Application                                   | Django                                                      |
+| -------------------------- | --------------------------------------------------------- | ----------------------------------------------------------- |
+| Web Application            | Spring Boot application                                   | Django project                                              |
+| Web Server / HTTP Handler  | Embedded Tomcat (included by default)                     | External Gunicorn (requires separate setup)                 |
+| Request Handling & Routing | Tomcat receives HTTP requests and forwards them to Spring | Gunicorn receives HTTP requests and forwards them to Django |
+| Replaceable?               | Can be replaced with Jetty, Undertow, etc.                | Can be replaced with uWSGI, Daphne, etc.                    |
+
+
+### 5. Points to improve
+It ended with the development of MVP without considering the situation where there are many users. If there are many users, each service will be converted into a container and the following architecture will be considered.
+
+```mermaid
+flowchart TD
+    A[Client Request] --> N[Nginx]
+
+    N --> C1
+    N --> C2
+    N --> C3[Bundled Frontend Files]
+
+    subgraph Container_1 [Uvicorn Container 1]
+        C1[Uvicorn Instance 1]
+        C1 --> W1[ASGI Worker]
+        W1 --> D1[Django ASGI App]
+    end
+
+    subgraph Container_2 [Uvicorn Container 2]
+        C2[Uvicorn Instance 2]
+        C2 --> W2[ASGI Worker]
+        W2 --> D2[Django ASGI App]
+    end
+
+    D1 --> E1[Database Server]
+    D2 --> E1[Database Server]
+
+```
