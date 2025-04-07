@@ -30,10 +30,12 @@ toc: true
   <div class="col">
     <h3 id="Bagelcode"><b>Bagelcode</b></h3>
     <p>
-      Backend Developer / Club Vegas Studio server<br>
-      <b><a href="/posts/bagelcode-retrospective/" target="_blank">My contributions</a></b><br>
+      Backend Developer / Club Vegas Studio server<br><br>
+      <b>My contributions</b><br>
+      I developed a game backend API server, an in-house administrator website frontend, and a payment website frontend.<br>
+      <a href="/posts/bagelcode-retrospective/"><strong>More Details</strong><br/><br></a>
       <small>February 2024 ~ August 2024</small><br/>
-      <small>Expressjs, NestJS</small><br>
+      <small>Expressjs, NestJS, Typescript</small><br>
     </p>
   </div>
 </div>
@@ -48,10 +50,17 @@ toc: true
   </div>
   <div class="col">
     <h3 id="SPARCS-KAIST"><b>SPARCS-KAIST</b></h3>
-    <p>App Developer / New Ara<br>
-    <b><a href="/posts/retropective-new-ara/" target="_blank">My contributions</a></b><br>
-    <small>September 2020 ~ August 2025</small><br/>
-    <small>Flutter</small></p>
+    <p>
+      Backend Developer / Clubs Beta<br>
+      <small>September 2024 ~ August 2025</small><br/>
+      <small>NestJS</small>
+    </p>
+    <p>
+      App Developer / New Ara<br>
+      <small>September 2020 ~ January 2024</small><br/>
+      <small>Flutter</small>
+    </p>
+    <a href="/posts/retrospective-new-ara/"><strong>More Details</strong><br/><br/></a>
   </div>
 
 </div>
@@ -112,9 +121,10 @@ toc: true
   </div>
   <div class="col">
     <h3 id="New Ara"><b>New Ara</b></h3>
-    <p>This is the official community app for KAIST students.</p>
-    <a href="/posts/retropective-new-ara/"><strong>Role and Responsibilities:</strong><br/></a>
-    I participated as an app developer using Flutter and collaborated with another team member to handle all aspects of the process, from planning to deployment.<br/><br/>
+    <p>This is the official community app for KAIST students supported by KAIST.</p>
+    <strong>Role and Responsibilities:</strong><br/>
+    I participated as an app developer using Flutter and collaborated with another team member to handle all aspects of the process, from planning to deployment.<br/>
+    <a href="/posts/retrospective-new-ara/"><strong>More Details</strong><br/><br/></a>
     <b>Technologies I Used:</b><br/>
     <img src="/assets/img/resume/flutter.svg" class="img-fluid" alt="Flutter Logo"><br/><br/>
     <b>Reference</b><br/>
@@ -132,12 +142,14 @@ toc: true
   </div>
   <div class="col">
     <h3 id="Jeong Seok Engineering"><b>Jeong Seok Engineering</b></h3>
-    <p>This is the introduction website for the company.</p>
+    <p>This is the company introduction website I received outsourcing.</p>
     <b>Role and Responsibilities:</b><br/>
     I designed and developed it by myself. I developed the introduction webpage using Next.js and Tailwind CSS, focusing on both front-end design and performance optimization.<br/><br/>
     <b>Technologies I Used:</b><br/>
     <img src="/assets/img/resume/nextjs.svg" class="img-fluid" alt="Next.js Logo">
     <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwindcss"/><br/><br/>
+
+    
     <b>Reference</b><br/>
     <ul>
       <li><a href="https://jseng.fly.dev/" target="_blank"><b>Website</b></a></li>
@@ -197,7 +209,8 @@ toc: true
     <h3 id="Solar See"><b>Solar-See</b></h3>
     <p>Solar-See is an AI-powered gaming and map service developed to discover undetected solar panels and thereby increase the accuracy of power demand forecasting.</p>
     <b>Role and Responsibilities:</b><br/>
-    I developed both the frontend and backend, deployed the services, and fine-tuned an image segmentation model.<br/><br/>
+    I developed main backend, deployed the services, and fine-tuned an image segmentation model.<br/>
+    <a href="/posts/retrospective-kakao-impact/"><strong>More Details</strong><br/><br/></a>
     <b>Technologies I Used:</b><br/>
       <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="react"/>
       <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwindcss"/>
@@ -222,7 +235,7 @@ toc: true
     <img src="/assets/img/resume/volunteering.webp" width="80%" style="margin-top:30px; margin-left:10%;" alt="volunteering"/>
     <li>KAIST Global Student Volunteers / Leader of the Arduino Education Team</li>
     <li>January 2024</li>
-    <li>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</li>
+    <li>Yayasan Pendidikan Santo Lukas Penginjil, <b>Jakarta, Indonesia</b></li>
   </div>
 </div>
 <br/>
@@ -236,7 +249,7 @@ toc: true
     <div>
      {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
     </div>
-    <li>I participated in YouTube content with YouTubers <b>미미미누</b> and <b>조코딩</b>. We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people.</li>
+    <li>I participated in a coding YouTube content for teenagers with YouTubers <b>미미미누</b> and <b>조코딩</b>. We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people.</li>
     <li>December 2024</li>
   </div>
 </div>
@@ -367,7 +380,7 @@ I worked on both front-end and back-end development for the voting platform usin
 <div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; font-family: sans-serif;">
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
 <div>
-<h4 style="color: #555; margin-bottom: 10px;">Upper Intermediate</h4>
+<h4 style="color: #555; margin-bottom: 10px;" id="Upper Intermediate">Upper Intermediate</h4>
 <ul style="list-style: none; padding: 0;">
 <li style="margin-bottom: 5px;"><span style="font-weight: bold; color: #007bff;">Flutter</span></li>
 <li style="margin-bottom: 5px;"><span style="font-weight: bold; color: #007bff;">Express.js</span></li>
@@ -375,7 +388,7 @@ I worked on both front-end and back-end development for the voting platform usin
 </ul>
 </div>
 <div>
-<h4 style="color: #555; margin-bottom: 10px;">Intermediate</h4>
+<h4 style="color: #555; margin-bottom: 10px;" id="Intermediate">Intermediate</h4>
 <ul style="list-style: none; padding: 0;">
 <li style="margin-bottom: 5px;"><span style="color: #28a745;">NestJS</span></li>
 <li style="margin-bottom: 5px;"><span style="color: #28a745;">React</span></li>
@@ -385,7 +398,7 @@ I worked on both front-end and back-end development for the voting platform usin
 </ul>
 </div>
 <div>
-<h4 style="color: #555; margin-bottom: 10px;">Beginner</h4>
+<h4 style="color: #555; margin-bottom: 10px;" id="Beginner">Beginner</h4>
 <ul style="list-style: none; padding: 0;">
 <li style="margin-bottom: 5px;"><span style="color: #dc3545;">Django</span></li>
 <li style="margin-bottom: 5px;"><span style="color: #dc3545;">Unity</span></li>
