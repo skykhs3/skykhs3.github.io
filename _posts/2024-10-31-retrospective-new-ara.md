@@ -48,18 +48,17 @@ description: I developed Ara, the official KAIST community app, using Flutter. I
 </div>
 
 - **Login Logic**: Integrate KAIST SSO authentication so that only KAIST students can log in.
-  
 - **Post Viewing**: Users should be able to view posts organized by boards
 
 - **Post Creation and Editing**: Users can add and edit posts in HTML format, with support for attachments.
-  
 - **Comments**: Enable users to comment on posts.
- 
+
 - **Multilingual Design**: The interface should support both English and Korean.
 
 ## 2. Why do I choose Flutter to implement a mobile app.
 
 ### 2.1 Pros
+
 - **Previous Experience**: My co-worker [Sang-oh Kim](https://github.com/sangohkim) and I have some familiarity with Flutter.
 
 - **Cross-Platform**: Since the app needs to be available on both iOS and Android, Flutter is a good option.
@@ -73,9 +72,10 @@ description: I developed Ara, the official KAIST community app, using Flutter. I
 ## 3. Structure
 
 ### 3.1 Code
+
 ```
 NEW-ARA-APP
-├── ios 
+├── ios
 │   ├── ...
 │   └── fastlane
 │       ├── Appfile
@@ -126,8 +126,7 @@ NEW-ARA-APP
         └── ...
 ```
 
-
--  **CI/CD** is managed by GitHub Actions and [fastlane](https://docs.fastlane.tools/getting-started/cross-platform/flutter/). Deployment keys, such as .jks files, are securely stored in GitHub Secrets.
+- **CI/CD** is managed by GitHub Actions and [fastlane](https://docs.fastlane.tools/getting-started/cross-platform/flutter/). Deployment keys, such as .jks files, are securely stored in GitHub Secrets.
 - **assets/**: It is composed of images, fonts, and translations.
 - **lib/models/**: It defined the schemas for API requests and response.
 - **lib/pages/**: It contains the structure of pages displayed in the app.
@@ -135,11 +134,12 @@ NEW-ARA-APP
 - **lib/widgets/**: It contains reusable, common widgets.
 
 ### 3.2 Provider
+
 I used the Provider library to share the same instance across the entire app. It seems like a singleton pattern, but it can also use dependency injection.
 
 **Sample**
 
-``` dart
+```dart
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'cart_provider.dart';
@@ -165,7 +165,9 @@ class MyApp extends StatelessWidget {
 ```
 
 ### 3.3 Role
+
 We divide roles by features.
+
 - [Sang-oh Kim](https://github.com/sangohkim): Responsible for implementing the comment writing system, personal profile editing, scrap system, and CI/CD.
 - [Me](https://github.com/skykhs3): Responsible for implementing the post and board view system, login system, and post writing system.
 
@@ -178,22 +180,25 @@ SPARCS SSO authenticates by storing cookies in the web browser, making a WebView
 Interestingly, Flutter allows access to WebView cookies, which could pose a security risk. I’ll address why the authority of cookies is important at a later time.
 
 ## 5. Post Creation and Editing
-## 6. Post Viewing
-## 7. Trouble shooting with app store and play store
-## 8. CI/CD
-To be written...
 
+## 6. Post Viewing
+
+## 7. Trouble shooting with app store and play store
+
+## 8. CI/CD
+
+To be written...
 
 <!-- ### withdrawal
 ### 익명 정책
 ### 테스터의 도배 -->
-
 
 ## 9. Points to improve
 
 After finishing the project, I identified several missing points and learned the following development considerations.
 
 ### 9.1 MVC
+
 If I were to implement the code again, I would solidify the **MVC (Model-View-Controller)** pattern. However, current code is mixed within dart files in a page folder. I would restructure it as shown below.
 
 ```
@@ -219,15 +224,18 @@ lib/
     └── helpers.dart
 
 ```
+
 - **models/**: It stores data and state of the app.
-- **views/**: It is directly related with UI of the app. 
+- **views/**: It is directly related with UI of the app.
 - **controllers/**: It overrides [ChangeNotifier](https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html) and controls data of models. When the model changes, controllers call `notifyListeners()` and update the views.
 - **api_service/**: It defines schemas of API and API functions.
 
 ### 9.2 Code Push
+
 Flutter doesn’t support Code Push, which means updating the app takes **too long due to app store review processes**. This is a key reason that new team members are migrating it to React Native, as Code Push would allow immediate updates without a cumbersome review.
 
 ### 9.3 Native App needed to run in apple watch
+
 If I want to implement app for Apple watch, eventually I have to implement swift code. I noticed that sophisticated app required native code.
 
 ### 9.4 TDD (Test-Driven Development)
@@ -248,7 +256,7 @@ graph LR
 
 **TDD**
 
-While TDD (Test-Driven Development) isn’t absolutely essential, it could be beneficial for effectively catching bugs and organizing features more clearly. 
+While TDD (Test-Driven Development) isn’t absolutely essential, it could be beneficial for effectively catching bugs and organizing features more clearly.
 
 ```mermaid
 graph LR

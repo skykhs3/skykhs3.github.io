@@ -81,7 +81,6 @@ toc: true
   </div>
 </div>
 
-
 ---
 
 ## 3. Education
@@ -113,8 +112,8 @@ toc: true
 
 ## 4. Projects
 
-
 ### 4.1. Official Projects
+
 <div class="row mb-3">
   <div class="col-auto">
     <img src="/assets/img/resume/ara.webp" class="img-fluid" alt="Ara Logo" style="height:50px;width:50px;margin-top:30px;"/>
@@ -149,18 +148,19 @@ toc: true
     <img src="/assets/img/resume/nextjs.svg" class="img-fluid" alt="Next.js Logo">
     <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwindcss"/><br/><br/>
 
-    
     <b>Reference</b><br/>
     <ul>
       <li><a href="https://jseng.fly.dev/" target="_blank"><b>Website</b></a></li>
       <li><a href="https://github.com/skykhs3/project-jseng" target="_blank"><b>Repository</b></a></li>
     </ul>
+
   </div>
 </div>
 
 ---
 
 ### 4.2. Toy Projects
+
 <div class="row mb-3">
   <div class="col-auto">
     <img src="/assets/img/resume/naver_email.webp" class="img-fluid" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:30px;"/>
@@ -192,8 +192,8 @@ toc: true
       <li><a href="https://edu.techceo.kr/" target="_blank"><b>Website</b></a></li>
       <li><a href="https://github.com/skykhs3/education-typescript-express/blob/main/slides.pdf" target="_blank"><b>Learning Materials</b></a></li>
       <li><a href="https://github.com/skykhs3/education-typescript-express" target="_blank"><b>Repository</b></a></li>
-
     </ul>
+
   </div>
 </div>
 
@@ -341,7 +341,6 @@ I worked on both front-end and back-end development for the voting platform usin
 ---
 
 ## 5. Competitions
-
 
 <div class="row mb-3">
   <div class="col-auto">
