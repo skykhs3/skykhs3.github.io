@@ -183,7 +183,7 @@ toc: true
     <img src="/assets/img/resume/blog_logo.webp" class="img-fluid" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:30px;"/>
   </div>
   <div class="col">
-    <h3><b>TypeScript & Express Tutorial (KOR) </b></h3>
+    <h3 id="TypeScript & Express Tutorial (KOR)"><b>TypeScript & Express Tutorial (KOR)</b></h3>
       <p>
       I created a website and materials where students can learn Typescript and express.
       </p>
