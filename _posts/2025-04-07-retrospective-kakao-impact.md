@@ -98,11 +98,11 @@ Smaller file size = faster loading.<br/>
 brotli is newer and usually compresses better than gzip.<br/>
 
 **2. ETag – File version checker**<br/>
-It’s like a unique ID for each version of a file.<br/>
-If the file hasn’t changed, the browser can use the cached version instead of downloading again.<br/>
+It's like a unique ID for each version of a file.<br/>
+If the file hasn't changed, the browser can use the cached version instead of downloading again.<br/>
 
 **3. Last-Modified – Timestamp of the file**<br/>
-The browser asks: “Has this file been updated since last time?”<br/>
+The browser asks: "Has this file been updated since last time?"<br/>
 If not, the server just says "No need to re-download" (sends 304 Not Modified).<br/>
 
 #### 4.2.2. Low-level features (System-level speed boosts)
@@ -146,7 +146,7 @@ To be written...
 
 ## 5. Gunicorn?? It's weird for me.
 
-This was my first time using Django, and **I initially didn’t understand why a separate component like Gunicorn was needed for deployment**.
+This was my first time using Django, and **I initially didn't understand why a separate component like Gunicorn was needed for deployment**.
 In Node.js, I was used to creating standalone HTTP servers, so simply porting it behind Nginx was enough.
 
 However, Django introduces a unique concept: the separation between the **WSGI (Web Server Gateway Interface) server** and the **WSGI(web server gateway interface) application**
@@ -181,7 +181,10 @@ In Django, on the other hand, you just need to switch the WSGI server.
 
 ## 6. Points to improve
 
-It ended with the development of MVP without considering the situation where there are many users. If there are many users, each service will be converted into a container and the following architecture will be considered.
+The project ended with the development of an MVP without considering scenarios with many users. If there are many users, each service will be converted into a container and the following architecture will be considered:
+
+- SQLite → MySQL: Because SQLite cannot handle multiple file writing
+- Two servers: At least two servers are needed to prevent server downtime
 
 ```mermaid
 flowchart TD
@@ -207,3 +210,5 @@ flowchart TD
     D2 --> E1[Database Server]
 
 ```
+
+</div>
