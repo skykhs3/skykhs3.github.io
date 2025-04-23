@@ -41,31 +41,14 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.3.0
-          bundler-cache: true
-          cache-version: 0
-
-      - name: Cache Jekyll
-        uses: actions/cache@v3
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
+          ruby-version: 3.3.0 # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
+          bundler-cache:
 
       - name: Install dependencies
-        run: bundle install --jobs 4 --retry 3
-
-      - name: Cache node modules
-        uses: actions/cache@v3
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+        run: bundle install
 
       - name: npm install
-        run: npm ci
+        run: npm install
 
       - name: npm run build
         run: npm run build
@@ -74,6 +57,10 @@ jobs:
         run: bundle exec jekyll b -d "_site"
         env:
           JEKYLL_ENV: "production"
+
+      # - name: Test site
+      #   run: |
+      #     bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
