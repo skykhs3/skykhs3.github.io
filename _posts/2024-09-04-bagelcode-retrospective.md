@@ -10,6 +10,7 @@ image:
 tags:
   - bagelcode
   - retrospective
+description: I worked at Bagelcode as a backend developer and increased Bagelcode's revenue through my tasks.
 ---
 
 <div markdown="1">

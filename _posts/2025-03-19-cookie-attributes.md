@@ -1,7 +1,7 @@
 ---
 title: "Cookie Attributes in Browser"
 date: 2025-03-19 17:56:00 +09:00
-categories: [Development, Secure]
+categories: [Development, Security]
 post: skykhs3
 math: true
 mermaid: true
