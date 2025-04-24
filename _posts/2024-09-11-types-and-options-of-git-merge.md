@@ -7,6 +7,7 @@ image:
   path: /assets/img/posts/2024-09-11-types-and-options-of-git-merge/--no-ff.png
   alt: 3-way merge
   show_in_post: true
+  background_color: white
 tags:
   - git
   - git merge

@@ -9,6 +9,7 @@ image:
   path: /assets/img/posts/2024-10-31-retrospective-new-ara/logo.webp
   alt: Ara Logo
   show_in_post: true
+  background_color: white
 tags:
   - ara
   - flutter
