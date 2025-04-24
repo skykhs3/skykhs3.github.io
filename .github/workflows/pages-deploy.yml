@@ -42,15 +42,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.3.0 # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
-          bundler-cache:
-
-      - name: Cache Ruby gems
-        uses: actions/cache@v3
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
+          bundler-cache: true
 
       - name: bundle install
         run: bundle install
