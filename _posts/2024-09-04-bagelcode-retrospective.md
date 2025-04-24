@@ -1,7 +1,7 @@
 ---
 title: "Retrospective of Bagelcode"
 date: 2024-09-04 18:00:00 +09:00
-categories: [Retrospective, Retrospective]
+categories: [Retrospective, Company]
 post: skykhs3
 image:
   path: /assets/img/posts/2024-09-04-bagelcode-retrospective/logo2.png
@@ -55,6 +55,6 @@ I refactored the code related to event rewards and developed both the frontend a
 I developed the logic for selling and configuring new game items by integrating with [third-party payment webhooks and APIs](https://developers.appcharge.com/reference/getting-started-with-appcharge-api){:target="_blank"}. **This integration enabled game administrators, via the in-house admin website, to dynamically configure and manage new game items for sale.**
 
 ### DevOps
-I participated in AWS workshops and the AWS Summit, where I learned about the latest trends in cloud computing. **While managing Club Vegas Studio’s infrastructure, I also gained experience in using Terraform and Kubernetes(EKS).**
+I participated in AWS workshops and the AWS Summit, where I learned about the latest trends in cloud computing. **While managing Club Vegas Studio's infrastructure, I also gained experience in using Terraform and Kubernetes(EKS).**
 
 </div>

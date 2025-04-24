@@ -1,5 +1,5 @@
 ---
-title: "Cookie Attributes in Browser"
+title: "Understanding Cookie Attributes and Security"
 date: 2025-03-19 17:56:00 +09:00
 categories: [Development, Security]
 post: skykhs3
@@ -10,8 +10,12 @@ image:
   alt: Cookie
   show_in_post: false
 tags:
-  - browser
-  - cookie
+  - web security
+  - cookies
+  - http
+  - web development
+  - cybersecurity
+  - browser security
 description: Cookies have several attributes that control how they behave in the browser. Understanding these attributes is essential for security, session management, and cross-site request handling.
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Retrospective of Ara"
 date: 2024-10-31 00:48:00 +09:00
-categories: [Retrospective, Retrospective]
+categories: [Retrospective, Project]
 post: skykhs3
 math: true
 mermaid: true

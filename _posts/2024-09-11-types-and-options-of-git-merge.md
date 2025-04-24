@@ -49,7 +49,7 @@ git merge feature-branch
 `Rebase` moves the current branch's commits onto the latest commit of the target branch.
 
 **Pros**
-- **Clear History**:  It doesn’t leave extra Git commit histories, keeping the commit log linear and clean.
+- **Clear History**:  It doesn't leave extra Git commit histories, keeping the commit log linear and clean.
 
 
 **Cons**

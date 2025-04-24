@@ -10,14 +10,13 @@ tags:
   - suffix array
   - ps
   - problem solving
+description: Z Algorithm is an algorithm that quickly finds the length of the longest common prefix between each suffix of a string and the entire string in O(N)
 ---
 <script type="text/javascript" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js">
 </script>
 
 <div markdown="1">
-
-> The Z-algorithm is an efficient algorithm ($\text{O(N)}$) that calculates the length of the longest substring starting from the each position for a given string. 
 
 ## 1. Description
 

@@ -87,7 +87,7 @@ void getTruckAttributes(Truck truck){
 1 error generated.
 ```
 
-## Why should you consider TypeScript’s structural type system?
+## Why should you consider TypeScript's structural type system?
 
 Overlooking TypeScript's structural type system can lead to logical errors in your code.
 ``` typescript
@@ -118,7 +118,7 @@ In this example, the `Truck` interface doesn't have a `color` field, so I assign
 In this short code snippet, the issue is easy to spot, but in a larger codebase, such an error could be challenging to detect.
 
 ## How to solve this problem?
-First, be cautious when using the spread operator (...). Keep in mind that the spread operation can overwrite existing properties, and an interface does not guarantee that there won’t be additional fields in an object.
+First, be cautious when using the spread operator (...). Keep in mind that the spread operation can overwrite existing properties, and an interface does not guarantee that there won't be additional fields in an object.
 
 Second, consider using a **"tag" field** to ensure type safety. The following example shows how tagging can throw an error and help prevent mistakes.
 

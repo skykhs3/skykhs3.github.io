@@ -44,7 +44,9 @@ I believed that I needed a technical blog to increase my own value. **To prove w
 ---
 ## 2. Difficulties in Creating a GitHub Blog
 
-I didn't start by following the [Jekyll tutorial](https://jekyllrb-ko.github.io/); instead, I used open-source blog codes and themes available on GitHub to create one directly. Using the existing GitHub blog themes, you can create a sufficiently attractive blog, and if you have frontend knowledge, you can customize the blog to your liking. However, the challenging part was dealing with unexpected errors when running the blog's local server or deploying it with GitHub Actions. If you don't have experience solving such errors as a developer, I think the entry barrier is higher compared to other blog creation tools. I also resolved the Git blog errors by referring to other people's blogs.
+I didn't start by following the [Jekyll tutorial](https://jekyllrb-ko.github.io/); instead, I used open-source blog codes and themes available on GitHub to create one directly. Using the existing GitHub blog themes, you can create a sufficiently attractive blog, and if you have frontend knowledge, you can customize the blog to your liking. However, the challenging part was dealing with unexpected errors when running the blog's local server or deploying it with [GitHub Actions](https://github.com/skykhs3/skykhs3.github.io/actions/workflows/pages-deploy.yml). If you don't have experience solving such errors as a developer, I think the entry barrier is higher compared to other blog creation tools. I also resolved the Git blog errors by referring to other people's blogs.
+
+cf. [My Github Workflows Yaml Sample](https://github.com/skykhs3/skykhs3.github.io/blob/main/.github/workflows/pages-deploy.yml)
 
 ---
 ## 3. Blog Content

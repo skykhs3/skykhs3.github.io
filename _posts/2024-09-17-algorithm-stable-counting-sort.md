@@ -4,10 +4,6 @@ date: 2024-09-17 19:57:00 +09:00
 categories: [Problem Solving, Algorithm]
 post: skykhs3
 math: true
-# image:
-#   path: /assets/img/posts/2024-09-11-types-and-options-of-git-merge/--no-ff.png
-#   alt: 3-way merge
-#   show_in_post: true
 tags:
   - counting sort
   - algorithm
