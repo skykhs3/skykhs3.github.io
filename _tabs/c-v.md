@@ -178,6 +178,7 @@ toc: true
     </ul>
   </div>
 </div>
+
 <div class="row mb-3">
   <div class="col-auto">
     <img src="/assets/img/resume/blog_logo.webp" class="img-fluid" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:30px;"/>
@@ -197,6 +198,25 @@ toc: true
   </div>
 </div>
 
+A website monitoring service that checks the availability of websites related with my university and provides status updates.
+
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/kaist_server_status_monitor.webp" class="img-fluid" alt="KAIST SERVER STATUS MONITOR" style="height:50px;width:50px;margin-top:30px;"/>
+  </div>
+  <div class="col">
+    <h3 id="KAIST SERVER STATUS MONITOR"><b>KAIST SERVER STATUS MONITOR</b></h3>
+      <p>
+      A website monitoring service that checks the availability of websites related with my university and provides status updates.
+      </p>
+    <b>Reference</b><br/>
+    <ul>
+      <li><a href="https://kaist.vercel.app/" target="_blank"><b>Website</b></a></li>
+      <li><a href="https://github.com/skykhs3/project-is-server-down" target="_blank"><b>Repository</b></a></li>
+    </ul>
+
+  </div>
+</div>
 ---
 
 ### 4.3. Social Impact Projects
