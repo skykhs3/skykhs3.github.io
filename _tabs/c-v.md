@@ -198,14 +198,12 @@ toc: true
   </div>
 </div>
 
-A website monitoring service that checks the availability of websites related with my university and provides status updates.
-
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/kaist_server_status_monitor.webp" class="img-fluid" alt="KAIST SERVER STATUS MONITOR" style="height:50px;width:50px;margin-top:30px;"/>
+    <img src="/assets/img/resume/kaist_server_status_monitor.webp" class="img-fluid" alt="KAIST Server Status Monitor" style="height:50px;width:50px;margin-top:30px;"/>
   </div>
   <div class="col">
-    <h3 id="KAIST SERVER STATUS MONITOR"><b>KAIST SERVER STATUS MONITOR</b></h3>
+    <h3 id="KAIST Server Status Monitor"><b>KAIST Server Status Monitor</b></h3>
       <p>
       A website monitoring service that checks the availability of websites related with my university and provides status updates.
       </p>
