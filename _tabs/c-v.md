@@ -181,7 +181,7 @@ toc: true
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/blog_logo.webp" class="img-fluid" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:30px;"/>
+    <img src="/assets/img/resume/express_tutorial.webp" class="img-fluid" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:30px;"/>
   </div>
   <div class="col">
     <h3 id="TypeScript & Express Tutorial (KOR)"><b>TypeScript & Express Tutorial (KOR)</b></h3>
