@@ -95,10 +95,10 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-#cdn: "https://skykhs3.github.io"
+cdn: "https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "https://skykhs3.github.io/assets/img/profile/profile.webp"
+avatar: "https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main/assets/img/resume/profile.webp"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
