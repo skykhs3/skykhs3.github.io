@@ -2,9 +2,9 @@
 title: "Types and Options of Git Merge"
 date: 2024-09-11 01:29:00 +09:00
 categories: [Development, Git]
-post: skykhs3
+author: skykhs3
 image:
-  path: /assets/img/posts/2024-09-11-types-and-options-of-git-merge/--no-ff.png
+  path: /assets/img/posts/2024-09-11-types-and-options-of-git-merge/no-ff.webp
   alt: 3-way merge
   show_in_post: true
   background_color: white
@@ -34,15 +34,15 @@ tags:
 - **Cluttered History**: The history can become cluttered. If there are many branches or frequent merges, the commit log may become messy.
 
 **Example**
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/base.png" alt="base"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/base.webp" alt="base"/>
 ```zsh
 git checkout main
 ```
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/checkout-merge.png" alt="checkout"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/checkout-merge.webp" alt="checkout"/>
 ```zsh
 git merge feature-branch
 ```
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/merge1.png" alt="merge"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/merge1.webp" alt="merge"/>
 
 ---
 
@@ -57,17 +57,17 @@ git merge feature-branch
 - **Creating New Commit**: It generates new commits with new commit hashes, which can make tracking history more difficult.
 
 **Example**
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/base.png" alt="rebase"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/base.webp" alt="rebase"/>
 ```zsh
 git checkout feature-branch
 ```
 
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/checkout-rebase.png" alt="rebase"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/checkout-rebase.webp" alt="rebase"/>
 ```zsh
 git rebase main
 ```
 
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/rebase1.png" alt="rebase"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/rebase1.webp" alt="rebase"/>
 
 ```zsh
 git checkout main
@@ -75,7 +75,7 @@ git merge feature-branch
 ```
 It should be a fast-forward merge.
 
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/rebase2.png" alt="rebase"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/rebase2.webp" alt="rebase"/>
 
 ---
 
@@ -102,12 +102,12 @@ An 3-way merge is used when the the two branches have different commit.
 You can merge branches by a fast-forward with the `--ff` option.
 
 **Example**
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.png" alt="before"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.webp" alt="before"/>
 ```zsh
 git checkout main
 git merge feature-branch --ff
 ```
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/--ff.png" alt="ff"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/ff.webp" alt="ff"/>
 
 ---
 
@@ -115,12 +115,12 @@ git merge feature-branch --ff
 You can merge branches using a 3-way merge with the `--no-ff` option. This creates a merge commit, preserving the merge history.
 
 **Example**
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.png" alt="before"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.webp" alt="before"/>
 ```zsh
 git checkout main
 git merge feature-branch --ff
 ```
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/--no-ff.png" alt="no-ff"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/no-ff.webp" alt="no-ff"/>
 
 ---
 
@@ -129,11 +129,11 @@ You can squash the commits from a branch into a single commit. This does not pre
 
 **Example**
 
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.png" alt="before"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/before.webp" alt="before"/>
 ```zsh
 git checkout main
 git merge feature-branch --squash
 ```
-<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/--squash.png" alt="squash"/>
+<img src="/assets/img/posts/2024-09-11-types-and-options-of-git-merge/squash.webp" alt="squash"/>
 
 </div>

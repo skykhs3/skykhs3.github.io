@@ -2,10 +2,9 @@
 title: "Structural type system in Typescript"
 date: 2024-10-26 00:00:00 +09:00
 categories: [Development, Typescript]
-post: skykhs3
-math: true
+author: skykhs3
 image:
-  path: /assets/img/posts/2024-10-26-typescript-duck-typing/typescript.png
+  path: /assets/img/posts/2024-10-26-typescript-duck-typing/typescript.webp
   alt: Typescript
   show_in_post: false
 tags:

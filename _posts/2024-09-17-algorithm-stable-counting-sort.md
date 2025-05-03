@@ -2,7 +2,7 @@
 title: "Stable Counting Sort"
 date: 2024-09-17 19:57:00 +09:00
 categories: [Problem Solving, Algorithm]
-post: skykhs3
+author: skykhs3
 math: true
 tags:
   - counting sort

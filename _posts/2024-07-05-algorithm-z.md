@@ -2,7 +2,7 @@
 title: "Z Algorithm"
 date: 2024-07-05 01:29:00 +09:00
 categories: [Problem Solving, Algorithm]
-post: skykhs3
+author: skykhs3
 math: true
 tags:
   - z

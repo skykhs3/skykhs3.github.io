@@ -2,9 +2,9 @@
 title: "Retrospective of Bagelcode"
 date: 2024-09-04 18:00:00 +09:00
 categories: [Retrospective, Company]
-post: skykhs3
+author: skykhs3
 image:
-  path: /assets/img/posts/2024-09-04-bagelcode-retrospective/logo2.png
+  path: /assets/img/posts/2024-09-04-bagelcode-retrospective/logo2.webp
   alt: Bagelcode
   show_in_post: false
 tags:
@@ -14,7 +14,7 @@ description: I worked at Bagelcode as a backend developer and increased Bagelcod
 ---
 
 <div markdown="1">
-<img src="/assets/img/posts/2024-09-04-bagelcode-retrospective/logo.png" alt="logo"/>
+<img src="/assets/img/posts/2024-09-04-bagelcode-retrospective/logo.webp" alt="logo"/>
 
 ## 1. Company Overview
 

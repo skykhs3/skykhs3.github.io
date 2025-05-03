@@ -1,6 +1,7 @@
 ---
 
 title: Thoughts on Starting a GitHub Blog
+author: skykhs3
 date: 2024-06-16 17:00:00 +09:00
 categories: [Development, Jekyll]
 post: skykhs3

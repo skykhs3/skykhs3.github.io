@@ -2,8 +2,7 @@
 title: "Retrospective of Ara"
 date: 2024-10-31 00:48:00 +09:00
 categories: [Retrospective, Project]
-post: skykhs3
-math: true
+author: skykhs3
 mermaid: true
 image:
   path: /assets/img/posts/2024-10-31-retrospective-new-ara/logo.webp

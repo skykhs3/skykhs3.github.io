@@ -2,7 +2,7 @@
 title: "SCC (Strongly Connected Component) Algorithm"
 date: 2024-07-04 13:00:00 +09:00
 categories: [Problem Solving, Algorithm]
-post: skykhs3
+author: skykhs3
 tags:
   - scc
   - tarjan's algorithm

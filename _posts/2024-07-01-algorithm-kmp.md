@@ -2,7 +2,7 @@
 title: "KMP(Knuth-Morris-Pratt) Algorithm"
 date: 2024-07-01 13:00:00 +09:00
 categories: [Problem Solving, Algorithm]
-post: skykhs3
+author: skykhs3
 math: true
 tags:
   [
@@ -48,7 +48,7 @@ pi[i] represents the maximum length of the string that can simultaneously serve 
 
 The picture below will help you understand this definition.
 
-<img src="/assets/img/posts/2024-07-01-algorithm-kmp/example2.jpeg" alt="definition"/>
+<img src="/assets/img/posts/2024-07-01-algorithm-kmp/example2.webp" alt="definition"/>
 
 Let's temporarily set aside how to compute pi and assume that we have already constructed the pi array.
 
@@ -75,7 +75,7 @@ vector<int> sample(string A, string B){
 
 However, we don't need to iterate from i=0 to i=N. What does this mean? Please refer to the explanation below.
 
-<img src="/assets/img/posts/2024-07-01-algorithm-kmp/example1.jpeg" alt="KMP"/>
+<img src="/assets/img/posts/2024-07-01-algorithm-kmp/example1.webp" alt="KMP"/>
 
 Assuming we already have the pi array, when A[q] and B[q] do not match at i=0, the next step isn't i=i+1 but rather i=p (where p = q - pi[q-1]). This transition is perfectly valid and crucial to understand. ( Here, pi[q-1] represents the maximum length of the string that can simultaneously serve as both a prefix and a suffix of "abacaba". )
 

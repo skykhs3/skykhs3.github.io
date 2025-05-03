@@ -2,8 +2,7 @@
 title: "Retrospective of Kakao Impact"
 date: 2025-04-07 22:00:00 +09:00
 categories: [Retrospective, Project]
-post: skykhs3
-math: true
+author: skykhs3
 mermaid: true
 image:
   path: /assets/img/posts/2025-04-07-retrospective-kakao-impact/award.webp

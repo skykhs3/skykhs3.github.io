@@ -2,11 +2,11 @@
 title: "Maximum Bipartite Matching"
 date: 2024-07-14 22:00:00 +09:00
 categories: [Problem Solving, Algorithm]
-post: skykhs3
+author: skykhs3
 description: A matching in a bipartite graph is a set of edges where no two edges share a common vertex, and a maximum matching is one that contains the largest possible number of edges.
 image:
     show_in_post: false
-    path: /assets/img/posts/2024-07-14-algorithm-maximum-bipartite-matching/sample_graph.jpeg
+    path: /assets/img/posts/2024-07-14-algorithm-maximum-bipartite-matching/sample_graph.webp
     alt: maximum bipartite matching
 
 tags:
@@ -31,7 +31,7 @@ In a bipartite graph, the goal of the maximum bipartite matching algorithm is to
 
 The algorithm is particularly useful in various practical applications, such as job assignments, where tasks need to be assigned to workers in a way that maximizes efficiency while ensuring no worker is assigned more than one task.
 
-<img src="/assets/img/posts/2024-07-14-algorithm-maximum-bipartite-matching/sample_graph.jpeg" alt="maximum bipartite matching"/>
+<img src="/assets/img/posts/2024-07-14-algorithm-maximum-bipartite-matching/sample_graph.webp" alt="maximum bipartite matching"/>
 
 For example, the maximum bipartite matching is 4 in the above picture. Of course, another way of matching the edges can exist. You can match vertex 3 and vertex 4 instead of matching vertex 2 and vertex 4.
 
