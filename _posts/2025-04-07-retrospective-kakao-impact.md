@@ -27,7 +27,7 @@ We proposed the project called **"Solar-See"**. "Solar-See" is an AI-based game 
 
 [**Demo**](/assets/img/posts/2025-04-07-retrospective-kakao-impact/demo-small.mp4){:target="\_blank"}
 
-[**Presentation**](/assets/img/resume/solar_see_final_presentation.pdf){:target="\_blank"}
+[**Presentation**](/assets/img/resume/solar-see-final-presentation.pdf){:target="\_blank"}
 
 ## 2. My role and Responsibilities
 
