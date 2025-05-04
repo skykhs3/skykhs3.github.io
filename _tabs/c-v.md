@@ -150,7 +150,7 @@ toc: true
     <img src="/assets/img/resume/ara.webp" alt="Ara Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="New Ara"><b>New Ara</b></h3>
+    <h4 id="New Ara"><b>New Ara</b></h4>
     <p>
       This is the official community app for KAIST students supported by KAIST.
     </p>
@@ -182,7 +182,7 @@ toc: true
     <img src="/assets/img/resume/jseng.webp" alt="Jeong Seok Engineering Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="Jeong Seok Engineering"><b>Jeong Seok Engineering</b></h3>
+    <h4 id="Jeong Seok Engineering"><b>Jeong Seok Engineering</b></h4>
     <p>This is the company introduction website I received outsourcing.</p>
     <p>
       <b>Role and Responsibilities:</b>
@@ -212,7 +212,7 @@ toc: true
     <img src="/assets/img/resume/naver-email.webp" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="Naver Email Summarizer"><b>Naver Email Summarizer</b></h3>
+    <h4 id="Naver Email Summarizer"><b>Naver Email Summarizer</b></h4>
     <p>
       It gives you a tooltip to preview the contents of the email and summarizes the contents of the email. It uses Chrome Extension.
       <br/>
@@ -234,7 +234,7 @@ toc: true
     <img src="/assets/img/resume/express-tutorial.webp" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="TypeScript & Express Tutorial (KOR)"><b>TypeScript & Express Tutorial (KOR)</b></h3>
+    <h4 id="TypeScript & Express Tutorial (KOR)"><b>TypeScript & Express Tutorial (KOR)</b></h4>
     <p>
       I created a website and materials where students can learn Typescript and express.
       <br/>
@@ -258,7 +258,7 @@ toc: true
     <img src="/assets/img/resume/kaist-server-status-monitor.webp" alt="KAIST Server Status Monitor" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="KAIST Server Status Monitor"><b>KAIST Server Status Monitor</b></h3>
+    <h4 id="KAIST Server Status Monitor"><b>KAIST Server Status Monitor</b></h4>
     <p>
       A website monitoring service that checks the availability of websites related with my university and provides status updates.
       <br/>
@@ -286,7 +286,7 @@ toc: true
     <img src="/assets/img/resume/solar-see.webp" alt="Solar See Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="Solar See"><b>Solar-See</b></h3>
+    <h4 id="Solar See"><b>Solar-See</b></h4>
     <p>
       Solar-See is an AI-powered gaming and map service developed to discover undetected solar panels and thereby increase the accuracy of power demand forecasting.
     </p>
@@ -297,6 +297,7 @@ toc: true
       <br />
         <span>
           <img src="/assets/img/resume/react.svg" alt="react" />
+          <img src="/assets/img/resume/tailwind.svg" alt="tailwindcss" />
           <img src="/assets/img/resume/django-rest.svg" alt="django" />
            <img src="/assets/img/resume/sqlite.svg" alt="sqlite" />
           <img src="https://img.shields.io/badge/ultralytics_YOLO11-8A2BE2?style=for-the-badge&logo=ultralytics&color=093eb0" alt="ultralytics" />
@@ -321,7 +322,7 @@ toc: true
     <img src="/assets/img/resume/kgsv.webp" alt="KGSV Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b></h3>
+    <h4 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b></h4>
     <img src="/assets/img/resume/volunteering.webp" width="100%" style="margin-top:30px;" alt="volunteering" />
     <p>
       <b>KAIST Global Student Volunteers / Leader of the Arduino Education Team</b>
@@ -340,7 +341,7 @@ toc: true
     <img src="/assets/img/resume/nypc.webp" alt="NYPC Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="YouTube Content"><b>YouTube Content</b></h3>
+    <h4 id="YouTube Content"><b>YouTube Content</b></h4>
     <div>
       {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
     </div>
@@ -364,7 +365,7 @@ toc: true
     <img src="/assets/img/resume/cctv.webp" alt="Yeok Pacar Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="Yeok Pacar - Gangnam-gu Parking Platform"><b>Yeok Pacar - Gangnam-gu Parking Platform</b></h3>
+    <h4 id="Yeok Pacar - Gangnam-gu Parking Platform"><b>Yeok Pacar - Gangnam-gu Parking Platform</b></h4>
     <p>This is a Gangnam-Gu parking platform app developed during a hackathon.</p>
     <p>
       <b>Role and Responsibilities:</b>
@@ -392,7 +393,7 @@ toc: true
     <img src="/assets/img/resume/battle-pants.webp" alt="Battle Pants Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="Battle Pants"><b>Battle Pants</b></h3>
+    <h4 id="Battle Pants"><b>Battle Pants</b></h4>
     <p>This is a platformer game allowing up to 4 players to join.</p>
     <p>
       <b>Role and Responsibilities:</b>
@@ -416,7 +417,7 @@ toc: true
     <img src="/assets/img/resume/flowlink.webp" alt="Flowlink Logo" style="height:10px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="Flowlink"><b>Flowlink</b></h3>
+    <h4 id="Flowlink"><b>Flowlink</b></h4>
     <p>This is a voting platform in the classroom.</p>
     <p>
       <b>Role and Responsibilities:</b>
@@ -442,7 +443,7 @@ toc: true
     <img src="/assets/img/resume/morning-buddy.webp" alt="Morning Buddy Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="Morning Buddy"><b>Morning Buddy</b></h3>
+    <h4 id="Morning Buddy"><b>Morning Buddy</b></h4>
     <p>This is an alarm app</p>
     <p>
       <b>Role and Responsibilities:</b>
