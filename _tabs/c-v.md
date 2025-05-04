@@ -29,14 +29,23 @@ toc: true
   </div>
   <div class="col">
     <h3 id="Bagelcode"><b>Bagelcode</b></h3>
-    <p>
-      Backend Developer / Club Vegas Studio server<br><br>
-      <b>My contributions</b><br>
-      I developed a game backend API server, an in-house administrator website frontend, and a payment website frontend.<br>
-      <a href="/posts/bagelcode-retrospective/"><strong>More Details</strong><br/><br></a>
-      <small>February 2024 ~ August 2024</small><br/>
-      <small>Expressjs, NestJS, Typescript</small><br>
-    </p>
+      <b>Backend Developer / Club Vegas Studio server</b>
+      <br>
+      <small>February 2024 ~ August 2024</small>
+      <br/>
+      <small>Seoul, South korea</small>
+      <br/><br/>
+      <b>My contributions</b>
+      <br>
+      I developed a game backend API server, an in-house administrator website frontend, and a payment website frontend.
+      <br>
+      <img src="/assets/img/resume/expressjs.svg"/>
+      <img src="/assets/img/resume/nestjs.svg"/>
+      <img src="/assets/img/resume/nextjs.svg"/>
+      <img src="/assets/img/resume/react.svg"/>
+      <img src="/assets/img/resume/aws.svg"/>
+      <br/><br/>
+      <a href="/posts/bagelcode-retrospective/"><strong>[ More Details ] </strong><br/><br></a>
   </div>
 </div>
 
@@ -60,7 +69,7 @@ toc: true
       <small>September 2020 ~ January 2024</small><br/>
       <small>Flutter</small>
     </p>
-    <a href="/posts/retrospective-new-ara/"><strong>More Details</strong><br/><br/></a>
+    <a href="/posts/retrospective-new-ara/"><strong>[ More Details ]</strong><br/><br/></a>
   </div>
 
 </div>
@@ -93,7 +102,7 @@ toc: true
     <h3 id="KAIST ( Korea Advanced Institute of Science and Technology )"><b>KAIST</b> ( Korea Advanced Institute of Science and Technology )</h3>
     <p>KAIST School of Computing / Undergraduate<br>
     <small>February 2019 ~ August 2025</small><br>
-    <small>South Korea, Daejeon</small></p>
+    <small>Daejeon, South Korea</small></p>
   </div>
 </div>
 
@@ -104,7 +113,7 @@ toc: true
   <div class="col">
     <h3 id = "Gyeonggi Science High School for the Gifted"><b>Gyeonggi Science High School for the Gifted</b></h3>
     <p><small>February 2016 ~ January 2019</small><br>
-    <small>South Korea, Suwon</small></p>
+    <small>Suwon, South Korea</small></p>
   </div>
 </div>
 
@@ -123,15 +132,15 @@ toc: true
     <p>This is the official community app for KAIST students supported by KAIST.</p>
     <strong>Role and Responsibilities:</strong><br/>
     I participated as an app developer using Flutter and collaborated with another team member to handle all aspects of the process, from planning to deployment.<br/>
-    <a href="/posts/retrospective-new-ara/"><strong>More Details</strong><br/><br/></a>
-    <b>Technologies I Used:</b><br/>
     <img src="/assets/img/resume/flutter.svg" class="img-fluid" alt="Flutter Logo"><br/><br/>
+    <a href="/posts/retrospective-new-ara/"><strong>[ More Details ]</strong><br/><br/></a>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="https://play.google.com/store/apps/details?id=org.sparcs.newara" target="_blank"><b>Android Download</b></a></li>
-      <li><a href="https://apps.apple.com/kr/app/ara-for-kaist/id6457209147" target="_blank"><b>iOS Download</b></a></li>
-      <li><a href="https://github.com/sparcs-kaist/new-ara-app" target="_blank"><b>Repository</b></a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.sparcs.newara" target="_blank">Android Download</a></li>
+      <li><a href="https://apps.apple.com/kr/app/ara-for-kaist/id6457209147" target="_blank">iOS Download</a></li>
+      <li><a href="https://github.com/sparcs-kaist/new-ara-app" target="_blank">Repository</a></li>
     </ul>
+    
   </div>
 </div>
 
@@ -143,15 +152,14 @@ toc: true
     <h3 id="Jeong Seok Engineering"><b>Jeong Seok Engineering</b></h3>
     <p>This is the company introduction website I received outsourcing.</p>
     <b>Role and Responsibilities:</b><br/>
-    I designed and developed it by myself. I developed the introduction webpage using Next.js and Tailwind CSS, focusing on both front-end design and performance optimization.<br/><br/>
-    <b>Technologies I Used:</b><br/>
+    I designed and developed it by myself. I developed the introduction webpage using Next.js and Tailwind CSS, focusing on both front-end design and performance optimization.<br/>
     <img src="/assets/img/resume/nextjs.svg" class="img-fluid" alt="Next.js Logo">
-    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwindcss"/><br/><br/>
-
+    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwindcss"/>
+    <br/><br/>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="https://jseng.fly.dev/" target="_blank"><b>Website</b></a></li>
-      <li><a href="https://github.com/skykhs3/project-jseng" target="_blank"><b>Repository</b></a></li>
+      <li><a href="https://jseng.fly.dev/" target="_blank">Website</a></li>
+      <li><a href="https://github.com/skykhs3/project-jseng" target="_blank">Repository</a></li>
     </ul>
 
   </div>
@@ -163,36 +171,36 @@ toc: true
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/naver_email.webp" class="img-fluid" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:30px;"/>
+    <img src="/assets/img/resume/naver-email.webp" class="img-fluid" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:30px;"/>
   </div>
   <div class="col">
     <h3 id="Naver Email Summarizer"><b>Naver Email Summarizer</b></h3>
       <p>
-      It gives you a tooltip to preview the contents of the email and summarizes the contents of the email.<br>
-      It uses Chrome Extension.
+      It gives you a tooltip to preview the contents of the email and summarizes the contents of the email. It uses Chrome Extension.
       </p>
+    <img src="/assets/img/resume/javascript.svg" class="img-fluid" alt="Flutter Logo"><br/><br/>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="https://chromewebstore.google.com/detail/%EB%84%A4%EC%9D%B4%EB%B2%84-%EB%A9%94%EC%9D%BC-%EC%9A%94%EC%95%BD%EA%B8%B0naver-mail-summ/geddbcdppbknpoomennnelgdngolhibn" target="_blank"><b>Download</b></a></li>
-      <li><a href="https://github.com/skykhs3/project-naver-email-summarizer" target="_blank"><b>Repository</b></a></li>
+      <li><a href="https://chromewebstore.google.com/detail/%EB%84%A4%EC%9D%B4%EB%B2%84-%EB%A9%94%EC%9D%BC-%EC%9A%94%EC%95%BD%EA%B8%B0naver-mail-summ/geddbcdppbknpoomennnelgdngolhibn" target="_blank">Download</a></li>
+      <li><a href="https://github.com/skykhs3/project-naver-email-summarizer" target="_blank">Repository</a></li>
     </ul>
   </div>
 </div>
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/express_tutorial.webp" class="img-fluid" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:30px;"/>
+    <img src="/assets/img/resume/express-tutorial.webp" class="img-fluid" alt="Naver Email Logo" style="height:50px;width:50px;margin-top:30px;"/>
   </div>
   <div class="col">
     <h3 id="TypeScript & Express Tutorial (KOR)"><b>TypeScript & Express Tutorial (KOR)</b></h3>
-      <p>
-      I created a website and materials where students can learn Typescript and express.
-      </p>
+    <p>
+    I created a website and materials where students can learn Typescript and express.
+    </p>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="https://edu.techceo.kr/" target="_blank"><b>Website</b></a></li>
-      <li><a href="https://github.com/skykhs3/education-typescript-express/blob/main/slides.pdf" target="_blank"><b>Learning Materials</b></a></li>
-      <li><a href="https://github.com/skykhs3/education-typescript-express" target="_blank"><b>Repository</b></a></li>
+      <li><a href="https://edu.techceo.kr/" target="_blank">Website</a></li>
+      <li><a href="https://github.com/skykhs3/education-typescript-express/blob/main/slides.pdf" target="_blank">Learning Materials</a></li>
+      <li><a href="https://github.com/skykhs3/education-typescript-express" target="_blank">Repository</a></li>
     </ul>
 
   </div>
@@ -200,7 +208,7 @@ toc: true
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/kaist_server_status_monitor.webp" class="img-fluid" alt="KAIST Server Status Monitor" style="height:50px;width:50px;margin-top:30px;"/>
+    <img src="/assets/img/resume/kaist-server-status-monitor.webp" class="img-fluid" alt="KAIST Server Status Monitor" style="height:50px;width:50px;margin-top:30px;"/>
   </div>
   <div class="col">
     <h3 id="KAIST Server Status Monitor"><b>KAIST Server Status Monitor</b></h3>
@@ -209,8 +217,8 @@ toc: true
       </p>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="https://kaist.vercel.app/" target="_blank"><b>Website</b></a></li>
-      <li><a href="https://github.com/skykhs3/project-is-server-down" target="_blank"><b>Repository</b></a></li>
+      <li><a href="https://kaist.vercel.app/" target="_blank">Website</a></li>
+      <li><a href="https://github.com/skykhs3/project-is-server-down" target="_blank">Repository</a></li>
     </ul>
 
   </div>
@@ -221,23 +229,26 @@ toc: true
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/solar_see.webp" class="img-fluid" alt="Solar See Logo" style="height:50px;width:50px;margin-top:30px;"/>
+    <img src="/assets/img/resume/solar-see.webp" class="img-fluid" alt="Solar See Logo" style="height:50px;width:50px;margin-top:30px;"/>
   </div>
   <div class="col">
     <h3 id="Solar See"><b>Solar-See</b></h3>
     <p>Solar-See is an AI-powered gaming and map service developed to discover undetected solar panels and thereby increase the accuracy of power demand forecasting.</p>
     <b>Role and Responsibilities:</b><br/>
     I developed main backend, deployed the services, and fine-tuned an image segmentation model.<br/>
-    <a href="/posts/retrospective-kakao-impact/"><strong>More Details</strong><br/><br/></a>
-    <b>Technologies I Used:</b><br/>
-      <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="react"/>
-      <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwindcss"/>
-      <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="django"/>
-      <br/><br/>
+    <img src="/assets/img/resume/react.svg" alt="react"/>
+    <img src="/assets/img/resume/tailwind.svg" alt="tailwindcss"/>
+    <img src="/assets/img/resume/django-rest.svg" alt="django"/>
+    <img src="https://img.shields.io/badge/ultralytics_YOLO11-8A2BE2?style=for-the-badge&logo=ultralytics&color=093eb0" alt="ultralytics"/>
+
+    
+    <br/><br/>
+    <a href="/posts/retrospective-kakao-impact/"><strong>[ More Details ]</strong></a>
+    <br/><br/>
     <b>Reference</b><br/>
     <ul>
-      <li><a href="/assets/img/resume/solar_see_final_presentation.pdf" target="_blank"><b>Presentation</b></a></li>
-      <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See" target="_blank"><b>Repository</b></a></li>
+      <li><a href="https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main/assets/img/resume/solar-see-final-presentation.pdf" target="_blank"><b>Presentation</b></a></li>
+      <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See" target="_blank">Repository</a></li>
     </ul>
   </div>
 </div>
@@ -250,10 +261,10 @@ toc: true
   <div class="col">
     <h3 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b>
     </h3>
-    <img src="/assets/img/resume/volunteering.webp" width="80%" style="margin-top:30px; margin-left:10%;" alt="volunteering"/>
-    <li>KAIST Global Student Volunteers / Leader of the Arduino Education Team</li>
-    <li>January 2024</li>
-    <li>Yayasan Pendidikan Santo Lukas Penginjil, <b>Jakarta, Indonesia</b></li>
+    <img src="/assets/img/resume/volunteering.webp" width="100%" style="margin-top:30px;" alt="volunteering"/>
+    <b>KAIST Global Student Volunteers / Leader of the Arduino Education Team</b><br>
+    <small>January 2024</small><br/>
+    <small>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</small><br/><br/>
   </div>
 </div>
 <br/>
@@ -267,8 +278,8 @@ toc: true
     <div>
      {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
     </div>
-    <li>I participated in a coding YouTube content for teenagers with YouTubers <b>미미미누</b> and <b>조코딩</b>. We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people.</li>
-    <li>December 2024</li>
+    I participated in a coding YouTube content for teenagers with YouTubers <b>미미미누</b> and <b>조코딩</b>. We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people. <br>
+    <small>December 2024</small>
   </div>
 </div>
 <br/>
@@ -286,8 +297,7 @@ toc: true
     <p>This is a Gangnam-Gu parking platform app developed during a hackathon.</p>
     <b>Role and Responsibilities:</b>
     <br/>
-I worked as an app developer, building the parking platform using Flutter and integrating Naver Map API.<br/><br/>
-    <b>Technologies I Used:</b><br/>
+I worked as an app developer, building the parking platform using Flutter and integrating Naver Map API.<br/>
     <img src="/assets/img/resume/flutter.svg" class="img-fluid" alt="Flutter Logo"><br/><br/>
     <b>Reference</b><br/>
     <ul>
@@ -302,14 +312,13 @@ I worked as an app developer, building the parking platform using Flutter and in
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/battle_pants.webp" class="img-fluid" alt="Battle Pants Logo" style="height:50px;width:50px;margin-top:30px;"/>
+    <img src="/assets/img/resume/battle-pants.webp" class="img-fluid" alt="Battle Pants Logo" style="height:50px;width:50px;margin-top:30px;"/>
   </div>
   <div class="col">
     <h3 id="Battle Pants"><b>Battle Pants</b></h3>
     <p>This is a platformer game allowing up to 4 players to join.</p>
     <b>Role and Responsibilities:</b><br/>
-I developed the game mechanics and multiplayer features using Unity and Photon Server<br/><br/>
-    <b>Technologies I Used:</b><br/>
+I developed the game mechanics and multiplayer features using Unity and Photon Server<br/>
     <img src="/assets/img/resume/unity.svg" class="img-fluid" alt="Unity Logo"><br/><br/>
     <b>Reference</b><br/>
     <ul>
@@ -326,8 +335,7 @@ I developed the game mechanics and multiplayer features using Unity and Photon S
     <h3 id="Flowlink"><b>Flowlink</b></h3>
     <p>This is a voting platform in the classroom.</p>
     <b>Role and Responsibilities:</b><br/>
-I worked on both front-end and back-end development for the voting platform using Flutter, Express.js, and MySQL.<br/><br/>
-    <b>Technologies I Used:</b><br/>
+I worked on both front-end and back-end development for the voting platform using Flutter, Express.js, and MySQL.<br/>
     <img src="/assets/img/resume/flutter.svg" class="img-fluid" alt="Flutter Logo">
     <img src="/assets/img/resume/expressjs.svg" class="img-fluid" alt="Express.js Logo">
     <img src="/assets/img/resume/mysql.svg" class="img-fluid" alt="MySQL Logo"><br/><br/>
@@ -340,14 +348,13 @@ I worked on both front-end and back-end development for the voting platform usin
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/morning_buddy.webp" class="img-fluid" alt="Morning Buddy Logo" style="height:50px;width:50px;margin-top:30px;"/>
+    <img src="/assets/img/resume/morning-buddy.webp" class="img-fluid" alt="Morning Buddy Logo" style="height:50px;width:50px;margin-top:30px;"/>
   </div>
   <div class="col">
     <h3 id="Morning Buddy"><b>Morning Buddy</b></h3>
     <p>This is an alarm app</p>
     <b>Role and Responsibilities:</b><br/>
-    I developed an Android alarm app using Kotlin.<br/><br/>
-    <b>Technologies I Used:</b><br/>
+    I developed an Android alarm app using Kotlin.<br/>
     <img src="/assets/img/resume/kotlin.svg" class="img-fluid" alt="Kotlin Logo"><br/><br/>
     <b>Reference</b><br/>
     <ul>
@@ -362,7 +369,7 @@ I worked on both front-end and back-end development for the voting platform usin
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/koi_prize.webp" alt="KOI Award Certificate" style="width:50px; margin-top:30px;"/>
+    <img src="/assets/img/resume/koi-prize.webp" alt="KOI Award Certificate" style="width:50px; margin-top:30px;"/>
   </div>
    <div class="col">
     <h3 id="2016 KOI"><b>Gold Medal in the 2016 Korea Olympiad in Informatics</b></h3>
@@ -372,7 +379,7 @@ I worked on both front-end and back-end development for the voting platform usin
 
 <div class="row mb-3">
   <div class="col-auto">
-    <img src="/assets/img/resume/nypc_prize.webp" alt="KOI Award Certificate" style="width:50px; margin-top:30px;"/>
+    <img src="/assets/img/resume/nypc-prize.webp" alt="KOI Award Certificate" style="width:50px; margin-top:30px;"/>
   </div>
    <div class="col">
     <h3 id="1th NYPC"><b>Bronze Medal in the 1st Nexon Youth Programming Challenge</b></h3>
