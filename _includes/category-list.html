@@ -2,7 +2,10 @@
 
 {% if site.categories.size > 0 %}
   <section id="access-categories">
-    <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.categories -}}</h2>
+    <h2 class="panel-heading">
+      {{- site.data.locales[include.lang].panel.categories -}}
+      <span class="text-muted small ms-2">({{ site.posts | size }})</span>
+    </h2>
     <div class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
       {% assign sort_categories = site.categories | sort %}
       
