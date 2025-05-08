@@ -18,7 +18,7 @@
     {% assign url = include.subpath | default: '' | append: '/' | append: url %}
 
     {%- comment -%} Prepend CND URL {%- endcomment -%}
-    {% if site.cdn %}
+    {% if site.cdn and jekyll.environment != 'development' %}
       {% assign url = site.cdn | append: '/' | append: url %}
     {% endif %}
 
