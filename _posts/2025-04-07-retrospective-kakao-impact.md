@@ -1,5 +1,5 @@
 ---
-title: "Retrospective of Kakao Impact"
+title: "Retrospective: Kakao Impact"
 date: 2025-04-07 22:00:00 +09:00
 categories: [Retrospective, Project]
 author: skykhs3

@@ -1,5 +1,5 @@
 ---
-title: "Retrospective of Ara"
+title: "Retrospective: NewAra"
 date: 2024-10-31 00:48:00 +09:00
 categories: [Retrospective, Project]
 author: skykhs3
@@ -48,14 +48,14 @@ description: I developed Ara, the official KAIST community app, using Flutter. I
 </div>
 
 - **Login Logic**: Integrate KAIST SSO authentication so that only KAIST students can log in.
-- **Post Viewing**: Users should be able to view posts organized by boards
+- **Post Viewing**: Users should be able to view posts organized by board.
 
 - **Post Creation and Editing**: Users can add and edit posts in HTML format, with support for attachments.
 - **Comments**: Enable users to comment on posts.
 
 - **Multilingual Design**: The interface should support both English and Korean.
 
-## 2. Why did I choose Flutter to implement a mobile app.
+## 2. Why did I choose Flutter to implement a mobile app?
 
 ### 2.1 Pros
 
@@ -65,7 +65,7 @@ description: I developed Ara, the official KAIST community app, using Flutter. I
 
 ### 2.2 Cons
 
-- **Not Native app**: Using advanced and the latest native features can be challenging. I rely solely on the Flutter SDK and its latest updates.
+- **Not a Native app**: Using advanced and the latest native features can be challenging. I rely solely on the Flutter SDK and its latest updates.
 
 - **Relatively Small Flutter Community**: Fewer available libraries and community resources.
 
@@ -128,9 +128,9 @@ NEW-ARA-APP
 
 - **CI/CD** is managed by GitHub Actions and [fastlane](https://docs.fastlane.tools/getting-started/cross-platform/flutter/){:target="_blank"}. Deployment keys, such as .jks files, are securely stored in GitHub Secrets.
 - **assets/**: It consists of images, fonts, and translations.
-- **lib/models/**: It defines the schemas for API requests and response.
+- **lib/models/**: It defines the schemas for API requests and responses.
 - **lib/pages/**: It contains the structure of pages displayed in the app.
-- **lib/providers/**: [Provider](https://pub.dev/packages/provider){:target="_blank"} is official state management libraries. Each dart file manages an entity's state.
+- **lib/providers/**: [Provider](https://pub.dev/packages/provider){:target="_blank"} is an official state management libraries. Each dart file manages an entity's state.
 - **lib/widgets/**: It contains reusable, common widgets.
 
 ### 3.2 Provider
@@ -166,21 +166,21 @@ class MyApp extends StatelessWidget {
 
 ### 3.3 Role
 
-We divide roles by features.
+We divided roles by features.
 
 - [Sang-oh Kim](https://github.com/sangohkim){:target="_blank"}: Responsible for implementing the comment writing system, personal profile editing, scrap system, and CI/CD.
 - [Me](https://github.com/skykhs3){:target="_blank"}: Responsible for implementing the post and board view system, login system, and post writing system.
 
 ## 4. How I implemented login
 
-The login page is composed of a [Web View](https://pub.dev/packages/webview_flutter){:target="_blank"}. To use the Ara app, users must log in through the SPARCS SSO web page, which serves as a club-based SSO system.
+The login page is composed of a [WebView](https://pub.dev/packages/webview_flutter){:target="_blank"}. To use the Ara app, users must log in through the SPARCS SSO web page, which serves as a club-based SSO system.
 
 SPARCS SSO authenticates by storing cookies in the web browser, making a WebView essential. This includes cookies like csrftoken and sessionId for user authentication and session maintenance.
 
 Interestingly, **Flutter** allows access to WebView cookies, which could pose a security risk. I'll explain the importance of cookie permissions in a later section.
 
 ## 5. How We Implemented Post Creation, Editing, and Viewing
-I used [Flutter Quill](https://pub.dev/packages/flutter_quill){:target="_blank"} to implement the HTML editor, and sangohkim used [Web View](https://pub.dev/packages/webview_flutter){:target="_blank"} to implement the HTML viewer.
+I used [Flutter Quill](https://pub.dev/packages/flutter_quill){:target="_blank"} to implement the HTML editor, and Sang-oh Kim used [WebView](https://pub.dev/packages/webview_flutter){:target="_blank"} to implement the HTML viewer.
 
 We prioritized publisher reliability, points, and latest published date when choosing the libraries.
 
@@ -190,12 +190,12 @@ We prioritized publisher reliability, points, and latest published date when cho
 ## 6. Troubleshooting with Play Store
 
 ### 6.1. Play Store Reviewer's Spam Comments
-We gave the Play Store reviewer a test account to review our app. However, for some reason, the tester repeatedly posted meaningless comments like emails on the app during the review process. I contacted the Play Store regarding this behavior and received a response stating that "the developer will need to take appropriate action." As a result, I've added a special message for testers: "Please refrain from spamming comments on this app."
+We gave the Play Store reviewer a test account to review our app. However, for some reason, the reviewer repeatedly posted meaningless comments, such as email addresses, on the app during the review process. I contacted the Play Store regarding this behavior and received a response stating that "the developer will need to take appropriate action." As a result, I've added a special message for reviewers: "Please refrain from spamming comments on this app."
 
 [Pull Request](https://github.com/sparcs-kaist/new-ara-app/pull/156){:target="_blank"}
 
 
-![Review's Comment](/assets/img/posts/2024-10-31-retrospective-new-ara/review-comment.webp)
+![Reviewer's Spam Comments](/assets/img/posts/2024-10-31-retrospective-new-ara/review-comment.webp)
 *Review's Comments*
 
 ![Received Email](/assets/img/posts/2024-10-31-retrospective-new-ara/received-email.webp)
@@ -294,7 +294,7 @@ Please see attached screenshots for details.
 </details>
 
 ### 7.2 Solution
-The backend team couldn't create the function using API communication, so I implemented it using app cache as a workaround. However, this solution has limitations: if you delete and reinstall the app or install it on another phone, the blocked users won't be applied and your membership status won't be properly reflected.
+The backend team couldn't create the function using API communication, so I implemented it using app cache as a workaround. However, this solution has limitations: if you delete and reinstall the app or install it on another phone, the blocked users won't be blocked and your membership status won't be properly reflected.
 
 ## 8. CI/CD
 We implemented Android and iOS CI/CD with [Fastlane](https://docs.fastlane.tools/){:target="_blank"} and [Github Actions](https://github.com/sparcs-kaist/new-ara-app/actions){:target="_blank"}
@@ -331,10 +331,10 @@ lib/
 
 ```
 
-- **models/**: It stores data and state of the app.
+- **models/**: It stores the data and state of the app.
 - **views/**: It is directly related with UI of the app.
-- **controllers/**: It overrides [ChangeNotifier](https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html){:target="_blank"} and controls data of models. When the model changes, controllers call `notifyListeners()` and update the views.
-- **api_service/**: It defines schemas of API and API functions.
+- **controllers/**: It extends [ChangeNotifier](https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html){:target="_blank"} and controls data of models. When the model changes, controllers call `notifyListeners()` and update the views.
+- **api_service/**: It defines the schemas of API and API functions.
 
 ### 9.2. Code Push
 

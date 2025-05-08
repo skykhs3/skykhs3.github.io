@@ -1,5 +1,5 @@
 ---
-title: "Retrospective of Bagelcode"
+title: "Retrospective: Bagelcode"
 date: 2024-09-04 18:00:00 +09:00
 categories: [Retrospective, Company]
 author: skykhs3
