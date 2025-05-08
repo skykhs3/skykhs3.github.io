@@ -220,9 +220,9 @@ We gave the Play Store reviewer a test account to review our app. However, for s
 ### 7.1. Rejections
 
 <details markdown="1">
-<summary>User Account Deletion Request</summary>
+<summary><b>It was rejected because there was no user account deletion feature.</b></summary>
 
-```
+<div markdown="1" style="font-style: italic;">
 Hello,
 
 Thank you for your efforts to follow our guidelines. There are still some issues that need your attention.
@@ -263,16 +263,15 @@ Resources
 - Review frequently asked questions and learn more about the account deletion requirements. 
 - Apps that offer Sign in with Apple should use the Sign in with Apple REST API to revoke user tokens.
 
-Please see attached screenshots for details. 
-```
+Please see attached screenshots for details.
+</div>
 </details>
 
 <details markdown="1">
 <summary>
-<span markdown="1">Request of feature of blocking other users</span>
+<span markdown="1"><b>It was rejected because there was no user blocking feature.</b></span>
 </summary>
-
-```
+<div markdown="1" style="font-style: italic;">
 Hello,
 
 Thank you for your efforts to follow our guidelines. There are still some issues that need your attention.
@@ -290,7 +289,7 @@ To resolve this issue, please revise your app to implement all of the following 
 - A mechanism for users to block abusive users
 
 Please see attached screenshots for details. 
-```
+</div>
 </details>
 
 ### 7.2 Solution
@@ -351,7 +350,7 @@ If I want to implement an app for Apple Watch, I would eventually need to implem
 It's challenging to find bugs in the app. Our app follows a development cycle like the graph below:
 
 ```mermaid
-graph LR
+graph TD
     A[Gather requirements] --> B[Analysis and design]
     B[Analysis and design] --> C[Code]
     C[Code] --> D[Test]
@@ -365,7 +364,7 @@ graph LR
 While TDD (Test-Driven Development) isn't absolutely essential, it could be beneficial for effectively catching bugs and organizing features more clearly.
 
 ```mermaid
-graph LR
+graph TD
     A[Gather requirements] --> B[Analysis and design]
     B[Analysis and design] --> C[Code]
     C[Write test code] --> D[Write feature code]

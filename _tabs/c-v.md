@@ -13,11 +13,11 @@ toc: true
 
 ## **Hyeonsu Kim 김현수**
 
-### GitHub: [skykhs3](https://github.com/skykhs3/)
+### GitHub: [skykhs3](https://github.com/skykhs3/){:target="_blank"}
 
-### Linkedin: [default](https://www.linkedin.com/in/default/)
+### Linkedin: [default](https://www.linkedin.com/in/default/){:target="_blank"}
 
-### Email: [skykhs3@naver.com](mailto:skykhs3@naver.com)
+### Email: [skykhs3@naver.com](mailto:skykhs3@naver.com){:target="_blank"}
 
 ---
 

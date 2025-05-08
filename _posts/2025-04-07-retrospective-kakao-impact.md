@@ -39,7 +39,7 @@ I developed both the **frontend(React)** and **backend(Django)**, deployed the s
 
 ```mermaid
 flowchart TD
-    A[National Geographic Information Institute] -->|Aerial Photos| B[GPU Server]
+    A[National Geographic<br/>Information Institute] -->|Aerial Photos| B[GPU Server]
 
 ```
 
@@ -47,10 +47,10 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[National Geographic Information Institute] -->|Aerial Photos| B[Trained AI Model]
-    A[National Geographic Information Institute] -->|Metadata| C[Coordinate Converter]
-    B[Trained AI Model] -->|Solar panel x,y pixel coordinates on photos| C[Coordinate Converter]
-    C[Coordinate Converter] -->|Solar panel longitude, latitude| E[Database; SQLite]
+    A[National Geographic<br/>Information Institute] -->|Aerial Photos| B[Trained AI Model]
+    A[National Geographic<br/>Information Institute] -->|Metadata| C[Coordinate Converter]
+    B[Trained AI Model] -->|Solar panel x,y pixel<br/>coordinates on photos| C[Coordinate Converter]
+    C[Coordinate Converter] -->|Solar panel<br/>longitude, latitude| E[Database; SQLite]
 ```
 
 ### 3.3. Service
@@ -58,7 +58,7 @@ flowchart TD
 ```mermaid
 flowchart TD
     A[Client] <-->  B
-    subgraph Personal Server
+    subgraph Physical Server
         B[Nginx] <--> C[Bundled Frontend Files]
         B <--> D[Gunicorn]
         D <--> E[Django]
