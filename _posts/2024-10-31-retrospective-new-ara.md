@@ -8,7 +8,7 @@ image:
   path: /assets/img/posts/2024-10-31-retrospective-new-ara/poster.webp
   alt: Ara 1.0.0
   show_in_post: true
-  background_color: '#cc5547'
+  background_color: '#ca5349'
 tags:
   - ara
   - flutter
