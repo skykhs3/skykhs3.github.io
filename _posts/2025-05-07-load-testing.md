@@ -219,16 +219,23 @@ export default function (){
 ```
 
 > You need to open port 5665 on EC2 and [Security Group](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html){:target="_blank"} to access the web dashboard
-{: .prompt-warning}
+{: .prompt-tip}
 
 ## 4. [Test Results](/assets/img/posts/2025-05-07-load-testing/k6-report-container1.html){:target="_blank"}
 ![K6 load test report for one container](/assets/img/posts/2025-05-07-load-testing/report-one-container.webp)
 
-- Throughput: ~270 RPS on average, peaking at ~344 RPS
-- Latency: average ~0.93 seconds, 95th percentile ~1.2 seconds, 99th percentile ~1.4 seconds
+- Throughput: peaking at ~350 RPS
+- Latency: average ~1.5 seconds, 95th percentile ~1.2 seconds, 99th percentile ~1 minute
 
-### What is the bottleneck of the server?
-### 4.1. Database?
+## 5. What is the bottleneck of the server?
+### 5.1. Network?
+![Network Speed](/assets/img/posts/2025-05-07-load-testing/network-latency.webp)
+*Network Speed*
+
+> - The maximum network speed is sufficient to handle 66 Mbps at peak times.
+{: .prompt-tip}
+
+### 5.2. Database?
 ```typescript
 let start = Date.now();
 // ...get documents with mongodb and save to in-memory cache
@@ -245,9 +252,9 @@ logger.info(`Data fetch duration: ${duration[0]}ms, ${duration[1]}ms`);
 > - It only takes 20 to 40 ms.
 > - I implemented this as a cron job.
 > - The total size of the documents in the collection is always the same (220MB).
-{: .prompt-warning}
+{: .prompt-tip}
 
-### 4.2. Nginx?
+### 5.3. Nginx?
 ```conf
 http {
   log_format  main_timing  '$remote_addr - $remote_user [$time_local] "$request" '
@@ -266,22 +273,22 @@ The difference between `rt` and `urt` represents the Nginx overhead, and `urt` r
 ![Nginx latency chart](/assets/img/posts/2025-05-07-load-testing/nginx-latency-time.webp)
 *Nginx Latency*
 
-> There is no nginx overhead.
-{: .prompt-warning}
+> There is **no nginx overhead**.
+{: .prompt-tip}
 
-### 4.3. Application?
+### 5.4. Application?
 ```bash
 top
 ```
 
 ![CPU usage: one core fully utilized](/assets/img/posts/2025-05-07-load-testing/one-core.webp)
-> I found the cause of the bottleneck! The Node.js process is using 100% of a single CPU core, but it cannot utilize more than that. This is because Node.js is single-threaded, so a single Express.js application can only use one CPU core.
+> A Node.js process is the cause of the bottleneck! The Node.js process is using 100% of a single CPU core, but it cannot utilize more than that. This is because Node.js is single-threaded. In other words, a single Express.js application can only use one CPU core.
 {: .prompt-warning}
 
-## 5. How I changed it to improve
-### 5.1. Increasing the number of backend containers
+## 6. How I changed it to improve
+### 6.1. Increasing the number of backend containers
 
-#### 5.1.1. Improvements
+#### 6.1.1. Improvements
 
 ```mermaid
 graph LR
@@ -296,7 +303,7 @@ graph LR
     end
 ```
 
-#### 5.1.2. Results
+#### 6.1.2. Results
 
 [Test results when there are two backend containers](/assets/img/posts/2025-05-07-load-testing/k6-report-container2.html){:target="_blank"}
 
@@ -321,8 +328,8 @@ top
 
 I also confirmed that each container uses 100% of each core.
 
-### 5.2. Decreasing CPU-heavy operations in application level
-#### 5.2.1. Improvements
+### 6.2. Decreasing CPU-heavy operations in application level
+#### 6.2.1. Improvements
 CPU-intensive operations include functions such as JSON.stringify(obj), JSON.parse(str), structuredClone(obj), lodash.cloneDeep(obj), array.sort(), and array.map(). In my Express.js backend code, I simply pre-processed the result of JSON.stringify(obj).
 
 ```typescript
@@ -339,7 +346,7 @@ app.get("/api/server-status", async (req: Request, res: Response) => {
 });
 ```
 
-#### 5.2.2 Results
+#### 6.2.2 Results
 
 [Test results when Cpu-Heavy Operation is optimized](/assets/img/posts/2025-05-07-load-testing/stringify.html){:target="_blank"}
 
@@ -361,8 +368,8 @@ glances
 > The glances command gives more specific status information about the server than the top command, but it uses more resources.
 {: .prompt-tip}
 
-### 5.3. Changing from HTTPS 1.1 to HTTPS 2.0 can improve performance?
-#### 5.3.1. Improvements
+### 6.3. Changing from HTTPS 1.1 to HTTPS 2.0 can improve performance?
+#### 6.3.1. Improvements
 ```conf
 server {
   server_name api.kaist.techceo.kr;
@@ -393,14 +400,14 @@ graph LR
     end
 ```
 
-#### 5.3.2. Results
+#### 6.3.2. Results
 [Test results when http2 set up](/assets/img/posts/2025-05-07-load-testing/http2.html){:target="_blank"}
 
 > There is no performance difference between https 1.1 and https 2.0.
 {: .prompt-info}
 
 
-## 6. Conclusion
+## 7. Conclusion
 
 ![Vecel Web Analytics](/assets/img/posts/2025-05-07-load-testing/vecel-web-analytics.webp)
 *Vecel Web Analytics: Real Visitors*
