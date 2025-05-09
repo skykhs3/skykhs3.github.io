@@ -352,7 +352,7 @@ app.get("/api/server-status", async (req: Request, res: Response) => {
 
 ---
 
-```
+```bash
 glances
 ```
 ![Glances system monitoring output](/assets/img/posts/2025-05-07-load-testing/cpu-burning.webp)
@@ -394,6 +394,7 @@ graph LR
 ```
 
 #### 5.3.2. Results
+[Test results when http2 set up](/assets/img/posts/2025-05-07-load-testing/http2.html){:target="_blank"}
 
 > There is no performance difference between https 1.1 and https 2.0.
 {: .prompt-info}
