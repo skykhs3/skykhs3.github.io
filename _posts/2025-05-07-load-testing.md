@@ -302,8 +302,8 @@ graph LR
 
 [Test results when there are three backend containers](/assets/img/posts/2025-05-07-load-testing/k6-report-container3.html){:target="_blank"}
 
-![K6 load test report for two and three containers](/assets/img/posts/2025-05-07-load-testing/report-two-three.webp)
-*Left: two backend containers set up<br/> Right: three backend containers set up*
+![K6 load test report for two and three containers](/assets/img/posts/2025-05-07-load-testing/report-one-two-three.webp)
+*Lef: one backend containers set up<br/>Mid: two backend containers set up<br/>Rig: three backend containers set up*
 
 The throughput showed a **linear relationship** with the increasing number of containers, **but it did not increase exactly two or three times.**
 
