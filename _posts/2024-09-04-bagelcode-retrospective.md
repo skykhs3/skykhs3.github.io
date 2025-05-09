@@ -4,7 +4,7 @@ date: 2024-09-04 18:00:00 +09:00
 categories: [Retrospective, Company]
 author: skykhs3
 image:
-  path: /assets/img/posts/2024-09-04-bagelcode-retrospective/logo.webp
+  path: /assets/img/posts/2024-09-04-bagelcode-retrospective/logo.webp?v=1000
   alt: "Bagelcode: Mobile Game Company"
   show_in_post: true
 tags:
