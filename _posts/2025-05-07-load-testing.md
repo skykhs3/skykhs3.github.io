@@ -400,3 +400,10 @@ graph LR
 {: .prompt-info}
 
 
+## 6. Conclusion
+
+![Vecel Web Analytics](/assets/img/posts/2025-05-07-load-testing/vecel-web-analytics.webp)
+*Vecel Web Analytics: Real Visitors*
+
+It's user traffic that doesn't require load testing, but it was nice to take this opportunity to study load testing.
+
