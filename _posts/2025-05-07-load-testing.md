@@ -44,27 +44,20 @@ graph LR
 ### 2.1. Server Specs
 
 
-```
-            .-/+oossssoo+/-.               ubuntu@server 
-        `:+ssssssssssssssssss+:`           ------------- 
-      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 24.04.2 LTS x86_64 
-    .ossssssssssssssssssdMMMNysssso.       Host: ChiefRiver Platform 0.1 
-   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 6.11.0-25-generic 
-  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 1 day, 1 hour, 19 mins 
- /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 2240 (dpkg), 13 (snap) 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.2.21 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1366x768 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   Terminal: node 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: Intel i5-3337U (4) @ 2.700GHz 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   GPU: Intel 3rd Gen Core processor Graphics Controller 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Memory: 2267MiB / 7779MiB 
- /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/
-  +sssssssssdmydMMMMMMMMddddyssssssss+                             
-   /ssssssssssshdmNNNNmyNMMMMhssssss/                              
-    .ossssssssssssssssssdMMMNysssso.
-      -+sssssssssssssssssyyyssss+-
-        `:+ssssssssssssssssss+:`
-            .-/+oossssoo+/-.
+```bash
+ubuntu@server 
+------------- 
+OS: Ubuntu 24.04.2 LTS x86_64 
+Host: ChiefRiver Platform 0.1 
+Kernel: 6.11.0-25-generic 
+Uptime: 1 day, 1 hour, 19 mins 
+Packages: 2240 (dpkg), 13 (snap) 
+Shell: bash 5.2.21 
+Resolution: 1366x768 
+Terminal: node 
+CPU: Intel i5-3337U (4) @ 2.700GHz 
+GPU: Intel 3rd Gen Core processor Graphics Controller 
+Memory: 2267MiB / 7779MiB 
 ```
 
 ### 2.2. Structure
@@ -166,7 +159,7 @@ server {
 
 ```mermaid
 graph LR
-    Browser <--> |HTTPS 2.0| Frontend[Vercel<br/>Frontend Server]
+    Browser --> |HTTPS 2.0| Frontend[Vercel<br/>Frontend Server]
     Browser --> |HTTPS 1.1| Nginx[Nginx Server]
     K6[K6 Load Tester] --> |HTTPS 1.1| Nginx
     
@@ -178,27 +171,20 @@ graph LR
 ## 3. Grafana K6 Server
 
 ### 3.1. Server Specs (AWS t3a.small)
-```text
-            .-/+oossssoo+/-.               ubuntu@ip-172-31-35-93 
-        `:+ssssssssssssssssss+:`           ---------------------- 
-      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 24.04.2 LTS x86_64 
-    .ossssssssssssssssssdMMMNysssso.       Host: t3a.small 
-   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 6.8.0-1024-aws 
-  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 2 hours, 23 mins 
- /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 763 (dpkg), 4 (snap) 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.2.21 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 800x600 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   Terminal: /dev/pts/0 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: AMD EPYC 7571 (2) @ 2.199GHz 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   GPU: 00:03.0 Amazon.com, Inc. Device 1111 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Memory: 216MiB / 1916MiB 
- /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/
-  +sssssssssdmydMMMMMMMMddddyssssssss+                             
-   /ssssssssssshdmNNNNmyNMMMMhssssss/                              
-    .ossssssssssssssssssdMMMNysssso.
-      -+sssssssssssssssssyyyssss+-
-        `:+ssssssssssssssssss+:`
-            .-/+oossssoo+/-.
+```
+ubuntu@ip-172-31-35-93 
+---------------------- 
+OS: Ubuntu 24.04.2 LTS x86_64 
+Host: t3a.small 
+Kernel: 6.8.0-1024-aws 
+Uptime: 2 hours, 23 mins 
+Packages: 763 (dpkg), 4 (snap) 
+Shell: bash 5.2.21 
+Resolution: 800x600 
+Terminal: /dev/pts/0 
+CPU: AMD EPYC 7571 (2) @ 2.199GHz 
+GPU: 00:03.0 Amazon.com, Inc. Device 1111 
+Memory: 216MiB / 1916MiB 
 ```
 
 ### 3.2. Test Code
@@ -241,8 +227,8 @@ export default function (){
 - Throughput: ~270 RPS on average, peaking at ~344 RPS
 - Latency: average ~0.93 seconds, 95th percentile ~1.2 seconds, 99th percentile ~1.4 seconds
 
-### 4.1. What is the bottleneck of the server?
-### 4.2. Database?
+### What is the bottleneck of the server?
+### 4.1. Database?
 ```typescript
 let start = Date.now();
 // ...get documents with mongodb and save to in-memory cache
@@ -261,7 +247,7 @@ logger.info(`Data fetch duration: ${duration[0]}ms, ${duration[1]}ms`);
 > - The total size of the documents in the collection is always the same (220MB).
 {: .prompt-warning}
 
-### 4.3. Nginx?
+### 4.2. Nginx?
 ```conf
 http {
   log_format  main_timing  '$remote_addr - $remote_user [$time_local] "$request" '
@@ -283,7 +269,7 @@ The difference between `rt` and `urt` represents the Nginx overhead, and `urt` r
 > There is no nginx overhead.
 {: .prompt-warning}
 
-### 4.4. Application?
+### 4.3. Application?
 ```bash
 top
 ```
@@ -296,7 +282,19 @@ top
 ### 5.1. Increasing the number of backend containers
 
 #### 5.1.1. Improvements
-To be continued...
+
+```mermaid
+graph LR
+    Browser --> |HTTPS 2.0| Frontend[Vercel<br/>Frontend Server]
+    Browser --> |HTTPS 1.1| Nginx[Nginx Server]
+    K6[K6 Load Tester] --> |HTTPS 1.1| Nginx
+    
+    subgraph Target[Target Server<br/>Physical Computer]
+        Nginx --> |HTTP 1.1| Backend1[Backend<br/>Docker Container]
+        Nginx --> |HTTP 1.1| Backend2[Backend<br/>Docker Container]
+        Nginx --> |HTTP 1.1| Backend3[Backend<br/>Docker Container]
+    end
+```
 
 #### 5.1.2. Results
 
@@ -305,7 +303,7 @@ To be continued...
 [Test results when there are three backend containers](/assets/img/posts/2025-05-07-load-testing/k6-report-container3.html){:target="_blank"}
 
 ![K6 load test report for two and three containers](/assets/img/posts/2025-05-07-load-testing/report-two-three.webp)
-*Left: two, Right: three*
+*Left: two backend containers set up<br/> Right: three backend containers set up*
 
 The throughput showed a **linear relationship** with the increasing number of containers, **but it did not increase exactly two or three times.**
 
@@ -325,7 +323,21 @@ I also confirmed that each container uses 100% of each core.
 
 ### 5.2. Decreasing CPU-heavy operations in application level
 #### 5.2.1. Improvements
-To be continued...
+CPU-intensive operations include functions such as JSON.stringify(obj), JSON.parse(str), structuredClone(obj), lodash.cloneDeep(obj), array.sort(), and array.map(). In my Express.js backend code, I simply pre-processed the result of JSON.stringify(obj).
+
+```typescript
+//let cachedData: AllServerStatus = {};
+let cachedDataStr: string;
+
+/// cronJob to fetch database data.
+...
+///
+
+app.get("/api/server-status", async (req: Request, res: Response) => {
+  //res.status(200).json(cachedData);
+  res.status(200).send(cachedDataStr);
+});
+```
 
 #### 5.2.2 Results
 
@@ -335,11 +347,55 @@ To be continued...
 ![K6 report after optimizing CPU-heavy operations](/assets/img/posts/2025-05-07-load-testing/report-cpu-heavy.webp)
 *CPU status monitoring when CPU-heavy operations are optimized*
 
+> The performance has improved dramatically. The server can now handle **1,500 requests per second**.
+{: .prompt-info}
+
 ---
 
 ```
 glances
 ```
 ![Glances system monitoring output](/assets/img/posts/2025-05-07-load-testing/cpu-burning.webp)
+*Burning my computer...*
+
 > The glances command gives more specific status information about the server than the top command, but it uses more resources.
+{: .prompt-tip}
+
+### 5.3. Changing from HTTPS 1.1 to HTTPS 2.0 can improve performance?
+#### 5.3.1. Improvements
+```conf
+server {
+  server_name api.kaist.techceo.kr;
+  location / {
+        proxy_pass http://project-is-server-down-api;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+    #listen 443 ssl;
+    listen 443 ssl http2;
+...
+```
+
+```mermaid
+graph LR
+    Browser --> |HTTPS 2.0| Frontend[Vercel<br/>Frontend Server]
+    Browser --> |HTTPS 2.0| Nginx[Nginx Server]
+    K6[K6 Load Tester] --> |HTTPS 2.0| Nginx
+    
+    subgraph Target[Target Server<br/>Physical Computer]
+        Nginx --> |HTTP 1.1| Backend1[Backend<br/>Docker Container]
+        Nginx --> |HTTP 1.1| Backend2[Backend<br/>Docker Container]
+        Nginx --> |HTTP 1.1| Backend3[Backend<br/>Docker Container]
+    end
+```
+
+#### 5.3.2. Results
+
+> There is no performance difference between https 1.1 and https 2.0.
 {: .prompt-info}
+
+
