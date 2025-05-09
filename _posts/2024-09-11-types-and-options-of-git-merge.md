@@ -1,7 +1,7 @@
 ---
 title: "Types and Options of Git Merge"
 date: 2024-09-11 01:29:00 +09:00
-categories: [Development, Git]
+categories: [Development, Git/GitHub]
 author: skykhs3
 image:
   path: /assets/img/posts/2024-09-11-types-and-options-of-git-merge/no-ff.webp

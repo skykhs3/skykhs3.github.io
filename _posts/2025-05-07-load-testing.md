@@ -1,7 +1,7 @@
 ---
 title: "Load Testing: Examining the Limitations of a Server"
 date: 2025-05-07 23:00:00 +09:00
-categories: [Development, Load Testing]
+categories: [Development,  DevOps & Infra]
 author: skykhs3
 image:
   path: /assets/img/posts/2025-05-07-load-testing/report-one-container.webp

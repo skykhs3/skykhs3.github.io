@@ -1,7 +1,7 @@
 ---
 title: "백엔드 튜토리얼 Typescript + Express (KOR)"
 date: 2025-03-24 14:00:00 +09:00
-categories: [Development, Express]
+categories: [Development, Learning & Roadmap]
 author: skykhs3
 image:
   path: /assets/img/posts/2025-03-24-express-tutorial/website.webp
