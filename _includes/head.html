@@ -13,6 +13,10 @@
     {% seo title=false %}
   {%- endcapture -%}
 
+  {% if page.url contains '/tags/' and page.url != '/tags/' %}
+    <meta name="robots" content="noindex">
+  {% endif %}
+
   <!-- Setup Open Graph image -->
 
   {% if page.image %}
