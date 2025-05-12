@@ -55,11 +55,13 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 ---
 
+> **Your private key should not be exposed to others!!!**
+> 
 > Keys may be created under the folder you designated 
 > ![I deleted these keys before posting](/assets/img/posts/2025-05-12-ssh-keygen/pri-pub.webp)
 > (`your_key_name`: private key, `your_key_name.pub`: public key.)
 > 
-> **Your private key should not be exposed!!!** These keys are only used for demonstration purposes and have been deleted.
+>  These keys are only used for demonstration purposes and have been deleted.
 {:.prompt-danger}
 
 > [Public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography){:target="_blank"}
@@ -75,18 +77,15 @@ Use the following command to copy your public key to the server in one command:
 ssh-copy-id -i ~/.ssh/your_key_name.pub -p 22 user@your.server.ip 
 ```
 
+---
+
 ### 3-2. Manual Method
 #### Client
 ```bash
-cat ~/.ssh/your_key_name.pub | ssh user@your.server.ip '
-  mkdir -p ~/.ssh &&
-  chmod 700 ~/.ssh &&
-  cat >> ~/.ssh/authorized_keys &&
-  chmod 600 ~/.ssh/authorized_keys
-'
+cat ~/.ssh/your_key_name.pub | ssh -p 22 user@your.server.ip 'mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
 ```
 
-### 4. Verify connecting to a server using a private key
+## 4. Verify connecting to a server using a private key
 
 #### Client
 The system will first attempt to authenticate using your private key before requesting a password.
@@ -97,3 +96,34 @@ ssh -p 22 user@your.server.ip
 
 ![Screenshot: SSH connection without password](/assets/img/posts/2025-05-12-ssh-keygen/ssh-without-password.webp)
 *Successfully connected to the server using SSH key authentication*
+
+## 5. Disable password authentication (Optional)
+
+#### Server
+To enhance security, you can disable password authentication and allow only key-based authentication. Edit the SSH configuration file:
+
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+
+Find and modify these lines:
+```bash
+# Disable password authentication
+PasswordAuthentication no
+# Disable root login
+PermitRootLogin no
+# Enable public key authentication
+PubkeyAuthentication yes
+```
+
+After making changes, restart the SSH service:
+```bash
+# Restart the service
+sudo systemctl restart sshd
+
+# Verify the service status
+sudo systemctl status sshd
+```
+
+> Make sure you have successfully set up key-based authentication before disabling password authentication. Otherwise, you might get locked out of your server.
+{:.prompt-warning}
