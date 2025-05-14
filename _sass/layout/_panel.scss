@@ -68,6 +68,10 @@
     @extend %no-bottom-border;
   }
 }
+#panel-categories {
+  position: -webkit-sticky;
+  position: sticky;
+}
 
 #access-categories {
   a {

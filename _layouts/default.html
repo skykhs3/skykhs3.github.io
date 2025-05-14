@@ -36,10 +36,13 @@ layout: compress
           <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
             <div class="access">
               {% include_cached update-list.html lang=lang %}
-              {% if page.layout != 'post'%}
-                {% include_cached category-list.html lang=lang %}
-              {% endif %}
             </div>
+
+            {% if page.layout != 'post'%}
+              <div class="access" id = "panel-categories">
+                {% include_cached category-list.html lang=lang %}
+              </div>
+            {% endif %}
 
             {% for _include in layout.panel_includes %}
               {% assign _include_path = _include | append: '.html' %}
