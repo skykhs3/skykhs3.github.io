@@ -8,8 +8,8 @@ post: skykhs3
 pin: true
 image:
   path: /assets/img/posts/2024-06-16-thoughts-on-starting-a-github-blog/jekyll_pages.webp
-  alt: Blog
-  show_in_post: false
+  alt: "Jekyll"
+  show_in_post: true
 tags:
   [
     github,
@@ -22,39 +22,37 @@ tags:
     jekyll,
     open source
   ]
+
+description: "Why I start a GitHub Blog? To increase my credibility and uniqueness through personal branding."
+
 ---
 <div markdown="1">
-> What do developers need to stay competitive?
->
-> They must constantly challenge themselves in new fields.
-> 
-> Writing blog content allows people to distinguish what they know from what they don't know.
-> 
-> Through personal branding, they can increase their credibility and uniqueness in their field.
 
 ## 1. Why Start a GitHub Blog? 
 
-The world is vast, and there are many developers. If you want to be a unique presence among the many developers, you need to work harder and challenge yourself in various fields. There are so many areas to study, and new fields and skills are constantly emerging, **so a tendency to shy away from challenges is not suitable for a developer.**
+The world is vast, and there are many developers. If you want to be a unique presence among the many developers, you need to work harder and challenge yourself in various fields. There are so many areas to study, and new fields and skills are constantly emerging. **As a developer, you should not be afraid of challenges. Developers are pioneers and problem solvers.**
 
 That's why I started a GitHub blog. I wanted to learn about creating a Git blog using GitHub Pages and Jekyll, which is a field I'm not familiar with. I needed a place to organize what I studied, so I decided to create one.
 
-Even if I have studied something before, I often don't remember it after a few months. Sometimes, even if I search the internet for materials I had studied before, I can't find them again. I intend to use this blog as a space where I can revisit what I have learned.
+Even if I learn something, I often forget it after a few months. Sometimes, I can't find the materials I studied before, even when I search online. I want to use this blog as a place where I can look back at what I learned.
 
-I believed that I needed a technical blog to increase my own value. **To prove what I know and to showcase the projects I've worked on, a GitHub blog is a perfect space.** Additionally, GitHub is efficient for linking my GitHub, LinkedIn, and projects, and it helps me showcase my resume. This comprehensive integration enhances my professional presence and makes it easier for potential employers or collaborators to see my work and skills.
+I thought I needed a technical blog to show my value. **A GitHub blog is perfect for showing what I know and the projects I've worked on.** It's also great for connecting my GitHub, LinkedIn, and projects. This helps me show my resume better. It makes it easier for people to see my work and skills.
 
 ---
 ## 2. Difficulties in Creating a GitHub Blog
 
-I didn't start by following the [Jekyll tutorial](https://jekyllrb-ko.github.io/); instead, I used open-source blog codes and themes available on GitHub to create one directly. Using the existing GitHub blog themes, you can create a sufficiently attractive blog, and if you have frontend knowledge, you can customize the blog to your liking. However, the challenging part was dealing with unexpected errors when running the blog's local server or deploying it with [GitHub Actions](https://github.com/skykhs3/skykhs3.github.io/actions/workflows/pages-deploy.yml). If you don't have experience solving such errors as a developer, I think the entry barrier is higher compared to other blog creation tools. I also resolved the Git blog errors by referring to other people's blogs.
+I didn't start by following the [Jekyll tutorial](https://jekyllrb.com/); instead, I used open-source blog codes and themes available on GitHub to create one directly. Using the existing GitHub blog themes, you can create a sufficiently attractive blog, and if you have frontend knowledge, you can customize the blog to fit your liking. **However, the challenging part was dealing with unexpected errors when running the blog's local server or deploying it with [GitHub Actions](https://github.com/skykhs3/skykhs3.github.io/actions/workflows/pages-deploy.yml).** Another challenge was modifying CSS, which is always tricky T_T
 
-cf. [My Github Workflows Yaml Sample](https://github.com/skykhs3/skykhs3.github.io/blob/main/.github/workflows/pages-deploy.yml)
+ If you don't have experience solving such errors as a developer, I think the entry barrier is higher compared to other blog creation tools. I also resolved the Git blog errors by referring to other people's blogs.
+
+See my [GitHub Workflows YAML file](https://github.com/skykhs3/skykhs3.github.io/blob/main/.github/workflows/pages-deploy.yml) for reference.
 
 ---
 ## 3. Blog Content
 
 I believe that for this blog to be vital and valuable, it needs to be updated consistently. Ideally, I would post once a week, but I don't want to force out content or write low-quality posts. Nonetheless, I plan to post at least once every two weeks. I intend to organize my wide-ranging interests, from development and design book contents to web development, game development, and algorithms (coding tests), on this blog.
 
-Additionally, if you truly want to differentiate yourself from others, writing content in English could be beneficial. If not only Korean developers but also people from around the world read my blog, it would further increase my value.
+Additionally, if you truly want to differentiate yourself from others, writing content in English could be beneficial. If not only Korean developers but also people from around the world read my blog, it would further increase my value. Well, I have very poor English conversation and writing skills, so one purpose of posting in English is to improve my English skills. **My English isn't very good, so writing in English will help me improve my skills.** I'm sorry if you find any grammar mistakes.
 
 ---
 ## 4. Continuity
