@@ -9,7 +9,7 @@ pin: true
 image:
   path: /assets/img/posts/2024-06-16-thoughts-on-starting-a-github-blog/jekyll_pages.webp
   alt: "Jekyll"
-  show_in_post: true
+  show_in_post: false
 tags:
   [
     github,
@@ -23,15 +23,16 @@ tags:
     open source
   ]
 
-description: "Why I start a GitHub Blog? To increase my credibility and uniqueness through personal branding."
 
 ---
 <div markdown="1">
 
->**Developers are pioneers and problem solvers.<br/>They should not be afraid of challenges and should be open to solutions that go beyond code.**
+>**Developers are pioneers and problem solvers.**
+>
+>**They should not be afraid of challenges and should be open to solutions that go beyond code.**
 {: .prompt-tip}
 
-## 1. Why Start a GitHub Blog? 
+## 1. Why I Start a GitHub Blog? 
 
 The world is vast, and there are many developers. If you want to be a unique presence among the many developers, you need to work harder and challenge yourself in various fields. There are so many areas to study, and new fields and skills are constantly emerging. Even if I learn something, I often forget it after a few months. Sometimes, I can't find the materials I studied before, even when I search online.
 
