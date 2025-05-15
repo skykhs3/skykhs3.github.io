@@ -41,20 +41,17 @@ ssh-keygen -t ed25519 -C "Git Signing Key" -f ~/.ssh/id_ed25519_signing -N ""
 >[ssh-keygen official docs](https://man.openbsd.org/ssh-keygen)
 {: .prompt-info}
 
-# 3. Verify generated a public key.
+# 3. Verify the public key
 ```bash
-cat ~~/.ssh/id_ed25519_signing
+cat ~/.ssh/id_ed25519_signing.pub
 ```
 **Copy the public key in the red box.**
-
 ![print a public key](/assets/img/posts/2025-05-15-signing-commits/cat-pub.webp)
 *print a public key*
 
+# 4. Add the SSH key to GitHub
 
-
-# 4. Going to github website
-
-**Go to github settings.**
+**Go to 'SSH and GPG keys' menu.**
 ![print a public key](/assets/img/posts/2025-05-15-signing-commits/github-settings.webp)
 *print a public key*
 
@@ -62,9 +59,9 @@ cat ~~/.ssh/id_ed25519_signing
 ![print a public key](/assets/img/posts/2025-05-15-signing-commits/github-add-new-ssh-key.webp)
 *Add new SSH key.*
 
-# 5. Setting up settings on your local computer
+# 5. Set up settings on your local computer
 
-```
+```bash
 git config --global gpg.format ssh
 git config --global user.signingkey ~/.ssh/id_ed25519_signing.pub
 git config --global commit.gpgsign true
