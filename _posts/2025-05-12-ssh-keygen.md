@@ -47,11 +47,15 @@ sudo adduser alice
 ## 2. Make a public key and a private key.
 #### Client
 ```bash
-ssh-keygen -t ed25519 -C "your_email@example.com"
+# -t: key type (ed25519), -C: comment/description
+ssh-keygen -t ed25519 -C "your_command"
 ```
 
 ![Screenshot: Generating SSH keys](/assets/img/posts/2025-05-12-ssh-keygen/ssh-keygen.webp)
 *Generating a new SSH key pair using ED25519 algorithm*
+
+>[ssh-keygen docs](https://man.openbsd.org/ssh-keygen)
+{: .prompt-info}
 
 ---
 
