@@ -1,10 +1,10 @@
 ---
-title: "ssh-keygen: Connecting to a server with ease and security"
+title: "SSH Key Authentication: A Secure Way to Connect to Servers"
 date: 2025-05-12 16:50:00 +09:00
 categories: [Development,  Security]
 author: skykhs3
 image:
-  path: /assets/img/posts/2025-05-12-ssh-keygen/ssh-keygen.webp
+  path: /assets/img/posts/2025-05-12-ssh-key-authentication/ssh-keygen.webp
   alt: ssh-keygen
   show_in_post: true
   background_color: black
@@ -29,7 +29,7 @@ Generate a new user named `alice`
 sudo adduser alice
 ```
 
-![Screenshot: Creating a new user](/assets/img/posts/2025-05-12-ssh-keygen/adduser.webp)
+![Screenshot: Creating a new user](/assets/img/posts/2025-05-12-ssh-key-authentication/adduser.webp)
 *Creating a new user with sudo privileges*
 
 > If you want to delete the user and the user's home directory, run the following command:
@@ -51,10 +51,10 @@ sudo adduser alice
 ssh-keygen -t ed25519 -C "your_command"
 ```
 
-![Screenshot: Generating SSH keys](/assets/img/posts/2025-05-12-ssh-keygen/ssh-keygen.webp)
+![Screenshot: Generating SSH keys](/assets/img/posts/2025-05-12-ssh-key-authentication/ssh-keygen.webp)
 *Generating a new SSH key pair using ED25519 algorithm*
 
->[ssh-keygen docs](https://man.openbsd.org/ssh-keygen)
+>[ssh-keygen official docs](https://man.openbsd.org/ssh-keygen)
 {: .prompt-info}
 
 ---
@@ -62,7 +62,7 @@ ssh-keygen -t ed25519 -C "your_command"
 > **Your private key should not be exposed to others!!!**
 > 
 > Keys may be created under the folder you designated 
-> ![I deleted these keys before posting](/assets/img/posts/2025-05-12-ssh-keygen/pri-pub.webp)
+> ![I deleted these keys before posting](/assets/img/posts/2025-05-12-ssh-key-authentication/pri-pub.webp)
 > (`your_key_name`: private key, `your_key_name.pub`: public key.)
 > 
 >  These keys are only used for demonstration purposes and have been deleted.
@@ -98,7 +98,7 @@ The system will first attempt to authenticate using your private key before requ
 ssh -p 22 user@your.server.ip
 ```
 
-![Screenshot: SSH connection without password](/assets/img/posts/2025-05-12-ssh-keygen/ssh-without-password.webp)
+![Screenshot: SSH connection without password](/assets/img/posts/2025-05-12-ssh-key-authentication/ssh-without-password.webp)
 *Successfully connected to the server using SSH key authentication*
 
 ## 5. Disable password authentication (Optional)
