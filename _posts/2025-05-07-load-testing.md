@@ -219,7 +219,7 @@ export default function (){
 ```
 
 > You need to open port 5665 on EC2 and [Security Group](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html){:target="_blank"} to access the web dashboard
-{: .prompt-tip}
+{: .prompt-warning}
 
 ## 4. [Test Results](/assets/img/posts/2025-05-07-load-testing/k6-report-container1.html){:target="_blank"}
 ![K6 load test report for one container](/assets/img/posts/2025-05-07-load-testing/report-one-container.webp)
@@ -282,7 +282,7 @@ top
 ```
 
 ![CPU usage: one core fully utilized](/assets/img/posts/2025-05-07-load-testing/one-core.webp)
-> A Node.js process is the cause of the bottleneck! The Node.js process is using 100% of a single CPU core, but it cannot utilize more than that. This is because Node.js is single-threaded. In other words, a single Express.js application can only use one CPU core.
+> **A Node.js process is the cause of the bottleneck!** The Node.js process is using 100% of a single CPU core, but it cannot utilize more than that. This is because Node.js is single-threaded. In other words, a single Express.js application can only use one CPU core.
 {: .prompt-warning}
 
 ## 6. How I changed it to improve
