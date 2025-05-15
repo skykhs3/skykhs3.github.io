@@ -73,6 +73,17 @@ git config --global commit.gpgsign true
 | `user.signingkey`     | Specify the path to the public key (must be `.pub` file) |
 | `commit.gpgsign true` | Automatically sign all commits (no need to use `-S` flag.)<br/>cf. `git commit -S -m "feat: my commit` |
 
+> Of course, you can apply config to one specific repository.
+> ```bash
+> # Navigate to your repository
+> cd your-repository
+> 
+> # Configure Git to use SSH for signing
+> git config --local gpg.format ssh
+> git config --local user.signingkey ~/.ssh/id_ed25519_signing.pub
+> git config --local commit.gpgsign true
+> ```
+{: .prompt-tip}
 
 # 6. Done
 

@@ -28,15 +28,17 @@ description: "Why I start a GitHub Blog? To increase my credibility and uniquene
 ---
 <div markdown="1">
 
+>**Developers are pioneers and problem solvers.<br/>They should not be afraid of challenges and should be open to solutions that go beyond code.**
+{: .prompt-tip}
+
 ## 1. Why Start a GitHub Blog? 
 
-The world is vast, and there are many developers. If you want to be a unique presence among the many developers, you need to work harder and challenge yourself in various fields. There are so many areas to study, and new fields and skills are constantly emerging. **As a developer, you should not be afraid of challenges. Developers are pioneers and problem solvers.**
+The world is vast, and there are many developers. If you want to be a unique presence among the many developers, you need to work harder and challenge yourself in various fields. There are so many areas to study, and new fields and skills are constantly emerging. Even if I learn something, I often forget it after a few months. Sometimes, I can't find the materials I studied before, even when I search online.
 
-That's why I started a GitHub blog. I wanted to learn about creating a Git blog using GitHub Pages and Jekyll, which is a field I'm not familiar with. I needed a place to organize what I studied, so I decided to create one.
+**I needed a place where I could look back at what I learned.** That's why I started a GitHub blog. I wanted to learn about creating a Git blog using GitHub Pages and Jekyll, which was a field I wasn't familiar with. I actively tried to learn about making GitHub blog, which was a new field for me.
 
-Even if I learn something, I often forget it after a few months. Sometimes, I can't find the materials I studied before, even when I search online. I want to use this blog as a place where I can look back at what I learned.
 
-I thought I needed a technical blog to show my value. **A GitHub blog is perfect for showing what I know and the projects I've worked on.** It's also great for connecting my GitHub, LinkedIn, and projects. This helps me show my resume better. It makes it easier for people to see my work and skills.
+Additionally, I thought I needed a technical blog to show my value. **A GitHub blog is perfect for showing what I know and the projects I've worked on.** It's also great for connecting my GitHub, LinkedIn, and projects. This helps me show my resume better. It makes it easier for people to see my work and skills.
 
 ---
 ## 2. Difficulties in Creating a GitHub Blog
