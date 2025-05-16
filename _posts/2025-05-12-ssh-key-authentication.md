@@ -14,12 +14,11 @@ tags:
 description: Let me explain how to connect via SSH using a private key.
 ---
 
-## 0. Version
-```env
-SSH Client: MacOS sequoia 15.3.1
-SSH Server: Ubuntu 24.04
-OpenSSH_9.8p1
-```
+| Item | Version |
+|-|-|
+| SSH Client OS | MacOS sequoia 15.3.1 |
+| SSH Server OS | Ubuntu 24.04 |
+| OpenSSH | 9.8p1 |
 
 ## 1. Generate a new user to login (Optional)
 

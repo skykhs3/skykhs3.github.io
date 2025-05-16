@@ -15,10 +15,14 @@ tags:
 description: Let me explain how to sign commits.
 ---
 
-> [GitHub Docs: About commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification)
+> [GitHub Docs: Managing commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification)
 {: .prompt-info}
 
----
+| Item | Version |
+|-|-|
+| OS | MacOS sequoia 15.3.1 |
+| Git | 2.49.0 |
+| OpenSSH | 9.8p1 |
 
 # 1. Overview
 
