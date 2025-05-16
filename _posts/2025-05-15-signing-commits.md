@@ -15,7 +15,7 @@ tags:
 description: Let me explain how to sign commits.
 ---
 
-> [GitHub Docs: Managing commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification)
+> [GitHub Docs: Managing commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification){:target="_blank"}
 {: .prompt-info}
 
 | Item | Version |
@@ -42,7 +42,7 @@ ssh-keygen -t ed25519 -C "Git Signing Key" -f ~/.ssh/id_ed25519_signing -N ""
 ![ssh-keygen](/assets/img/posts/2025-05-15-signing-commits/ssh-keygen.webp)
 *ssh-keygen*
 
->[ssh-keygen official docs](https://man.openbsd.org/ssh-keygen)
+>[ssh-keygen official docs](https://man.openbsd.org/ssh-keygen){:target="_blank"}
 {: .prompt-info}
 
 # 3. Verify the public key

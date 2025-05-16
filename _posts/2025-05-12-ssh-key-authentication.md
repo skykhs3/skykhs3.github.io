@@ -53,7 +53,7 @@ ssh-keygen -t ed25519 -C "your_command"
 ![Screenshot: Generating SSH keys](/assets/img/posts/2025-05-12-ssh-key-authentication/ssh-keygen.webp)
 *Generating a new SSH key pair using ED25519 algorithm*
 
->[ssh-keygen official docs](https://man.openbsd.org/ssh-keygen)
+>[ssh-keygen official docs](https://man.openbsd.org/ssh-keygen){:target="_blank"}
 {: .prompt-info}
 
 ---

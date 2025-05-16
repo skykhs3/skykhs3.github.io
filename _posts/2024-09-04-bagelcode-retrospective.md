@@ -47,7 +47,7 @@ I independently undertook the development work for the following projects:
 I implemented the logic for rewarding items to users who achieve certain milestones or frequencies on [third-party payment sites](https://store.clubvegasslots.com/){:target="_blank"} to facilitate third-party payments. I also implemented a system to send analytic data to the Data Analysis team to measure the revenue impact of these challenge missions. Additionally, I improved an in-house admin website that can manage milestones or frequencies tailored to each player. **My task was to improve the company's revenue.**
 
 ### Website Login Page Renewal
-I developed a [payment website login page](https://playclubvegas.com/) that allows users to log in by clicking a button, which automatically launches the game app and logs them in. **This task improved the login experience, allowing users to log in more easily.**
+I developed a [payment website login page](https://playclubvegas.com/){:target="_blank"} that allows users to log in by clicking a button, which automatically launches the game app and logs them in. **This task improved the login experience, allowing users to log in more easily.**
 
 ### Refactoring Event Rewards Logic
 I refactored the code related to event rewards and developed both the frontend and backend code for the in-house admin website. **This enhancement enabled game administrators to dynamically and easily configure event reward values.**

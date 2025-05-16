@@ -44,11 +44,11 @@ Additionally, I thought I needed a technical blog to show my value. **A GitHub b
 ---
 ## 2. Difficulties in Creating a GitHub Blog
 
-I didn't start by following the [Jekyll tutorial](https://jekyllrb.com/); instead, I used open-source blog codes and themes available on GitHub to create one directly. Using the existing GitHub blog themes, you can create a sufficiently attractive blog, and if you have frontend knowledge, you can customize the blog to fit your liking. **However, the challenging part was dealing with unexpected errors when running the blog's local server or deploying it with [GitHub Actions](https://github.com/skykhs3/skykhs3.github.io/actions/workflows/pages-deploy.yml).** Another challenge was modifying CSS, which is always tricky T_T
+I didn't start by following the [Jekyll tutorial](https://jekyllrb.com/){:target="_blank"}; instead, I used open-source blog codes and themes available on GitHub to create one directly. Using the existing GitHub blog themes, you can create a sufficiently attractive blog, and if you have frontend knowledge, you can customize the blog to fit your liking. **However, the challenging part was dealing with unexpected errors when running the blog's local server or deploying it with [GitHub Actions](https://github.com/skykhs3/skykhs3.github.io/actions/workflows/pages-deploy.yml){:target="_blank"}.** Another challenge was modifying CSS, which is always tricky T_T
 
  If you don't have experience solving such errors as a developer, I think the entry barrier is higher compared to other blog creation tools. I also resolved the Git blog errors by referring to other people's blogs.
 
-See my [GitHub Workflows YAML file](https://github.com/skykhs3/skykhs3.github.io/blob/main/.github/workflows/pages-deploy.yml) for reference.
+See my [GitHub Workflows YAML file](https://github.com/skykhs3/skykhs3.github.io/blob/main/.github/workflows/pages-deploy.yml){:target="_blank"} for reference.
 
 ---
 ## 3. Blog Content

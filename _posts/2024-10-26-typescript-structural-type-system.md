@@ -44,11 +44,11 @@ The above code has no errors at a `getTruckAttributes` function. The code prints
 ## This happens because of structural type system 
 
 ### A structural type system
-[A structural type system](https://en.wikipedia.org/wiki/Structural_type_system) (or property-based type system) is a major class of type systems in which type compatibility and equivalence are determined by the type's actual structure or definition and not by other characteristics such as its name or place of declaration.
+[A structural type system](https://en.wikipedia.org/wiki/Structural_type_system){:target="_blank"} (or property-based type system) is a major class of type systems in which type compatibility and equivalence are determined by the type's actual structure or definition and not by other characteristics such as its name or place of declaration.
 For the above code, `bus` has the `weight` and `color` attributes, thus it can pass `getTruckAttributes` function as parameter
 
 ### A norminal type system
-[A type system is nominal](https://en.wikipedia.org/wiki/Nominal_type_system) (also called nominative or name-based) if compatibility and equivalence of data types is determined by explicit declarations and/or the name of the types. Nominal systems are used to determine if types are equivalent, as well as if a type is a subtype of another. Nominal type systems contrast with structural systems, where comparisons are based on the structure of the types in question and do not require explicit declarations.
+[A type system is nominal](https://en.wikipedia.org/wiki/Nominal_type_system){:target="_blank"} (also called nominative or name-based) if compatibility and equivalence of data types is determined by explicit declarations and/or the name of the types. Nominal systems are used to determine if types are equivalent, as well as if a type is a subtype of another. Nominal type systems contrast with structural systems, where comparisons are based on the structure of the types in question and do not require explicit declarations.
 
 
 The following C++ code mirrors the logic and structure of the Typescript code but throws an error in the `getTruckAttributes` function. This is because it violates the normal type system in C++.

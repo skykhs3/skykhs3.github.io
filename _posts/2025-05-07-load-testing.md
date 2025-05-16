@@ -18,9 +18,9 @@ mermaid: true
 
 ## 1. Grafana K6
 
-[Grafana K6](https://grafana.com/docs/k6/latest/using-k6/http-requests/) is a load testing tool that helps you identify server limitations. I chose Grafana K6 as a load tester because I can easily implement a test in JavaScript. With Grafana K6, I will find the bottleneck of my server and increase its throughput.
+[Grafana K6](https://grafana.com/docs/k6/latest/using-k6/http-requests/){:target="_blank"} is a load testing tool that helps you identify server limitations. I chose Grafana K6 as a load tester because I can easily implement a test in JavaScript. With Grafana K6, I will find the bottleneck of my server and increase its throughput.
 
-I needed a server on another private network, so I used [AWS EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) as K6 server
+I needed a server on another private network, so I used [AWS EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html){:target="_blank"} as K6 server
 
 ```mermaid
 graph LR
