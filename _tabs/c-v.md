@@ -66,16 +66,16 @@ toc: true
   <div class="col">
     <h3 id="SPARCS-KAIST"><b>SPARCS-KAIST</b></h3>
     <p>
-      Backend Developer / Clubs Beta
+      <b>Backend Developer / Clubs Beta</b>
       <br />
       <small>September 2024 ~ August 2025</small>
       <br />
       <small>NestJS</small>
     </p>
     <p>
-      App Developer / New Ara
+      <b>App Developer / New Ara</b>
       <br />
-      <small>September 2020 ~ January 2024</small>
+      <small>March 2023 ~ January 2024</small>
       <br />
       <small>Flutter</small>
     </p>
@@ -289,6 +289,8 @@ toc: true
     <h4 id="Solar See"><b>Solar-See</b></h4>
     <p>
       Solar-See is an AI-powered gaming and map service developed to discover undetected solar panels and thereby increase the accuracy of power demand forecasting.
+      <br/>
+      <small> October 2024 ~ November 2024</small>
     </p>
     <p>
       <b>Role and Responsibilities:</b>
@@ -299,7 +301,7 @@ toc: true
           <img src="/assets/img/resume/react.svg" alt="react" />
           <img src="/assets/img/resume/tailwind.svg" alt="tailwindcss" />
           <img src="/assets/img/resume/django-rest.svg" alt="django" />
-           <img src="/assets/img/resume/sqlite.svg" alt="sqlite" />
+          <img src="/assets/img/resume/sqlite.svg" alt="sqlite" />
           <img src="https://img.shields.io/badge/ultralytics_YOLO11-8A2BE2?style=for-the-badge&logo=ultralytics&color=093eb0" alt="ultralytics" />
         </span>
     </p>
@@ -309,7 +311,8 @@ toc: true
     <b>Reference</b>
     <br />
     <ul>
-      <li><a href="https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main/assets/img/resume/solar-see-final-presentation.pdf" target="_blank"><b>Presentation</b></a></li>
+      <li><a href="https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main/assets/img/resume/solar-see-final-presentation.pdf" target="_blank"><b>Presentation (KOR)</b></a></li>
+      <li><a href="https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main/assets/img/posts/2025-04-07-retrospective-kakao-impact/demo-small.mp4" target="_blank">Demo (KOR)</a></li>
       <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See" target="_blank">Repository</a></li>
     </ul>
   </div>
@@ -323,13 +326,17 @@ toc: true
   </div>
   <div class="col">
     <h4 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b></h4>
-    <img src="/assets/img/resume/volunteering.webp" width="100%" style="margin-top:30px;" alt="volunteering" />
+    <img src="/assets/img/resume/volunteering.webp" width="100%" alt="volunteering" />
     <p>
       <b>KAIST Global Student Volunteers / Leader of the Arduino Education Team</b>
       <br />
       <small>January 2024</small>
       <br />
       <small>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</small>
+      <br/>
+      <span>
+        <img src="/assets/img/resume/arduino.svg" alt="arduino" />
+      </span>
     </p>
   </div>
 </div>
@@ -346,9 +353,10 @@ toc: true
       {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
     </div>
     <p>
-      I participated in a coding YouTube content for teenagers with YouTubers <b>미미미누</b> and <b>조코딩</b>. We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people.
-    </p>
-    <p>
+      I participated in a coding YouTube content for teenagers with YouTubers <b>미미미누</b> and <b>조코딩</b>.
+      <br/>
+       We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people.
+      <br/>
       <small>December 2024</small>
     </p>
   </div>
@@ -366,7 +374,11 @@ toc: true
   </div>
   <div class="col">
     <h4 id="Yeok Pacar - Gangnam-gu Parking Platform"><b>Yeok Pacar - Gangnam-gu Parking Platform</b></h4>
-    <p>This is a Gangnam-Gu parking platform app developed during a hackathon.</p>
+    <p>
+    This is a Gangnam-Gu parking platform app developed during a hackathon.
+    <br/>
+    <small> November 11, 2023</small>
+    </p>
     <p>
       <b>Role and Responsibilities:</b>
       <br/>
@@ -394,7 +406,11 @@ toc: true
   </div>
   <div class="col">
     <h4 id="Battle Pants"><b>Battle Pants</b></h4>
-    <p>This is a platformer game allowing up to 4 players to join.</p>
+    <p>
+    This is a platformer game allowing up to 4 players to join.
+    <br/>
+    <small> July 2023</small><br/>
+    </p>
     <p>
       <b>Role and Responsibilities:</b>
       <br/>
@@ -418,7 +434,11 @@ toc: true
   </div>
   <div class="col">
     <h4 id="Flowlink"><b>Flowlink</b></h4>
-    <p>This is a voting platform in the classroom.</p>
+    <p>
+    This is a voting platform in the classroom.
+    <br/>
+    <small> July 2023</small><br/>
+    </p>
     <p>
       <b>Role and Responsibilities:</b>
       <br />
@@ -444,7 +464,11 @@ toc: true
   </div>
   <div class="col">
     <h4 id="Morning Buddy"><b>Morning Buddy</b></h4>
-    <p>This is an alarm app</p>
+    <p>
+    This is an alarm app.
+    <br/>
+    <small> July 2023</small><br/>
+    </p>
     <p>
       <b>Role and Responsibilities:</b>
       <br />
@@ -491,10 +515,10 @@ toc: true
 ## 6. Certifications
 
 <ul>
-  <li>TOEFL 83 (December 16, 2023)</li>
-  <li>TOEIC Speaking Test Intermediate Mid 2 (Speaking Score 120) (Sep 8, 2024)</li>
+  <li>OPIc / English IM2 (Feb, 2025)</li>
+  <li>TOEIC Speaking Test IM2 (Speaking Score 120) (Sep 8, 2024)</li>
+  <li>TOEFL 83 (Dec 16, 2023)</li>
 </ul>
-
 <br />
 
 ---
@@ -508,7 +532,7 @@ toc: true
       <ul style="list-style: none; padding: 0;">
         <li style="margin-bottom: 5px;"><span style="font-weight: bold; color: #007bff;">Flutter</span></li>
         <li style="margin-bottom: 5px;"><span style="font-weight: bold; color: #007bff;">Express.js</span></li>
-        <li style="margin-bottom: 5px;"><span style="font-weight: bold; color: #007bff;">C++</span></li>
+        
       </ul>
     </div>
     <div>
@@ -533,6 +557,7 @@ toc: true
   </div>
 </div>
 
+---
 ## 8. Military Service
 
 ### **Republic of Korea Air Force**
