@@ -28,7 +28,7 @@ graph LR
         K6[K6 Load Tester]
     end
 
-    K6 --> |HTTPS 1.1| Target[Target Server]
+    K6 --> |"HTTPS (HTTP/1.1)"| Target[Target Server]
     
     subgraph Physical Computer
         Target
@@ -159,12 +159,12 @@ server {
 
 ```mermaid
 graph LR
-    Browser --> |HTTPS 2.0| Frontend[Vercel<br/>Frontend Server]
-    Browser --> |HTTPS 1.1| Nginx[Nginx Server]
-    K6[K6 Load Tester] --> |HTTPS 1.1| Nginx
+    Browser --> |"HTTPS (HTTP/2.0)"| Frontend[Vercel<br/>Frontend Server]
+    Browser --> |"HTTPS (HTTP/1.1)"| Nginx[Nginx Server]
+    K6[K6 Load Tester] --> |"HTTPS (HTTP/1.1)"| Nginx
     
     subgraph Target[Target Server<br/>Physical Computer]
-        Nginx --> |HTTP 1.1| Backend[Backend<br/>Docker Container]
+        Nginx --> |"HTTP (HTTP/1.1)"| Backend[Backend<br/>Docker Container]
     end
 ```
 
@@ -292,14 +292,14 @@ top
 
 ```mermaid
 graph LR
-    Browser --> |HTTPS 2.0| Frontend[Vercel<br/>Frontend Server]
-    Browser --> |HTTPS 1.1| Nginx[Nginx Server]
-    K6[K6 Load Tester] --> |HTTPS 1.1| Nginx
+    Browser --> |"HTTPS (HTTP/2.0)"| Frontend[Vercel<br/>Frontend Server]
+    Browser --> |"HTTPS (HTTP/1.1)"| Nginx[Nginx Server]
+    K6[K6 Load Tester] --> |"HTTPS (HTTP/1.1)"| Nginx
     
     subgraph Target[Target Server<br/>Physical Computer]
-        Nginx --> |HTTP 1.1| Backend1[Backend<br/>Docker Container]
-        Nginx --> |HTTP 1.1| Backend2[Backend<br/>Docker Container]
-        Nginx --> |HTTP 1.1| Backend3[Backend<br/>Docker Container]
+        Nginx --> |HTTP/1.1| Backend1[Backend<br/>Docker Container]
+        Nginx --> |HTTP/1.1| Backend2[Backend<br/>Docker Container]
+        Nginx --> |HTTP/1.1| Backend3[Backend<br/>Docker Container]
     end
 ```
 
@@ -368,7 +368,7 @@ glances
 > The glances command gives more specific status information about the server than the top command, but it uses more resources.
 {: .prompt-tip}
 
-### 6.3. Changing from HTTPS 1.1 to HTTPS 2.0 can improve performance?
+### 6.3. Changing from HTTP/1.1 to HTTP/2.0 can improve performance?
 #### 6.3.1. Improvements
 ```conf
 server {
@@ -389,21 +389,21 @@ server {
 
 ```mermaid
 graph LR
-    Browser --> |HTTPS 2.0| Frontend[Vercel<br/>Frontend Server]
-    Browser --> |HTTPS 2.0| Nginx[Nginx Server]
-    K6[K6 Load Tester] --> |HTTPS 2.0| Nginx
+    Browser -->|"HTTPS (HTTP/2)"| Frontend[Vercel<br/>Frontend Server]
+    Browser -->|"HTTPS (HTTP/2)"| Nginx[Nginx Server]
+    K6[K6 Load Tester] -->|"HTTPS (HTTP/2)"| Nginx
     
     subgraph Target[Target Server<br/>Physical Computer]
-        Nginx --> |HTTP 1.1| Backend1[Backend<br/>Docker Container]
-        Nginx --> |HTTP 1.1| Backend2[Backend<br/>Docker Container]
-        Nginx --> |HTTP 1.1| Backend3[Backend<br/>Docker Container]
+        Nginx -->|HTTP/1.1| Backend1[Backend<br/>Docker Container]
+        Nginx -->|HTTP/1.1| Backend2[Backend<br/>Docker Container]
+        Nginx -->|HTTP/1.1| Backend3[Backend<br/>Docker Container]
     end
 ```
 
 #### 6.3.2. Results
 [Test results when http2 set up](/assets/img/posts/2025-05-07-load-testing/http2.html){:target="_blank"}
 
-> There is no performance difference between https 1.1 and https 2.0.
+> There is no performance difference between http/1.1 and http/2.0.
 {: .prompt-info}
 
 
