@@ -1,21 +1,21 @@
 {
-  "name": "A developer who loves to learn.",
-  "short_name": "skykhs3",
-  "description": "In this blog, I share what I learn about development, design, algorithms, and more. As a developer, I'm constantly working to improve my skills, and this is where I document that journey.",
+  "name": "Hyeonsu's Blog",
+  "short_name": "Blog",
   "icons": [
     {
-      "src": "/assets/img/favicons/android-chrome-192x192.png?v=2",
+      "src": "/assets/img/favicons/web-app-manifest-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
-      "src": "/assets/img/favicons/android-chrome-384x384.png?v=2",
-      "sizes": "384x384",
-      "type": "image/png"
+      "src": "/assets/img/favicons/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-  "start_url": "https://skykhs3.github.io",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#1c1c1c",
+  "background_color": "#1c1c1c",
   "display": "standalone"
 }
