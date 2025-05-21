@@ -25,6 +25,12 @@ description: I developed Ara, the official KAIST community app, using Flutter. I
 
 [**GitHub Repository**](https://github.com/sparcs-kaist/new-ara-app){:target="_blank"}
 
+### Total 2000+ users have downloaded the app!
+<div style="display: flex">
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/total-downloads-app-store-connect.webp" style="width: 100%" alt="total-downloads-app-store-connect"/>
+<img src="/assets/img/posts/2024-10-31-retrospective-new-ara/total-downloads-play-console-graph.webp" style="width: 100%" alt="total-downloads-play-console-graph"/>
+</div>
+
 ## 1. Key Implementation Requirements
 
 [The web-based Ara frontend and backend have been in service since 1991.](https://sparcs.org/projects/ara/){:target="_blank"} However, there was no **mobile app** for Ara, so I developed one.
