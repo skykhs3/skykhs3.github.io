@@ -25,7 +25,8 @@ description: I developed Ara, the official KAIST community app, using Flutter. I
 
 [**GitHub Repository**](https://github.com/sparcs-kaist/new-ara-app){:target="_blank"}
 
-### Total 2000+ users have downloaded the app!
+### Total **2000+ users** have downloaded Ara app!
+The app fully supports both Korean and English.
 <div style="display: flex">
 <img src="/assets/img/posts/2024-10-31-retrospective-new-ara/total-downloads-app-store-connect.webp" style="width: 100%" alt="total-downloads-app-store-connect"/>
 <img src="/assets/img/posts/2024-10-31-retrospective-new-ara/total-downloads-play-console-graph.webp" style="width: 100%" alt="total-downloads-play-console-graph"/>
