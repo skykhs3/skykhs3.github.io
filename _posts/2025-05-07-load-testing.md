@@ -61,7 +61,7 @@ Memory: 2267MiB / 7779MiB
 ```
 
 ### 2.2. Structure
-
+I've used [Nginx](https://nginx.org/en/docs/beginners_guide.html){:target="_blank"} as a load balancer.
 <details markdown="1">
 <summary>
 /etc/nginx/nginx.conf
@@ -287,9 +287,8 @@ top
 
 ## 6. How I changed it to improve
 ### 6.1. Increasing the number of backend containers
-
+I am applying round-robin.
 #### 6.1.1. Improvements
-
 ```mermaid
 graph LR
     Browser --> |"HTTPS (HTTP/2.0)"| Frontend[Vercel<br/>Frontend Server]
@@ -365,7 +364,7 @@ glances
 ![Glances system monitoring output](/assets/img/posts/2025-05-07-load-testing/cpu-burning.webp)
 *Burning my computer...*
 
-> The glances command gives more specific status information about the server than the top command, but it uses more resources.
+> The [glances](https://github.com/nicolargo/glances){:target="_blank"} command gives more specific status information about the server than the top command, but it uses more resources.
 {: .prompt-tip}
 
 ### 6.3. Changing from HTTP/1.1 to HTTP/2.0 can improve performance?
