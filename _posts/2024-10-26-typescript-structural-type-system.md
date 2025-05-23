@@ -8,7 +8,7 @@ image:
   alt: Typescript
   show_in_post: false
 tags:
-  - structural type system.
+  - structural type system
   - typescript
 description: While debugging legacy TypeScript code, I encountered an odd issue—a field of a object not defined in the interface appeared unexpectedly.
 ---
