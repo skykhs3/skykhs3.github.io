@@ -224,6 +224,7 @@ toc: true
     <br />
     <ul>
       <li><a href="https://chromewebstore.google.com/detail/%EB%84%A4%EC%9D%B4%EB%B2%84-%EB%A9%94%EC%9D%BC-%EC%9A%94%EC%95%BD%EA%B8%B0naver-mail-summ/geddbcdppbknpoomennnelgdngolhibn" target="_blank"><b>Chrome Extension Download</b></a></li>
+      <li><a href="https://cdn.jsdelivr.net/gh/skykhs3/project-naver-email-summarizer@main/demo/demo.gif" target="_blank">Demo</a></li>
       <li><a href="https://github.com/skykhs3/project-naver-email-summarizer" target="_blank">Repository</a></li>
     </ul>
   </div>
