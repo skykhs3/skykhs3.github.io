@@ -8,9 +8,7 @@ image:
   alt: TypeScript Error
   show_in_post: false
 tags:
-  - git
-  - github
-  - commits
+  - typescript
 description: TypeScript's Exhaustiveness Checking helps catch missing cases in switch statements.
 ---
 ```json
