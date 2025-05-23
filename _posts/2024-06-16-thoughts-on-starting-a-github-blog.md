@@ -15,9 +15,7 @@ tags:
     github,
     github blog,
     blog,
-    creating a github blog,
     tech blog,
-    engineering blog,
     ruby,
     jekyll,
     open source
