@@ -57,22 +57,22 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Client] <-->  B
-    subgraph Physical Server
-        B[Nginx] <--> C[Bundled Frontend Files]
-        B <--> D[Gunicorn]
-        D <--> E[Django]
-        E <--> F[SQLite]
-        B <--> G[Aerial Images]
+    A[Client] -->  B
+    subgraph P[Physical Server]
+        B[Nginx] --> C[Bundled Frontend Files]
+        B --> D[Gunicorn Instance]
+        D --> E
+        subgraph E[WSGI Worker]
+            F[Django App]
+        end
+        E --> H[SQLite]
+        B --> G[Aerial Images]
     end
-
 ```
 
-## 4. Tech Stacks
-
+## 4. Django REST Framework
 We chose React and Django + Django REST Framework because our team is already familiar with these technologies. We saved over 50GB of images for training the model and developing the service.
 
-### 4.1. Django REST Framework
 
 **Pros:**
 
@@ -84,11 +84,11 @@ We chose React and Django + Django REST Framework because our team is already fa
 
 - Limited flexibility
 
-### 4.2. Nginx
+## 5. Nginx
 
 - Its asynchronous, event-driven architecture makes it highly efficient at handling concurrent connections. It's especially fast at serving static files.
 
-#### 4.2.1. High-level features (HTTP optimizations)
+#### 5.1. High-level features (HTTP optimizations)
 
 **1. gzip / brotli – Compression**
 
@@ -104,7 +104,7 @@ If the file hasn't changed, the browser can use the cached version instead of do
 The browser asks: "Has this file been updated since last time?"<br/>
 If not, the server just says "No need to re-download" (sends 304 Not Modified).<br/>
 
-#### 4.2.2. Low-level features (System-level speed boosts)
+#### 5.2. Low-level features (System-level speed boosts)
 
 **1. sendfile – Skip the middle step**<br/>
 Normally, files go from disk → memory → network.<br/>
@@ -118,7 +118,7 @@ Useful when serving the same files repeatedly.<br/>
 **3. zero-copy I/O – No copying at all**<br/>
 It avoids copying data between parts of the system (like memory and disk).<br/>
 
-### 4.3. SQLite
+## 6. SQLite
 
 **Pros:**
 
@@ -132,25 +132,28 @@ It avoids copying data between parts of the system (like memory and disk).<br/>
 
 - As a serverless RDBMS, it cannot be accessed directly from external networks.
 
-### 4.4. Ultralytics
+## 7. Ultralytics
 
 **Pros:**
 
 - If the training data is well-labeled, fine-tuning can be done easily with just a few commands.
 - This framework has good pre-trained models.
 
-### 4.4.1. How to fine-turn model?
+### 7.1. How to fine-tune model?
 
-To be written...
+![Fine-tuning Ultralytics YOLO11](/assets/img/posts/2025-04-07-retrospective-kakao-impact/train_batch47242.webp)
+*Fine-tuning Ultralytics YOLO11*
 
-## 5. Gunicorn?? It's weird for me.
+**To be written...**
+
+## 8. Gunicorn?? It's weird for me.
 
 This was my first time using Django, and **I initially didn't understand why a separate component like Gunicorn was needed for deployment**.
 In Node.js, I was used to creating standalone HTTP servers, so simply porting it behind Nginx was enough.
 
 However, Django introduces a unique concept: the separation between the **WSGI (Web Server Gateway Interface) server** and the **WSGI(web server gateway interface) application**
 
-### 5.1. WSGI Server, WSGI Application
+### 8.1. WSGI Server, WSGI Application
 
 - The WSGI application handles business logic.
 
@@ -158,7 +161,16 @@ However, Django introduces a unique concept: the separation between the **WSGI (
 
 This separation of concerns is a good design principle. It allows the WSGI application to be swapped out easily (e.g., from WSGI to ASGI).
 
-### 5.2. Node.js vs Django + DRF
+### 8.2. WSGI Server vs ASGI Server
+
+|Feature | Synchronous (WSGI)| Asynchronous (ASGI)|
+| --- | ---| --- |
+| Execution Model | Blocking (one request at a time per worker/thread) | Non-blocking (can handle many requests concurrently)  |
+| Concurrency | Thread/process-based concurrency | Event loop-based concurrency (async/await) |
+| Protocol Support | HTTP only | HTTP, WebSocket, and more |
+| Server Examples | Gunicorn, uWSGI, mod\_wsgi | Uvicorn, Daphne, Hypercorn |
+
+### 8.3. Node.js vs Django + DRF
 
 For example, if you want to use HTTP/2 in Node.js, you'd need to import the http2 module and change the code accordingly.
 In Django, on the other hand, you just need to switch the WSGI server.
@@ -169,7 +181,7 @@ In Django, on the other hand, you just need to switch the WSGI server.
 | Design Philosophy | Server + Runtime All-in-One | App Logic Only, Server is Needed |
 | Deployment        | simple and low flexibility  | complex and high flexibility     |
 
-### 5.3. Spring Boot Application vs Django
+### 8.4. Spring Boot Application vs Django + DRF
 
 | Concept                    | Spring Boot Application                                   | Django                                                      |
 | -------------------------- | --------------------------------------------------------- | ----------------------------------------------------------- |
@@ -178,7 +190,7 @@ In Django, on the other hand, you just need to switch the WSGI server.
 | Request Handling & Routing | Tomcat receives HTTP requests and forwards them to Spring | Gunicorn receives HTTP requests and forwards them to Django |
 | Replaceable?               | Can be replaced with Jetty, Undertow, etc.                | Can be replaced with uWSGI, Daphne, etc.                    |
 
-## 6. Points to improve
+## 9. Points to improve
 
 The project ended with the development of an MVP without considering scenarios with many users. If there are many users, each service will be converted into a container and the following architecture will be considered:
 
@@ -196,18 +208,21 @@ flowchart TD
     subgraph Container_1 [Uvicorn Container 1]
         C1[Uvicorn Instance 1]
         C1 --> W1[ASGI Worker]
-        W1 --> D1[Django ASGI App]
+        subgraph W1 [ASGI Worker 1]
+            D1["Django App"]
+        end
     end
 
     subgraph Container_2 [Uvicorn Container 2]
         C2[Uvicorn Instance 2]
         C2 --> W2[ASGI Worker]
-        W2 --> D2[Django ASGI App]
+         subgraph W2 [ASGI Worker 2]
+            D2["Django App"]
+        end
     end
 
-    D1 --> E1[Database Server]
-    D2 --> E1[Database Server]
-
+    W1 --> E1[MySQL Server]
+    W2 --> E1[MySQL Server]
 ```
 
 </div>
