@@ -141,8 +141,8 @@ It avoids copying data between parts of the system (like memory and disk).<br/>
 
 ### 7.1. How to fine-tune model?
 
-![Fine-tuning Ultralytics YOLO11](/assets/img/posts/2025-04-07-retrospective-kakao-impact/train_batch47242.webp)
-*Fine-tuning Ultralytics YOLO11*
+![YOLO11 Training Validation Results](/assets/img/posts/2025-04-07-retrospective-kakao-impact/train_batch47242.webp)
+*Object Detection Predictions During Batch Training*
 
 **To be written...**
 
