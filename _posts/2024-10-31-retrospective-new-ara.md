@@ -18,6 +18,7 @@ description: I developed Ara, the official KAIST community app, using Flutter. I
 <div markdown="1">
 
 ## Download Link
+### **Total 2000+ users have downloaded Ara app!**
 
 [**App Store**](https://apps.apple.com/kr/app/ara-for-kaist/id6457209147){:target="_blank"}
 
@@ -25,8 +26,6 @@ description: I developed Ara, the official KAIST community app, using Flutter. I
 
 [**GitHub Repository**](https://github.com/sparcs-kaist/new-ara-app){:target="_blank"}
 
-### Total **2000+ users** have downloaded Ara app!
-The app fully supports both Korean and English.
 <div style="display: flex">
 <img src="/assets/img/posts/2024-10-31-retrospective-new-ara/total-downloads-app-store-connect.webp" style="width: 100%" alt="total-downloads-app-store-connect"/>
 <img src="/assets/img/posts/2024-10-31-retrospective-new-ara/total-downloads-play-console-graph.webp" style="width: 100%" alt="total-downloads-play-console-graph"/>
@@ -36,6 +35,7 @@ The app fully supports both Korean and English.
 
 [The web-based Ara frontend and backend have been in service since 1991.](https://sparcs.org/projects/ara/){:target="_blank"} However, there was no **mobile app** for Ara, so I developed one.
 
+The app fully supports both Korean and English.
 <div style="display: flex">
 <img src="/assets/img/posts/2024-10-31-retrospective-new-ara/login_page.webp" style="width: 100%" alt="login page"/>
 <img src="/assets/img/posts/2024-10-31-retrospective-new-ara/main_page_eng.webp" style="width: 100%" alt="login page"/>
@@ -64,13 +64,13 @@ The app fully supports both Korean and English.
 
 ## 2. Why did I choose Flutter to implement a mobile app?
 
-### 2.1 Pros
+### 2.1. Pros
 
 - **Previous Experience**: My co-worker [Sang-oh Kim](https://github.com/sangohkim){:target="_blank"} and I have some familiarity with Flutter.
 
 - **Cross-Platform**: Since the app needs to be available on both iOS and Android, Flutter is a good option.
 
-### 2.2 Cons
+### 2.2. Cons
 
 - **Not a Native app**: Using advanced and the latest native features can be challenging. I rely solely on the Flutter SDK and its latest updates.
 
@@ -78,7 +78,7 @@ The app fully supports both Korean and English.
 
 ## 3. Structure
 
-### 3.1 Code
+### 3.1. Code
 
 ```
 NEW-ARA-APP
@@ -140,7 +140,7 @@ NEW-ARA-APP
 - **lib/providers/**: [Provider](https://pub.dev/packages/provider){:target="_blank"} is an official state management libraries. Each dart file manages an entity's state.
 - **lib/widgets/**: It contains reusable, common widgets.
 
-### 3.2 Provider
+### 3.2. Provider
 
 I used the Provider library to share the same instance across the entire app. It seems like a singleton pattern, but it can also use dependency injection.
 
@@ -171,7 +171,7 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-### 3.3 Role
+### 3.3. Role
 
 We divided roles by features.
 
@@ -299,7 +299,7 @@ Please see attached screenshots for details.
 </div>
 </details>
 
-### 7.2 Solution
+### 7.2. Solution
 The backend team couldn't create the function using API communication, so I implemented it using app cache as a workaround. However, this solution has limitations: if you delete and reinstall the app or install it on another phone, the blocked users won't be blocked and your membership status won't be properly reflected.
 
 ## 8. CI/CD

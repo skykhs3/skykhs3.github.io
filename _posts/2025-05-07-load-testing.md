@@ -345,7 +345,7 @@ app.get("/api/server-status", async (req: Request, res: Response) => {
 });
 ```
 
-#### 6.2.2 Results
+#### 6.2.2. Results
 
 [Test results when Cpu-Heavy Operation is optimized](/assets/img/posts/2025-05-07-load-testing/stringify.html){:target="_blank"}
 
