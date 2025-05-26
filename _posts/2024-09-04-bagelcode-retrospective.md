@@ -43,20 +43,20 @@ As a member of the Club Vegas Studio server team, my tasks included:
 ## 3. Key Projects
 I independently undertook the development work for the following projects:
 
-### Implementing Challenge Missions
-I implemented the logic for rewarding items to users who achieve certain milestones or frequencies on [third-party payment sites](https://store.clubvegasslots.com/){:target="_blank"} to facilitate third-party payments. I also implemented a system to send analytic data to the Data Analysis team to measure the revenue impact of these challenge missions. Additionally, I improved an in-house admin website that can manage milestones or frequencies tailored to each player. **My task was to improve the company's revenue.**
+### 3.1. Implementing Challenge Missions
+I implemented the logic for rewarding items to users who achieve certain milestones or frequencies on [third-party payment sites](https://store.clubvegasslots.com/){:target="_blank"} to facilitate third-party payments. I also implemented a system to send analytic data to the Data Analysis team to measure the revenue impact of these challenge missions. Additionally, I improved an in-house admin website that can manage milestones or frequencies tailored to each player. **The main goal was to make users pay more often, which would help increase the company's revenue.**
 
-### Website Login Page Renewal
+### 3.2. Website Login Page Renewal
 I developed a [payment website login page](https://playclubvegas.com/){:target="_blank"} that allows users to log in by clicking a button, which automatically launches the game app and logs them in. **This task improved the login experience, allowing users to log in more easily.**
 
-### Refactoring Event Rewards Logic
+### 3.3. Refactoring Event Rewards Logic
 I refactored the code related to event rewards and developed both the frontend and backend code for the in-house admin website. **This enhancement enabled game administrators to dynamically and easily configure event reward values.**
 
-### Building a Backend Server to Support Third-Party Payments and New Game Items
-I developed the logic for selling and configuring new game items by integrating with [third-party payment webhooks and APIs](https://developers.appcharge.com/reference/getting-started-with-appcharge-api){:target="_blank"}. **This integration enabled game administrators, via the in-house admin website, to dynamically configure and manage new game items for sale.**
+### 3.4. Building a Backend Server to Support Third-Party Payments and New Game Items
+I developed the logic for selling and configuring new game items by integrating with [third-party payment webhooks and APIs](https://developers.appcharge.com/reference/getting-started-with-appcharge-api){:target="_blank"}. This integration enabled game administrators to dynamically configure and manage new game items for sale through the in-house admin website. **The main goal was to increase net profit by avoiding the high fees** that App Store and Play Store charge.
 
-### DevOps
-I participated in AWS workshops and the AWS Summit, where I learned about the latest trends in cloud computing. **While managing Club Vegas Studio's infrastructure, I also gained experience using Terraform and Kubernetes(EKS).**
+### 3.5. DevOps
+I participated in AWS workshops and the AWS Summit, where I learned about the latest trends in cloud computing. While managing Club Vegas Studio's infrastructure, **I also gained experience using Terraform and Kubernetes(EKS).**
 
 </div>
 
