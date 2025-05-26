@@ -106,17 +106,33 @@ If not, the server just says "No need to re-download" (sends 304 Not Modified).<
 
 #### 5.2. Low-level features (System-level speed boosts)
 
-**1. sendfile – Skip the middle step**<br/>
-Normally, files go from disk → memory → network.<br/>
-With sendfile, the OS sends the file directly from disk to network.<br/>
-This saves time and CPU.<br/>
+**1. sendfile – Sends files faster**<br/>
+Normally, files go from `disk → kernel buffer → user buffer → network`.<br/>
+With sendfile, they go from `disk → kernel buffer → network`.<br/>
+Zero-copy I/O – No copying at all: This saves time and CPU.<br/>
 
-**2. mmap – Map file into memory**<br/>
+**2. mmap – Reads and analyzes files faster**<br/>
 Makes file access much faster by mapping it directly into memory.<br/>
 Useful when serving the same files repeatedly.<br/>
 
-**3. zero-copy I/O – No copying at all**<br/>
-It avoids copying data between parts of the system (like memory and disk).<br/>
+> ```c
+> char buf[4096];
+> read(fd, buf, 4096);
+> ```
+> **read() system call; Slow** <br/>
+> `Disk → Kernel Buffer → User Buffer` <br/>
+> User reads from user buffer <br/>
+> 
+> ---
+> 
+> ```c
+> char *buf = mmap(NULL, 4096, PROT_READ, MAP_PRIVATE, fd, 0);
+> ```
+> **mmap() system call; Fast** <br/>
+> mmap reserves memory in user address space and maps it to the file.
+> When user accesses the address, page fault occurs and data is loaded from disk to user memory.
+{: .prompt-info}
+
 
 ## 6. SQLite
 
