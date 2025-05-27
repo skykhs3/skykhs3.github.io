@@ -11,7 +11,7 @@ toc: true
   <img src="/assets/img/resume/profile.webp" alt="Profile Picture" style="max-width: 150px; border-radius: 50%;" />
 </div>
 
-## **Hyeonsu Kim 김현수**
+## **Hyeonsu Kim / 김현수**
 
 ### GitHub: [skykhs3](https://github.com/skykhs3/){:target="_blank"}
 
@@ -228,7 +228,91 @@ toc: true
 
 ---
 
-### 4.2. Toy Projects
+### 4.2. Social Impact Projects
+
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/solar-see.webp" alt="Solar See Logo" style="height:50px;width:50px;margin-top:30px;" />
+  </div>
+  <div class="col">
+    <h4 id="Solar See"><b>Solar-See</b></h4>
+    <p>
+      Solar-See is an AI-powered gaming and map service developed to discover undetected solar panels and thereby increase the accuracy of power demand forecasting.
+      <br/>
+      <small> October 2024 ~ November 2024</small>
+    </p>
+    <p>
+      <b>Role and Responsibilities:</b>
+      <br />
+      I developed main backend, deployed the services, and fine-tuned an image segmentation model.
+      <br />
+        <span>
+          <img src="/assets/img/resume/react.svg" alt="react" />
+          <img src="/assets/img/resume/tailwind.svg" alt="tailwindcss" />
+          <img src="/assets/img/resume/django-rest.svg" alt="django" />
+          <img src="/assets/img/resume/sqlite.svg" alt="sqlite" />
+          <img src="https://img.shields.io/badge/ultralytics_YOLO11-8A2BE2?style=for-the-badge&logo=ultralytics&color=093eb0" alt="ultralytics" />
+        </span>
+    </p>
+    <p>
+      <a href="/posts/retrospective-kakao-impact/"><strong>[ More Details ]</strong></a>
+    </p>
+    <b>Reference</b>
+    <br />
+    <ul>
+      <li><a href="https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main/assets/img/resume/solar-see-final-presentation.pdf" target="_blank"><b>Presentation (KOR)</b></a></li>
+      <li><a href="https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main/assets/img/posts/2025-04-07-retrospective-kakao-impact/demo-small.mp4" target="_blank">Demo (KOR)</a></li>
+      <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See" target="_blank">Repository</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/nypc.webp" alt="NYPC Logo" style="height:50px;width:50px;margin-top:30px;" />
+  </div>
+  <div class="col">
+    <h4 id="YouTube Content"><b>YouTube Content</b></h4>
+    <div>
+      {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
+    </div>
+    <p>
+      I participated in a coding YouTube content for teenagers with YouTubers <b>미미미누</b> and <b>조코딩</b>.
+      <br/>
+       We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people.
+      <br/>
+      <small>December 2024</small>
+    </p>
+  </div>
+</div>
+
+
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/kgsv.webp" alt="KGSV Logo" style="height:50px;width:50px;margin-top:30px;" />
+  </div>
+  <div class="col">
+    <h4 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b></h4>
+    <img src="/assets/img/resume/volunteering.webp" width="100%" alt="volunteering" />
+    <p>
+      <b>KAIST Global Student Volunteers / Leader of the Arduino Education Team</b>
+      <br />
+      <small>January 2024</small>
+      <br />
+      <small>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</small>
+      <br/>
+      <span>
+        <img src="/assets/img/resume/arduino.svg" alt="arduino" />
+      </span>
+    </p>
+  </div>
+</div>
+
+
+---
+
+### 4.3. Toy Projects
 
 <div class="row mb-3">
   <div class="col-auto">
@@ -300,93 +384,6 @@ toc: true
     </ul>
   </div>
 </div>
-
----
-
-### 4.3. Social Impact Projects
-
-<div class="row mb-3">
-  <div class="col-auto">
-    <img src="/assets/img/resume/solar-see.webp" alt="Solar See Logo" style="height:50px;width:50px;margin-top:30px;" />
-  </div>
-  <div class="col">
-    <h4 id="Solar See"><b>Solar-See</b></h4>
-    <p>
-      Solar-See is an AI-powered gaming and map service developed to discover undetected solar panels and thereby increase the accuracy of power demand forecasting.
-      <br/>
-      <small> October 2024 ~ November 2024</small>
-    </p>
-    <p>
-      <b>Role and Responsibilities:</b>
-      <br />
-      I developed main backend, deployed the services, and fine-tuned an image segmentation model.
-      <br />
-        <span>
-          <img src="/assets/img/resume/react.svg" alt="react" />
-          <img src="/assets/img/resume/tailwind.svg" alt="tailwindcss" />
-          <img src="/assets/img/resume/django-rest.svg" alt="django" />
-          <img src="/assets/img/resume/sqlite.svg" alt="sqlite" />
-          <img src="https://img.shields.io/badge/ultralytics_YOLO11-8A2BE2?style=for-the-badge&logo=ultralytics&color=093eb0" alt="ultralytics" />
-        </span>
-    </p>
-    <p>
-      <a href="/posts/retrospective-kakao-impact/"><strong>[ More Details ]</strong></a>
-    </p>
-    <b>Reference</b>
-    <br />
-    <ul>
-      <li><a href="https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main/assets/img/resume/solar-see-final-presentation.pdf" target="_blank"><b>Presentation (KOR)</b></a></li>
-      <li><a href="https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main/assets/img/posts/2025-04-07-retrospective-kakao-impact/demo-small.mp4" target="_blank">Demo (KOR)</a></li>
-      <li><a href="https://github.com/techforimpact-archive/TFI_CAMPUS_KAIST_24fall_Solar-See" target="_blank">Repository</a></li>
-    </ul>
-  </div>
-</div>
-
-<br />
-
-<div class="row mb-3">
-  <div class="col-auto">
-    <img src="/assets/img/resume/kgsv.webp" alt="KGSV Logo" style="height:50px;width:50px;margin-top:30px;" />
-  </div>
-  <div class="col">
-    <h4 id="Volunteering in ICT Education"><b>Volunteering in ICT Education</b></h4>
-    <img src="/assets/img/resume/volunteering.webp" width="100%" alt="volunteering" />
-    <p>
-      <b>KAIST Global Student Volunteers / Leader of the Arduino Education Team</b>
-      <br />
-      <small>January 2024</small>
-      <br />
-      <small>Yayasan Pendidikan Santo Lukas Penginjil, Jakarta, Indonesia</small>
-      <br/>
-      <span>
-        <img src="/assets/img/resume/arduino.svg" alt="arduino" />
-      </span>
-    </p>
-  </div>
-</div>
-
-<br />
-
-<div class="row mb-3">
-  <div class="col-auto">
-    <img src="/assets/img/resume/nypc.webp" alt="NYPC Logo" style="height:50px;width:50px;margin-top:30px;" />
-  </div>
-  <div class="col">
-    <h4 id="YouTube Content"><b>YouTube Content</b></h4>
-    <div>
-      {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
-    </div>
-    <p>
-      I participated in a coding YouTube content for teenagers with YouTubers <b>미미미누</b> and <b>조코딩</b>.
-      <br/>
-       We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people.
-      <br/>
-      <small>December 2024</small>
-    </p>
-  </div>
-</div>
-
-<br />
 
 ---
 
@@ -519,8 +516,8 @@ toc: true
     <img src="/assets/img/resume/koi-prize.webp" alt="KOI Award Certificate" style="width:50px; margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="2016 KOI"><b>Gold Medal in the 2016 Korea Olympiad in Informatics</b></h3>
-    <p>3rd place in the final round</p>
+    <h3 id="2016 Korea Olympiad in Informatics"><b>2016 Korea Olympiad in Informatics</b></h3>
+    <p><b>Gold Medal (3rd place)</b> in the final round</p>
     <p><small>Korea's most prestigious programming competition for high school students.</small></p>
   </div>
 </div>
@@ -530,7 +527,8 @@ toc: true
     <img src="/assets/img/resume/nypc-prize.webp" alt="KOI Award Certificate" style="width:50px; margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="1th NYPC"><b>Bronze Medal in the 1st Nexon Youth Programming Challenge</b></h3>
+    <h3 id="1th NYPC"><b>1st NYPC</b></h3>
+    <p>Bronze Medal</p>
     <p><small>An annual programming competition for young programmers hosted by Nexon, one of the largest game companies in Korea.</small></p>
   </div>
 </div>
@@ -544,7 +542,6 @@ toc: true
   <li>TOEIC Speaking Test IM2 (Speaking Score 120) (Sep 8, 2024)</li>
   <li>TOEFL 83 (Dec 16, 2023)</li>
 </ul>
-<br />
 
 ---
 
@@ -592,5 +589,4 @@ toc: true
     <p>February 2021 ~ January 2023</p>
   </div>
 </div>
-<br />
 
