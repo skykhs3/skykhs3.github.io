@@ -139,6 +139,29 @@ toc: true
   </div>
 </div>
 
+<div class="row mb-3">
+  <div class="col-auto">
+    <img src="/assets/img/resume/ioi.webp" alt="IOI Logo" style="height:25px;width:50px;margin-top:30px;" />
+  </div>
+  <div class="col">
+    <h3 id="International Olympiad in Informatics Training Camp"><b>International Olympiad in Informatics Training Camp</b></h3>
+    <p>
+      <small>Jul 2016 ~ Aug 2016</small>
+      <br />
+      <small>Jan 2016 ~ Jan 2016</small>
+      <br />
+      <small>Jul 2017 ~ Aug 2017</small>
+      <br />
+      <small>Jan 2018 ~ Jan 2018</small>
+      <br />
+      <small>Suwon, South Korea</small>
+    </p>
+    <p>
+      <a href="https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main/assets/img/resume/ioi-certificate.pdf" target="_blank"><strong>[ Certificate of Completion ]</strong></a>
+    </p>
+  </div>
+</div>
+
 ---
 
 ## 4. Projects
@@ -498,6 +521,7 @@ toc: true
   <div class="col">
     <h3 id="2016 KOI"><b>Gold Medal in the 2016 Korea Olympiad in Informatics</b></h3>
     <p>3rd place in the final round</p>
+    <p><small>Korea's most prestigious programming competition for high school students.</small></p>
   </div>
 </div>
 
@@ -507,7 +531,7 @@ toc: true
   </div>
   <div class="col">
     <h3 id="1th NYPC"><b>Bronze Medal in the 1st Nexon Youth Programming Challenge</b></h3>
-    <p>2016 NYPC</p>
+    <p><small>An annual programming competition for young programmers hosted by Nexon, one of the largest game companies in Korea.</small></p>
   </div>
 </div>
 
