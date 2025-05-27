@@ -548,32 +548,32 @@ toc: true
 ## 7. Tech Stack
 
 <div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; font-family: sans-serif;">
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(113px, 1fr)); gap: 20px;">
     <div>
       <h4 style="color: #555; margin-bottom: 10px;" id="Upper Intermediate">Upper Intermediate</h4>
       <ul style="list-style: none; padding: 0;">
         <li style="margin-bottom: 5px;"><span style="font-weight: bold; color: #007bff;">Flutter</span></li>
         <li style="margin-bottom: 5px;"><span style="font-weight: bold; color: #007bff;">Express.js</span></li>
-        
       </ul>
     </div>
     <div>
       <h4 style="color: #555; margin-bottom: 10px;" id="Intermediate">Intermediate</h4>
       <ul style="list-style: none; padding: 0;">
         <li style="margin-bottom: 5px;"><span style="color: #28a745;">NestJS</span></li>
+        <li style="margin-bottom: 5px;"><span style="color: #28a745;">MySQL</span></li>
         <li style="margin-bottom: 5px;"><span style="color: #28a745;">React</span></li>
         <li style="margin-bottom: 5px;"><span style="color: #28a745;">Next.js</span></li>
         <li style="margin-bottom: 5px;"><span style="color: #28a745;">Tailwind CSS</span></li>
-        <li style="margin-bottom: 5px;"><span style="color: #28a745;">MySQL</span></li>
       </ul>
     </div>
     <div>
       <h4 style="color: #555; margin-bottom: 10px;" id="Beginner">Beginner</h4>
       <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 5px;"><span style="color: #dc3545;">Amazon EKS</span></li>
+        <li style="margin-bottom: 5px;"><span style="color: #dc3545;">Redis</span></li>
+        <li style="margin-bottom: 5px;"><span style="color: #dc3545;">MongoDB</span></li>
         <li style="margin-bottom: 5px;"><span style="color: #dc3545;">Django</span></li>
         <li style="margin-bottom: 5px;"><span style="color: #dc3545;">Unity</span></li>
-        <li style="margin-bottom: 5px;"><span style="color: #dc3545;">AWS</span></li>
-        <li style="margin-bottom: 5px;"><span style="color: #dc3545;">MongoDB</span></li>
       </ul>
     </div>
   </div>
