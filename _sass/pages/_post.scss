@@ -285,6 +285,8 @@ header {
 
       @extend %text-ellipsis;
 
+      white-space: pre-wrap;
+
       &:hover {
         color: var(--toc-highlight);
         text-decoration: none;
