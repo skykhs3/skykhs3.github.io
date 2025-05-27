@@ -17,15 +17,13 @@ description: I developed Ara, the official KAIST community app, using Flutter. I
 
 <div markdown="1">
 
-## Download Link
-### **Total 2000+ users have downloaded Ara app!**
-
 [**App Store**](https://apps.apple.com/kr/app/ara-for-kaist/id6457209147){:target="_blank"}
 
 [**Google Play**](https://play.google.com/store/apps/details?id=org.sparcs.newara){:target="_blank"}
 
 [**GitHub Repository**](https://github.com/sparcs-kaist/new-ara-app){:target="_blank"}
 
+## **Total 2000+ users have downloaded Ara app!**
 <div style="display: flex">
 <img src="/assets/img/posts/2024-10-31-retrospective-new-ara/total-downloads-app-store-connect.webp" style="width: 100%" alt="total-downloads-app-store-connect"/>
 <img src="/assets/img/posts/2024-10-31-retrospective-new-ara/total-downloads-play-console-graph.webp" style="width: 100%" alt="total-downloads-play-console-graph"/>
