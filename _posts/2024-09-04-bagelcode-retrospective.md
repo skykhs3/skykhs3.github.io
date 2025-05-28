@@ -53,7 +53,7 @@ I developed a [payment website login page](https://playclubvegas.com/){:target="
 I refactored the code related to event rewards and developed both the frontend and backend code for the in-house admin website. **This enhancement enabled game administrators to dynamically and easily configure event reward values.**
 
 ### 3.4. Building a Backend Server to Support Third-Party Payments and New Game Items
-I developed the logic for selling and configuring new game items by integrating with [third-party payment webhooks and APIs](https://developers.appcharge.com/reference/getting-started-with-appcharge-api){:target="_blank"}. This integration enabled game administrators to dynamically configure and manage new game items for sale through the in-house admin website. **The main goal was to increase net profit by avoiding the high fees** that App Store and Play Store charge.
+I developed the logic for selling and configuring new game items by integrating with [third-party payment webhooks and APIs](https://developers.appcharge.com/reference/getting-started-with-appcharge-api){:target="_blank"}. This integration enabled game administrators to dynamically configure and manage new game items for sale through the in-house admin website. **The main goal was to increase net revenue by avoiding the high fees** that App Store and Play Store charge.
 
 ### 3.5. DevOps
 I participated in AWS workshops and the AWS Summit, where I learned about the latest trends in cloud computing. While managing Club Vegas Studio's infrastructure, **I also gained experience using Terraform and Kubernetes(EKS).**
