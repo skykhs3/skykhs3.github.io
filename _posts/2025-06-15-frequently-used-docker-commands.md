@@ -13,7 +13,11 @@ description: A collection of frequently used Docker commands
 ---
 
 <details>
-<summary><code>docker version</code></summary>
+<summary>
+<span markdown="1">
+`docker version`
+</span>
+</summary>
 <div markdown="1">
 ```bash
 Client:
@@ -47,9 +51,7 @@ Server: Docker Desktop 4.42.0 (195023)
 </div>
 </details>
 
-## 1. Basic Docker Commands
-
-### 1.1. Image & Container Management
+## 1. Image & Container Management
 
 | Command | Description |
 |---------|-------------|
@@ -63,20 +65,29 @@ Server: Docker Desktop 4.42.0 (195023)
 | [`docker logs <container-name>`](https://docs.docker.com/reference/cli/docker/container/logs/) | Show logs |
 | [`docker rm <container-name>`](https://docs.docker.com/reference/cli/docker/container/rm/) | Remove container |
 | [`docker rmi <image-name>`](https://docs.docker.com/reference/cli/docker/image/rm/) | Remove image |
-| [`docker volume rm <volume-name>`](https://docs.docker.com/reference/cli/docker/volume/rm/) | Remove volume |
 
-
-> Press `Ctrl + p + q` to detach from container without stopping it
-{: .prompt-tip }
-
-### 1.2. System Management
+## 2. Volume Management
 
 | Command | Description |
 |---------|-------------|
-| [`docker system df -v`](https://docs.docker.com/reference/cli/docker/system/df/) | Show the amount of disk space used by the Docker daemon |
+| [`docker volume ls`](https://docs.docker.com/reference/cli/docker/volume/ls/) | List volumes |
+| [`docker volume create <volume-name>`](https://docs.docker.com/reference/cli/docker/volume/create/) | Create volume |
+| [`docker volume rm <volume-name>`](https://docs.docker.com/reference/cli/docker/volume/rm/) | Remove volume |
+| [`docker run -v <volume-name>:<container-path> <image-name>`](https://docs.docker.com/reference/cli/docker/container/run/) | Mount volume to container |
+| [`docker run -v <host-path>:<container-path> <image-name>`](https://docs.docker.com/reference/cli/docker/container/run/) | Mount host path to container |
+
+
+> Press `Ctrl + p + q` to exit the terminal without stopping the container
+{: .prompt-tip }
+
+## 3. System Management
+
+| Command | Description |
+|---------|-------------|
+| [`docker system df -v`](https://docs.docker.com/reference/cli/docker/system/df/) | Show Docker daemon disk usage |
 | [`docker system prune`](https://docs.docker.com/reference/cli/docker/system/prune/) | Remove unused data |
 
-### 1.3. Docker Prune Commands Comparison
+## 4. Docker Prune Commands Comparison
 
 | Command | Stopped<br>Containers | Unused<br>Networks | Dangling<br>Images | Unused<br>Images | Unused<br>Anonymous<br>Volumes | Unused<br>Named<br>Volumes |
 |---------|----------------------|-------------------|-------------------|---------------------|---------------------------|------------------------|
@@ -87,22 +98,22 @@ Server: Docker Desktop 4.42.0 (195023)
 | `docker volume \`<br>`prune` | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | `docker volume \`<br>`prune -a` | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
 
-### 1.4. Examples
+## 5. Examples
+
 ```bash
 # Pull Ubuntu image
 docker image pull ubuntu:24.04
 ```
 ```bash
 # Run Ubuntu container
-docker container run -it --name ubuntu-test ubuntu:24.04
+docker container run -it -v ./test-volume:/home/ubuntu --name ubuntu-test ubuntu:24.04
 ```
 ```bash
 # Execute bash in container
 docker container exec -it ubuntu-test /bin/bash
 ```
 
-
-## 2. Docker Compose Commands
+## 6. Docker Compose Commands
 
 | Command | Description |
 |---------|-------------|
