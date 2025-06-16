@@ -54,7 +54,6 @@ Server: Docker Desktop 4.42.0 (195023)
 | Command | Description |
 |---------|-------------|
 | [`docker pull <image-name>`](https://docs.docker.com/reference/cli/docker/image/pull/) | Pull image from registry |
-| [`docker rmi <image-name>`](https://docs.docker.com/reference/cli/docker/image/rm/) | Remove image |
 | [`docker create --name <container-name> <image-name>`](https://docs.docker.com/reference/cli/docker/container/create/) | Create container without running it |
 | [`docker run -it --name <container-name> <image-name>`](https://docs.docker.com/reference/cli/docker/container/run/) | Create and Run container interactively |
 | [`docker exec -it <container-name> <command>`](https://docs.docker.com/reference/cli/docker/container/exec/) | Execute command in running container |
@@ -63,6 +62,8 @@ Server: Docker Desktop 4.42.0 (195023)
 | [`docker stop <container-name>`](https://docs.docker.com/reference/cli/docker/container/stop/) | Stop container |
 | [`docker logs <container-name>`](https://docs.docker.com/reference/cli/docker/container/logs/) | Show logs |
 | [`docker rm <container-name>`](https://docs.docker.com/reference/cli/docker/container/rm/) | Remove container |
+| [`docker rmi <image-name>`](https://docs.docker.com/reference/cli/docker/image/rm/) | Remove image |
+| [`docker volume rm <volume-name>`](https://docs.docker.com/reference/cli/docker/volume/rm/) | Remove volume |
 
 
 > Press `Ctrl + p + q` to detach from container without stopping it
@@ -72,10 +73,21 @@ Server: Docker Desktop 4.42.0 (195023)
 
 | Command | Description |
 |---------|-------------|
-| [`docker system df -v`](https://docs.docker.com/reference/cli/docker/system/df/) | Show disk usage |
+| [`docker system df -v`](https://docs.docker.com/reference/cli/docker/system/df/) | Show the amount of disk space used by the Docker daemon |
 | [`docker system prune`](https://docs.docker.com/reference/cli/docker/system/prune/) | Remove unused data |
 
-### 1.3. Examples
+### 1.3. Docker Prune Commands Comparison
+
+| Command | Stopped<br>Containers | Unused<br>Networks | Dangling<br>Images | Unused<br>Images | Unused<br>Anonymous<br>Volumes | Unused<br>Named<br>Volumes |
+|---------|----------------------|-------------------|-------------------|---------------------|---------------------------|------------------------|
+| `docker system \`<br>`prune` | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| `docker system \`<br>`prune --volumes` | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
+| `docker system \`<br>`prune -a` | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| `docker system \`<br>`prune -a --volumes` | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| `docker volume \`<br>`prune` | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
+| `docker volume \`<br>`prune -a` | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
+
+### 1.4. Examples
 ```bash
 # Pull Ubuntu image
 docker image pull ubuntu:24.04
