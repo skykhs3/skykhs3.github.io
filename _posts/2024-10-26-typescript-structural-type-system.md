@@ -13,7 +13,7 @@ tags:
 description: While debugging legacy TypeScript code, I encountered an odd issue—a field of a object not defined in the interface appeared unexpectedly.
 ---
 
-## Something unexpected happened in TypeScript code...
+## 1. Something unexpected happened in TypeScript code...
 
 <div markdown="1">
 
@@ -41,13 +41,13 @@ getTruckAttributes(bus);
 
 The above code has no errors at a `getTruckAttributes` function. The code prints "A bus can be a truck", yet the truck has an `Truck` interface and the bus has `Bus` interface.
 
-## This happens because of structural type system 
+## 2. This happens because of structural type system 
 
-### A structural type system
+### 2.1. A structural type system
 [A structural type system](https://en.wikipedia.org/wiki/Structural_type_system){:target="_blank"} (or property-based type system) is a major class of type systems in which type compatibility and equivalence are determined by the type's actual structure or definition and not by other characteristics such as its name or place of declaration.
 For the above code, `bus` has the `weight` and `color` attributes, thus it can pass `getTruckAttributes` function as parameter
 
-### A norminal type system
+### 2.2. A norminal type system
 [A type system is nominal](https://en.wikipedia.org/wiki/Nominal_type_system){:target="_blank"} (also called nominative or name-based) if compatibility and equivalence of data types is determined by explicit declarations and/or the name of the types. Nominal systems are used to determine if types are equivalent, as well as if a type is a subtype of another. Nominal type systems contrast with structural systems, where comparisons are based on the structure of the types in question and do not require explicit declarations.
 
 
@@ -86,7 +86,7 @@ void getTruckAttributes(Truck truck){
 1 error generated.
 ```
 
-## Why should you consider TypeScript's structural type system?
+## 3. Why should you consider TypeScript's structural type system?
 
 Overlooking TypeScript's structural type system can lead to logical errors in your code.
 ``` typescript
@@ -116,19 +116,19 @@ In this example, the `Truck` interface doesn't have a `color` field, so I assign
 
 In this short code snippet, the issue is easy to spot, but in a larger codebase, such an error could be challenging to detect.
 
-## How to solve this problem?
+## 4. How to solve this problem?
 First, be cautious when using the spread operator (...). Keep in mind that the spread operation can overwrite existing properties, and an interface does not guarantee that there won't be additional fields in an object.
 
-Second, consider using a **"tag" field** to ensure type safety. The following example shows how tagging can throw an error and help prevent mistakes.
+Second, consider using a **`_brand` field** to ensure type safety. The following example shows how `_brand` can throw an error and help prevent mistakes.
 
 ```typescript
 interface Truck {
-  tag: 'truck'
+  _brand: 'truck'
   weight: number;
 }
 
 interface Bus {
-  tag: 'bus'
+  _brand: 'bus'
   weight: number;
   color: string;
 }
@@ -144,7 +144,7 @@ getTruckAttributes(bus);
 
 ```bash
 Argument of type 'Bus' is not assignable to parameter of type 'Truck'.
-  Types of property 'tag' are incompatible.
+  Types of property '_brand' are incompatible.
     Type '"bus"' is not assignable to type '"truck"'.
 'truck' is declared but its value is never read.
 ```
