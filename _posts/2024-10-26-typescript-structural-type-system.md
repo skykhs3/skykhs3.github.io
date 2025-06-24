@@ -1,7 +1,7 @@
 ---
-title: "Structural type system in TypeScript"
+title: "TypeScript: Structural type system"
 date: 2024-10-26 00:00:00 +09:00
-categories: [Development, TypeScript]
+categories: [Development, JavaScript/TypeScript]
 author: skykhs3
 image:
   path: /assets/img/posts/typescript-logo.webp
