@@ -4,7 +4,7 @@ date: 2024-10-26 00:00:00 +09:00
 categories: [Development, TypeScript]
 author: skykhs3
 image:
-  path: /assets/img/posts/2024-10-26-typescript-duck-typing/typescript.webp
+  path: /assets/img/posts/typescript-logo.webp
   alt: Typescript
   show_in_post: false
 tags:
