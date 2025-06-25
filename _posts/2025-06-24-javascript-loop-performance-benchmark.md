@@ -9,7 +9,7 @@ image:
   show_in_post: false
 tags:
   - javascript
-description:  I wondered which loop algorithm is the fastest.
+description:  I wondered if array methods are slower than the traditional for loop.
 
 ---
 
