@@ -10,26 +10,26 @@ image:
 tags:
   - bagelcode
   - retrospective
-description: I worked at Bagelcode as a backend developer and contributed to increasing the company's revenue.
+description: I worked at Bagelcode as a backend developer and contributed to increasing the company's revenue. Let me introduce my experience at Bagelcode.
 ---
 
 <div markdown="1">
 
-## 1. Company Overview
+## 1. Company Introduction
 
 **[Bagelcode](https://www.bagelcode.com/en/){:target="_blank"}** is a rapidly growing mobile game company with a global market presence.
 
- One of Bagelcode's flagship games, **Club Vegas Slots Casino Games**, is enjoyed by over 50 million people worldwide. Notably, Club Vegas boasts the highest average playtime among social casino games and ranked in the top 100 for overall revenue on Android in the U.S. in 2022.
+One of Bagelcode's flagship games, **Club Vegas Slots Casino Games**, is enjoyed by over 50 million people worldwide. Notably, Club Vegas boasts the highest average playtime among social casino games and ranked in the top 100 for overall revenue on Android in the U.S. in 2022.
 
 **Club Vegas Slots Casino Games**
 - [Google Play](https://play.google.com/store/apps/details?id=com.bagelcode.slots1){:target="_blank"}
 - [App Store](https://apps.apple.com/us/app/club-vegas-slots-casino-games/id1201054588){:target="_blank"}
 
-Not playable in some countries.
+*Note: The Casino game is not playable in Republic of Korea.*
 
 I worked as a backend developer for the **Club Vegas Studio server team**<br/>
 **Role**: Backend Developer, Club Vegas Server Team<br/>
-**Work Period**: February 26, 2024 - August 25, 2024<br/>
+**Work Period**: February 26th, 2024 - August 25th, 2024<br/>
 
 ## 2. Key Tasks
 As a member of the Club Vegas Studio server team, my tasks included:
