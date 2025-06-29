@@ -32,7 +32,7 @@ toc: true
     <p>
       <b>Backend Developer / Club Vegas Studio server</b>
       <br />
-      <small>26th February 2024 ~ 26th August 2024</small>
+      <small>February 26th, 2024 ~ August 25th, 2024</small>
       <br />
       <small>Seoul, South korea</small>
       <br />
@@ -611,9 +611,9 @@ toc: true
 ## 6. Certifications
 
 <ul>
-  <li>OPIc / English IM2 (Feb, 2025)</li>
-  <li>TOEIC Speaking Test IM2 (Speaking Score 120) (Sep 8, 2024)</li>
-  <li>TOEFL 83 (Dec 16, 2023)</li>
+  <li>OPIc / English IM2 (Feb 18th, 2025)</li>
+  <li>TOEIC Speaking Test IM2 (Speaking Score 120) (Sep 8th, 2024)</li>
+  <li>TOEFL 83 (Dec 16th, 2023)</li>
 </ul>
 
 ---
