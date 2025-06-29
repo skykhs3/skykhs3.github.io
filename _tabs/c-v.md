@@ -28,16 +28,13 @@ toc: true
     <img src="/assets/img/resume/bagelcode.webp" alt="Bagelcode Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="Bagelcode"><b>Bagelcode</b></h3>
+    <h3 id="Bagelcode"><a href="/posts/bagelcode-retrospective/"><b>Bagelcode</b></a></h3>
     <p>
       <b>Backend Developer / Club Vegas Studio server</b>
       <br />
-      <small>February 2024 ~ August 2024</small>
+      <small>26th February 2024 ~ 26th August 2024</small>
       <br />
       <small>Seoul, South korea</small>
-    </p>
-    <p class="col">
-      <b>My contributions</b>
       <br />
       I developed a game backend API server, an in-house administrator website frontend, and a payment website frontend.
       <br />
@@ -49,15 +46,8 @@ toc: true
         <img src="/assets/img/resume/aws.svg" />
       </span>
     </p>
-    <p>
-      <a href="/posts/bagelcode-retrospective/"><strong>[ More Details ] </strong></a>
-    </p>
   </div>
 </div>
-
----
-
-## 2. Organization
 
 <div class="row mb-3">
   <div class="col-auto">
@@ -70,21 +60,22 @@ toc: true
       <br />
       <small>September 2024 ~ August 2025</small>
       <br />
-      <small>NestJS</small>
+      <span >
+        <img src="/assets/img/resume/nestjs.svg" />
+      </span>
     </p>
     <p>
-      <b>App Developer / New Ara</b>
+      <b><a href="/posts/retrospective-new-ara/">App Developer / New Ara</a></b>
       <br />
       <small>March 2023 ~ January 2024</small>
       <br />
-      <small>Flutter</small>
-    </p>
-    <p>
-      <a href="/posts/retrospective-new-ara/"><strong>[ More Details ]</strong></a>
+      <span >
+        <img src="/assets/img/resume/flutter.svg" />
+      </span>
     </p>
   </div>
 </div>
-
+<!-- 
 <div class="row mb-3">
   <div class="col-auto">
     <img src="/assets/img/resume/icists.webp" alt="ICISTS-KAIST Logo" style="height:50px;width:50px;margin-top:30px;" />
@@ -103,11 +94,11 @@ toc: true
       <small><a href="https://www.youtube.com/@ICISTSKAIST" target="_blank">YouTube channel</a></small>
     </p>
   </div>
-</div>
+</div> -->
 
 ---
 
-## 3. Education
+## 2. Education
 
 <div class="row mb-3">
   <div class="col-auto">
@@ -130,7 +121,9 @@ toc: true
     <img src="/assets/img/resume/gshs.webp" alt="Gyeonggi Science High School Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="Gyeonggi Science High School for the Gifted"><b>Gyeonggi Science High School for the Gifted</b></h3>
+    <h3 id="Gyeonggi Science High School for the Gifted">
+    <b>Gyeonggi Science High School for the Gifted</b>
+    </h3>
     <p>
       <small>February 2016 ~ January 2019</small>
       <br />
@@ -144,7 +137,9 @@ toc: true
     <img src="/assets/img/resume/ioi.webp" alt="IOI Logo" style="height:25px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h3 id="International Olympiad in Informatics Training Camp"><b>International Olympiad in Informatics Training Camp</b></h3>
+    <h3 id="International Olympiad in Informatics Training Camp"><b>
+    <a href="https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main/assets/img/resume/ioi-certificate.pdf" target="_blank"><strong>International Olympiad in Informatics Training Camp</strong></a>
+    </b></h3>
     <p>
       <small>Jul 2016 ~ Aug 2016</small>
       <br />
@@ -156,9 +151,92 @@ toc: true
       <br />
       <small>Suwon, South Korea</small>
     </p>
-    <p>
-      <a href="https://cdn.jsdelivr.net/gh/skykhs3/skykhs3.github.io@main/assets/img/resume/ioi-certificate.pdf" target="_blank"><strong>[ Certificate of Completion ]</strong></a>
-    </p>
+  </div>
+</div>
+
+---
+
+## 3. Technical Skills
+
+<div style="border: 1px solid #ddd; border-radius: 8px; padding: 15px; font-family: sans-serif; font-size: 16px;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+    <!-- Languages -->
+    <div>
+      <div style="color: #333; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 16px;">
+        <i class="fas fa-code" style="margin-right: 6px;"></i>Languages
+      </div>
+      <div style="margin-bottom: 10px;">
+        <ul style="list-style: none; padding: 0; margin: 0; ">
+          <li style="margin-bottom: 3px;"><span style="font-weight: bold; color: #007bff;">TypeScript</span></li>
+        </ul>
+        <ul style="list-style: none; padding: 0; margin: 0;;">
+          <li style="margin-bottom: 3px;"><span style="color: #28a745;">Python</span></li>
+          <li style="margin-bottom: 3px;"><span style="color: #28a745;">C/C++</span></li>
+          <li style="margin-bottom: 3px;"><span style="color: #28a745;">JavaScript</span></li>
+        </ul>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 3px;"><span style="color: #dc3545;">JAVA</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Frameworks & Libraries -->
+    <div>
+      <div style="color: #333; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 16px;">
+        <i class="fas fa-layer-group" style="margin-right: 6px;"></i>Frameworks & Libraries
+      </div>
+      <div style="margin-bottom: 10px;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 3px;"><span style="font-weight: bold; color: #007bff;">Flutter</span></li>
+          <li style="margin-bottom: 3px;"><span style="font-weight: bold; color: #007bff;">Express.js</span></li>
+        </ul>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 3px;"><span style="color: #28a745;">NestJS</span></li>
+          <li style="margin-bottom: 3px;"><span style="color: #28a745;">React</span></li>
+          <li style="margin-bottom: 3px;"><span style="color: #28a745;">Next.js</span></li>
+          <li style="margin-bottom: 3px;"><span style="color: #28a745;">Tailwind CSS</span></li>
+        </ul>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 3px;"><span style="color: #dc3545;">Django</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Databases -->
+    <div>
+      <div style="color: #333; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 16px;">
+        <i class="fas fa-database" style="margin-right: 6px;"></i>Databases
+      </div>
+      <div style="margin-bottom: 10px;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 3px;"><span style="color: #28a745;">MySQL</span></li>
+        </ul>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 3px;"><span style="color: #dc3545;">Redis</span></li>
+          <li style="margin-bottom: 3px;"><span style="color: #dc3545;">MongoDB</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Tools & Platforms -->
+    <div>
+      <div style="color: #333; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 16px;">
+        <i class="fas fa-tools" style="margin-right: 6px;"></i>Tools & Platforms
+      </div>
+      <div style="margin-bottom: 10px;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 3px;"><span style="color: #28a745;">Docker</span></li>
+        </ul>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 3px;"><span style="color: #dc3545;">AWS</span></li>
+          <li style="margin-bottom: 3px;"><span style="color: #dc3545;">Kubernetes</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Legend -->
+  <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee; text-align: center; font-size: 12px; color: #666;">
+    <span style="margin-right: 15px;"><span style="color: #007bff; font-weight: bold;">●</span> Upper Intermediate</span>
+    <span style="margin-right: 15px;"><span style="color: #28a745;">●</span> Intermediate</span>
+    <span><span style="color: #dc3545;">●</span> Pre-Intermediate</span>
   </div>
 </div>
 
@@ -173,7 +251,7 @@ toc: true
     <img src="/assets/img/resume/ara.webp" alt="Ara Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h4 id="New Ara"><b>New Ara</b></h4>
+    <h4 id="New Ara"><b><a href="/posts/retrospective-new-ara/">New Ara</a></b></h4>
     <p>
       This is the official community app for KAIST students supported by KAIST.
     </p>
@@ -185,9 +263,6 @@ toc: true
       <span>
         <img src="/assets/img/resume/flutter.svg" alt="Flutter Logo" />
       </span>
-    </p>
-    <p>
-      <a href="/posts/retrospective-new-ara/"><strong>[ More Details ]</strong></a>
     </p>
     <div>
       <b>Reference</b>
@@ -235,7 +310,7 @@ toc: true
     <img src="/assets/img/resume/solar-see.webp" alt="Solar See Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
-    <h4 id="Solar See"><b>Solar-See</b></h4>
+    <h4 id="Solar See"><b><a href="/posts/retrospective-kakao-impact/">Solar-See</a></b></h4>
     <p>
       Solar-See is an AI-powered gaming and map service developed to discover undetected solar panels and thereby increase the accuracy of power demand forecasting.
       <br/>
@@ -253,9 +328,6 @@ toc: true
           <img src="/assets/img/resume/sqlite.svg" alt="sqlite" />
           <img src="https://img.shields.io/badge/ultralytics_YOLO11-8A2BE2?style=for-the-badge&logo=ultralytics&color=093eb0" alt="ultralytics" />
         </span>
-    </p>
-    <p>
-      <a href="/posts/retrospective-kakao-impact/"><strong>[ More Details ]</strong></a>
     </p>
     <b>Reference</b>
     <br />
@@ -278,11 +350,12 @@ toc: true
       {% include embed/youtube.html id='ql0lFXHtAnk' start='476' %}
     </div>
     <p>
-      I participated in a coding YouTube content for teenagers with YouTubers <b>미미미누</b> and <b>조코딩</b>.
-      <br/>
-       We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people.
+      <b>NYPC / IT Content Creator</b>
       <br/>
       <small>December 2024</small>
+      <br/>
+      I participated in a coding YouTube content for teenagers with YouTubers <b>미미미누</b> and <b>조코딩</b>.
+      We created an artificial intelligence service that makes phone calls and sends notifications to vulnerable elderly people.
     </p>
   </div>
 </div>
@@ -545,42 +618,7 @@ toc: true
 
 ---
 
-## 7. Tech Stack
-
-<div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; font-family: sans-serif;">
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(113px, 1fr)); gap: 20px;">
-    <div>
-      <h4 style="color: #555; margin-bottom: 10px;" id="Upper Intermediate">Upper Intermediate</h4>
-      <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 5px;"><span style="font-weight: bold; color: #007bff;">Flutter</span></li>
-        <li style="margin-bottom: 5px;"><span style="font-weight: bold; color: #007bff;">Express.js</span></li>
-      </ul>
-    </div>
-    <div>
-      <h4 style="color: #555; margin-bottom: 10px;" id="Intermediate">Intermediate</h4>
-      <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 5px;"><span style="color: #28a745;">NestJS</span></li>
-        <li style="margin-bottom: 5px;"><span style="color: #28a745;">MySQL</span></li>
-        <li style="margin-bottom: 5px;"><span style="color: #28a745;">React</span></li>
-        <li style="margin-bottom: 5px;"><span style="color: #28a745;">Next.js</span></li>
-        <li style="margin-bottom: 5px;"><span style="color: #28a745;">Tailwind CSS</span></li>
-      </ul>
-    </div>
-    <div>
-      <h4 style="color: #555; margin-bottom: 10px;" id="Beginner">Beginner</h4>
-      <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 5px;"><span style="color: #dc3545;">Amazon EKS</span></li>
-        <li style="margin-bottom: 5px;"><span style="color: #dc3545;">Redis</span></li>
-        <li style="margin-bottom: 5px;"><span style="color: #dc3545;">MongoDB</span></li>
-        <li style="margin-bottom: 5px;"><span style="color: #dc3545;">Django</span></li>
-        <li style="margin-bottom: 5px;"><span style="color: #dc3545;">Unity</span></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
----
-## 8. Military Service
+## 7. Military Service
 
 ### **Republic of Korea Air Force**
 
