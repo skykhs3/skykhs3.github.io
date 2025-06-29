@@ -162,7 +162,7 @@ toc: true
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
     <!-- Languages -->
     <div>
-      <div style="color: #333; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 16px;">
+      <div style="margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 16px;">
         <i class="fas fa-code" style="margin-right: 6px;"></i>Languages
       </div>
       <div style="margin-bottom: 10px;">
@@ -181,7 +181,7 @@ toc: true
     </div>
     <!-- Frameworks & Libraries -->
     <div>
-      <div style="color: #333; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 16px;">
+      <div style="margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 16px;">
         <i class="fas fa-layer-group" style="margin-right: 6px;"></i>Frameworks & Libraries
       </div>
       <div style="margin-bottom: 10px;">
@@ -202,7 +202,7 @@ toc: true
     </div>
     <!-- Databases -->
     <div>
-      <div style="color: #333; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 16px;">
+      <div style="margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 16px;">
         <i class="fas fa-database" style="margin-right: 6px;"></i>Databases
       </div>
       <div style="margin-bottom: 10px;">
@@ -217,7 +217,7 @@ toc: true
     </div>
     <!-- Tools & Platforms -->
     <div>
-      <div style="color: #333; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 16px;">
+      <div style="margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 16px;">
         <i class="fas fa-tools" style="margin-right: 6px;"></i>Tools & Platforms
       </div>
       <div style="margin-bottom: 10px;">
@@ -233,7 +233,7 @@ toc: true
   </div>
   
   <!-- Legend -->
-  <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee; text-align: center; font-size: 12px; color: #666;">
+  <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee; text-align: center; font-size: 12px;">
     <span style="margin-right: 15px;"><span style="color: #007bff; font-weight: bold;">●</span> Upper Intermediate</span>
     <span style="margin-right: 15px;"><span style="color: #28a745;">●</span> Intermediate</span>
     <span><span style="color: #dc3545;">●</span> Pre-Intermediate</span>
