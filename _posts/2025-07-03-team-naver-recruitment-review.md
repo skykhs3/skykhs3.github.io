@@ -1,20 +1,20 @@
 ---
-title: "2025 네이버 공채 최종 합격 후기 (Tech 백엔드) (KOR)"
+title: "2025 네이버 신입 공채 최종 합격 후기 (Tech 백엔드) (KOR)"
 date: 2025-07-03 16:13:00 +09:00
 categories: [Development,  Learning & Roadmap]
 author: skykhs3
 image:
   path: /assets/img/posts/2025-07-03-team-naver-recruitment-review/passing-interview.webp
-  alt: 2025 네이버 공채 최종 합격(Tech 백엔드) 
+  alt: 2025 네이버 신입 공채 최종 합격(Tech 백엔드) 
   show_in_post: true
 tags:
   - naver
-description:  2025 팀네이버 공채 최종 합격까지 학습한 자료 모음
+description:  2025 팀네이버 신입 공채 최종 합격까지 학습한 자료 모음
 
 ---
 
 ## 1. 개인적 생각
-취업을 준비하고 네이버 공채에 붙기까지 제 생각입니다. 틀릴 수도 있습니다. 
+취업을 준비하고 네이버 신입 공채에 붙기까지 제 생각입니다. 틀릴 수도 있습니다. 
 
 개발 실무에서 원하는 것은 학교에서 가르치는 수업 내용과 매우 다르다고 생각합니다. 실무 경험, 즉 바로 회사 개발 인력으로 투입될 수 있는 역량이나 잠재력이 중요하다고 생각합니다. 학교 수업을 열심히 듣고 학점만 높다고 해서 개발 업무를 바로 할 수 있는 것이 아니라, **개발 역량(문제해결능력과 개발 지식)**을 충분히 갖추려면 배워야 하는 과정이 따로 있습니다.
 
