@@ -1,11 +1,11 @@
 ---
-title: "2025 네이버 신입 공채 최종 합격 후기 (Tech 백엔드) (KOR)"
+title: "2025 네이버 신입 공채 최종 합격 후기: Tech 백엔드 (KOR)"
 date: 2025-07-03 16:13:00 +09:00
 categories: [Development,  Learning & Roadmap]
 author: skykhs3
 image:
   path: /assets/img/posts/2025-07-03-team-naver-recruitment-review/passing-interview.webp
-  alt: 2025 네이버 신입 공채 최종 합격(Tech 백엔드) 
+  alt: "2025 네이버 신입 공채 최종 합격: Tech 백엔드"
   show_in_post: true
 tags:
   - naver
