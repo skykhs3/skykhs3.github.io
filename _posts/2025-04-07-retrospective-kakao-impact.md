@@ -1,7 +1,7 @@
 ---
 title: "Retrospective: Kakao Impact"
 date: 2025-04-07 22:00:00 +09:00
-categories: [Retrospective, Project]
+categories: [Retrospectives, Professional Reflections]
 author: skykhs3
 mermaid: true
 image:

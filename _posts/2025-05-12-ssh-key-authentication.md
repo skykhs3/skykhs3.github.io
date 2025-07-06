@@ -1,7 +1,7 @@
 ---
 title: "SSH Key Authentication: A Secure Way to Connect to Servers"
 date: 2025-05-12 16:50:00 +09:00
-categories: [Development,  Security]
+categories: [Tools,  Security]
 author: skykhs3
 image:
   path: /assets/img/posts/2025-05-12-ssh-key-authentication/ssh-keygen.webp

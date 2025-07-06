@@ -1,7 +1,7 @@
 ---
 title: "TypeScript: Exhaustiveness Checking"
 date: 2025-05-22 16:44:00 +09:00
-categories: [Development,  JavaScript/TypeScript]
+categories: [Languages, JavaScript/TypeScript]
 author: skykhs3
 image:
   path: /assets/img/posts/typescript-logo.webp

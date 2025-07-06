@@ -1,7 +1,7 @@
 ---
 title: "JavaScript: Loop Performance Benchmark"
 date: 2025-06-24 14:58:00 +09:00
-categories: [Development,  JavaScript/TypeScript]
+categories: [Languages, JavaScript/TypeScript]
 author: skykhs3
 image:
   path: /assets/img/posts/javascript-logo.webp

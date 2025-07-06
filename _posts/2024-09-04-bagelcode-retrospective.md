@@ -1,7 +1,7 @@
 ---
 title: "Retrospective: Bagelcode"
 date: 2024-09-04 18:00:00 +09:00
-categories: [Retrospective, Company]
+categories: [Retrospectives, Professional Reflections]
 author: skykhs3
 image:
   path: /assets/img/posts/2024-09-04-bagelcode-retrospective/logo.webp?v=1000

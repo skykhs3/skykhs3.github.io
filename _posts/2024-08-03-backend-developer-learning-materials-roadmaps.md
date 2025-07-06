@@ -1,7 +1,7 @@
 ---
 title: "백엔드 개발자 학습 자료 & 로드맵 (KOR)"
 date: 2024-08-03 03:05:00 +09:00
-categories: [Development, Learning & Roadmap]
+categories: [Retrospectives, Personal Reflections]
 author: skykhs3
 tags:
   - backend developer

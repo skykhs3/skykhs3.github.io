@@ -1,7 +1,7 @@
 ---
 title: "Frequently Used Docker Commands"
 date: 2025-06-15 18:00:00 +09:00
-categories: [Development,  Docker]
+categories: [Tools,  Docker]
 author: skykhs3
 image:
   path: /assets/img/posts/2025-06-15-frequently-used-docker-commands/docker-logo.svg

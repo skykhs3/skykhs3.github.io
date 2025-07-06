@@ -1,7 +1,7 @@
 ---
 title: "TypeScript: Structural type system"
 date: 2024-10-26 00:00:00 +09:00
-categories: [Development, JavaScript/TypeScript]
+categories: [Languages, JavaScript/TypeScript]
 author: skykhs3
 image:
   path: /assets/img/posts/typescript-logo.webp

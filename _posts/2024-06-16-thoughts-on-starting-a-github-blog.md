@@ -3,7 +3,7 @@
 title: Thoughts on Starting a GitHub Blog
 author: skykhs3
 date: 2024-06-16 17:00:00 +09:00
-categories: [Retrospective, Project]
+categories: [Retrospectives, Personal Reflections]
 post: skykhs3
 pin: true
 image:

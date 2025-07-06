@@ -1,7 +1,7 @@
 ---
 title: "Understanding Cookie Attributes and Security"
 date: 2025-03-19 17:56:00 +09:00
-categories: [Development, Security]
+categories: [Tools, Security]
 author: skykhs3
 image:
   path: /assets/img/posts/2025-03-19-cookie-attributes/cookie.webp

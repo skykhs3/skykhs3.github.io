@@ -1,7 +1,7 @@
 ---
 title: "Built-in Bit Functions Provided by GCC"
 date: 2024-07-26 03:13:00 +09:00
-categories: [Development, C/C++]
+categories: [Languages, C/C++]
 author: skykhs3
 image:
   path: /assets/img/posts/2024-07-26-built-in-bit-functions/c++.webp

@@ -1,7 +1,7 @@
 ---
 title: "Signing Commits: How to push verified commits on GitHub"
 date: 2025-05-15 16:50:00 +09:00
-categories: [Development,  Git/GitHub]
+categories: [Tools,  Git/GitHub]
 author: skykhs3
 image:
   path: /assets/img/posts/2025-05-15-signing-commits/github-commits.webp
