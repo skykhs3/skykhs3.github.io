@@ -6,16 +6,17 @@ author: skykhs3
 tags:
   - backend developer
   - roadmap
+description: 백엔드 개발을 혼자 공부하면서, 올바른 방향으로 학습하고 있는지, 판단하기가 어려웠다. 백엔드 개발자로 성장하기 위해 사용한 학습 자료와 로드맵을 정리했다.
+image:
+  path: /assets/img/posts/2024-08-03-backend-developer-learning-materials-roadmaps/pentagon.webp
+  alt: "『육각형 개발자: 시니어 개발자로 성장하기 위한 10가지 핵심 역량』, 최범균 저."
+  show_in_post: true
 ---
 <script type="text/javascript" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js">
 </script>
 
-<div markdown="1">
-
->백엔드 개발을 혼자 공부하면서, 내가 올바른 방향으로 학습하고 있는지, 판단하기가 어려웠다. 이 글은 내가 백엔드 개발자로 성장하기 위해 사용한 학습 자료와 로드맵을 정리했다.
->
->지금도 부족한 점이 많지만 지금까지 공부한 것들을 기록해 보려고 한다. 백엔드를 독학하는 사람들에게 도움이 되었으면 좋겠다. 
+지금도 부족한 점이 많지만 지금까지 공부한 것들을 기록해 보려고 한다. 백엔드를 독학하는 사람들에게 도움이 되었으면 좋겠다. 
 
 (**난이도, 실용성, 최신성**) 이 세 가지 기준으로 주관적으로 평가하며, 계속 업데이트 중.
 
@@ -168,4 +169,3 @@ tags:
 <br/>
 **좋은 자료가 있다면 추천 부탁드립니다.**
 
-</div>
