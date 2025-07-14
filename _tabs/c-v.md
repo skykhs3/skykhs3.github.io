@@ -25,6 +25,32 @@ toc: true
 
 <div class="row mb-3">
   <div class="col-auto">
+    <img src="/assets/img/resume/naver.webp" alt="Naver Logo" style="height:50px;width:50px;margin-top:30px;" />
+  </div>
+  <div class="col">
+    <h3 id="Naver"><b>Naver</b></h3>
+    <p>
+      <b>Software Developer / Naver Place</b>
+      <br />
+      <small>July 7th, 2025 ~ Present</small>
+      <br />
+      <small>Seongnam-si, South Korea</small>
+      <!-- <br />
+      I developed a game backend API server, an in-house administrator website frontend, and a payment website frontend.
+      <br />
+      <span >
+        <img src="/assets/img/resume/expressjs.svg" />
+        <img src="/assets/img/resume/nestjs.svg" />
+        <img src="/assets/img/resume/nextjs.svg" />
+        <img src="/assets/img/resume/react.svg" />
+        <img src="/assets/img/resume/aws.svg" />
+      </span> -->
+    </p>
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class="col-auto">
     <img src="/assets/img/resume/bagelcode.webp" alt="Bagelcode Logo" style="height:50px;width:50px;margin-top:30px;" />
   </div>
   <div class="col">
@@ -34,7 +60,7 @@ toc: true
       <br />
       <small>February 26th, 2024 ~ August 25th, 2024</small>
       <br />
-      <small>Seoul, South korea</small>
+      <small>Seoul, South Korea</small>
       <br />
       I developed a game backend API server, an in-house administrator website frontend, and a payment website frontend.
       <br />
