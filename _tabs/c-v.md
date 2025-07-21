@@ -8,7 +8,7 @@ toc: true
 ---
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/assets/img/resume/profile.webp" alt="Profile Picture" style="max-width: 150px; border-radius: 50%;" />
+  <img src="/assets/img/resume/profile.webp" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; object-fit:cover" />
 </div>
 
 ## **Hyeonsu Kim / 김현수**
