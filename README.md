@@ -1,7 +1,13 @@
 # [Tech Blog](https://skykhs3.github.io)
 
-
+## Overview
 [skykhs3.github.io](https://skykhs3.github.io) is a blog forked from [Chirpy Jekyll Theme](https://github.com/cotes2020/jekyll-theme-chirpy).
+
+## How to run locally
+```bash
+bundle install --path vendor/bundle
+bundle exec jekyll serve
+```
 
 <!-- markdownlint-disable-next-line -->
 <div align="center">
