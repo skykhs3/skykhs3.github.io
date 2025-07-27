@@ -24,7 +24,7 @@ description: Let me explain how to sign commits.
 | Git | 2.49.0 |
 | OpenSSH | 9.8p1 |
 
-# 1. Overview
+## 1. Overview
 
 ```bash
 git config user.name = "your_name"
@@ -33,7 +33,7 @@ git config user.email ="your_email"
 
 As you know, you can freely change the author of git commits. However, signing git commits prevents author forgery.
 
-# 2. Generating a new ssh key.
+## 2. Generating a new ssh key.
 ```bash
 # -t: key type, -C: comment, -f: file location, -N: passphrase
 ssh-keygen -t ed25519 -C "Git Signing Key" -f ~/.ssh/id_ed25519_signing -N ""
@@ -45,7 +45,7 @@ ssh-keygen -t ed25519 -C "Git Signing Key" -f ~/.ssh/id_ed25519_signing -N ""
 >[ssh-keygen official docs](https://man.openbsd.org/ssh-keygen){:target="_blank"}
 {: .prompt-info}
 
-# 3. Verify the public key
+## 3. Verify the public key
 ```bash
 cat ~/.ssh/id_ed25519_signing.pub
 ```
@@ -53,17 +53,17 @@ cat ~/.ssh/id_ed25519_signing.pub
 ![print a public key](/assets/img/posts/2025-05-15-signing-commits/cat-pub.webp)
 *print a public key*
 
-# 4. Add the SSH key to GitHub
+## 4. Add the SSH key to GitHub
 
-**Go to 'SSH and GPG keys' menu.**
+**[Go to 'SSH and GPG keys' menu.](https://github.com/settings/keys) and click `New SSH key`.**
 ![print a public key](/assets/img/posts/2025-05-15-signing-commits/github-settings.webp)
 *print a public key*
 
-**Paste your SSH key and complete adding new SSH key.**
+**Select Key type as `Signing Key` and paste your SSH key.**
 ![print a public key](/assets/img/posts/2025-05-15-signing-commits/github-add-new-ssh-key.webp)
 *Add new SSH key.*
 
-# 5. Set up settings on your local computer
+## 5. Set up settings on your local computer
 
 ```bash
 git config --global gpg.format ssh
@@ -89,7 +89,7 @@ git config --global commit.gpgsign true
 > ```
 {: .prompt-tip}
 
-# 6. Done
+## 6. Done
 
 ![Signed Git Commits](/assets/img/posts/2025-05-15-signing-commits/github-commits.webp)
 *Signed Git Commits*
