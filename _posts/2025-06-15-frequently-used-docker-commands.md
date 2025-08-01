@@ -98,6 +98,36 @@ Server: Docker Desktop 4.42.0 (195023)
 | `docker volume \`<br>`prune` | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | `docker volume \`<br>`prune -a` | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
 
+| Command | Stopped<br>Containers | Unused<br>Networks | Build<br>Cache<br>(Unused) | Build<br>Cache<br> (All) | Dangling<br>Images | All<br>Unused<br>Images | Unused<br>Anonymous<br>Volumes  | Unused<br>Named<br>Volumes |
+|---------|-------------------|-----------------|---------------------|-------------------|-----------------|-------------------|-------------------|---------------|
+| `docker system \`<br>`prune` | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| `docker system \`<br>`prune -a` | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ |
+| `docker system \`<br>`prune --volumes` | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ✅ | ❌ |
+| `docker system \`<br>`prune -a --volumes` | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ |
+| `docker container \`<br>`prune` | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| `docker image \`<br>`prune` | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| `docker image \`<br>`prune -a` | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
+| `docker volume \`<br>`prune` | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
+| `docker volume \`<br>`prune -a` | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
+| `docker builder \`<br>`prune` | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| `docker builder \`<br>`prune -a` | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
+
+- Stopped Containers: These are containers that are **no longer running but still exist on your Docker system**. They result from docker run commands followed by a stop or exit.
+
+- Unused Networks: These are networks** not currently connected to any running containers or services**. Networks can often persist even after the containers using them are removed.
+
+- Build Cache (Unused): These are intermediate layers created during the Docker image build process. **While they speed up future builds, unreferenced or unnecessary cache layers can accumulate.** Commands like docker system prune or docker builder prune (without -a) target these.
+
+- Build Cache (All): This refers to **the forcible deletion of all build cache**, including actively used or recently accessed cache layers. The docker builder prune -a command performs this comprehensive cleanup. Be aware that this can significantly increase your next build time.
+
+- Dangling Images: These are images **that have no tag (e.g., latest, v1.0) and are not referenced by any containers**. They often appear when you rebuild an image, causing the older version to lose its tag.
+
+- All Unused Images: This includes dangling images, plus any other images that have tags **but are not currently used by any running containers**. Commands like docker system prune -a or docker image prune -a target this broader category of images.
+
+- Unused Anonymous Volumes: These are volumes created without a specific name (e.g., via `docker run -v /path/in/container`) and there is no associated container.
+
+- Unused Named Volumes: These are volumes that you explicitly created with a name (e.g., `docker volume create my-volume`) and there is no associated container.
+
 ## 5. Examples
 
 ```bash
