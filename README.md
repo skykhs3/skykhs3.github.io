@@ -4,6 +4,23 @@
 [skykhs3.github.io](https://skykhs3.github.io) is a blog forked from [Chirpy Jekyll Theme](https://github.com/cotes2020/jekyll-theme-chirpy).
 
 ## How to run locally
+
+### Install Ruby Version Manager
+
+```bash
+brew install rbenv ruby-build #Mac
+echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc && source ~/.zshrc
+```
+
+### Install Your Preferred Ruby Version
+```bash
+rbenv install --list | grep -E "^[0-9]+\.[0-9]+\.[0-9]+$" | tail -5
+rbenv install 3.4.5
+rbenv global 3.4.5
+# rbenv local 3.4.5 # Set specific version for this project directory
+```
+
+### Navigate to your project directory and install gem bundle
 ```bash
 bundle install --path vendor/bundle
 bundle exec jekyll serve
