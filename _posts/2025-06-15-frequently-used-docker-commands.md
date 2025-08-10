@@ -91,15 +91,6 @@ Server: Docker Desktop 4.42.0 (195023)
 
 The commands below prune the checked column items
 
-| Command | Stopped<br>Containers | Unused<br>Networks | Dangling<br>Images | Unused<br>Images | Unused<br>Anonymous<br>Volumes | Unused<br>Named<br>Volumes |
-|---------|----------------------|-------------------|-------------------|---------------------|---------------------------|------------------------|
-| `docker system \`<br>`prune` | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| `docker system \`<br>`prune --volumes` | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
-| `docker system \`<br>`prune -a` | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| `docker system \`<br>`prune -a --volumes` | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| `docker volume \`<br>`prune` | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
-| `docker volume \`<br>`prune -a` | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
-
 | Command | Stopped<br>Containers | Unused<br>Networks | Build<br>Cache<br>(Unused) | Build<br>Cache<br>(All) | Dangling<br>Images | All<br>Unused<br>Images | Unused<br>Anonymous<br>Volumes  | Unused<br>Named<br>Volumes |
 |---------|-------------------|-----------------|---------------------|-------------------|-----------------|-------------------|-------------------|---------------|
 | `docker system \`<br>`prune` | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
