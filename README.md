@@ -20,8 +20,16 @@ rbenv global 3.4.5
 # rbenv local 3.4.5 # Set specific version for this project directory
 ```
 
+### Build related JavaScript assets
+```bash
+# Navigate to your project folder.
+npm install
+npm run build
+```
+
 ### Navigate to your project directory and install gem bundle
 ```bash
+# Navigate to your project folder.
 bundle install --path vendor/bundle
 bundle exec jekyll serve
 ```
