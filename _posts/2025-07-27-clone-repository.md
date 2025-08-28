@@ -6,7 +6,7 @@ author: skykhs3
 image:
   path: /assets/img/posts/github-logo.webp
   alt: Clone a repository with SSH
-  show_in_post: true
+  show_in_post: false
 tags:
   - git
   - github
