@@ -27,11 +27,19 @@ description: Let me explain how to sign commits.
 ## 1. Overview
 
 ```bash
-git config user.name = "your_name"
-git config user.email ="your_email"
+git config user.name "your_name"
+git config user.email "your_email"
 ```
-
 As you know, you can freely change the author of git commits. However, signing git commits prevents author forgery.
+
+> If you want to apply the configuration globally, use the following commands
+>```bash
+>git config --global user.name "your_name"
+>git config --global user.email "your_email"
+>```
+{: .prompt-tip }
+
+
 
 ## 2. Generating a new ssh key.
 ```bash
@@ -77,7 +85,7 @@ git config --global commit.gpgsign true
 | `user.signingkey`     | Specify the path to the public key (must be `.pub` file) |
 | `commit.gpgsign true` | Automatically sign all commits (no need to use `-S` flag.)<br/>cf. `git commit -S -m "feat: my commit` |
 
-> Of course, you can apply config to one specific repository.
+> Of course, you can apply the configuration to a specific repository.
 > ```bash
 > # Navigate to your repository
 > cd your-repository
