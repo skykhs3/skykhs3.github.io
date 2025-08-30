@@ -16,6 +16,19 @@ description: A comprehensive guide to Scala collections including Option, List, 
 |-|-|
 | Scala | 2.12.17 |
 
+```scala
+// Helper Functions
+val tripleOption: Option[Int] => Option[Int] = {
+  case Some(x) => Some(x * 3)
+  case None => None
+}
+
+val tripleIterable: Option[Int] => Iterable[Int] = {
+  case Some(x) => Some(x * 3)
+  case None => None
+}
+```
+
 ## 1. Option
 
 ### 1.1. get
@@ -36,7 +49,7 @@ None.flatten // None
 ### 1.3. map
 ```scala
 Some(10).map(_ * 2) // Some(20)
-None.asInstanceOf[Option[Int]].map(_ * 2) // None
+(None: Option[Int]).map(_ * 2) // None
 ```
 
 ### 1.4. flatMap
@@ -45,7 +58,13 @@ Some(Some(10)).flatMap(tripleOption) // Some(30)
 Some(None).flatMap(tripleOption) // None
 ```
 
-### 1.5. toList
+### 1.5. exists
+```scala
+Some(10).exists(_ > 2) // true
+(None: Option[Int]).exists(_ > 2) // None // always returns false
+```
+
+### 1.6. toList
 
 ```scala
 Some(10).toList // List(10)
@@ -62,21 +81,17 @@ List(Option(1), None).map(tripleOption) // List(Some(3), None)
 
 ### 2.2. map, flatten, and flatMap
 ```scala
-val tripleOption: Option[Int] => Option[Int] = {
-  case Some(x) => Some(x * 3)
-  case None => None
-}
-
-val tripleIterable: Option[Int] => Iterable[Int] = {
-  case Some(x) => Some(x * 3)
-  case None => None
-}
-
 List(1, 2).map(_ * 2) // List(2, 4)
 List(Some(1), Some(2), None).map(tripleOption) // List(Some(3), Some(6), None)
 List(Some(1), Some(2), None).flatten // List(1, 2)
 List(Some(1), Some(2), None).map(tripleOption).flatten // List(3, 6)
-List(Some(1), Some(2), None).flatMap(tripleIterable) // List(3, 6)
+List(Some(1), Some(2), None).flatMap(tripleIterable) // List(3, 6) // flatMap == map + flatten
+```
+
+### 2.3. exists
+```scala
+List(1, 2).exists(_ == 2) // true
+List(1, 2).exists(_ == 3) // false
 ```
 
 ## 3. Map
