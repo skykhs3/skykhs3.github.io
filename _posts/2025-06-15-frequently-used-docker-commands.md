@@ -19,6 +19,7 @@ description: A collection of frequently used Docker commands
 </span>
 </summary>
 <div markdown="1">
+
 ```bash
 Client:
  Version:           27.5.1-rd
@@ -55,6 +56,9 @@ Server: Docker Desktop 4.42.0 (195023)
 
 | Command | Description |
 |---------|-------------|
+| [`docker build -t <image-name> <build-context>`](https://docs.docker.com/reference/cli/docker/image/build/) | Build image from Dockerfile |
+| [`docker build -t <image-name> -f <dockerfile-path> <build-context>`](https://docs.docker.com/reference/cli/docker/image/build/) | Build image with custom Dockerfile |
+| [`docker build --no-cache -t <image-name> <build-context>`](https://docs.docker.com/reference/cli/docker/image/build/) | Build image without cache |
 | [`docker pull <image-name>`](https://docs.docker.com/reference/cli/docker/image/pull/) | Pull image from registry |
 | [`docker create --name <container-name> <image-name>`](https://docs.docker.com/reference/cli/docker/container/create/) | Create container without running it |
 | [`docker run -it --name <container-name> <image-name>`](https://docs.docker.com/reference/cli/docker/container/run/) | Create and Run container interactively |
@@ -91,36 +95,36 @@ Server: Docker Desktop 4.42.0 (195023)
 
 The commands below prune the checked column items
 
-| Command | Stopped<br>Containers | Unused<br>Networks | Build<br>Cache<br>(Unused) | Build<br>Cache<br>(All) | Dangling<br>Images | All<br>Unused<br>Images | Unused<br>Anonymous<br>Volumes  | Unused<br>Named<br>Volumes |
+| Command | Stopped<br>Containers | Unused<br>Networks | Dangling<br>Build<br>Cache | All<br>Build<br>Cache | Dangling<br>Images | All<br>Unused<br>Images | Unused<br>Anonymous<br>Volumes  | Unused<br>Named<br>Volumes |
 |---------|-------------------|-----------------|---------------------|-------------------|-----------------|-------------------|-------------------|---------------|
 | `docker system \`<br>`prune` | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
-| `docker system \`<br>`prune -a` | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ |
+| `docker system \`<br>`prune -a` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 | `docker system \`<br>`prune --volumes` | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ✅ | ❌ |
-| `docker system \`<br>`prune -a --volumes` | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ |
+| `docker system \`<br>`prune -a --volumes` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | `docker container \`<br>`prune` | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | `docker image \`<br>`prune` | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | `docker image \`<br>`prune -a` | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
 | `docker volume \`<br>`prune` | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | `docker volume \`<br>`prune -a` | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
 | `docker builder \`<br>`prune` | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| `docker builder \`<br>`prune -a` | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| `docker builder \`<br>`prune -a` | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 
 >**Stopped Containers:** These are containers that are **no longer running but still exist on your Docker system**. They result from docker run commands followed by a stop or exit.
 {: .prompt-info}
 
->**Unused Networks:** These are networks** not currently connected to any running containers or services**. Networks can often persist even after the containers using them are removed.
+>**Unused Networks:** These are networks **not currently connected to any containers or services**. Networks can often persist even after the containers using them are removed.
 {: .prompt-info}
 
->**Build Cache (Unused):** These are intermediate layers created during the Docker image build process. **While they speed up future builds, unreferenced or unnecessary cache layers can accumulate.** Commands like docker system prune or docker builder prune (without -a) target these.
+>**Dangling Build Cache:** These are intermediate layers created during the Docker image build process. These are **unreferenced or unnecessary cache layers.** Commands like `docker system prune` or `docker builder prune` (without -a) target these.
 {: .prompt-info}
 
->**Build Cache (All):** This refers to **the forcible deletion of all build cache**, including actively used or recently accessed cache layers. The `docker builder prune -a` command performs this comprehensive cleanup. Be aware that this can significantly increase your next build time.
+>**All Build Cache:** This refers to **all build cache**, including actively used or recently accessed cache layers. The `docker builder prune -a` command performs this comprehensive cleanup. Be aware that this can significantly increase your next build time.
 {: .prompt-info}
 
 >**Dangling Images:** These are images **that have no tag (e.g., latest, v1.0) and are not referenced by any containers**. They often appear when you rebuild an image, causing the older version to lose its tag.
 {: .prompt-info}
 
->**All Unused Images:** This includes dangling images, plus any other images that have tags **but are not currently used by any running containers**. Commands like `docker system prune -a` or `docker image prune -a` target this broader category of images.
+>**All Unused Images:** This includes dangling images, plus any other images that have tags **but are not currently used by any containers**. Commands like `docker system prune -a` or `docker image prune -a` target this broader category of images.
 {: .prompt-info}
 
 >**Unused Anonymous Volumes:** These are volumes created without a specific name (e.g., via `docker run -v /path/in/container`) that are no longer associated with any containers. This means that the associated containers have already been removed.
@@ -129,7 +133,7 @@ The commands below prune the checked column items
 >**Unused Named Volumes:** These are named volumes (e.g., created with `docker volume create my-volume`) that are no longer associated with any containers. This means that the associated containers have already been removed.
 {: .prompt-info}
 
->**Orphaned Containers:** These are stopped containers that exist but cannot be restarted because their associated images have been removed. This typically happens when you run `docker image prune -a` while having stopped containers. These containers are essentially useless since they cannot be started without their images.
+>**Orphaned Containers:** These are stopped containers that exist but cannot be restarted because their associated images have been removed. These containers are essentially useless since they cannot be started without their images.
 {: .prompt-info}
 
 ## 5. Examples
