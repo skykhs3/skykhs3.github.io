@@ -3,6 +3,7 @@ title: "SCC (Strongly Connected Component) Algorithm"
 date: 2024-07-04 13:00:00 +09:00
 categories: [Problem Solving, Algorithm]
 author: skykhs3
+description: A guide to finding Strongly Connected Components in directed graphs using Tarjan's and Kosaraju's algorithms.
 tags:
   - scc
   - tarjan's algorithm

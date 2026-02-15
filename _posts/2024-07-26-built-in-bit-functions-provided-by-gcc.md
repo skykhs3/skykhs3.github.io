@@ -3,6 +3,7 @@ title: "Built-in Bit Functions Provided by GCC"
 date: 2024-07-26 03:13:00 +09:00
 categories: [Languages, C/C++]
 author: skykhs3
+description: A reference for GCC built-in bit manipulation functions including __builtin_clz, __builtin_ctz, __builtin_popcount, and __builtin_parity.
 image:
   path: /assets/img/posts/2024-07-26-built-in-bit-functions/c++.webp
   alt: C++

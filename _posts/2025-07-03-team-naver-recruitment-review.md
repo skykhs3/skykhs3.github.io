@@ -1,6 +1,7 @@
 ---
 title: "2025 네이버 신입 공채 최종 합격 후기: Tech 백엔드 (KOR)"
 date: 2025-07-03 16:13:00 +09:00
+lang: ko
 categories: [Retrospectives, Personal Reflections]
 author: skykhs3
 image:
@@ -9,7 +10,11 @@ image:
   show_in_post: true
 tags:
   - naver
-description:  2025 팀네이버 신입 공채 최종 합격까지 학습한 자료 모음
+  - backend-developer
+  - retrospective
+  - interview
+  - recruitment
+description: 2025 팀네이버 신입 공채 최종 합격까지의 준비 과정, CS 학습 자료, 포트폴리오 구성, 면접 준비 방법을 정리한 후기입니다.
 
 ---
 
