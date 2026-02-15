@@ -3,6 +3,7 @@ title: "Types and Options of Git Merge"
 date: 2024-09-11 01:29:00 +09:00
 categories: [Tools, Git/GitHub]
 author: skykhs3
+description: Understanding different types of git merge strategies including fast-forward, 3-way merge, and the --no-ff option.
 image:
   path: /assets/img/posts/2024-09-11-types-and-options-of-git-merge/no-ff.webp
   alt: 3-way merge

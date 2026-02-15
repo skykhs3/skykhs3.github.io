@@ -4,6 +4,7 @@ date: 2024-09-17 19:57:00 +09:00
 categories: [Problem Solving, Algorithm]
 author: skykhs3
 math: true
+description: An explanation of stable counting sort algorithm, why stability matters, and how to implement it correctly.
 tags:
   - counting sort
   - algorithm

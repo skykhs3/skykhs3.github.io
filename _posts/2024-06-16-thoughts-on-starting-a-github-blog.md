@@ -6,6 +6,7 @@ date: 2024-06-16 17:00:00 +09:00
 categories: [Retrospectives, Personal Reflections]
 post: skykhs3
 pin: true
+description: Why I started a GitHub blog, the challenges I faced with Jekyll and GitHub Actions, and my plans for continuous learning and writing.
 image:
   path: /assets/img/posts/2024-06-16-thoughts-on-starting-a-github-blog/jekyll_pages.webp
   alt: "Jekyll"

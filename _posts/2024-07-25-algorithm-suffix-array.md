@@ -4,6 +4,7 @@ date: 2024-07-25 01:29:00 +09:00
 categories: [Problem Solving, Algorithm]
 author: skykhs3
 math: true
+description: How to construct Suffix Array using Manber-Myers algorithm and LCP Array using Kasai's algorithm with implementation details.
 tags:
   - suffix array
   - lcp array

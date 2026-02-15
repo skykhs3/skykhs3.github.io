@@ -4,6 +4,7 @@ date: 2024-07-01 13:00:00 +09:00
 categories: [Problem Solving, Algorithm]
 author: skykhs3
 math: true
+description: An explanation of the KMP string matching algorithm with failure function construction and O(N+M) time complexity analysis.
 tags:
   [
     kmp algorithm,
