@@ -193,6 +193,11 @@ defaults:
       layout: page
       permalink: /:title/
 
+  - scope:
+      path: "assets/img"
+    values:
+      sitemap: false
+
 sass:
   style: compressed
 
